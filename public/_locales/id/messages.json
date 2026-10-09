@@ -1,0 +1,1372 @@
+{
+  "extensionDescription": {
+    "message": "Kontrol kecepatan dan pemutaran untuk video dan audio HTML5: cepat, ringan, dan menghormati privasi Anda.",
+    "description": "Store and browser description."
+  },
+  "connectingTitle": {
+    "message": "Menghubungkan ke halaman…",
+    "description": "Popup, while injecting."
+  },
+  "pageUnavailableTitle": {
+    "message": "FleetFoot Engine tidak berfungsi di halaman ini.",
+    "description": "Popup, page refuses extensions."
+  },
+  "pageUnavailableHint": {
+    "message": "Halaman browser dan toko ekstensi tidak mengizinkan ekstensi.",
+    "description": "Popup hint."
+  },
+  "noAnswerTitle": {
+    "message": "Halaman tidak merespons.",
+    "description": "Popup, no answer."
+  },
+  "noAnswerHint": {
+    "message": "Mungkin halaman sedang sibuk atau baru saja berubah. Coba lagi.",
+    "description": "Popup hint."
+  },
+  "noMediaTitle": {
+    "message": "Tidak ada video atau audio di halaman ini.",
+    "description": "Popup, no media."
+  },
+  "noMediaHint": {
+    "message": "Pemutar yang disematkan dari situs lain tidak bisa dijangkau dari sini.",
+    "description": "Popup hint."
+  },
+  "framedTitle": {
+    "message": "Pemutarnya ada di dalam frame dari $SITE$.",
+    "description": "Popup: no player here, but a frame from another site is on screen; $SITE$ is that site, e.g. «vixcloud.co».",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedHint": {
+    "message": "Untuk menjangkaunya, browser meminta akses ke situs itu; setelah itu FleetFoot Engine berjalan sendiri di sana.",
+    "description": "Popup, under framedTitle: allowing the site lets the extension reach the frame, and it then starts there by itself."
+  },
+  "framedAllowSite": {
+    "message": "Izinkan di $SITE$",
+    "description": "Popup button: asks the browser for access to that one site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedAllowAll": {
+    "message": "Izinkan di semua situs",
+    "description": "Popup button: asks the browser for access to every site (as «Always, on every site» in the options)."
+  },
+  "retry": {
+    "message": "Coba lagi",
+    "description": "Button."
+  },
+  "slower": {
+    "message": "Lebih lambat",
+    "description": "Button label."
+  },
+  "faster": {
+    "message": "Lebih cepat",
+    "description": "Button label."
+  },
+  "rateInputLabel": {
+    "message": "Kecepatan pemutaran",
+    "description": "Rate input label."
+  },
+  "rateInvalid": {
+    "message": "Masukkan kecepatan dari $MIN$ sampai $MAX$.",
+    "description": "Invalid typed rate.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "resetTo": {
+    "message": "Kembali ke $RATE$",
+    "description": "Reset button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "previousRate": {
+    "message": "Kecepatan sebelumnya",
+    "description": "Button label."
+  },
+  "favoriteRate": {
+    "message": "Kecepatan favorit, $RATE$",
+    "description": "Button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "presets": {
+    "message": "Pintasan kecepatan",
+    "description": "Group label."
+  },
+  "preservePitch": {
+    "message": "Suara alami",
+    "description": "Switch label."
+  },
+  "on": {
+    "message": "Aktif",
+    "description": "Switch state."
+  },
+  "off": {
+    "message": "Nonaktif",
+    "description": "Switch state."
+  },
+  "seekBack": {
+    "message": "Mundur $DURATION$",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "seekForward": {
+    "message": "Maju $DURATION$",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipEnter": {
+    "message": "Gambar dalam gambar",
+    "description": "Button."
+  },
+  "pipExit": {
+    "message": "Keluar dari gambar dalam gambar",
+    "description": "Button."
+  },
+  "loopGroup": {
+    "message": "Ulangi A–B",
+    "description": "Group label."
+  },
+  "loopHelpLabel": {
+    "message": "Apa itu ulangi A–B?",
+    "description": "Accessible name of the info button next to the loop."
+  },
+  "loopHelp": {
+    "message": "Mengulang satu bagian tanpa henti, untuk ditonton lagi atau dipelajari.",
+    "description": "Popover explaining the A–B loop: what it is for."
+  },
+  "loopHelpSteps": {
+    "message": "Ketuk A di awal bagian, B di akhirnya, lalu Ulangi.",
+    "description": "Popover explaining the A–B loop: how to set it."
+  },
+  "loopHelpClear": {
+    "message": "Tombol × menghapus pengulangan.",
+    "description": "Last line of the loop help; × is the clear button."
+  },
+  "loopA": {
+    "message": "Tandai A",
+    "description": "Button."
+  },
+  "loopB": {
+    "message": "Tandai B",
+    "description": "Button."
+  },
+  "loopAAt": {
+    "message": "A $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loopBAt": {
+    "message": "B $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loop": {
+    "message": "Ulangi",
+    "description": "Toggle button."
+  },
+  "loopClear": {
+    "message": "Hapus pengulangan",
+    "description": "Button label."
+  },
+  "copyTimestamp": {
+    "message": "Salin waktu ini",
+    "description": "Button."
+  },
+  "copied": {
+    "message": "$TIME$ disalin",
+    "description": "After copying.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "Waktu tidak bisa disalin.",
+    "description": "Copy failed."
+  },
+  "player": {
+    "message": "Pemutar",
+    "description": "Select label."
+  },
+  "playerAuto": {
+    "message": "Otomatis",
+    "description": "Option."
+  },
+  "playerAll": {
+    "message": "Semua pemutar",
+    "description": "Option."
+  },
+  "playerVideo": {
+    "message": "Video $NUMBER$",
+    "description": "Short name of a video player, numbered in order of discovery.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerAudio": {
+    "message": "Audio $NUMBER$",
+    "description": "Player name.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerPlaying": {
+    "message": "sedang diputar",
+    "description": "Detail of a player that is playing now."
+  },
+  "playerEmbedded": {
+    "message": "disematkan dari $SITE$",
+    "description": "Detail of a player inside a frame of the page; $SITE$ is that frame's site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerEmbeddedUnknown": {
+    "message": "disematkan",
+    "description": "Detail of a player inside a frame of the page that has no site."
+  },
+  "options": {
+    "message": "Setelan",
+    "description": "Button."
+  },
+  "policyFollow": {
+    "message": "Biarkan situs memutuskan",
+    "description": "Rate policy name."
+  },
+  "policySmart": {
+    "message": "Kembalikan di video berikutnya (disarankan)",
+    "description": "Rate policy name."
+  },
+  "policyLock": {
+    "message": "Langsung kembalikan, selalu",
+    "description": "Rate policy name."
+  },
+  "noticeContested": {
+    "message": "Ekstensi lain atau halaman itu sendiri terus mengubah kecepatan pemutar ini. Agar tidak saling tarik, FleetFoot Engine berhenti mengembalikannya.",
+    "description": "Notice."
+  },
+  "noticeContestedChoose": {
+    "message": "Pilih tindakan",
+    "description": "Popup link after the LOCK yielded notice: opens the option."
+  },
+  "noticeExtremeRate": {
+    "message": "Pada kecepatan ini, browser bisa membisukan atau mendistorsi audio.",
+    "description": "Notice."
+  },
+  "noticeLive": {
+    "message": "Ini siaran langsung, jadi tidak bisa dimajukan dan sisa waktunya tidak bisa dilihat.",
+    "description": "Notice."
+  },
+  "errorInvalidCommand": {
+    "message": "Terjadi kesalahan. Coba lagi.",
+    "description": "Error."
+  },
+  "errorNoPlayer": {
+    "message": "Pemutar sudah tidak ada di halaman.",
+    "description": "Error."
+  },
+  "errorRateRejected": {
+    "message": "Halaman menolak kecepatan ini.",
+    "description": "Error."
+  },
+  "errorPitchUnsupported": {
+    "message": "Pemutar ini tidak bisa mempertahankan suara alami.",
+    "description": "Error."
+  },
+  "errorNoPreviousRate": {
+    "message": "Belum ada kecepatan sebelumnya.",
+    "description": "Error."
+  },
+  "errorNotSeekable": {
+    "message": "Media ini tidak bisa dimajukan atau dimundurkan sekarang.",
+    "description": "Error."
+  },
+  "errorNotLoopable": {
+    "message": "Pengulangan memerlukan media yang durasinya diketahui.",
+    "description": "Error."
+  },
+  "errorLoopInvalid": {
+    "message": "B harus berada setelah A.",
+    "description": "Error."
+  },
+  "errorPipUnavailable": {
+    "message": "Gambar dalam gambar tidak tersedia untuk pemutar ini.",
+    "description": "Error."
+  },
+  "errorPipRejected": {
+    "message": "Browser menolak gambar dalam gambar. Gunakan tombol di bilah atas pemutar atau pintasan di halaman.",
+    "description": "Error."
+  },
+  "overlayLabel": {
+    "message": "Kontrol FleetFoot Engine",
+    "description": "Toolbar label."
+  },
+  "overlayMove": {
+    "message": "Pindahkan (tombol panah)",
+    "description": "Drag handle."
+  },
+  "overlayMore": {
+    "message": "Kontrol lainnya",
+    "description": "Button."
+  },
+  "overlayLess": {
+    "message": "Lebih sedikit kontrol",
+    "description": "Button."
+  },
+  "menuSpeed": {
+    "message": "Kecepatan",
+    "description": "Context menu."
+  },
+  "menuFavorite": {
+    "message": "Favorit ($RATE$)",
+    "description": "Context menu.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "Setelan",
+    "description": "Page subtitle."
+  },
+  "sectionSpeed": {
+    "message": "Kecepatan",
+    "description": "Section."
+  },
+  "speedGroupRates": {
+    "message": "Kecepatan Anda",
+    "description": "Options, Speed section: heading of the user's own speeds (presets, step, favorite and hold speeds)."
+  },
+  "speedGroupRestore": {
+    "message": "Mengembalikan kecepatan Anda",
+    "description": "Options, Speed section: heading of what happens when a site changes the speed."
+  },
+  "speedGroupPlayers": {
+    "message": "Pemutar yang terpengaruh",
+    "description": "Options, Speed section: heading of which players a speed applies to."
+  },
+  "sectionPlayback": {
+    "message": "Pemutaran",
+    "description": "Section."
+  },
+  "sectionKeyboard": {
+    "message": "Keyboard",
+    "description": "Section."
+  },
+  "sectionOverlay": {
+    "message": "Bilah di atas pemutar",
+    "description": "Section."
+  },
+  "sectionMenu": {
+    "message": "Menu klik kanan",
+    "description": "Section."
+  },
+  "presetsField": {
+    "message": "Pintasan kecepatan",
+    "description": "Field."
+  },
+  "presetsHelp": {
+    "message": "Hingga 12 kecepatan dipisahkan spasi, misalnya 1 1,5 2.",
+    "description": "Help."
+  },
+  "presetsInvalid": {
+    "message": "Masukkan 1 sampai $MAX$ kecepatan, dipisahkan spasi.",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "rateStepField": {
+    "message": "Langkah untuk lebih lambat dan lebih cepat",
+    "description": "Field."
+  },
+  "rateStepHelp": {
+    "message": "Dari 0,01 sampai 1,00.",
+    "description": "Help."
+  },
+  "favoriteField": {
+    "message": "Kecepatan favorit",
+    "description": "Field."
+  },
+  "holdField": {
+    "message": "Kecepatan saat tombol ditahan",
+    "description": "Field."
+  },
+  "rateRangeHelp": {
+    "message": "Dari 0,10 sampai 16,00.",
+    "description": "Help."
+  },
+  "policyField": {
+    "message": "Jika situs mengubah kecepatan",
+    "description": "Legend."
+  },
+  "policyFollowHelp": {
+    "message": "Kecepatan Anda diterapkan sekali. Contoh: episode berikutnya dimulai di 1× dan tetap di 1×.",
+    "description": "Help."
+  },
+  "policySmartHelp": {
+    "message": "Contoh: episode berikutnya dimulai di 1× dan kecepatan Anda kembali. Jika situs mengubah kecepatan saat Anda menonton, kecepatan tetap seperti yang diatur situs sampai video berikutnya.",
+    "description": "Help."
+  },
+  "policyLockHelp": {
+    "message": "Contoh: saat Anda menonton, situs kembali ke 1× dan sesaat kemudian kecepatan Anda kembali. Untuk situs yang terus mengubah kecepatan.",
+    "description": "Help."
+  },
+  "targetField": {
+    "message": "Kecepatan berlaku untuk",
+    "description": "Legend."
+  },
+  "targetActive": {
+    "message": "Pemutar yang aktif",
+    "description": "Option."
+  },
+  "targetAll": {
+    "message": "Semua pemutar di halaman",
+    "description": "Option."
+  },
+  "pitchField": {
+    "message": "Suara alami saat kecepatan diubah",
+    "description": "Field."
+  },
+  "skipSilenceField": {
+    "message": "Lewati jeda hening",
+    "description": "Name of Skip Silence: options switch, site profile field, popup button."
+  },
+  "skipSilenceHelp": {
+    "message": "Saat jeda, pemutar beralih ke kecepatan hening dan kembali ke kecepatan Anda begitu suara kembali. Suara hanya didengarkan di perangkat Anda, tidak pernah direkam atau dikirim.",
+    "description": "What Skip Silence does and that the sound stays on the device: options help, popup card."
+  },
+  "skipSilenceSettings": {
+    "message": "Pengaturan “Lewati jeda hening”",
+    "description": "Link in the popup card of Skip Silence, to its place on the options page."
+  },
+  "silenceModeField": {
+    "message": "Yang dihitung sebagai hening",
+    "description": "Options legend: how readily a pause counts as a silence."
+  },
+  "silenceConservative": {
+    "message": "Hanya jeda yang panjang dan sunyi",
+    "description": "Options choice: only long, quiet pauses count."
+  },
+  "silenceNormal": {
+    "message": "Juga jeda antarkalimat (disarankan)",
+    "description": "Options choice, the default: pauses between sentences count too."
+  },
+  "silenceAggressive": {
+    "message": "Setiap jeda, meski ada sedikit bunyi latar",
+    "description": "Options choice: every pause counts, even with background noise."
+  },
+  "silenceRateField": {
+    "message": "Kecepatan saat hening",
+    "description": "Options field: the speed a silence plays at."
+  },
+  "noticeSkipSilenceWaiting": {
+    "message": "“Lewati jeda hening” mulai dengan klik pertama Anda di halaman.",
+    "description": "Notice: the browser starts audio only after a click on the page."
+  },
+  "noticeSkipSilenceUnavailable": {
+    "message": "“Lewati jeda hening” tidak tersedia untuk media ini.",
+    "description": "Notice: the browser does not let the extension hear this media."
+  },
+  "seekStepField": {
+    "message": "Lompatan dalam detik",
+    "description": "Field."
+  },
+  "seekStepInvalid": {
+    "message": "Masukkan bilangan bulat detik dari $MIN$ sampai $MAX$.",
+    "description": "Error.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "pageShortcutsField": {
+    "message": "Pintasan di halaman",
+    "description": "Field."
+  },
+  "pageShortcutsHelp": {
+    "message": "Berfungsi setelah Anda membuka FleetFoot Engine di halaman, dan tidak pernah saat Anda mengetik di kolom.",
+    "description": "Help."
+  },
+  "shortcutsTable": {
+    "message": "Tombol di halaman",
+    "description": "Table caption."
+  },
+  "keyPress": {
+    "message": "Tekan tombol… (Esc untuk batal)",
+    "description": "While recording."
+  },
+  "keyNone": {
+    "message": "Tidak ada",
+    "description": "Unbound."
+  },
+  "keyRemove": {
+    "message": "Hapus tombol untuk $ACTION$",
+    "description": "Button label: the button shows only a cross.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "keyChange": {
+    "message": "$ACTION$: $KEY$. Ubah",
+    "description": "Button label.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "keyTaken": {
+    "message": "$KEY$ sudah dipakai untuk $ACTION$.",
+    "description": "Conflict.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "action": {
+        "content": "$2"
+      }
+    }
+  },
+  "browserShortcutsHelp": {
+    "message": "Pintasan yang berfungsi di halaman mana pun diatur di setelan pintasan ekstensi pada browser.",
+    "description": "Help."
+  },
+  "browserShortcutsOpen": {
+    "message": "Buka pintasan browser",
+    "description": "Button."
+  },
+  "overlayField": {
+    "message": "Tampilkan bilah di atas pemutar",
+    "description": "Field."
+  },
+  "overlayHelp": {
+    "message": "Bilah kecil yang muncul saat penunjuk berada di atas pemutar.",
+    "description": "Help."
+  },
+  "overlayResetPosition": {
+    "message": "Kembalikan bilah ke sudut",
+    "description": "Button."
+  },
+  "contextMenuField": {
+    "message": "Menu kecepatan saat mengeklik kanan video atau audio",
+    "description": "Field."
+  },
+  "contextMenuHelp": {
+    "message": "Hanya muncul pada video dan audio.",
+    "description": "Help."
+  },
+  "saved": {
+    "message": "Tersimpan.",
+    "description": "Status."
+  },
+  "invalidValue": {
+    "message": "Nilai ini tidak valid.",
+    "description": "Error."
+  },
+  "restoreDefaults": {
+    "message": "Pulihkan setelan bawaan",
+    "description": "Button."
+  },
+  "restoreConfirm": {
+    "message": "Klik lagi untuk memulihkan semuanya",
+    "description": "Button, armed."
+  },
+  "restored": {
+    "message": "Setelan bawaan dipulihkan.",
+    "description": "Status."
+  },
+  "actionSlower": {
+    "message": "Lebih lambat",
+    "description": "Shortcut action."
+  },
+  "actionFaster": {
+    "message": "Lebih cepat",
+    "description": "Shortcut action."
+  },
+  "actionReset": {
+    "message": "Kembali ke 1×",
+    "description": "Shortcut action."
+  },
+  "actionFavorite": {
+    "message": "Kecepatan favorit",
+    "description": "Shortcut action."
+  },
+  "actionHold": {
+    "message": "Tahan untuk mempercepat",
+    "description": "Shortcut action."
+  },
+  "actionSeekBackward": {
+    "message": "Mundur",
+    "description": "Shortcut action."
+  },
+  "actionSeekForward": {
+    "message": "Maju",
+    "description": "Shortcut action."
+  },
+  "actionTogglePitch": {
+    "message": "Suara alami aktif/nonaktif",
+    "description": "Shortcut action."
+  },
+  "actionLoopA": {
+    "message": "Awal pengulangan (A)",
+    "description": "Shortcut action."
+  },
+  "actionLoopB": {
+    "message": "Akhir pengulangan (B)",
+    "description": "Shortcut action."
+  },
+  "actionLoopToggle": {
+    "message": "Pengulangan aktif/nonaktif",
+    "description": "Shortcut action."
+  },
+  "actionNextPlayer": {
+    "message": "Pemutar berikutnya",
+    "description": "Shortcut action."
+  },
+  "actionToggleOverlay": {
+    "message": "Bilah aktif/nonaktif",
+    "description": "Shortcut action."
+  },
+  "controlling": {
+    "message": "Pemutar yang dikendalikan",
+    "description": "Caption above the player list."
+  },
+  "live": {
+    "message": "Langsung",
+    "description": "Badge for a live stream."
+  },
+  "timeLeftAt": {
+    "message": "Sisa $TIME$ pada $RATE$",
+    "description": "Remaining time at the current speed.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      },
+      "rate": {
+        "content": "$2"
+      }
+    }
+  },
+  "timeLeftNormal": {
+    "message": "$TIME$ pada kecepatan normal",
+    "description": "Remaining time at 1×.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipOpen": {
+    "message": "Buka",
+    "description": "Picture-in-picture button."
+  },
+  "pipClose": {
+    "message": "Tutup",
+    "description": "Picture-in-picture button."
+  },
+  "savedHours": {
+    "message": "$HOURS$ $MINUTES$",
+    "description": "Time saved: hours then minutes, each already with its unit («12 h», «34 min»).",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      },
+      "minutes": {
+        "content": "$2"
+      }
+    }
+  },
+  "savedUnderMinute": {
+    "message": "kurang dari satu menit",
+    "description": "Time saved below one minute."
+  },
+  "savedPopup": {
+    "message": "$TIME$ dihemat",
+    "description": "Popup header: total time saved.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedTitle": {
+    "message": "Waktu yang dihemat",
+    "description": "Options section."
+  },
+  "savedHelp": {
+    "message": "Waktu yang tidak perlu Anda habiskan karena FleetFoot Engine memutar video dan audio Anda lebih cepat. Hanya disimpan di perangkat ini, sebagai satu total.",
+    "description": "Help."
+  },
+  "savedTotal": {
+    "message": "Sejauh ini: $TIME$",
+    "description": "Options: the total.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedReset": {
+    "message": "Atur ulang penghitung",
+    "description": "Button."
+  },
+  "savedResetConfirm": {
+    "message": "Klik lagi untuk mengatur ulang",
+    "description": "Button, armed."
+  },
+  "savedResetDone": {
+    "message": "Penghitung diatur ulang.",
+    "description": "Status."
+  },
+  "sectionAppearance": {
+    "message": "Tampilan",
+    "description": "Options section."
+  },
+  "themeField": {
+    "message": "Tema warna",
+    "description": "Legend."
+  },
+  "textSizeField": {
+    "message": "Ukuran teks",
+    "description": "Options, Appearance: label of the choice of text size for this page, from 100% to 200%."
+  },
+  "textSizeHelp": {
+    "message": "Memperbesar teks dan kontrol di halaman ini.",
+    "description": "Options, Appearance: under textSizeField."
+  },
+  "themeYellow": {
+    "message": "Kuning (bawaan)",
+    "description": "Theme."
+  },
+  "themeCyan": {
+    "message": "Sian",
+    "description": "Theme."
+  },
+  "themeMagenta": {
+    "message": "Magenta",
+    "description": "Theme."
+  },
+  "themeGreen": {
+    "message": "Hijau",
+    "description": "Theme."
+  },
+  "themeViolet": {
+    "message": "Violet",
+    "description": "Theme."
+  },
+  "themeCoral": {
+    "message": "Koral",
+    "description": "Theme."
+  },
+  "themeSlate": {
+    "message": "Batu tulis",
+    "description": "Theme: dimmed blue-grey, easy on the eyes."
+  },
+  "themeSepia": {
+    "message": "Sepia",
+    "description": "Theme: dimmed warm brown, easy on the eyes."
+  },
+  "themeSage": {
+    "message": "Hijau sage",
+    "description": "Theme: dimmed green, easy on the eyes."
+  },
+  "themeLight": {
+    "message": "Terang",
+    "description": "Theme."
+  },
+  "pitchHelpShort": {
+    "message": "Suara tidak jadi melengking",
+    "description": "Popup subtitle of the natural voice switch."
+  },
+  "rateOutOfRange": {
+    "message": "Masukkan kecepatan dari $MIN$ sampai $MAX$.",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "stepOutOfRange": {
+    "message": "Masukkan langkah dari $MIN$ sampai $MAX$.",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "privacyBadge": {
+    "message": "FULL PRIVACY",
+    "description": "Badge; the same words in every language."
+  },
+  "privacyBadgeSub": {
+    "message": "Nol telemetri · Tanpa akun · Setelan hanya di perangkat",
+    "description": "Badge subtitle."
+  },
+  "privacyStatement": {
+    "message": "FleetFoot Engine tidak mengirimkan situs yang Anda kunjungi atau apa yang Anda tonton kepada siapa pun.",
+    "description": "Privacy section: the promise about browsing activity."
+  },
+  "verifySource": {
+    "message": "Jangan percaya kami begitu saja. Baca kodenya.",
+    "description": "Privacy section: the invitation to read the source, before its link."
+  },
+  "sourceLink": {
+    "message": "Baca kodenya di GitHub",
+    "description": "Link to the public repository."
+  },
+  "supportDevelopment": {
+    "message": "Dukung pengembangan",
+    "description": "Popup footer link."
+  },
+  "supportQuestion": {
+    "message": "Bermanfaat?",
+    "description": "Popup footer question before the support link."
+  },
+  "supportSaved": {
+    "message": "Sudah menghemat $DURATION$ untuk Anda?",
+    "description": "Popup footer question before the support link, once the time saved reaches an hour; whole hours, with the unit («12 h»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "supportDevelopmentKofi": {
+    "message": "Dukung pengembangan di Ko-fi",
+    "description": "Options link."
+  },
+  "reviewStore": {
+    "message": "Suka? Beri ulasan",
+    "description": "Accessible name of the heart at the top of the popup, which opens this extension's page in the store it was installed from, to leave a review."
+  },
+  "sectionPrivacy": {
+    "message": "Privasi dan izin",
+    "description": "Options section."
+  },
+  "sectionMemory": {
+    "message": "Ingatan",
+    "description": "Options section."
+  },
+  "memoryField": {
+    "message": "Yang diingat FleetFoot Engine",
+    "description": "Group label."
+  },
+  "memoryNone": {
+    "message": "Tidak ada",
+    "description": "Memory choice."
+  },
+  "memoryNoneHelp": {
+    "message": "Setiap halaman dimulai pada kecepatannya sendiri.",
+    "description": "Help."
+  },
+  "memoryGlobal": {
+    "message": "Satu kecepatan untuk semua situs",
+    "description": "Memory choice."
+  },
+  "memoryGlobalHelp": {
+    "message": "Kecepatan terakhir yang Anda pilih berlaku di mana saja. Hanya angkanya yang disimpan.",
+    "description": "Help."
+  },
+  "memorySite": {
+    "message": "Kecepatan untuk tiap situs",
+    "description": "Memory choice."
+  },
+  "memorySiteHelp": {
+    "message": "Tiap situs menyimpan kecepatannya sendiri dan, jika Anda mau, setelannya sendiri. Hanya nama situs yang disimpan, tidak pernah apa yang Anda tonton.",
+    "description": "Help."
+  },
+  "profilesTitle": {
+    "message": "Situs yang diingat",
+    "description": "Heading."
+  },
+  "profilesEmpty": {
+    "message": "Belum ada situs. Ubah kecepatan di sebuah situs, maka situs itu muncul di sini.",
+    "description": "Empty list."
+  },
+  "profileSpeed": {
+    "message": "Kecepatan (kosongkan untuk memakai kecepatan situs)",
+    "description": "Field of a site profile."
+  },
+  "profileGeneralValue": {
+    "message": "Umum ($VALUE$)",
+    "description": "Option or placeholder: no value of its own on this site; the value it takes from the general settings in brackets.",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "policyFollowShort": {
+    "message": "Situs yang memutuskan",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policySmartShort": {
+    "message": "Di video berikutnya",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policyLockShort": {
+    "message": "Langsung, selalu",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "fightField": {
+    "message": "Jika situs langsung mengubahnya lagi",
+    "description": "Options legend: what LOCK does when a page answers every restore at once."
+  },
+  "fightYield": {
+    "message": "Biarkan dan beri tahu saya (disarankan)",
+    "description": "LOCK fight answer: yield."
+  },
+  "fightBraked": {
+    "message": "Terus kembalikan, dengan rem",
+    "description": "LOCK fight answer: keep imposing, bounded."
+  },
+  "fightUnbraked": {
+    "message": "Terus kembalikan, tanpa rem",
+    "description": "LOCK fight answer: keep imposing, unbounded."
+  },
+  "fightYieldShort": {
+    "message": "Biarkan",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightBrakedShort": {
+    "message": "Dengan rem",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightUnbrakedShort": {
+    "message": "Tanpa rem",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightHelpLabel": {
+    "message": "Apa bedanya ketiga pilihan ini?",
+    "description": "Accessible name of the info button next to the LOCK fight choices."
+  },
+  "fightYieldHelp": {
+    "message": "FleetFoot Engine berhenti mengembalikan kecepatan di pemutar itu dan memberi tahu Anda di jendela ekstensi.",
+    "description": "Info popover, first answer."
+  },
+  "fightBrakedHelp": {
+    "message": "Terus mengembalikan kecepatan Anda tanpa disadari situs, dengan batas yang menjaga pemakaian daya tetap rendah. Pemutar situs mungkin menampilkan kecepatan yang berbeda dari yang sebenarnya.",
+    "description": "Info popover, second answer."
+  },
+  "fightUnbrakedHelp": {
+    "message": "Sama, tetapi tanpa batas. Di beberapa situs, ini bisa memakai satu inti prosesor sepenuhnya, dengan pemakaian daya lebih tinggi dan baterai lebih cepat habis.",
+    "description": "Info popover, third answer and its risk."
+  },
+  "profileOn": {
+    "message": "Aktif",
+    "description": "Option."
+  },
+  "profileOff": {
+    "message": "Nonaktif",
+    "description": "Option."
+  },
+  "profileForget": {
+    "message": "Lupakan situs ini",
+    "description": "Button."
+  },
+  "profileForgetSite": {
+    "message": "Lupakan $SITE$",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "sectionAccess": {
+    "message": "Akses ke situs",
+    "description": "Options section."
+  },
+  "accessField": {
+    "message": "Tempat FleetFoot Engine berfungsi",
+    "description": "Group label."
+  },
+  "accessOnClick": {
+    "message": "Hanya saat Anda memanggilnya",
+    "description": "Access choice."
+  },
+  "accessOnClickHelp": {
+    "message": "Berfungsi di sebuah tab setelah Anda mengeklik ikonnya, memakai pintasan, atau menu klik kanan. Tidak punya akses ke situs mana pun.",
+    "description": "Help."
+  },
+  "accessSelected": {
+    "message": "Selalu, di situs yang Anda pilih",
+    "description": "Access choice."
+  },
+  "accessSelectedHelp": {
+    "message": "Mulai sendiri di situs-situs itu, dengan pintasan yang siap dipakai.",
+    "description": "Help."
+  },
+  "accessAll": {
+    "message": "Selalu, di semua situs",
+    "description": "Access choice."
+  },
+  "accessAllHelp": {
+    "message": "Browser akan meminta akses ke semua situs. FleetFoot Engine hanya mencari video dan audio. Ia tidak pernah membaca halaman dan tidak pernah mengirim apa pun.",
+    "description": "Help."
+  },
+  "accessDeclined": {
+    "message": "Browser tidak memberi akses, jadi tidak ada yang berubah.",
+    "description": "Status."
+  },
+  "accessFiles": {
+    "message": "Video yang dibuka dari komputer Anda tidak termasuk dalam pilihan ini; buka FleetFoot Engine dengan mengeklik ikonnya.",
+    "description": "Help."
+  },
+  "sitesChosen": {
+    "message": "Situs Anda",
+    "description": "Heading."
+  },
+  "sitesExcluded": {
+    "message": "Kecuali di situs ini",
+    "description": "Heading."
+  },
+  "sitesExcludedHelp": {
+    "message": "Di situs ini ia tidak pernah mulai sendiri, tetapi Anda tetap bisa memanggilnya dengan satu klik.",
+    "description": "Help."
+  },
+  "sitesNone": {
+    "message": "Belum ada situs.",
+    "description": "Empty list."
+  },
+  "siteField": {
+    "message": "Situs",
+    "description": "Field label."
+  },
+  "siteHelp": {
+    "message": "Nama seperti example.com atau alamat salah satu halamannya.",
+    "description": "Help."
+  },
+  "siteAdd": {
+    "message": "Tambah",
+    "description": "Button."
+  },
+  "siteInvalid": {
+    "message": "Ini bukan situs. Tulis seperti example.com.",
+    "description": "Error."
+  },
+  "siteRemoveShort": {
+    "message": "Hapus",
+    "description": "Button."
+  },
+  "siteRemove": {
+    "message": "Hapus $SITE$",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "excludedFull": {
+    "message": "Anda bisa mengecualikan hingga $MAX$ situs.",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "privacyTelemetry": {
+    "message": "Telemetri",
+    "description": "Label."
+  },
+  "privacyTelemetryNone": {
+    "message": "Tidak ada",
+    "description": "Value."
+  },
+  "privacyAnalytics": {
+    "message": "Statistik penggunaan",
+    "description": "Label."
+  },
+  "privacyAnalyticsNone": {
+    "message": "Tidak ada",
+    "description": "Value."
+  },
+  "privacyAccounts": {
+    "message": "Akun",
+    "description": "Label."
+  },
+  "privacyAccountsNone": {
+    "message": "Tidak ada",
+    "description": "Value."
+  },
+  "privacyServers": {
+    "message": "Server jarak jauh",
+    "description": "Label."
+  },
+  "privacyServersNone": {
+    "message": "Tidak ada",
+    "description": "Value."
+  },
+  "privacyAds": {
+    "message": "Iklan",
+    "description": "Label."
+  },
+  "privacyAdsNone": {
+    "message": "Tidak ada",
+    "description": "Value."
+  },
+  "privacyAffiliate": {
+    "message": "Tautan afiliasi",
+    "description": "Label."
+  },
+  "privacyAffiliateNone": {
+    "message": "Tidak ada",
+    "description": "Value."
+  },
+  "privacyStorage": {
+    "message": "Setelan Anda",
+    "description": "Label."
+  },
+  "privacyStorageLocal": {
+    "message": "Hanya di perangkat ini",
+    "description": "Value."
+  },
+  "privacyWhereOnClick": {
+    "message": "Tempat berfungsi: hanya saat Anda memanggilnya",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereSelected": {
+    "message": "Tempat berfungsi: selalu, di situs yang Anda pilih",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereAll": {
+    "message": "Tempat berfungsi: selalu, di semua situs",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyAccessChange": {
+    "message": "Ubah akses ke situs",
+    "description": "Link to the site access section."
+  },
+  "backupTitle": {
+    "message": "Salinan setelan Anda",
+    "description": "Heading."
+  },
+  "backupHelp": {
+    "message": "Sebuah file berisi setelan Anda dan situs yang disimpan, untuk disimpan atau dibawa ke browser lain. File itu tetap di tempat Anda menaruhnya.",
+    "description": "Help."
+  },
+  "exportSettings": {
+    "message": "Ekspor setelan",
+    "description": "Button."
+  },
+  "exportDone": {
+    "message": "Setelan diekspor.",
+    "description": "Status."
+  },
+  "exportFailed": {
+    "message": "Setelan tidak bisa diekspor.",
+    "description": "Status."
+  },
+  "importSettings": {
+    "message": "Impor setelan",
+    "description": "Button."
+  },
+  "importSummary": {
+    "message": "Setelan dalam file: $SETTINGS$ · Situs: $SITES$",
+    "description": "What an import would bring.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      },
+      "sites": {
+        "content": "$2"
+      }
+    }
+  },
+  "importIgnored": {
+    "message": "Nilai yang dilewati karena tidak valid: $COUNT$",
+    "description": "Import summary.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "importReplace": {
+    "message": "Setelan ini menggantikan yang sekarang. Situs yang tidak ada di file tetap seperti semula.",
+    "description": "Import summary."
+  },
+  "importConfirm": {
+    "message": "Impor",
+    "description": "Button."
+  },
+  "importCancel": {
+    "message": "Batal",
+    "description": "Button."
+  },
+  "importDone": {
+    "message": "Setelan diimpor.",
+    "description": "Status."
+  },
+  "importFailed": {
+    "message": "Setelan tidak bisa diimpor.",
+    "description": "Status."
+  },
+  "importTooLarge": {
+    "message": "File ini terlalu besar untuk sebuah salinan setelan.",
+    "description": "Status."
+  },
+  "importNotJson": {
+    "message": "File ini tidak bisa dibaca sebagai salinan setelan.",
+    "description": "Status."
+  },
+  "importNotBackup": {
+    "message": "File ini bukan salinan setelan FleetFoot Engine.",
+    "description": "Status."
+  },
+  "importNewer": {
+    "message": "Salinan ini berasal dari versi FleetFoot Engine yang lebih baru. Perbarui ekstensinya, lalu impor lagi.",
+    "description": "Status."
+  },
+  "deleteAll": {
+    "message": "Hapus semua di perangkat ini",
+    "description": "Button."
+  },
+  "deleteAllConfirm": {
+    "message": "Klik lagi untuk menghapus semuanya",
+    "description": "Button, armed."
+  },
+  "deleteAllHelp": {
+    "message": "Menghapus setelan, situs yang disimpan, dan waktu yang dihemat. Izin situs tetap ada; Anda bisa mencabutnya di $SECTION$.",
+    "description": "Help; the substitution is the site access section title.",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "deletedAll": {
+    "message": "Semua yang disimpan FleetFoot Engine di perangkat ini sudah dihapus.",
+    "description": "Status."
+  },
+  "deleteFailed": {
+    "message": "Tidak semuanya bisa dihapus.",
+    "description": "Status."
+  },
+  "sectionAbout": {
+    "message": "Tentang",
+    "description": "Section title."
+  },
+  "aboutVersion": {
+    "message": "Versi $VERSION$",
+    "description": "The version of this build.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "aboutLicense": {
+    "message": "Gratis untuk penggunaan pribadi dan nonkomersial, dengan lisensi PolyForm Strict 1.0.0. Kode tidak boleh diubah atau didistribusikan ulang.",
+    "description": "Licence summary; the licence text decides."
+  },
+  "aboutSource": {
+    "message": "Kode sumber versi ini",
+    "description": "Link."
+  },
+  "aboutLicenseLink": {
+    "message": "Baca lisensinya",
+    "description": "Link."
+  },
+  "aboutIssues": {
+    "message": "Laporkan masalah",
+    "description": "Link to GitHub Issues."
+  },
+  "aboutDiscussions": {
+    "message": "Pertanyaan dan ide",
+    "description": "Link to GitHub Discussions."
+  },
+  "moreFromDeveloper": {
+    "message": "Karya lain dari pengembang",
+    "description": "Heading."
+  },
+  "welcomeTitle": {
+    "message": "Siap dalam tiga langkah",
+    "description": "First-run page title."
+  },
+  "welcomePrivacy": {
+    "message": "Data Anda milik Anda",
+    "description": "First-run page, first step heading."
+  },
+  "welcomeSpeed": {
+    "message": "Kecepatan favorit Anda",
+    "description": "First-run page, third step heading."
+  },
+  "welcomeSpeedHelp": {
+    "message": "Satu ketukan pada bintang di jendela ekstensi, dan kecepatannya menjadi ini. Dari 0,10 sampai 16,00.",
+    "description": "First-run page, favorite speed help."
+  },
+  "welcomeDone": {
+    "message": "Selesai",
+    "description": "First-run page button that closes it."
+  },
+  "welcomeAllSettings": {
+    "message": "Semua setelan",
+    "description": "First-run page link to the options page."
+  }
+}

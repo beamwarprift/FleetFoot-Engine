@@ -1,0 +1,5 @@
+{
+  "$comment": "Longest product module (TypeScript in src/ and entrypoints/), in lines. 302 = src/page/overlay/Overlay.ts, the longest module once popup, options and overlay were split. A module over the cap is debt only once approved, listed in baseline with its length; the baseline may only shrink.",
+  "maxLines": 302,
+  "baseline": {}
+}

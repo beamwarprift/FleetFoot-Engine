@@ -1,0 +1,143 @@
+# Builds FleetFoot Engine from this repository. Every push runs every check (`pnpm verify`). A
+# release, `v<version>` or `v<version>-rc.<n>` (a release candidate), pushed as a tag or asked for
+# by hand with its name, also builds the store packages again in a clean job, checks they are the
+# same bytes as the checked ones, attests where they were built, and publishes them with their
+# SHA-256 in a GitHub release; asked for by hand, the release creates its tag on the checked commit.
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      release:
+        description: 'Release to publish from this commit, as v<version> or v<version>-rc.<n>'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    outputs:
+      sums: ${{ steps.sums.outputs.sums }}
+    steps:
+      # Actions are pinned by commit SHA: a moved tag cannot change what runs here.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+
+      - name: Install dependencies (lockfile must match)
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Chromium and Firefox for browser and end-to-end tests
+        run: pnpm exec playwright install --with-deps chromium firefox
+
+      # Firefox starts audio only on a machine with an audio output; Skip Silence is tested by
+      # hearing real audio. A null sink is an output that plays nowhere.
+      - name: A silent audio output (PulseAudio null sink)
+        run: |
+          sudo apt-get install -y --no-install-recommends pulseaudio
+          pulseaudio --start --exit-idle-time=-1
+          pactl load-module module-null-sink sink_name=silent
+          pactl set-default-sink silent
+
+      - name: Verify (lint, typecheck, tests, builds, audits, web-ext lint, E2E, dependency audit)
+        run: pnpm verify
+
+      - name: SHA-256 of the store packages
+        id: sums
+        run: |
+          cd .output
+          sha256sum fleetfoot-engine-*.zip | tee ../SHA256SUMS
+          {
+            echo 'sums<<END'
+            cat ../SHA256SUMS
+            echo 'END'
+          } >> "$GITHUB_OUTPUT"
+
+      # Edge runs the Chromium build: the same end-to-end checks, in Edge.
+      - name: Install Edge for the Edge smoke test
+        run: pnpm exec playwright install --with-deps msedge
+
+      - name: Edge smoke (the Chromium build in Edge)
+        run: pnpm test:edge
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v') || inputs.release != ''
+    needs: verify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+
+      - name: The tag names the version in package.json
+        env:
+          TAG: ${{ inputs.release || github.ref_name }}
+        run: |
+          version="$(node -p 'require("./package.json").version')"
+          case "$TAG" in
+            "v$version" | "v$version"-rc.[0-9]*) ;;
+            *) echo "tag $TAG does not name version $version" >&2; exit 1 ;;
+          esac
+
+      - name: Install dependencies (lockfile must match)
+        run: pnpm install --frozen-lockfile
+
+      - name: Build the store packages
+        run: pnpm build
+
+      # The packages published are the same bytes as the packages every check ran on.
+      - name: Same bytes as the verified build
+        env:
+          SUMS: ${{ needs.verify.outputs.sums }}
+        run: |
+          cd .output
+          printf '%s\n' "$SUMS" > ../SHA256SUMS
+          sha256sum -c ../SHA256SUMS
+
+      - name: Attest where the packages were built
+        uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
+        with:
+          subject-path: .output/fleetfoot-engine-*.zip
+
+      - name: Publish the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.release || github.ref_name }}
+        run: |
+          prerelease=()
+          case "$TAG" in *-rc.*) prerelease=(--prerelease) ;; esac
+          # A pushed tag must exist already; one asked for by hand is created on this commit.
+          if [ "$GITHUB_REF_TYPE" = tag ]; then where=(--verify-tag); else where=(--target "$GITHUB_SHA"); fi
+          gh release create "$TAG" "${prerelease[@]}" "${where[@]}" --title "FleetFoot Engine $TAG" \
+            --notes "Built by this workflow from $TAG. SHA-256 in SHA256SUMS; provenance: gh attestation verify <package> --repo $GITHUB_REPOSITORY" \
+            .output/fleetfoot-engine-*.zip SHA256SUMS

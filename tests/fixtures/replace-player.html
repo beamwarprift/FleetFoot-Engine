@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FFE fixture: replace-player</title>
+  </head>
+  <body>
+    <div id="slot"><video src="/tone.wav" muted style="width: 640px; height: 360px"><track kind="captions" src="/captions.vtt" /></video></div>
+    <button id="replace" type="button">Replace the player</button>
+    <script>
+      document.getElementById('replace').addEventListener('click', () => {
+        const video = document.createElement('video');
+        video.src = '/tone.wav?next';
+        video.muted = true;
+        video.id = 'next';
+        video.style.cssText = 'width: 640px; height: 360px';
+        document.getElementById('slot').replaceChildren(video);
+      });
+    </script>
+  </body>
+</html>

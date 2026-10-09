@@ -1,0 +1,10 @@
+# Normalize text to LF on every platform (Biome formats with LF; build hashes must not depend on the OS)
+* text=auto eol=lf
+
+# Binary assets: never normalized
+*.png binary
+*.jpg binary
+*.ico binary
+*.webp binary
+*.woff2 binary
+*.zip binary

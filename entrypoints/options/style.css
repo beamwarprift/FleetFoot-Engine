@@ -1,0 +1,696 @@
+@import "../../src/ui/theme.css";
+
+/* The page: one column, generous margins, every gap from the spacing scale. A word longer than
+   its line (a long compound, a large text size on a phone) breaks, hyphenated where the browser
+   knows the language, instead of pushing the page sideways. */
+.options {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-8) clamp(var(--space-4), 4vw, var(--space-6)) 64px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+p,
+h3,
+fieldset {
+  margin: 0;
+}
+
+/* One scale from the page's name down to a description: size and weight say what to read first. */
+h1 {
+  font-size: 24px;
+  margin: 0 0 var(--space-6);
+}
+
+h1 .title {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--muted);
+  margin-top: var(--space-1);
+}
+
+/* A section stacks its parts at one rhythm; a heading keeps a little more room under it. */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  padding: clamp(var(--space-4), 4vw, var(--space-6));
+  margin-bottom: var(--space-6);
+}
+
+section > button,
+section > a {
+  align-self: flex-start;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 var(--space-1);
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* A block inside a section: its heading, its list, its fields at the section's rhythm; a block
+   after another starts a little further down, its heading enough to tell them apart. */
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding-top: var(--space-1);
+}
+
+.group + .group {
+  padding-top: var(--space-4);
+}
+
+.help,
+.error {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.help {
+  color: var(--help);
+}
+
+.error {
+  color: var(--danger);
+}
+
+/* Controls a hand can hit comfortably: the same height for fields and buttons. The (i) keeps its
+   own size (theme.css). */
+.options :is(button:not(.info), select, input[type="text"]) {
+  min-height: 36px;
+  padding: 6px var(--space-3);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field > label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* A single number reads better in a field its own size than across the page. */
+.field > input.number {
+  align-self: flex-start;
+  inline-size: calc(7ch + 2 * var(--space-3) + 2px);
+}
+
+/* A list of sizes: as wide as its longest. */
+.field > select.number {
+  align-self: flex-start;
+}
+
+/* The field and its button on one line, the help and the error under both. */
+.site-adder {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 6px var(--space-2);
+}
+
+.site-adder .field {
+  display: contents;
+}
+
+.site-adder label {
+  grid-row: 1;
+  grid-column: 1 / -1;
+}
+
+.site-adder input {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.site-adder button {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.site-adder .help,
+.site-adder .error {
+  grid-column: 1 / -1;
+}
+
+/* As specific as the shared input rule it must win over. */
+:is(input, select)[aria-invalid="true"] {
+  border-color: var(--danger);
+}
+
+/* A group of choices: a frame, its title, then one choice under another, each with its
+   description inside the frame. */
+fieldset {
+  min-inline-size: 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: var(--space-3) clamp(var(--space-3), 3vw, var(--space-5)) var(--space-5);
+}
+
+legend {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 0 6px;
+  margin-inline-start: -6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Below the (i) that opens it where anchor positioning exists, centred in the window elsewhere. */
+@supports (position-area: block-end) {
+  .options .tip {
+    inset: auto;
+    margin: 6px 0 0;
+    position-area: block-end span-inline-end;
+    position-try-fallbacks: flip-block, flip-inline;
+  }
+}
+
+.choice {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 2px var(--space-3);
+}
+
+.choice + .choice {
+  margin-top: var(--space-3);
+}
+
+.choice input {
+  inline-size: 18px;
+  block-size: 18px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.choice .help {
+  grid-column: 2;
+}
+
+/* An empty field in a site's profile reads as the general setting. */
+::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+/* Keys: one line per action at every width, the name, then its key and the cross that removes it. */
+/* The keys' title opens and closes them, its chevron drawn like the cards'. */
+.keys > summary {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 32px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* One rounded panel holding the rows, a visible rule between them. */
+.shortcuts {
+  width: 100%;
+  /* Shown only open, under its title. */
+  margin-block-start: var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--surface-2);
+}
+
+.shortcuts tr:not(:last-child) > * {
+  border-block-end: 1px solid var(--border);
+}
+
+/* The name takes the room the key and the cross leave; a word longer than that room (a long
+   compound) breaks, hyphenated where the browser knows the language. */
+.shortcuts th {
+  width: 100%;
+  text-align: start;
+  font-weight: 400;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+  padding-block: var(--space-3);
+  padding-inline: var(--space-3) var(--space-2);
+}
+
+/* The cross's own box already holds the air around its icon: no padding after it. */
+.shortcuts td {
+  padding-block: var(--space-3);
+  padding-inline-start: var(--space-1);
+  white-space: nowrap;
+}
+
+.shortcuts td:last-child {
+  padding-inline-end: var(--space-1);
+}
+
+.shortcuts td:first-of-type {
+  text-align: end;
+}
+
+/* Too narrow for a name beside its key and cross (a large text size on a phone): the name on its
+   own line, the key and the cross under it at the line's end, the cross under the key if needed.
+   200 px: chosen below the narrowest table at the normal size, 254 px on a 320 px phone (the page's
+   and the section's padding, 16 px each side, and the section's borders). */
+.keys {
+  container-type: inline-size;
+}
+
+@container (width < 200px) {
+  .shortcuts tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .shortcuts tr:not(:last-child) {
+    border-block-end: 1px solid var(--border);
+  }
+
+  .shortcuts tr:not(:last-child) > * {
+    border-block-end: 0;
+  }
+
+  .shortcuts th {
+    flex: 1 0 100%;
+    padding-block-end: 0;
+  }
+}
+
+/* A key that is set looks like a key, on the page's own colour so it stands off the panel, and
+   reads left to right in every language as keys do; an empty one is a slot waiting for it. */
+.shortcuts .key[data-state="set"] {
+  background: var(--surface);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-weight: 600;
+  border-block-end-width: 2px;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.shortcuts .key[data-state="empty"] {
+  border-style: dashed;
+  border-color: var(--muted);
+  background: transparent;
+  color: var(--muted);
+}
+
+.shortcuts .key[data-state="empty"]:hover {
+  border-color: var(--accent);
+}
+
+.shortcuts .key[data-state="recording"] {
+  border-color: var(--accent);
+}
+
+.shortcuts .key-remove {
+  display: inline-grid;
+  place-items: center;
+  border-color: transparent;
+  background: transparent;
+  color: var(--muted);
+}
+
+.shortcuts .key-remove:hover {
+  color: var(--text);
+}
+
+.shortcuts .key-remove .icon {
+  width: 18px;
+  height: 18px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.status {
+  color: var(--muted);
+}
+
+/* The one action of the first-run page: the theme's accent, as a pressed button in the popup. */
+.welcome footer button.primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 700;
+}
+
+.themes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(190px, 100%), 1fr));
+  gap: var(--space-3) var(--space-4);
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.theme label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme input {
+  flex: none;
+  inline-size: 18px;
+  block-size: 18px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.swatch {
+  flex: none;
+  width: 32px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: linear-gradient(135deg, var(--swatch-bg) 50%, var(--swatch-accent) 50%);
+}
+
+.saved-total {
+  font-size: 18px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.support {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+
+.support:hover {
+  color: var(--text);
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.badge-title {
+  color: var(--accent);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.badge-sub {
+  color: var(--muted);
+}
+
+/* What FleetFoot Engine has none of: the name on one side, the answer on the other. Neither
+   column goes under its longest word; a long answer wraps instead. */
+.facts {
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr) fit-content(60%);
+  gap: var(--space-2) var(--space-4);
+  margin: 0;
+}
+
+.facts dt {
+  color: var(--muted);
+}
+
+.facts dd {
+  margin: 0;
+  font-weight: 600;
+  text-align: end;
+}
+
+.group > button,
+.group > a {
+  align-self: flex-start;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.backup-actions,
+.import-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+/* A file read and checked, waiting for the user's word. */
+.import-confirm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-2);
+}
+
+.verify {
+  font-weight: 700;
+}
+
+/* Sites: one per line between soft rules, the remove button at the end. */
+.sites {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-block-start: 1px solid var(--border-soft);
+}
+
+.sites li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-block-end: 1px solid var(--border-soft);
+}
+
+.site {
+  overflow-wrap: anywhere;
+}
+
+/* Remembered sites: one card each, closed it shows the site and its speed. */
+.profile-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.profile {
+  border: 1px solid var(--border-soft);
+  border-radius: 10px;
+  background: var(--surface-2);
+}
+
+.profile summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  cursor: pointer;
+  list-style: none;
+}
+
+:is(.profile, .keys) > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* A chevron that turns down when a card or the keys are open. */
+:is(.profile, .keys) > summary::before {
+  content: "";
+  inline-size: 7px;
+  block-size: 7px;
+  border-inline-end: 2px solid var(--muted);
+  border-block-end: 2px solid var(--muted);
+  transform: rotate(-45deg);
+  transition: transform 150ms ease;
+}
+
+/* Its two borders sit on the inline end, so right to left mirrors the drawing as well. */
+:is(.profile, .keys)[open] > summary::before {
+  transform: rotate(45deg);
+}
+
+:is(.profile, .keys) > summary:dir(rtl)::before {
+  transform: rotate(45deg);
+}
+
+:is(.profile, .keys)[open] > summary:dir(rtl)::before {
+  transform: rotate(-45deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(.profile, .keys) > summary::before {
+    transition: none;
+  }
+}
+
+.profile[open] summary {
+  border-block-end: 1px solid var(--border-soft);
+}
+
+/* Too narrow for a site and its speed side by side (a large text size on a phone): the speed
+   under the site. The same 200 px as the keys: the narrowest card at the normal size is wider. */
+.profile {
+  container-type: inline-size;
+}
+
+@container (width < 200px) {
+  .profile summary {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .profile .site-rate {
+    grid-column: 2;
+  }
+}
+
+/* Inside a card: the fields side by side where the page is wide enough. */
+.profile-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+  align-items: end;
+  gap: var(--space-4) var(--space-5);
+  padding: var(--space-4);
+}
+
+.profile-body > button {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+.site-rate {
+  color: var(--accent);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.options .shortcuts button {
+  min-width: 32px;
+  min-height: 32px;
+  padding: 2px var(--space-3);
+}
+
+.options .shortcuts .key-remove {
+  padding: 0;
+}
+
+/* On or off: the setting and its help on one side, a switch on the other. */
+.field.check > .field {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 2px var(--space-4);
+}
+
+.field.check > .field > input {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+}
+
+.field.check .help,
+.field.check .error {
+  grid-column: 1;
+}
+
+/* The switch is the checkbox itself, so keyboard, label and screen readers keep working. */
+.field.check input[type="checkbox"] {
+  appearance: none;
+  position: relative;
+  inline-size: 44px;
+  block-size: 24px;
+  margin: 0;
+  border: 1px solid var(--muted);
+  border-radius: 12px;
+  background: var(--surface-2);
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+.field.check input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 2px;
+  inset-inline-start: 2px;
+  inline-size: 18px;
+  block-size: 18px;
+  border-radius: 50%;
+  background: var(--muted);
+  transition: transform 150ms ease;
+}
+
+.field.check input[type="checkbox"]:checked {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+
+.field.check input[type="checkbox"]:checked::before {
+  background: var(--on-accent);
+  transform: translateX(20px);
+}
+
+.field.check input[type="checkbox"]:checked:dir(rtl)::before {
+  transform: translateX(-20px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .field.check input[type="checkbox"],
+  .field.check input[type="checkbox"]::before {
+    transition: none;
+  }
+}
+
+/* A finger, not a mouse: every control big enough to hit (44 × 44 px, WCAG 2.5.5). */
+@media (pointer: coarse) {
+  .options :is(button, select, input[type="text"]) {
+    min-height: 44px;
+  }
+
+  .options :is(.shortcuts button, button.info) {
+    min-width: 44px;
+  }
+
+  .keys > summary {
+    min-height: 44px;
+  }
+
+  /* Links on a line of their own are targets too. */
+  .options :is(.links a, .group > a) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}

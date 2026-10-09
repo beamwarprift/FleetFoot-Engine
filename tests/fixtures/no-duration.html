@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FFE fixture: no-duration</title>
+  </head>
+  <body>
+    <canvas width="64" height="36"></canvas>
+    <video muted style="width: 640px; height: 360px"><track kind="captions" src="/captions.vtt" /></video>
+    <script>
+      // A live stream: no duration to count down. One frame drawn, so the video has something
+      // to show and the page finishes loading.
+      const canvas = document.querySelector('canvas');
+      document.querySelector('video').srcObject = canvas.captureStream();
+      canvas.getContext('2d').fillRect(0, 0, 64, 36);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "$comment": "URLs allowed to appear in the shipped bundle. The network API whitelist stays empty. Every entry needs a justification and explicit review. namespaceUris: http://www.w3.org/2000/svg is the SVG namespace name that createElementNS needs to draw the interface icons; it is an identifier, never requested. linkUrls, each opened in a tab only when the user clicks it, never fetched: https://ko-fi.com/lyuk28 is the developer's donation page; https://github.com/buildwiserevenue/fleetfoot-engine is the public repository, with its /issues and /discussions pages; https://github.com/buildwiserevenue/fleetfoot-engine/tree/ and https://github.com/buildwiserevenue/fleetfoot-engine/blob/ are the bases that the running version's tag is joined to at runtime, for the source and the licence of that very version. https://chromewebstore.google.com/detail/ and https://microsoftedge.microsoft.com/addons/detail/ are the bases that the extension's own ID is joined to, for the review page of the store it was installed from (the heart in the popup), recognised by the update address that store writes into the installed manifest.",
+  "linkUrls": [
+    "https://ko-fi.com/lyuk28",
+    "https://github.com/buildwiserevenue/fleetfoot-engine",
+    "https://github.com/buildwiserevenue/fleetfoot-engine/issues",
+    "https://github.com/buildwiserevenue/fleetfoot-engine/discussions",
+    "https://github.com/buildwiserevenue/fleetfoot-engine/tree/",
+    "https://github.com/buildwiserevenue/fleetfoot-engine/blob/",
+    "https://chromewebstore.google.com/detail/",
+    "https://microsoftedge.microsoft.com/addons/detail/"
+  ],
+  "namespaceUris": ["http://www.w3.org/2000/svg"]
+}

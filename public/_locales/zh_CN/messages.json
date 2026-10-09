@@ -1,0 +1,1372 @@
+{
+  "extensionDescription": {
+    "message": "HTML5 视频和音频的速度与播放控制：快速、轻巧，尊重你的隐私。",
+    "description": "Store and browser description."
+  },
+  "connectingTitle": {
+    "message": "正在连接页面…",
+    "description": "Popup, while injecting."
+  },
+  "pageUnavailableTitle": {
+    "message": "FleetFoot Engine 无法在此页面上运行。",
+    "description": "Popup, page refuses extensions."
+  },
+  "pageUnavailableHint": {
+    "message": "浏览器自带页面和扩展商店不允许扩展运行。",
+    "description": "Popup hint."
+  },
+  "noAnswerTitle": {
+    "message": "页面没有响应。",
+    "description": "Popup, no answer."
+  },
+  "noAnswerHint": {
+    "message": "页面可能正忙，或刚刚发生了变化。请重试。",
+    "description": "Popup hint."
+  },
+  "noMediaTitle": {
+    "message": "此页面上没有视频或音频。",
+    "description": "Popup, no media."
+  },
+  "noMediaHint": {
+    "message": "嵌入自其他网站的播放器无法从这里控制。",
+    "description": "Popup hint."
+  },
+  "framedTitle": {
+    "message": "播放器在来自 $SITE$ 的框架中。",
+    "description": "Popup: no player here, but a frame from another site is on screen; $SITE$ is that site, e.g. «vixcloud.co».",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedHint": {
+    "message": "要访问它，浏览器会请求该网站的访问权限；之后 FleetFoot Engine 会在那里自动启动。",
+    "description": "Popup, under framedTitle: allowing the site lets the extension reach the frame, and it then starts there by itself."
+  },
+  "framedAllowSite": {
+    "message": "在 $SITE$ 上允许",
+    "description": "Popup button: asks the browser for access to that one site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedAllowAll": {
+    "message": "在所有网站上允许",
+    "description": "Popup button: asks the browser for access to every site (as «Always, on every site» in the options)."
+  },
+  "retry": {
+    "message": "重试",
+    "description": "Button."
+  },
+  "slower": {
+    "message": "减速",
+    "description": "Button label."
+  },
+  "faster": {
+    "message": "加速",
+    "description": "Button label."
+  },
+  "rateInputLabel": {
+    "message": "播放速度",
+    "description": "Rate input label."
+  },
+  "rateInvalid": {
+    "message": "请输入 $MIN$ 到 $MAX$ 之间的速度。",
+    "description": "Invalid typed rate.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "resetTo": {
+    "message": "恢复为 $RATE$",
+    "description": "Reset button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "previousRate": {
+    "message": "上一个速度",
+    "description": "Button label."
+  },
+  "favoriteRate": {
+    "message": "常用速度，$RATE$",
+    "description": "Button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "presets": {
+    "message": "快捷速度",
+    "description": "Group label."
+  },
+  "preservePitch": {
+    "message": "自然音调",
+    "description": "Switch label."
+  },
+  "on": {
+    "message": "开",
+    "description": "Switch state."
+  },
+  "off": {
+    "message": "关",
+    "description": "Switch state."
+  },
+  "seekBack": {
+    "message": "后退 $DURATION$",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "seekForward": {
+    "message": "前进 $DURATION$",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipEnter": {
+    "message": "画中画",
+    "description": "Button."
+  },
+  "pipExit": {
+    "message": "退出画中画",
+    "description": "Button."
+  },
+  "loopGroup": {
+    "message": "A–B 循环",
+    "description": "Group label."
+  },
+  "loopHelpLabel": {
+    "message": "什么是 A–B 循环？",
+    "description": "Accessible name of the info button next to the loop."
+  },
+  "loopHelp": {
+    "message": "不停地重复播放一个片段，方便重看或学习。",
+    "description": "Popover explaining the A–B loop: what it is for."
+  },
+  "loopHelpSteps": {
+    "message": "在片段开始处点 A，结束处点 B，然后点“循环”。",
+    "description": "Popover explaining the A–B loop: how to set it."
+  },
+  "loopHelpClear": {
+    "message": "点 × 可取消循环。",
+    "description": "Last line of the loop help; × is the clear button."
+  },
+  "loopA": {
+    "message": "标记 A",
+    "description": "Button."
+  },
+  "loopB": {
+    "message": "标记 B",
+    "description": "Button."
+  },
+  "loopAAt": {
+    "message": "A $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loopBAt": {
+    "message": "B $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loop": {
+    "message": "循环",
+    "description": "Toggle button."
+  },
+  "loopClear": {
+    "message": "取消循环",
+    "description": "Button label."
+  },
+  "copyTimestamp": {
+    "message": "复制时间点",
+    "description": "Button."
+  },
+  "copied": {
+    "message": "已复制 $TIME$",
+    "description": "After copying.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "无法复制时间点。",
+    "description": "Copy failed."
+  },
+  "player": {
+    "message": "播放器",
+    "description": "Select label."
+  },
+  "playerAuto": {
+    "message": "自动",
+    "description": "Option."
+  },
+  "playerAll": {
+    "message": "所有播放器",
+    "description": "Option."
+  },
+  "playerVideo": {
+    "message": "视频 $NUMBER$",
+    "description": "Short name of a video player, numbered in order of discovery.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerAudio": {
+    "message": "音频 $NUMBER$",
+    "description": "Player name.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerPlaying": {
+    "message": "正在播放",
+    "description": "Detail of a player that is playing now."
+  },
+  "playerEmbedded": {
+    "message": "嵌入自 $SITE$",
+    "description": "Detail of a player inside a frame of the page; $SITE$ is that frame's site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerEmbeddedUnknown": {
+    "message": "嵌入的",
+    "description": "Detail of a player inside a frame of the page that has no site."
+  },
+  "options": {
+    "message": "设置",
+    "description": "Button."
+  },
+  "policyFollow": {
+    "message": "由网站决定",
+    "description": "Rate policy name."
+  },
+  "policySmart": {
+    "message": "在下一个视频恢复（推荐）",
+    "description": "Rate policy name."
+  },
+  "policyLock": {
+    "message": "始终立即恢复",
+    "description": "Rate policy name."
+  },
+  "noticeContested": {
+    "message": "另一个扩展或页面本身在不断更改此播放器的速度。为避免互相拉扯，FleetFoot Engine 已停止恢复速度。",
+    "description": "Notice."
+  },
+  "noticeContestedChoose": {
+    "message": "选择处理方式",
+    "description": "Popup link after the LOCK yielded notice: opens the option."
+  },
+  "noticeExtremeRate": {
+    "message": "在此速度下，浏览器可能会将音频静音或使其失真。",
+    "description": "Notice."
+  },
+  "noticeLive": {
+    "message": "这是直播，因此无法快进，也无法查看剩余时间。",
+    "description": "Notice."
+  },
+  "errorInvalidCommand": {
+    "message": "出了点问题。请重试。",
+    "description": "Error."
+  },
+  "errorNoPlayer": {
+    "message": "该播放器已不在页面上。",
+    "description": "Error."
+  },
+  "errorRateRejected": {
+    "message": "页面拒绝了此速度。",
+    "description": "Error."
+  },
+  "errorPitchUnsupported": {
+    "message": "此播放器无法保持自然音调。",
+    "description": "Error."
+  },
+  "errorNoPreviousRate": {
+    "message": "还没有上一个速度。",
+    "description": "Error."
+  },
+  "errorNotSeekable": {
+    "message": "目前无法在此媒体中快进或后退。",
+    "description": "Error."
+  },
+  "errorNotLoopable": {
+    "message": "循环需要时长已知的媒体。",
+    "description": "Error."
+  },
+  "errorLoopInvalid": {
+    "message": "B 必须在 A 之后。",
+    "description": "Error."
+  },
+  "errorPipUnavailable": {
+    "message": "此播放器不支持画中画。",
+    "description": "Error."
+  },
+  "errorPipRejected": {
+    "message": "浏览器拒绝了画中画。请使用播放器上方工具条中的按钮，或页面上的快捷键。",
+    "description": "Error."
+  },
+  "overlayLabel": {
+    "message": "FleetFoot Engine 控件",
+    "description": "Toolbar label."
+  },
+  "overlayMove": {
+    "message": "移动（键盘方向键）",
+    "description": "Drag handle."
+  },
+  "overlayMore": {
+    "message": "更多控件",
+    "description": "Button."
+  },
+  "overlayLess": {
+    "message": "更少控件",
+    "description": "Button."
+  },
+  "menuSpeed": {
+    "message": "速度",
+    "description": "Context menu."
+  },
+  "menuFavorite": {
+    "message": "常用（$RATE$）",
+    "description": "Context menu.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "设置",
+    "description": "Page subtitle."
+  },
+  "sectionSpeed": {
+    "message": "速度",
+    "description": "Section."
+  },
+  "speedGroupRates": {
+    "message": "你的速度",
+    "description": "Options, Speed section: heading of the user's own speeds (presets, step, favorite and hold speeds)."
+  },
+  "speedGroupRestore": {
+    "message": "恢复你的速度",
+    "description": "Options, Speed section: heading of what happens when a site changes the speed."
+  },
+  "speedGroupPlayers": {
+    "message": "适用的播放器",
+    "description": "Options, Speed section: heading of which players a speed applies to."
+  },
+  "sectionPlayback": {
+    "message": "播放",
+    "description": "Section."
+  },
+  "sectionKeyboard": {
+    "message": "键盘",
+    "description": "Section."
+  },
+  "sectionOverlay": {
+    "message": "播放器上的工具条",
+    "description": "Section."
+  },
+  "sectionMenu": {
+    "message": "右键菜单",
+    "description": "Section."
+  },
+  "presetsField": {
+    "message": "快捷速度",
+    "description": "Field."
+  },
+  "presetsHelp": {
+    "message": "最多 12 个速度，用空格分隔，例如 1 1.5 2。",
+    "description": "Help."
+  },
+  "presetsInvalid": {
+    "message": "请输入 1 到 $MAX$ 个速度，用空格分隔。",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "rateStepField": {
+    "message": "减速和加速的步长",
+    "description": "Field."
+  },
+  "rateStepHelp": {
+    "message": "0.01 到 1.00。",
+    "description": "Help."
+  },
+  "favoriteField": {
+    "message": "常用速度",
+    "description": "Field."
+  },
+  "holdField": {
+    "message": "按住按键时的速度",
+    "description": "Field."
+  },
+  "rateRangeHelp": {
+    "message": "0.10 到 16.00。",
+    "description": "Help."
+  },
+  "policyField": {
+    "message": "如果网站更改了速度",
+    "description": "Legend."
+  },
+  "policyFollowHelp": {
+    "message": "你的速度只应用一次。例如：下一集以 1× 开始，并一直保持 1×。",
+    "description": "Help."
+  },
+  "policySmartHelp": {
+    "message": "例如：下一集以 1× 开始，你的速度会恢复。如果网站在你观看时更改了速度，则保持网站设定的速度，直到下一个视频。",
+    "description": "Help."
+  },
+  "policyLockHelp": {
+    "message": "例如：观看时网站改回 1×，片刻之后你的速度就会恢复。适用于不断更改速度的网站。",
+    "description": "Help."
+  },
+  "targetField": {
+    "message": "速度应用于",
+    "description": "Legend."
+  },
+  "targetActive": {
+    "message": "当前播放器",
+    "description": "Option."
+  },
+  "targetAll": {
+    "message": "页面上的所有播放器",
+    "description": "Option."
+  },
+  "pitchField": {
+    "message": "变速时保持自然音调",
+    "description": "Field."
+  },
+  "skipSilenceField": {
+    "message": "跳过静音",
+    "description": "Name of Skip Silence: options switch, site profile field, popup button."
+  },
+  "skipSilenceHelp": {
+    "message": "在停顿处，播放器切换到静音速度，声音一出现就回到你的速度。声音只在你的设备上分析，绝不会被录制或发送。",
+    "description": "What Skip Silence does and that the sound stays on the device: options help, popup card."
+  },
+  "skipSilenceSettings": {
+    "message": "“跳过静音”设置",
+    "description": "Link in the popup card of Skip Silence, to its place on the options page."
+  },
+  "silenceModeField": {
+    "message": "什么算作静音",
+    "description": "Options legend: how readily a pause counts as a silence."
+  },
+  "silenceConservative": {
+    "message": "只算较长的安静停顿",
+    "description": "Options choice: only long, quiet pauses count."
+  },
+  "silenceNormal": {
+    "message": "句子之间的停顿也算（推荐）",
+    "description": "Options choice, the default: pauses between sentences count too."
+  },
+  "silenceAggressive": {
+    "message": "任何停顿都算，即使有些背景噪音",
+    "description": "Options choice: every pause counts, even with background noise."
+  },
+  "silenceRateField": {
+    "message": "静音时的速度",
+    "description": "Options field: the speed a silence plays at."
+  },
+  "noticeSkipSilenceWaiting": {
+    "message": "“跳过静音”会在你第一次点击页面后启动。",
+    "description": "Notice: the browser starts audio only after a click on the page."
+  },
+  "noticeSkipSilenceUnavailable": {
+    "message": "“跳过静音”不适用于此媒体。",
+    "description": "Notice: the browser does not let the extension hear this media."
+  },
+  "seekStepField": {
+    "message": "跳转秒数",
+    "description": "Field."
+  },
+  "seekStepInvalid": {
+    "message": "请输入 $MIN$ 到 $MAX$ 之间的整数秒数。",
+    "description": "Error.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "pageShortcutsField": {
+    "message": "页面快捷键",
+    "description": "Field."
+  },
+  "pageShortcutsHelp": {
+    "message": "在页面上打开 FleetFoot Engine 后生效，在输入框中打字时绝不触发。",
+    "description": "Help."
+  },
+  "shortcutsTable": {
+    "message": "页面上的按键",
+    "description": "Table caption."
+  },
+  "keyPress": {
+    "message": "请按一个键…（按 Esc 取消）",
+    "description": "While recording."
+  },
+  "keyNone": {
+    "message": "无",
+    "description": "Unbound."
+  },
+  "keyRemove": {
+    "message": "移除“$ACTION$”的按键",
+    "description": "Button label: the button shows only a cross.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "keyChange": {
+    "message": "$ACTION$：$KEY$。更改",
+    "description": "Button label.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "keyTaken": {
+    "message": "$KEY$ 已用于“$ACTION$”。",
+    "description": "Conflict.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "action": {
+        "content": "$2"
+      }
+    }
+  },
+  "browserShortcutsHelp": {
+    "message": "在任何页面都有效的快捷键，需要在浏览器的扩展快捷键设置中设定。",
+    "description": "Help."
+  },
+  "browserShortcutsOpen": {
+    "message": "打开浏览器快捷键",
+    "description": "Button."
+  },
+  "overlayField": {
+    "message": "在播放器上显示工具条",
+    "description": "Field."
+  },
+  "overlayHelp": {
+    "message": "指针停在播放器上时出现的小工具条。",
+    "description": "Help."
+  },
+  "overlayResetPosition": {
+    "message": "将工具条移回角落",
+    "description": "Button."
+  },
+  "contextMenuField": {
+    "message": "右键点击视频或音频时显示速度菜单",
+    "description": "Field."
+  },
+  "contextMenuHelp": {
+    "message": "只在视频和音频上出现。",
+    "description": "Help."
+  },
+  "saved": {
+    "message": "已保存。",
+    "description": "Status."
+  },
+  "invalidValue": {
+    "message": "此值无效。",
+    "description": "Error."
+  },
+  "restoreDefaults": {
+    "message": "恢复默认设置",
+    "description": "Button."
+  },
+  "restoreConfirm": {
+    "message": "再次点击以全部恢复",
+    "description": "Button, armed."
+  },
+  "restored": {
+    "message": "已恢复默认设置。",
+    "description": "Status."
+  },
+  "actionSlower": {
+    "message": "减速",
+    "description": "Shortcut action."
+  },
+  "actionFaster": {
+    "message": "加速",
+    "description": "Shortcut action."
+  },
+  "actionReset": {
+    "message": "恢复 1×",
+    "description": "Shortcut action."
+  },
+  "actionFavorite": {
+    "message": "常用速度",
+    "description": "Shortcut action."
+  },
+  "actionHold": {
+    "message": "按住加速",
+    "description": "Shortcut action."
+  },
+  "actionSeekBackward": {
+    "message": "后退",
+    "description": "Shortcut action."
+  },
+  "actionSeekForward": {
+    "message": "前进",
+    "description": "Shortcut action."
+  },
+  "actionTogglePitch": {
+    "message": "开关自然音调",
+    "description": "Shortcut action."
+  },
+  "actionLoopA": {
+    "message": "循环起点（A）",
+    "description": "Shortcut action."
+  },
+  "actionLoopB": {
+    "message": "循环终点（B）",
+    "description": "Shortcut action."
+  },
+  "actionLoopToggle": {
+    "message": "开关循环",
+    "description": "Shortcut action."
+  },
+  "actionNextPlayer": {
+    "message": "下一个播放器",
+    "description": "Shortcut action."
+  },
+  "actionToggleOverlay": {
+    "message": "显示或隐藏工具条",
+    "description": "Shortcut action."
+  },
+  "controlling": {
+    "message": "正在控制的播放器",
+    "description": "Caption above the player list."
+  },
+  "live": {
+    "message": "直播",
+    "description": "Badge for a live stream."
+  },
+  "timeLeftAt": {
+    "message": "以 $RATE$ 播放还剩 $TIME$",
+    "description": "Remaining time at the current speed.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      },
+      "rate": {
+        "content": "$2"
+      }
+    }
+  },
+  "timeLeftNormal": {
+    "message": "正常速度下 $TIME$",
+    "description": "Remaining time at 1×.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipOpen": {
+    "message": "打开",
+    "description": "Picture-in-picture button."
+  },
+  "pipClose": {
+    "message": "关闭",
+    "description": "Picture-in-picture button."
+  },
+  "savedHours": {
+    "message": "$HOURS$ $MINUTES$",
+    "description": "Time saved: hours then minutes, each already with its unit («12 h», «34 min»).",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      },
+      "minutes": {
+        "content": "$2"
+      }
+    }
+  },
+  "savedUnderMinute": {
+    "message": "不到一分钟",
+    "description": "Time saved below one minute."
+  },
+  "savedPopup": {
+    "message": "已节省 $TIME$",
+    "description": "Popup header: total time saved.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedTitle": {
+    "message": "节省的时间",
+    "description": "Options section."
+  },
+  "savedHelp": {
+    "message": "因为 FleetFoot Engine 加快了你的视频和音频播放而省下的时间。只以一个总数保存在此设备上。",
+    "description": "Help."
+  },
+  "savedTotal": {
+    "message": "迄今为止：$TIME$",
+    "description": "Options: the total.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedReset": {
+    "message": "将计数器清零",
+    "description": "Button."
+  },
+  "savedResetConfirm": {
+    "message": "再次点击以清零",
+    "description": "Button, armed."
+  },
+  "savedResetDone": {
+    "message": "计数器已清零。",
+    "description": "Status."
+  },
+  "sectionAppearance": {
+    "message": "外观",
+    "description": "Options section."
+  },
+  "themeField": {
+    "message": "配色主题",
+    "description": "Legend."
+  },
+  "textSizeField": {
+    "message": "文字大小",
+    "description": "Options, Appearance: label of the choice of text size for this page, from 100% to 200%."
+  },
+  "textSizeHelp": {
+    "message": "放大此页面中的文字和控件。",
+    "description": "Options, Appearance: under textSizeField."
+  },
+  "themeYellow": {
+    "message": "黄色（默认）",
+    "description": "Theme."
+  },
+  "themeCyan": {
+    "message": "青色",
+    "description": "Theme."
+  },
+  "themeMagenta": {
+    "message": "品红",
+    "description": "Theme."
+  },
+  "themeGreen": {
+    "message": "绿色",
+    "description": "Theme."
+  },
+  "themeViolet": {
+    "message": "紫罗兰",
+    "description": "Theme."
+  },
+  "themeCoral": {
+    "message": "珊瑚色",
+    "description": "Theme."
+  },
+  "themeSlate": {
+    "message": "石板灰",
+    "description": "Theme: dimmed blue-grey, easy on the eyes."
+  },
+  "themeSepia": {
+    "message": "棕褐色",
+    "description": "Theme: dimmed warm brown, easy on the eyes."
+  },
+  "themeSage": {
+    "message": "鼠尾草绿",
+    "description": "Theme: dimmed green, easy on the eyes."
+  },
+  "themeLight": {
+    "message": "浅色",
+    "description": "Theme."
+  },
+  "pitchHelpShort": {
+    "message": "人声不会变尖",
+    "description": "Popup subtitle of the natural voice switch."
+  },
+  "rateOutOfRange": {
+    "message": "请输入 $MIN$ 到 $MAX$ 之间的速度。",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "stepOutOfRange": {
+    "message": "请输入 $MIN$ 到 $MAX$ 之间的步长。",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "privacyBadge": {
+    "message": "FULL PRIVACY",
+    "description": "Badge; the same words in every language."
+  },
+  "privacyBadgeSub": {
+    "message": "零遥测 · 无账户 · 设置仅存于本设备",
+    "description": "Badge subtitle."
+  },
+  "privacyStatement": {
+    "message": "FleetFoot Engine 不会把你访问的网站和观看的内容发送给任何人。",
+    "description": "Privacy section: the promise about browsing activity."
+  },
+  "verifySource": {
+    "message": "不必相信我们。去读代码。",
+    "description": "Privacy section: the invitation to read the source, before its link."
+  },
+  "sourceLink": {
+    "message": "在 GitHub 上阅读代码",
+    "description": "Link to the public repository."
+  },
+  "supportDevelopment": {
+    "message": "支持开发",
+    "description": "Popup footer link."
+  },
+  "supportQuestion": {
+    "message": "觉得有用吗？",
+    "description": "Popup footer question before the support link."
+  },
+  "supportSaved": {
+    "message": "已经为你节省了 $DURATION$？",
+    "description": "Popup footer question before the support link, once the time saved reaches an hour; whole hours, with the unit («12 h»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "supportDevelopmentKofi": {
+    "message": "在 Ko-fi 上支持开发",
+    "description": "Options link."
+  },
+  "reviewStore": {
+    "message": "喜欢吗？写条评价吧",
+    "description": "Accessible name of the heart at the top of the popup, which opens this extension's page in the store it was installed from, to leave a review."
+  },
+  "sectionPrivacy": {
+    "message": "隐私与权限",
+    "description": "Options section."
+  },
+  "sectionMemory": {
+    "message": "记忆",
+    "description": "Options section."
+  },
+  "memoryField": {
+    "message": "FleetFoot Engine 会记住什么",
+    "description": "Group label."
+  },
+  "memoryNone": {
+    "message": "什么都不记",
+    "description": "Memory choice."
+  },
+  "memoryNoneHelp": {
+    "message": "每个页面都以自己的速度开始。",
+    "description": "Help."
+  },
+  "memoryGlobal": {
+    "message": "所有网站使用同一速度",
+    "description": "Memory choice."
+  },
+  "memoryGlobalHelp": {
+    "message": "你最后选择的速度在所有地方生效。只保存这个数字。",
+    "description": "Help."
+  },
+  "memorySite": {
+    "message": "每个网站各用一个速度",
+    "description": "Memory choice."
+  },
+  "memorySiteHelp": {
+    "message": "每个网站保存自己的速度，如果你愿意，还可以保存自己的设置。只保存网站名称，绝不保存你观看的内容。",
+    "description": "Help."
+  },
+  "profilesTitle": {
+    "message": "记住的网站",
+    "description": "Heading."
+  },
+  "profilesEmpty": {
+    "message": "还没有网站。在某个网站上更改速度后，它就会出现在这里。",
+    "description": "Empty list."
+  },
+  "profileSpeed": {
+    "message": "速度（留空则使用网站的速度）",
+    "description": "Field of a site profile."
+  },
+  "profileGeneralValue": {
+    "message": "通用（$VALUE$）",
+    "description": "Option or placeholder: no value of its own on this site; the value it takes from the general settings in brackets.",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "policyFollowShort": {
+    "message": "由网站决定",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policySmartShort": {
+    "message": "下一个视频时",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policyLockShort": {
+    "message": "始终立即",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "fightField": {
+    "message": "如果网站立刻又改回去",
+    "description": "Options legend: what LOCK does when a page answers every restore at once."
+  },
+  "fightYield": {
+    "message": "放手并提醒我（推荐）",
+    "description": "LOCK fight answer: yield."
+  },
+  "fightBraked": {
+    "message": "继续恢复，带刹车",
+    "description": "LOCK fight answer: keep imposing, bounded."
+  },
+  "fightUnbraked": {
+    "message": "继续恢复，不带刹车",
+    "description": "LOCK fight answer: keep imposing, unbounded."
+  },
+  "fightYieldShort": {
+    "message": "放手",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightBrakedShort": {
+    "message": "带刹车",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightUnbrakedShort": {
+    "message": "不带刹车",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightHelpLabel": {
+    "message": "这三项有什么区别？",
+    "description": "Accessible name of the info button next to the LOCK fight choices."
+  },
+  "fightYieldHelp": {
+    "message": "FleetFoot Engine 会停止恢复该播放器的速度，并在扩展窗口中提醒你。",
+    "description": "Info popover, first answer."
+  },
+  "fightBrakedHelp": {
+    "message": "在网站察觉不到的情况下继续恢复你的速度，并有一个上限让资源占用保持在较低水平。网站的播放器显示的速度可能与实际速度不同。",
+    "description": "Info popover, second answer."
+  },
+  "fightUnbrakedHelp": {
+    "message": "同上，但没有上限。在某些网站上可能占满一个处理器核心，耗电更多，电池也更快耗尽。",
+    "description": "Info popover, third answer and its risk."
+  },
+  "profileOn": {
+    "message": "开",
+    "description": "Option."
+  },
+  "profileOff": {
+    "message": "关",
+    "description": "Option."
+  },
+  "profileForget": {
+    "message": "忘记此网站",
+    "description": "Button."
+  },
+  "profileForgetSite": {
+    "message": "忘记 $SITE$",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "sectionAccess": {
+    "message": "网站访问权限",
+    "description": "Options section."
+  },
+  "accessField": {
+    "message": "FleetFoot Engine 在哪里运行",
+    "description": "Group label."
+  },
+  "accessOnClick": {
+    "message": "仅在你调用时",
+    "description": "Access choice."
+  },
+  "accessOnClickHelp": {
+    "message": "在你点击图标、使用快捷键或右键菜单后，在该标签页中运行。不能访问任何网站。",
+    "description": "Help."
+  },
+  "accessSelected": {
+    "message": "始终，在你选择的网站上",
+    "description": "Access choice."
+  },
+  "accessSelectedHelp": {
+    "message": "在这些网站上自动启动，快捷键随时可用。",
+    "description": "Help."
+  },
+  "accessAll": {
+    "message": "始终，在所有网站上",
+    "description": "Access choice."
+  },
+  "accessAllHelp": {
+    "message": "浏览器会请求访问所有网站的权限。FleetFoot Engine 只查找视频和音频，从不读取页面内容，也从不发送任何东西。",
+    "description": "Help."
+  },
+  "accessDeclined": {
+    "message": "浏览器未授予权限，因此没有任何更改。",
+    "description": "Status."
+  },
+  "accessFiles": {
+    "message": "从你电脑上打开的视频不在这些选项范围内；点击 FleetFoot Engine 的图标即可打开它。",
+    "description": "Help."
+  },
+  "sitesChosen": {
+    "message": "你的网站",
+    "description": "Heading."
+  },
+  "sitesExcluded": {
+    "message": "以下网站除外",
+    "description": "Heading."
+  },
+  "sitesExcludedHelp": {
+    "message": "在这些网站上它从不自动启动，但你仍可以点一下来调用它。",
+    "description": "Help."
+  },
+  "sitesNone": {
+    "message": "还没有网站。",
+    "description": "Empty list."
+  },
+  "siteField": {
+    "message": "网站",
+    "description": "Field label."
+  },
+  "siteHelp": {
+    "message": "例如 example.com 这样的名称，或该网站某个页面的地址。",
+    "description": "Help."
+  },
+  "siteAdd": {
+    "message": "添加",
+    "description": "Button."
+  },
+  "siteInvalid": {
+    "message": "这不是网站。请写成 example.com 这样的形式。",
+    "description": "Error."
+  },
+  "siteRemoveShort": {
+    "message": "移除",
+    "description": "Button."
+  },
+  "siteRemove": {
+    "message": "移除 $SITE$",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "excludedFull": {
+    "message": "最多可排除 $MAX$ 个网站。",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "privacyTelemetry": {
+    "message": "遥测",
+    "description": "Label."
+  },
+  "privacyTelemetryNone": {
+    "message": "无",
+    "description": "Value."
+  },
+  "privacyAnalytics": {
+    "message": "使用统计",
+    "description": "Label."
+  },
+  "privacyAnalyticsNone": {
+    "message": "无",
+    "description": "Value."
+  },
+  "privacyAccounts": {
+    "message": "账户",
+    "description": "Label."
+  },
+  "privacyAccountsNone": {
+    "message": "无",
+    "description": "Value."
+  },
+  "privacyServers": {
+    "message": "远程服务器",
+    "description": "Label."
+  },
+  "privacyServersNone": {
+    "message": "无",
+    "description": "Value."
+  },
+  "privacyAds": {
+    "message": "广告",
+    "description": "Label."
+  },
+  "privacyAdsNone": {
+    "message": "无",
+    "description": "Value."
+  },
+  "privacyAffiliate": {
+    "message": "推广链接",
+    "description": "Label."
+  },
+  "privacyAffiliateNone": {
+    "message": "无",
+    "description": "Value."
+  },
+  "privacyStorage": {
+    "message": "你的设置",
+    "description": "Label."
+  },
+  "privacyStorageLocal": {
+    "message": "仅在此设备上",
+    "description": "Value."
+  },
+  "privacyWhereOnClick": {
+    "message": "运行范围：仅在你调用时",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereSelected": {
+    "message": "运行范围：始终，在你选择的网站上",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereAll": {
+    "message": "运行范围：始终，在所有网站上",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyAccessChange": {
+    "message": "更改网站访问权限",
+    "description": "Link to the site access section."
+  },
+  "backupTitle": {
+    "message": "设置的副本",
+    "description": "Heading."
+  },
+  "backupHelp": {
+    "message": "一个包含你的设置和已保存网站的文件，可用于保存或转移到其他浏览器。文件存放在你选择的位置。",
+    "description": "Help."
+  },
+  "exportSettings": {
+    "message": "导出设置",
+    "description": "Button."
+  },
+  "exportDone": {
+    "message": "设置已导出。",
+    "description": "Status."
+  },
+  "exportFailed": {
+    "message": "无法导出设置。",
+    "description": "Status."
+  },
+  "importSettings": {
+    "message": "导入设置",
+    "description": "Button."
+  },
+  "importSummary": {
+    "message": "文件中的设置：$SETTINGS$ · 网站：$SITES$",
+    "description": "What an import would bring.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      },
+      "sites": {
+        "content": "$2"
+      }
+    }
+  },
+  "importIgnored": {
+    "message": "因无效而略过的值：$COUNT$",
+    "description": "Import summary.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "importReplace": {
+    "message": "它们会替换当前设置。文件中没有的网站保持不变。",
+    "description": "Import summary."
+  },
+  "importConfirm": {
+    "message": "导入",
+    "description": "Button."
+  },
+  "importCancel": {
+    "message": "取消",
+    "description": "Button."
+  },
+  "importDone": {
+    "message": "设置已导入。",
+    "description": "Status."
+  },
+  "importFailed": {
+    "message": "无法导入设置。",
+    "description": "Status."
+  },
+  "importTooLarge": {
+    "message": "此文件太大，不可能是设置副本。",
+    "description": "Status."
+  },
+  "importNotJson": {
+    "message": "无法将此文件读取为设置副本。",
+    "description": "Status."
+  },
+  "importNotBackup": {
+    "message": "此文件不是 FleetFoot Engine 的设置副本。",
+    "description": "Status."
+  },
+  "importNewer": {
+    "message": "此副本来自更新版本的 FleetFoot Engine。请更新扩展后重新导入。",
+    "description": "Status."
+  },
+  "deleteAll": {
+    "message": "清除此设备上的所有数据",
+    "description": "Button."
+  },
+  "deleteAllConfirm": {
+    "message": "再次点击以全部清除",
+    "description": "Button, armed."
+  },
+  "deleteAllHelp": {
+    "message": "清除设置、已保存的网站和节省的时间。网站权限会保留，你可以在“$SECTION$”中移除。",
+    "description": "Help; the substitution is the site access section title.",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "deletedAll": {
+    "message": "FleetFoot Engine 在此设备上保存的所有内容都已清除。",
+    "description": "Status."
+  },
+  "deleteFailed": {
+    "message": "无法全部清除。",
+    "description": "Status."
+  },
+  "sectionAbout": {
+    "message": "关于",
+    "description": "Section title."
+  },
+  "aboutVersion": {
+    "message": "版本 $VERSION$",
+    "description": "The version of this build.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "aboutLicense": {
+    "message": "依据 PolyForm Strict 1.0.0 许可证，可免费用于个人非商业用途。不得修改或再分发代码。",
+    "description": "Licence summary; the licence text decides."
+  },
+  "aboutSource": {
+    "message": "此版本的源代码",
+    "description": "Link."
+  },
+  "aboutLicenseLink": {
+    "message": "阅读许可证",
+    "description": "Link."
+  },
+  "aboutIssues": {
+    "message": "报告问题",
+    "description": "Link to GitHub Issues."
+  },
+  "aboutDiscussions": {
+    "message": "问题与想法",
+    "description": "Link to GitHub Discussions."
+  },
+  "moreFromDeveloper": {
+    "message": "开发者的更多作品",
+    "description": "Heading."
+  },
+  "welcomeTitle": {
+    "message": "三步即可就绪",
+    "description": "First-run page title."
+  },
+  "welcomePrivacy": {
+    "message": "你的数据属于你",
+    "description": "First-run page, first step heading."
+  },
+  "welcomeSpeed": {
+    "message": "你的常用速度",
+    "description": "First-run page, third step heading."
+  },
+  "welcomeSpeedHelp": {
+    "message": "在扩展窗口中点一下星标，速度就会变成这个值。0.10 到 16.00。",
+    "description": "First-run page, favorite speed help."
+  },
+  "welcomeDone": {
+    "message": "完成",
+    "description": "First-run page button that closes it."
+  },
+  "welcomeAllSettings": {
+    "message": "所有设置",
+    "description": "First-run page link to the options page."
+  }
+}

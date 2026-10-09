@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FFE fixture: hostile-prototype</title>
+  </head>
+  <body>
+    <video src="/tone.wav" muted style="width: 640px; height: 360px"><track kind="captions" src="/captions.vtt" /></video>
+    <script>
+      // The page takes over playbackRate in its own world: reads lie, writes vanish.
+      const real = Object.getOwnPropertyDescriptor(HTMLMediaElement.prototype, 'playbackRate');
+      Object.defineProperty(HTMLMediaElement.prototype, 'playbackRate', {
+        configurable: true,
+        get() {
+          return 1;
+        },
+        set() {},
+      });
+      window.realRate = () => real.get.call(document.querySelector('video'));
+    </script>
+  </body>
+</html>

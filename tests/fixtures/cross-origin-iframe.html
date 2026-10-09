@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FFE fixture: cross-origin-iframe</title>
+  </head>
+  <body>
+    <video src="/tone.wav" muted style="width: 640px; height: 360px"><track kind="captions" src="/captions.vtt" /></video>
+    <script>
+      // The same server under another host name: another origin, one the extension was not given.
+      const frame = document.createElement('iframe');
+      frame.src = `http://localhost:${location.port}/fixtures/single-video.html`;
+      frame.title = 'Embedded player';
+      frame.style.cssText = 'width: 700px; height: 420px';
+      document.body.append(frame);
+    </script>
+  </body>
+</html>

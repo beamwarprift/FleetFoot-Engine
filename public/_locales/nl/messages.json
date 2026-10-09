@@ -1,0 +1,1372 @@
+{
+  "extensionDescription": {
+    "message": "Snelheids- en afspeelbediening voor HTML5-video en -audio: snel, licht en met respect voor je privacy.",
+    "description": "Store and browser description."
+  },
+  "connectingTitle": {
+    "message": "Verbinden met de pagina…",
+    "description": "Popup, while injecting."
+  },
+  "pageUnavailableTitle": {
+    "message": "FleetFoot Engine werkt niet op deze pagina.",
+    "description": "Popup, page refuses extensions."
+  },
+  "pageUnavailableHint": {
+    "message": "Browserpagina's en extensiewinkels staan geen extensies toe.",
+    "description": "Popup hint."
+  },
+  "noAnswerTitle": {
+    "message": "De pagina reageert niet.",
+    "description": "Popup, no answer."
+  },
+  "noAnswerHint": {
+    "message": "Misschien is ze bezig of net veranderd. Probeer het opnieuw.",
+    "description": "Popup hint."
+  },
+  "noMediaTitle": {
+    "message": "Er staat geen video of audio op deze pagina.",
+    "description": "Popup, no media."
+  },
+  "noMediaHint": {
+    "message": "Een speler die van een andere site is ingesloten, is hiervandaan niet bereikbaar.",
+    "description": "Popup hint."
+  },
+  "framedTitle": {
+    "message": "De speler zit in een frame van $SITE$.",
+    "description": "Popup: no player here, but a frame from another site is on screen; $SITE$ is that site, e.g. «vixcloud.co».",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedHint": {
+    "message": "Om erbij te komen vraagt de browser toegang tot die site; daarna start FleetFoot Engine daar vanzelf.",
+    "description": "Popup, under framedTitle: allowing the site lets the extension reach the frame, and it then starts there by itself."
+  },
+  "framedAllowSite": {
+    "message": "Toestaan op $SITE$",
+    "description": "Popup button: asks the browser for access to that one site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedAllowAll": {
+    "message": "Toestaan op alle sites",
+    "description": "Popup button: asks the browser for access to every site (as «Always, on every site» in the options)."
+  },
+  "retry": {
+    "message": "Opnieuw proberen",
+    "description": "Button."
+  },
+  "slower": {
+    "message": "Langzamer",
+    "description": "Button label."
+  },
+  "faster": {
+    "message": "Sneller",
+    "description": "Button label."
+  },
+  "rateInputLabel": {
+    "message": "Afspeelsnelheid",
+    "description": "Rate input label."
+  },
+  "rateInvalid": {
+    "message": "Vul een snelheid in van $MIN$ tot $MAX$.",
+    "description": "Invalid typed rate.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "resetTo": {
+    "message": "Terug naar $RATE$",
+    "description": "Reset button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "previousRate": {
+    "message": "Vorige snelheid",
+    "description": "Button label."
+  },
+  "favoriteRate": {
+    "message": "Favoriete snelheid, $RATE$",
+    "description": "Button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "presets": {
+    "message": "Snelkeuze",
+    "description": "Group label."
+  },
+  "preservePitch": {
+    "message": "Natuurlijke stem",
+    "description": "Switch label."
+  },
+  "on": {
+    "message": "Aan",
+    "description": "Switch state."
+  },
+  "off": {
+    "message": "Uit",
+    "description": "Switch state."
+  },
+  "seekBack": {
+    "message": "$DURATION$ terug",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "seekForward": {
+    "message": "$DURATION$ vooruit",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipEnter": {
+    "message": "Beeld-in-beeld",
+    "description": "Button."
+  },
+  "pipExit": {
+    "message": "Beeld-in-beeld sluiten",
+    "description": "Button."
+  },
+  "loopGroup": {
+    "message": "Herhaling A–B",
+    "description": "Group label."
+  },
+  "loopHelpLabel": {
+    "message": "Wat is herhaling A–B?",
+    "description": "Accessible name of the info button next to the loop."
+  },
+  "loopHelp": {
+    "message": "Herhaalt een stuk zonder te stoppen, om het terug te kijken of te bestuderen.",
+    "description": "Popover explaining the A–B loop: what it is for."
+  },
+  "loopHelpSteps": {
+    "message": "Tik op A waar het begint, op B waar het eindigt en dan op Herhalen.",
+    "description": "Popover explaining the A–B loop: how to set it."
+  },
+  "loopHelpClear": {
+    "message": "Met × verwijder je de herhaling.",
+    "description": "Last line of the loop help; × is the clear button."
+  },
+  "loopA": {
+    "message": "A markeren",
+    "description": "Button."
+  },
+  "loopB": {
+    "message": "B markeren",
+    "description": "Button."
+  },
+  "loopAAt": {
+    "message": "A $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loopBAt": {
+    "message": "B $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loop": {
+    "message": "Herhalen",
+    "description": "Toggle button."
+  },
+  "loopClear": {
+    "message": "Herhaling verwijderen",
+    "description": "Button label."
+  },
+  "copyTimestamp": {
+    "message": "Moment kopiëren",
+    "description": "Button."
+  },
+  "copied": {
+    "message": "$TIME$ gekopieerd",
+    "description": "After copying.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "Het moment kon niet worden gekopieerd.",
+    "description": "Copy failed."
+  },
+  "player": {
+    "message": "Speler",
+    "description": "Select label."
+  },
+  "playerAuto": {
+    "message": "Automatisch",
+    "description": "Option."
+  },
+  "playerAll": {
+    "message": "Alle spelers",
+    "description": "Option."
+  },
+  "playerVideo": {
+    "message": "Video $NUMBER$",
+    "description": "Short name of a video player, numbered in order of discovery.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerAudio": {
+    "message": "Audio $NUMBER$",
+    "description": "Player name.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerPlaying": {
+    "message": "speelt af",
+    "description": "Detail of a player that is playing now."
+  },
+  "playerEmbedded": {
+    "message": "ingesloten van $SITE$",
+    "description": "Detail of a player inside a frame of the page; $SITE$ is that frame's site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerEmbeddedUnknown": {
+    "message": "ingesloten",
+    "description": "Detail of a player inside a frame of the page that has no site."
+  },
+  "options": {
+    "message": "Instellingen",
+    "description": "Button."
+  },
+  "policyFollow": {
+    "message": "De site laten beslissen",
+    "description": "Rate policy name."
+  },
+  "policySmart": {
+    "message": "Herstellen bij de volgende video (aanbevolen)",
+    "description": "Rate policy name."
+  },
+  "policyLock": {
+    "message": "Meteen herstellen, altijd",
+    "description": "Rate policy name."
+  },
+  "noticeContested": {
+    "message": "Een andere extensie of de pagina zelf blijft de snelheid van deze speler veranderen. Om touwtrekken te voorkomen, herstelt FleetFoot Engine de snelheid niet meer.",
+    "description": "Notice."
+  },
+  "noticeContestedChoose": {
+    "message": "Kiezen wat er moet gebeuren",
+    "description": "Popup link after the LOCK yielded notice: opens the option."
+  },
+  "noticeExtremeRate": {
+    "message": "Bij deze snelheid kan de browser het geluid dempen of vervormen.",
+    "description": "Notice."
+  },
+  "noticeLive": {
+    "message": "Dit is een livestream, dus vooruitspoelen en de resterende tijd zien kan niet.",
+    "description": "Notice."
+  },
+  "errorInvalidCommand": {
+    "message": "Er ging iets mis. Probeer het opnieuw.",
+    "description": "Error."
+  },
+  "errorNoPlayer": {
+    "message": "De speler staat niet meer op de pagina.",
+    "description": "Error."
+  },
+  "errorRateRejected": {
+    "message": "De pagina heeft deze snelheid geweigerd.",
+    "description": "Error."
+  },
+  "errorPitchUnsupported": {
+    "message": "Deze speler kan de natuurlijke stem niet behouden.",
+    "description": "Error."
+  },
+  "errorNoPreviousRate": {
+    "message": "Er is nog geen vorige snelheid.",
+    "description": "Error."
+  },
+  "errorNotSeekable": {
+    "message": "Je kunt nu niet vooruit- of terugspoelen in deze media.",
+    "description": "Error."
+  },
+  "errorNotLoopable": {
+    "message": "Voor een herhaling is media met een bekende duur nodig.",
+    "description": "Error."
+  },
+  "errorLoopInvalid": {
+    "message": "B moet na A komen.",
+    "description": "Error."
+  },
+  "errorPipUnavailable": {
+    "message": "Beeld-in-beeld is niet beschikbaar voor deze speler.",
+    "description": "Error."
+  },
+  "errorPipRejected": {
+    "message": "De browser heeft beeld-in-beeld geweigerd. Gebruik de knop in de balk op de speler of een sneltoets op de pagina.",
+    "description": "Error."
+  },
+  "overlayLabel": {
+    "message": "Bediening van FleetFoot Engine",
+    "description": "Toolbar label."
+  },
+  "overlayMove": {
+    "message": "Verplaatsen (pijltjestoetsen)",
+    "description": "Drag handle."
+  },
+  "overlayMore": {
+    "message": "Meer knoppen",
+    "description": "Button."
+  },
+  "overlayLess": {
+    "message": "Minder knoppen",
+    "description": "Button."
+  },
+  "menuSpeed": {
+    "message": "Snelheid",
+    "description": "Context menu."
+  },
+  "menuFavorite": {
+    "message": "Favoriet ($RATE$)",
+    "description": "Context menu.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "Instellingen",
+    "description": "Page subtitle."
+  },
+  "sectionSpeed": {
+    "message": "Snelheid",
+    "description": "Section."
+  },
+  "speedGroupRates": {
+    "message": "Je snelheden",
+    "description": "Options, Speed section: heading of the user's own speeds (presets, step, favorite and hold speeds)."
+  },
+  "speedGroupRestore": {
+    "message": "Je snelheid herstellen",
+    "description": "Options, Speed section: heading of what happens when a site changes the speed."
+  },
+  "speedGroupPlayers": {
+    "message": "Welke spelers",
+    "description": "Options, Speed section: heading of which players a speed applies to."
+  },
+  "sectionPlayback": {
+    "message": "Afspelen",
+    "description": "Section."
+  },
+  "sectionKeyboard": {
+    "message": "Toetsenbord",
+    "description": "Section."
+  },
+  "sectionOverlay": {
+    "message": "Balk op de speler",
+    "description": "Section."
+  },
+  "sectionMenu": {
+    "message": "Rechtsklikmenu",
+    "description": "Section."
+  },
+  "presetsField": {
+    "message": "Snelkeuze",
+    "description": "Field."
+  },
+  "presetsHelp": {
+    "message": "Tot 12 snelheden, gescheiden door spaties, bijvoorbeeld 1 1,5 2.",
+    "description": "Help."
+  },
+  "presetsInvalid": {
+    "message": "Vul 1 tot $MAX$ snelheden in, gescheiden door spaties.",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "rateStepField": {
+    "message": "Stap voor langzamer en sneller",
+    "description": "Field."
+  },
+  "rateStepHelp": {
+    "message": "Van 0,01 tot 1,00.",
+    "description": "Help."
+  },
+  "favoriteField": {
+    "message": "Favoriete snelheid",
+    "description": "Field."
+  },
+  "holdField": {
+    "message": "Snelheid zolang je een toets ingedrukt houdt",
+    "description": "Field."
+  },
+  "rateRangeHelp": {
+    "message": "Van 0,10 tot 16,00.",
+    "description": "Help."
+  },
+  "policyField": {
+    "message": "Als de site de snelheid verandert",
+    "description": "Legend."
+  },
+  "policyFollowHelp": {
+    "message": "Je snelheid wordt één keer ingesteld. Voorbeeld: de volgende aflevering begint op 1× en blijft op 1×.",
+    "description": "Help."
+  },
+  "policySmartHelp": {
+    "message": "Voorbeeld: de volgende aflevering begint op 1× en je snelheid komt terug. Verandert de site de snelheid terwijl je kijkt, dan blijft die zo tot de volgende video.",
+    "description": "Help."
+  },
+  "policyLockHelp": {
+    "message": "Voorbeeld: terwijl je kijkt, zet de site 1× en even later komt je snelheid terug. Voor sites die de snelheid steeds veranderen.",
+    "description": "Help."
+  },
+  "targetField": {
+    "message": "De snelheid geldt voor",
+    "description": "Legend."
+  },
+  "targetActive": {
+    "message": "De actieve speler",
+    "description": "Option."
+  },
+  "targetAll": {
+    "message": "Alle spelers op de pagina",
+    "description": "Option."
+  },
+  "pitchField": {
+    "message": "Natuurlijke stem bij een andere snelheid",
+    "description": "Field."
+  },
+  "skipSilenceField": {
+    "message": "Stiltes overslaan",
+    "description": "Name of Skip Silence: options switch, site profile field, popup button."
+  },
+  "skipSilenceHelp": {
+    "message": "Tijdens pauzes schakelt de speler over op de snelheid voor stiltes en gaat terug naar die van jou zodra het geluid terugkomt. Het geluid wordt alleen op je apparaat beluisterd, nooit opgenomen of verstuurd.",
+    "description": "What Skip Silence does and that the sound stays on the device: options help, popup card."
+  },
+  "skipSilenceSettings": {
+    "message": "Instellingen voor ‘Stiltes overslaan’",
+    "description": "Link in the popup card of Skip Silence, to its place on the options page."
+  },
+  "silenceModeField": {
+    "message": "Wat telt als stilte",
+    "description": "Options legend: how readily a pause counts as a silence."
+  },
+  "silenceConservative": {
+    "message": "Alleen lange, stille pauzes",
+    "description": "Options choice: only long, quiet pauses count."
+  },
+  "silenceNormal": {
+    "message": "Ook pauzes tussen zinnen (aanbevolen)",
+    "description": "Options choice, the default: pauses between sentences count too."
+  },
+  "silenceAggressive": {
+    "message": "Elke pauze, ook met wat achtergrondgeluid",
+    "description": "Options choice: every pause counts, even with background noise."
+  },
+  "silenceRateField": {
+    "message": "Snelheid tijdens stiltes",
+    "description": "Options field: the speed a silence plays at."
+  },
+  "noticeSkipSilenceWaiting": {
+    "message": "‘Stiltes overslaan’ start bij je eerste klik op de pagina.",
+    "description": "Notice: the browser starts audio only after a click on the page."
+  },
+  "noticeSkipSilenceUnavailable": {
+    "message": "‘Stiltes overslaan’ is niet beschikbaar voor deze media.",
+    "description": "Notice: the browser does not let the extension hear this media."
+  },
+  "seekStepField": {
+    "message": "Sprong in seconden",
+    "description": "Field."
+  },
+  "seekStepInvalid": {
+    "message": "Vul een heel aantal seconden in van $MIN$ tot $MAX$.",
+    "description": "Error.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "pageShortcutsField": {
+    "message": "Sneltoetsen op de pagina",
+    "description": "Field."
+  },
+  "pageShortcutsHelp": {
+    "message": "Ze werken nadat je FleetFoot Engine op de pagina hebt geopend, en nooit terwijl je in een veld typt.",
+    "description": "Help."
+  },
+  "shortcutsTable": {
+    "message": "Toetsen op de pagina",
+    "description": "Table caption."
+  },
+  "keyPress": {
+    "message": "Druk op een toets… (Esc om te annuleren)",
+    "description": "While recording."
+  },
+  "keyNone": {
+    "message": "Geen",
+    "description": "Unbound."
+  },
+  "keyRemove": {
+    "message": "Toets voor $ACTION$ verwijderen",
+    "description": "Button label: the button shows only a cross.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "keyChange": {
+    "message": "$ACTION$: $KEY$. Wijzigen",
+    "description": "Button label.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "keyTaken": {
+    "message": "$KEY$ wordt al gebruikt voor $ACTION$.",
+    "description": "Conflict.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "action": {
+        "content": "$2"
+      }
+    }
+  },
+  "browserShortcutsHelp": {
+    "message": "Sneltoetsen die op elke pagina werken, stel je in de browser in, bij de sneltoetsen voor extensies.",
+    "description": "Help."
+  },
+  "browserShortcutsOpen": {
+    "message": "Sneltoetsen van de browser openen",
+    "description": "Button."
+  },
+  "overlayField": {
+    "message": "De balk op spelers tonen",
+    "description": "Field."
+  },
+  "overlayHelp": {
+    "message": "Een kleine balk die verschijnt zolang de aanwijzer op de speler staat.",
+    "description": "Help."
+  },
+  "overlayResetPosition": {
+    "message": "De balk terugzetten in de hoek",
+    "description": "Button."
+  },
+  "contextMenuField": {
+    "message": "Snelheidsmenu bij rechtsklikken op video of audio",
+    "description": "Field."
+  },
+  "contextMenuHelp": {
+    "message": "Verschijnt alleen bij video en audio.",
+    "description": "Help."
+  },
+  "saved": {
+    "message": "Opgeslagen.",
+    "description": "Status."
+  },
+  "invalidValue": {
+    "message": "Deze waarde is niet geldig.",
+    "description": "Error."
+  },
+  "restoreDefaults": {
+    "message": "Standaardinstellingen herstellen",
+    "description": "Button."
+  },
+  "restoreConfirm": {
+    "message": "Klik nogmaals om alles te herstellen",
+    "description": "Button, armed."
+  },
+  "restored": {
+    "message": "Standaardinstellingen hersteld.",
+    "description": "Status."
+  },
+  "actionSlower": {
+    "message": "Langzamer",
+    "description": "Shortcut action."
+  },
+  "actionFaster": {
+    "message": "Sneller",
+    "description": "Shortcut action."
+  },
+  "actionReset": {
+    "message": "Terug naar 1×",
+    "description": "Shortcut action."
+  },
+  "actionFavorite": {
+    "message": "Favoriete snelheid",
+    "description": "Shortcut action."
+  },
+  "actionHold": {
+    "message": "Ingedrukt houden voor sneller",
+    "description": "Shortcut action."
+  },
+  "actionSeekBackward": {
+    "message": "Terug",
+    "description": "Shortcut action."
+  },
+  "actionSeekForward": {
+    "message": "Vooruit",
+    "description": "Shortcut action."
+  },
+  "actionTogglePitch": {
+    "message": "Natuurlijke stem aan/uit",
+    "description": "Shortcut action."
+  },
+  "actionLoopA": {
+    "message": "Begin herhaling (A)",
+    "description": "Shortcut action."
+  },
+  "actionLoopB": {
+    "message": "Einde herhaling (B)",
+    "description": "Shortcut action."
+  },
+  "actionLoopToggle": {
+    "message": "Herhaling aan/uit",
+    "description": "Shortcut action."
+  },
+  "actionNextPlayer": {
+    "message": "Volgende speler",
+    "description": "Shortcut action."
+  },
+  "actionToggleOverlay": {
+    "message": "Balk tonen of verbergen",
+    "description": "Shortcut action."
+  },
+  "controlling": {
+    "message": "Bestuurde speler",
+    "description": "Caption above the player list."
+  },
+  "live": {
+    "message": "Live",
+    "description": "Badge for a live stream."
+  },
+  "timeLeftAt": {
+    "message": "Nog $TIME$ op $RATE$",
+    "description": "Remaining time at the current speed.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      },
+      "rate": {
+        "content": "$2"
+      }
+    }
+  },
+  "timeLeftNormal": {
+    "message": "$TIME$ op normale snelheid",
+    "description": "Remaining time at 1×.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipOpen": {
+    "message": "Openen",
+    "description": "Picture-in-picture button."
+  },
+  "pipClose": {
+    "message": "Sluiten",
+    "description": "Picture-in-picture button."
+  },
+  "savedHours": {
+    "message": "$HOURS$ $MINUTES$",
+    "description": "Time saved: hours then minutes, each already with its unit («12 h», «34 min»).",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      },
+      "minutes": {
+        "content": "$2"
+      }
+    }
+  },
+  "savedUnderMinute": {
+    "message": "minder dan een minuut",
+    "description": "Time saved below one minute."
+  },
+  "savedPopup": {
+    "message": "$TIME$ bespaard",
+    "description": "Popup header: total time saved.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedTitle": {
+    "message": "Bespaarde tijd",
+    "description": "Options section."
+  },
+  "savedHelp": {
+    "message": "De tijd die je niet kwijt was doordat FleetFoot Engine je video's en audio sneller afspeelde. Staat alleen op dit apparaat, als één totaal.",
+    "description": "Help."
+  },
+  "savedTotal": {
+    "message": "Tot nu toe: $TIME$",
+    "description": "Options: the total.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedReset": {
+    "message": "Teller op nul zetten",
+    "description": "Button."
+  },
+  "savedResetConfirm": {
+    "message": "Klik nogmaals om op nul te zetten",
+    "description": "Button, armed."
+  },
+  "savedResetDone": {
+    "message": "Teller op nul gezet.",
+    "description": "Status."
+  },
+  "sectionAppearance": {
+    "message": "Weergave",
+    "description": "Options section."
+  },
+  "themeField": {
+    "message": "Kleurthema",
+    "description": "Legend."
+  },
+  "textSizeField": {
+    "message": "Tekstgrootte",
+    "description": "Options, Appearance: label of the choice of text size for this page, from 100% to 200%."
+  },
+  "textSizeHelp": {
+    "message": "Vergroot tekst en knoppen op deze pagina.",
+    "description": "Options, Appearance: under textSizeField."
+  },
+  "themeYellow": {
+    "message": "Geel (standaard)",
+    "description": "Theme."
+  },
+  "themeCyan": {
+    "message": "Cyaan",
+    "description": "Theme."
+  },
+  "themeMagenta": {
+    "message": "Magenta",
+    "description": "Theme."
+  },
+  "themeGreen": {
+    "message": "Groen",
+    "description": "Theme."
+  },
+  "themeViolet": {
+    "message": "Violet",
+    "description": "Theme."
+  },
+  "themeCoral": {
+    "message": "Koraal",
+    "description": "Theme."
+  },
+  "themeSlate": {
+    "message": "Leisteen",
+    "description": "Theme: dimmed blue-grey, easy on the eyes."
+  },
+  "themeSepia": {
+    "message": "Sepia",
+    "description": "Theme: dimmed warm brown, easy on the eyes."
+  },
+  "themeSage": {
+    "message": "Salie",
+    "description": "Theme: dimmed green, easy on the eyes."
+  },
+  "themeLight": {
+    "message": "Licht",
+    "description": "Theme."
+  },
+  "pitchHelpShort": {
+    "message": "Stemmen gaan niet piepen",
+    "description": "Popup subtitle of the natural voice switch."
+  },
+  "rateOutOfRange": {
+    "message": "Vul een snelheid in van $MIN$ tot $MAX$.",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "stepOutOfRange": {
+    "message": "Vul een stap in van $MIN$ tot $MAX$.",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "privacyBadge": {
+    "message": "FULL PRIVACY",
+    "description": "Badge; the same words in every language."
+  },
+  "privacyBadgeSub": {
+    "message": "Geen telemetrie · Geen accounts · Instellingen alleen op het apparaat",
+    "description": "Badge subtitle."
+  },
+  "privacyStatement": {
+    "message": "FleetFoot Engine stuurt aan niemand door welke sites je bezoekt of wat je bekijkt.",
+    "description": "Privacy section: the promise about browsing activity."
+  },
+  "verifySource": {
+    "message": "Neem het niet van ons aan. Lees de code.",
+    "description": "Privacy section: the invitation to read the source, before its link."
+  },
+  "sourceLink": {
+    "message": "De code lezen op GitHub",
+    "description": "Link to the public repository."
+  },
+  "supportDevelopment": {
+    "message": "De ontwikkeling steunen",
+    "description": "Popup footer link."
+  },
+  "supportQuestion": {
+    "message": "Heb je er iets aan?",
+    "description": "Popup footer question before the support link."
+  },
+  "supportSaved": {
+    "message": "Heeft het je al $DURATION$ bespaard?",
+    "description": "Popup footer question before the support link, once the time saved reaches an hour; whole hours, with the unit («12 h»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "supportDevelopmentKofi": {
+    "message": "De ontwikkeling steunen via Ko-fi",
+    "description": "Options link."
+  },
+  "reviewStore": {
+    "message": "Bevalt het? Schrijf een recensie",
+    "description": "Accessible name of the heart at the top of the popup, which opens this extension's page in the store it was installed from, to leave a review."
+  },
+  "sectionPrivacy": {
+    "message": "Privacy en rechten",
+    "description": "Options section."
+  },
+  "sectionMemory": {
+    "message": "Geheugen",
+    "description": "Options section."
+  },
+  "memoryField": {
+    "message": "Wat FleetFoot Engine onthoudt",
+    "description": "Group label."
+  },
+  "memoryNone": {
+    "message": "Niets",
+    "description": "Memory choice."
+  },
+  "memoryNoneHelp": {
+    "message": "Elke pagina begint op de eigen snelheid.",
+    "description": "Help."
+  },
+  "memoryGlobal": {
+    "message": "Eén snelheid voor alle sites",
+    "description": "Memory choice."
+  },
+  "memoryGlobalHelp": {
+    "message": "De laatst gekozen snelheid geldt overal. Alleen het getal wordt bewaard.",
+    "description": "Help."
+  },
+  "memorySite": {
+    "message": "Een snelheid per site",
+    "description": "Memory choice."
+  },
+  "memorySiteHelp": {
+    "message": "Elke site bewaart een eigen snelheid en, als je wilt, eigen instellingen. Alleen de naam van de site wordt bewaard, nooit wat je bekijkt.",
+    "description": "Help."
+  },
+  "profilesTitle": {
+    "message": "Onthouden sites",
+    "description": "Heading."
+  },
+  "profilesEmpty": {
+    "message": "Nog geen sites. Verander de snelheid op een site en die verschijnt hier.",
+    "description": "Empty list."
+  },
+  "profileSpeed": {
+    "message": "Snelheid (leeg voor die van de site)",
+    "description": "Field of a site profile."
+  },
+  "profileGeneralValue": {
+    "message": "Algemeen ($VALUE$)",
+    "description": "Option or placeholder: no value of its own on this site; the value it takes from the general settings in brackets.",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "policyFollowShort": {
+    "message": "De site beslist",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policySmartShort": {
+    "message": "Bij de volgende video",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policyLockShort": {
+    "message": "Meteen, altijd",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "fightField": {
+    "message": "Als de site meteen weer verandert",
+    "description": "Options legend: what LOCK does when a page answers every restore at once."
+  },
+  "fightYield": {
+    "message": "Laten gaan en mij waarschuwen (aanbevolen)",
+    "description": "LOCK fight answer: yield."
+  },
+  "fightBraked": {
+    "message": "Blijven herstellen, met rem",
+    "description": "LOCK fight answer: keep imposing, bounded."
+  },
+  "fightUnbraked": {
+    "message": "Blijven herstellen, zonder rem",
+    "description": "LOCK fight answer: keep imposing, unbounded."
+  },
+  "fightYieldShort": {
+    "message": "Laten gaan",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightBrakedShort": {
+    "message": "Met rem",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightUnbrakedShort": {
+    "message": "Zonder rem",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightHelpLabel": {
+    "message": "Wat is het verschil tussen de drie?",
+    "description": "Accessible name of the info button next to the LOCK fight choices."
+  },
+  "fightYieldHelp": {
+    "message": "FleetFoot Engine stopt met het herstellen van de snelheid in die speler en laat het je weten in het venster van de extensie.",
+    "description": "Info popover, first answer."
+  },
+  "fightBrakedHelp": {
+    "message": "Blijft je snelheid herstellen zonder dat de site het merkt, met een limiet die het verbruik laag houdt. De speler van de site kan een andere snelheid tonen dan de echte.",
+    "description": "Info popover, second answer."
+  },
+  "fightUnbrakedHelp": {
+    "message": "Hetzelfde, zonder limiet. Op sommige sites kan dat een hele processorkern bezetten, met meer verbruik en een batterij die sneller leeg is.",
+    "description": "Info popover, third answer and its risk."
+  },
+  "profileOn": {
+    "message": "Aan",
+    "description": "Option."
+  },
+  "profileOff": {
+    "message": "Uit",
+    "description": "Option."
+  },
+  "profileForget": {
+    "message": "Deze site vergeten",
+    "description": "Button."
+  },
+  "profileForgetSite": {
+    "message": "$SITE$ vergeten",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "sectionAccess": {
+    "message": "Toegang tot sites",
+    "description": "Options section."
+  },
+  "accessField": {
+    "message": "Waar FleetFoot Engine werkt",
+    "description": "Group label."
+  },
+  "accessOnClick": {
+    "message": "Alleen als je erom vraagt",
+    "description": "Access choice."
+  },
+  "accessOnClickHelp": {
+    "message": "Werkt in een tabblad nadat je op het pictogram klikt of een sneltoets of het rechtsklikmenu gebruikt. Heeft geen toegang tot sites.",
+    "description": "Help."
+  },
+  "accessSelected": {
+    "message": "Altijd, op de sites die je kiest",
+    "description": "Access choice."
+  },
+  "accessSelectedHelp": {
+    "message": "Start vanzelf op die sites, met de sneltoetsen meteen klaar.",
+    "description": "Help."
+  },
+  "accessAll": {
+    "message": "Altijd, op alle sites",
+    "description": "Access choice."
+  },
+  "accessAllHelp": {
+    "message": "De browser vraagt toegang tot alle sites. FleetFoot Engine zoekt alleen naar video en audio. Het leest nooit pagina's en verstuurt nooit iets.",
+    "description": "Help."
+  },
+  "accessDeclined": {
+    "message": "De browser gaf geen toegang, dus er is niets veranderd.",
+    "description": "Status."
+  },
+  "accessFiles": {
+    "message": "Video's die je vanaf je computer opent, vallen buiten deze keuzes; open FleetFoot Engine met een klik op het pictogram.",
+    "description": "Help."
+  },
+  "sitesChosen": {
+    "message": "Jouw sites",
+    "description": "Heading."
+  },
+  "sitesExcluded": {
+    "message": "Behalve op deze sites",
+    "description": "Heading."
+  },
+  "sitesExcludedHelp": {
+    "message": "Op deze sites start het nooit vanzelf, maar je kunt het nog steeds met een klik oproepen.",
+    "description": "Help."
+  },
+  "sitesNone": {
+    "message": "Nog geen sites.",
+    "description": "Empty list."
+  },
+  "siteField": {
+    "message": "Site",
+    "description": "Field label."
+  },
+  "siteHelp": {
+    "message": "Een naam als example.com of het adres van een van de pagina's.",
+    "description": "Help."
+  },
+  "siteAdd": {
+    "message": "Toevoegen",
+    "description": "Button."
+  },
+  "siteInvalid": {
+    "message": "Dit is geen site. Schrijf het als example.com.",
+    "description": "Error."
+  },
+  "siteRemoveShort": {
+    "message": "Verwijderen",
+    "description": "Button."
+  },
+  "siteRemove": {
+    "message": "$SITE$ verwijderen",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "excludedFull": {
+    "message": "Je kunt tot $MAX$ sites uitsluiten.",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "privacyTelemetry": {
+    "message": "Telemetrie",
+    "description": "Label."
+  },
+  "privacyTelemetryNone": {
+    "message": "Geen",
+    "description": "Value."
+  },
+  "privacyAnalytics": {
+    "message": "Gebruiksstatistieken",
+    "description": "Label."
+  },
+  "privacyAnalyticsNone": {
+    "message": "Geen",
+    "description": "Value."
+  },
+  "privacyAccounts": {
+    "message": "Accounts",
+    "description": "Label."
+  },
+  "privacyAccountsNone": {
+    "message": "Geen",
+    "description": "Value."
+  },
+  "privacyServers": {
+    "message": "Externe servers",
+    "description": "Label."
+  },
+  "privacyServersNone": {
+    "message": "Geen",
+    "description": "Value."
+  },
+  "privacyAds": {
+    "message": "Advertenties",
+    "description": "Label."
+  },
+  "privacyAdsNone": {
+    "message": "Geen",
+    "description": "Value."
+  },
+  "privacyAffiliate": {
+    "message": "Affiliatelinks",
+    "description": "Label."
+  },
+  "privacyAffiliateNone": {
+    "message": "Geen",
+    "description": "Value."
+  },
+  "privacyStorage": {
+    "message": "Je instellingen",
+    "description": "Label."
+  },
+  "privacyStorageLocal": {
+    "message": "Alleen op dit apparaat",
+    "description": "Value."
+  },
+  "privacyWhereOnClick": {
+    "message": "Waar het werkt: alleen als je erom vraagt",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereSelected": {
+    "message": "Waar het werkt: altijd, op de sites die je kiest",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereAll": {
+    "message": "Waar het werkt: altijd, op alle sites",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyAccessChange": {
+    "message": "Toegang tot sites wijzigen",
+    "description": "Link to the site access section."
+  },
+  "backupTitle": {
+    "message": "Een kopie van je instellingen",
+    "description": "Heading."
+  },
+  "backupHelp": {
+    "message": "Een bestand met je instellingen en de opgeslagen sites, om te bewaren of mee te nemen naar een andere browser. Het blijft waar je het neerzet.",
+    "description": "Help."
+  },
+  "exportSettings": {
+    "message": "Instellingen exporteren",
+    "description": "Button."
+  },
+  "exportDone": {
+    "message": "Instellingen geëxporteerd.",
+    "description": "Status."
+  },
+  "exportFailed": {
+    "message": "De instellingen konden niet worden geëxporteerd.",
+    "description": "Status."
+  },
+  "importSettings": {
+    "message": "Instellingen importeren",
+    "description": "Button."
+  },
+  "importSummary": {
+    "message": "Instellingen in het bestand: $SETTINGS$ · Sites: $SITES$",
+    "description": "What an import would bring.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      },
+      "sites": {
+        "content": "$2"
+      }
+    }
+  },
+  "importIgnored": {
+    "message": "Ongeldige waarden weggelaten: $COUNT$",
+    "description": "Import summary.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "importReplace": {
+    "message": "Ze vervangen de huidige. Sites die niet in het bestand staan, blijven zoals ze zijn.",
+    "description": "Import summary."
+  },
+  "importConfirm": {
+    "message": "Importeren",
+    "description": "Button."
+  },
+  "importCancel": {
+    "message": "Annuleren",
+    "description": "Button."
+  },
+  "importDone": {
+    "message": "Instellingen geïmporteerd.",
+    "description": "Status."
+  },
+  "importFailed": {
+    "message": "De instellingen konden niet worden geïmporteerd.",
+    "description": "Status."
+  },
+  "importTooLarge": {
+    "message": "Dit bestand is te groot voor een kopie van de instellingen.",
+    "description": "Status."
+  },
+  "importNotJson": {
+    "message": "Dit bestand kan niet worden gelezen als kopie van de instellingen.",
+    "description": "Status."
+  },
+  "importNotBackup": {
+    "message": "Dit bestand is geen kopie van de instellingen van FleetFoot Engine.",
+    "description": "Status."
+  },
+  "importNewer": {
+    "message": "Deze kopie komt uit een nieuwere versie van FleetFoot Engine. Werk de extensie bij en importeer opnieuw.",
+    "description": "Status."
+  },
+  "deleteAll": {
+    "message": "Alles op dit apparaat wissen",
+    "description": "Button."
+  },
+  "deleteAllConfirm": {
+    "message": "Klik nogmaals om alles te wissen",
+    "description": "Button, armed."
+  },
+  "deleteAllHelp": {
+    "message": "Wist de instellingen, de opgeslagen sites en de bespaarde tijd. De rechten voor sites blijven; je kunt ze verwijderen onder $SECTION$.",
+    "description": "Help; the substitution is the site access section title.",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "deletedAll": {
+    "message": "Alles wat FleetFoot Engine op dit apparaat bewaarde, is gewist.",
+    "description": "Status."
+  },
+  "deleteFailed": {
+    "message": "Niet alles kon worden gewist.",
+    "description": "Status."
+  },
+  "sectionAbout": {
+    "message": "Over",
+    "description": "Section title."
+  },
+  "aboutVersion": {
+    "message": "Versie $VERSION$",
+    "description": "The version of this build.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "aboutLicense": {
+    "message": "Gratis voor persoonlijk, niet-commercieel gebruik onder de licentie PolyForm Strict 1.0.0. Het is niet toegestaan de code te wijzigen of te verspreiden.",
+    "description": "Licence summary; the licence text decides."
+  },
+  "aboutSource": {
+    "message": "Broncode van deze versie",
+    "description": "Link."
+  },
+  "aboutLicenseLink": {
+    "message": "De licentie lezen",
+    "description": "Link."
+  },
+  "aboutIssues": {
+    "message": "Een probleem melden",
+    "description": "Link to GitHub Issues."
+  },
+  "aboutDiscussions": {
+    "message": "Vragen en ideeën",
+    "description": "Link to GitHub Discussions."
+  },
+  "moreFromDeveloper": {
+    "message": "Meer van de ontwikkelaar",
+    "description": "Heading."
+  },
+  "welcomeTitle": {
+    "message": "Klaar in drie stappen",
+    "description": "First-run page title."
+  },
+  "welcomePrivacy": {
+    "message": "Je gegevens zijn van jou",
+    "description": "First-run page, first step heading."
+  },
+  "welcomeSpeed": {
+    "message": "Je favoriete snelheid",
+    "description": "First-run page, third step heading."
+  },
+  "welcomeSpeedHelp": {
+    "message": "Eén tik op de ster in het venster van de extensie en de snelheid is deze. Van 0,10 tot 16,00.",
+    "description": "First-run page, favorite speed help."
+  },
+  "welcomeDone": {
+    "message": "Klaar",
+    "description": "First-run page button that closes it."
+  },
+  "welcomeAllSettings": {
+    "message": "Alle instellingen",
+    "description": "First-run page link to the options page."
+  }
+}

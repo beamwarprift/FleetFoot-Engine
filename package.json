@@ -1,0 +1,48 @@
+{
+  "name": "fleetfoot-engine",
+  "version": "1.0.0",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "description": "Fast, lightweight, privacy-first playback control for HTML5 video and audio.",
+  "type": "module",
+  "packageManager": "pnpm@10.33.4",
+  "engines": {
+    "node": ">=24.15.0 <25"
+  },
+  "scripts": {
+    "prepare:wxt": "wxt prepare",
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build:chrome": "wxt zip -b chrome",
+    "build:firefox": "wxt zip -b firefox",
+    "build": "pnpm build:chrome && pnpm build:firefox",
+    "typecheck": "wxt prepare && tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.node.json",
+    "lint": "biome ci .",
+    "format": "biome check --write .",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "audit:manifest": "node scripts/audit.ts manifest",
+    "audit:privacy": "node scripts/audit.ts privacy",
+    "audit:size": "node scripts/audit.ts size",
+    "audit:modules": "node scripts/audit.ts modules",
+    "audit:public": "node scripts/audit.ts public",
+    "audit:deps": "pnpm audit --audit-level high",
+    "lint:firefox": "web-ext lint --source-dir .output/firefox-mv3 --warnings-as-errors",
+    "verify": "pnpm lint && pnpm typecheck && pnpm audit:modules && pnpm audit:public && pnpm test && pnpm build && pnpm audit:manifest && pnpm audit:privacy && pnpm audit:size && pnpm lint:firefox && pnpm build:e2e && pnpm test:e2e && pnpm audit:deps",
+    "test:edge": "FFE_E2E_CHANNEL=msedge playwright test tests/e2e/smoke.spec.ts tests/e2e/edge.spec.ts",
+    "release": "pnpm verify && node scripts/release.ts",
+    "build:e2e": "FFE_E2E_BUILD=1 wxt build -b chrome && FFE_E2E_BUILD=1 wxt build -b firefox"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.14",
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.19.0",
+    "@vitest/browser-playwright": "5.0.2",
+    "axe-core": "4.13.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.1",
+    "vitest": "5.0.2",
+    "web-ext": "10.7.0",
+    "wxt": "0.21.4"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "root": true,
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "includes": ["**", "!**/node_modules", "!**/.output", "!**/.wxt", "!**/*.md"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 100
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "preset": "recommended",
+      "complexity": {
+        "useLiteralKeys": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "error"
+      },
+      "security": {
+        "noGlobalEval": "error"
+      },
+      "style": {
+        "noRestrictedGlobals": {
+          "level": "error",
+          "options": {
+            "deniedGlobals": {
+              "fetch": "Network APIs are forbidden in runtime code: the extension makes no network requests.",
+              "XMLHttpRequest": "Network APIs are forbidden in runtime code: the extension makes no network requests.",
+              "WebSocket": "Network APIs are forbidden in runtime code: the extension makes no network requests.",
+              "EventSource": "Network APIs are forbidden in runtime code: the extension makes no network requests.",
+              "WebTransport": "Network APIs are forbidden in runtime code: the extension makes no network requests.",
+              "RTCPeerConnection": "Network APIs are forbidden in runtime code: the extension makes no network requests."
+            }
+          }
+        }
+      }
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["src/core/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "patterns": [
+                  {
+                    "group": ["wxt", "wxt/**", "@wxt-dev/**"],
+                    "message": "src/core stays framework-agnostic: browser and WXT access goes through src/browser."
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

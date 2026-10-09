@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FFE fixture: shadow-dom</title>
+  </head>
+  <body>
+    <div id="host"></div>
+    <script>
+      const root = document.getElementById('host').attachShadow({ mode: 'open' });
+      root.innerHTML = '<video src="/tone.wav" muted style="width: 640px; height: 360px"><track kind="captions" src="/captions.vtt" /></video>';
+    </script>
+  </body>
+</html>

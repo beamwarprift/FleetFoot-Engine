@@ -1,0 +1,1372 @@
+{
+  "extensionDescription": {
+    "message": "HTML5 वीडियो और ऑडियो के लिए गति और प्लेबैक नियंत्रण: तेज़, हल्का और आपकी निजता का सम्मान करने वाला।",
+    "description": "Store and browser description."
+  },
+  "connectingTitle": {
+    "message": "पेज से जुड़ रहा है…",
+    "description": "Popup, while injecting."
+  },
+  "pageUnavailableTitle": {
+    "message": "FleetFoot Engine इस पेज पर काम नहीं करता।",
+    "description": "Popup, page refuses extensions."
+  },
+  "pageUnavailableHint": {
+    "message": "ब्राउज़र के अपने पेज और एक्सटेंशन स्टोर एक्सटेंशन को चलने नहीं देते।",
+    "description": "Popup hint."
+  },
+  "noAnswerTitle": {
+    "message": "पेज जवाब नहीं दे रहा है।",
+    "description": "Popup, no answer."
+  },
+  "noAnswerHint": {
+    "message": "हो सकता है वह व्यस्त हो या अभी-अभी बदला हो। फिर से कोशिश करें।",
+    "description": "Popup hint."
+  },
+  "noMediaTitle": {
+    "message": "इस पेज पर कोई वीडियो या ऑडियो नहीं है।",
+    "description": "Popup, no media."
+  },
+  "noMediaHint": {
+    "message": "किसी दूसरी साइट से जोड़े गए प्लेयर तक यहाँ से नहीं पहुँचा जा सकता।",
+    "description": "Popup hint."
+  },
+  "framedTitle": {
+    "message": "प्लेयर $SITE$ के एक फ़्रेम के अंदर है।",
+    "description": "Popup: no player here, but a frame from another site is on screen; $SITE$ is that site, e.g. «vixcloud.co».",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedHint": {
+    "message": "उस तक पहुँचने के लिए ब्राउज़र उस साइट की अनुमति माँगेगा; उसके बाद FleetFoot Engine वहाँ अपने आप शुरू होगा।",
+    "description": "Popup, under framedTitle: allowing the site lets the extension reach the frame, and it then starts there by itself."
+  },
+  "framedAllowSite": {
+    "message": "$SITE$ पर अनुमति दें",
+    "description": "Popup button: asks the browser for access to that one site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedAllowAll": {
+    "message": "सभी साइटों पर अनुमति दें",
+    "description": "Popup button: asks the browser for access to every site (as «Always, on every site» in the options)."
+  },
+  "retry": {
+    "message": "फिर से कोशिश करें",
+    "description": "Button."
+  },
+  "slower": {
+    "message": "धीमा",
+    "description": "Button label."
+  },
+  "faster": {
+    "message": "तेज़",
+    "description": "Button label."
+  },
+  "rateInputLabel": {
+    "message": "प्लेबैक गति",
+    "description": "Rate input label."
+  },
+  "rateInvalid": {
+    "message": "$MIN$ से $MAX$ तक की गति लिखें।",
+    "description": "Invalid typed rate.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "resetTo": {
+    "message": "$RATE$ पर लौटें",
+    "description": "Reset button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "previousRate": {
+    "message": "पिछली गति",
+    "description": "Button label."
+  },
+  "favoriteRate": {
+    "message": "पसंदीदा गति, $RATE$",
+    "description": "Button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "presets": {
+    "message": "गति के शॉर्टकट",
+    "description": "Group label."
+  },
+  "preservePitch": {
+    "message": "स्वाभाविक आवाज़",
+    "description": "Switch label."
+  },
+  "on": {
+    "message": "चालू",
+    "description": "Switch state."
+  },
+  "off": {
+    "message": "बंद",
+    "description": "Switch state."
+  },
+  "seekBack": {
+    "message": "$DURATION$ पीछे",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "seekForward": {
+    "message": "$DURATION$ आगे",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipEnter": {
+    "message": "पिक्चर में पिक्चर",
+    "description": "Button."
+  },
+  "pipExit": {
+    "message": "पिक्चर में पिक्चर से बाहर निकलें",
+    "description": "Button."
+  },
+  "loopGroup": {
+    "message": "A–B लूप",
+    "description": "Group label."
+  },
+  "loopHelpLabel": {
+    "message": "A–B लूप क्या है?",
+    "description": "Accessible name of the info button next to the loop."
+  },
+  "loopHelp": {
+    "message": "किसी हिस्से को बिना रुके दोहराता है, ताकि आप उसे फिर से देख सकें या उससे सीख सकें।",
+    "description": "Popover explaining the A–B loop: what it is for."
+  },
+  "loopHelpSteps": {
+    "message": "जहाँ हिस्सा शुरू होता है वहाँ A, जहाँ खत्म होता है वहाँ B, फिर लूप पर टैप करें।",
+    "description": "Popover explaining the A–B loop: how to set it."
+  },
+  "loopHelpClear": {
+    "message": "× लूप को हटा देता है।",
+    "description": "Last line of the loop help; × is the clear button."
+  },
+  "loopA": {
+    "message": "A तय करें",
+    "description": "Button."
+  },
+  "loopB": {
+    "message": "B तय करें",
+    "description": "Button."
+  },
+  "loopAAt": {
+    "message": "A $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loopBAt": {
+    "message": "B $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loop": {
+    "message": "लूप",
+    "description": "Toggle button."
+  },
+  "loopClear": {
+    "message": "लूप हटाएँ",
+    "description": "Button label."
+  },
+  "copyTimestamp": {
+    "message": "यह पल कॉपी करें",
+    "description": "Button."
+  },
+  "copied": {
+    "message": "$TIME$ कॉपी हो गया",
+    "description": "After copying.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "पल कॉपी नहीं हो सका।",
+    "description": "Copy failed."
+  },
+  "player": {
+    "message": "प्लेयर",
+    "description": "Select label."
+  },
+  "playerAuto": {
+    "message": "अपने-आप",
+    "description": "Option."
+  },
+  "playerAll": {
+    "message": "सभी प्लेयर",
+    "description": "Option."
+  },
+  "playerVideo": {
+    "message": "वीडियो $NUMBER$",
+    "description": "Short name of a video player, numbered in order of discovery.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerAudio": {
+    "message": "ऑडियो $NUMBER$",
+    "description": "Player name.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerPlaying": {
+    "message": "चल रहा है",
+    "description": "Detail of a player that is playing now."
+  },
+  "playerEmbedded": {
+    "message": "$SITE$ से जोड़ा गया",
+    "description": "Detail of a player inside a frame of the page; $SITE$ is that frame's site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerEmbeddedUnknown": {
+    "message": "जोड़ा गया",
+    "description": "Detail of a player inside a frame of the page that has no site."
+  },
+  "options": {
+    "message": "सेटिंग",
+    "description": "Button."
+  },
+  "policyFollow": {
+    "message": "साइट को तय करने दें",
+    "description": "Rate policy name."
+  },
+  "policySmart": {
+    "message": "अगले वीडियो पर वापस लाएँ (सुझाया गया)",
+    "description": "Rate policy name."
+  },
+  "policyLock": {
+    "message": "हमेशा, तुरंत वापस लाएँ",
+    "description": "Rate policy name."
+  },
+  "noticeContested": {
+    "message": "कोई दूसरा एक्सटेंशन या खुद पेज इस प्लेयर की गति बार-बार बदल रहा है। खींचतान से बचने के लिए FleetFoot Engine ने गति वापस लाना बंद कर दिया है।",
+    "description": "Notice."
+  },
+  "noticeContestedChoose": {
+    "message": "चुनें कि क्या करना है",
+    "description": "Popup link after the LOCK yielded notice: opens the option."
+  },
+  "noticeExtremeRate": {
+    "message": "इस गति पर ब्राउज़र ऑडियो को म्यूट या विकृत कर सकता है।",
+    "description": "Notice."
+  },
+  "noticeLive": {
+    "message": "यह लाइव प्रसारण है, इसलिए इसे आगे नहीं बढ़ाया जा सकता और बचा हुआ समय नहीं दिखता।",
+    "description": "Notice."
+  },
+  "errorInvalidCommand": {
+    "message": "कुछ गड़बड़ हो गई। फिर से कोशिश करें।",
+    "description": "Error."
+  },
+  "errorNoPlayer": {
+    "message": "प्लेयर अब पेज पर नहीं है।",
+    "description": "Error."
+  },
+  "errorRateRejected": {
+    "message": "पेज ने यह गति स्वीकार नहीं की।",
+    "description": "Error."
+  },
+  "errorPitchUnsupported": {
+    "message": "यह प्लेयर स्वाभाविक आवाज़ बनाए नहीं रख सकता।",
+    "description": "Error."
+  },
+  "errorNoPreviousRate": {
+    "message": "अभी कोई पिछली गति नहीं है।",
+    "description": "Error."
+  },
+  "errorNotSeekable": {
+    "message": "इस मीडिया को अभी आगे या पीछे नहीं किया जा सकता।",
+    "description": "Error."
+  },
+  "errorNotLoopable": {
+    "message": "लूप के लिए ऐसा मीडिया चाहिए जिसकी अवधि पता हो।",
+    "description": "Error."
+  },
+  "errorLoopInvalid": {
+    "message": "B को A के बाद होना चाहिए।",
+    "description": "Error."
+  },
+  "errorPipUnavailable": {
+    "message": "इस प्लेयर के लिए पिक्चर में पिक्चर उपलब्ध नहीं है।",
+    "description": "Error."
+  },
+  "errorPipRejected": {
+    "message": "ब्राउज़र ने पिक्चर में पिक्चर की अनुमति नहीं दी। प्लेयर के ऊपर वाली पट्टी का बटन या पेज पर कोई शॉर्टकट इस्तेमाल करें।",
+    "description": "Error."
+  },
+  "overlayLabel": {
+    "message": "FleetFoot Engine के नियंत्रण",
+    "description": "Toolbar label."
+  },
+  "overlayMove": {
+    "message": "खिसकाएँ (तीर वाली कुंजियाँ)",
+    "description": "Drag handle."
+  },
+  "overlayMore": {
+    "message": "और नियंत्रण",
+    "description": "Button."
+  },
+  "overlayLess": {
+    "message": "कम नियंत्रण",
+    "description": "Button."
+  },
+  "menuSpeed": {
+    "message": "गति",
+    "description": "Context menu."
+  },
+  "menuFavorite": {
+    "message": "पसंदीदा ($RATE$)",
+    "description": "Context menu.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "सेटिंग",
+    "description": "Page subtitle."
+  },
+  "sectionSpeed": {
+    "message": "गति",
+    "description": "Section."
+  },
+  "speedGroupRates": {
+    "message": "आपकी गतियाँ",
+    "description": "Options, Speed section: heading of the user's own speeds (presets, step, favorite and hold speeds)."
+  },
+  "speedGroupRestore": {
+    "message": "आपकी गति वापस लाना",
+    "description": "Options, Speed section: heading of what happens when a site changes the speed."
+  },
+  "speedGroupPlayers": {
+    "message": "लागू होने वाले प्लेयर",
+    "description": "Options, Speed section: heading of which players a speed applies to."
+  },
+  "sectionPlayback": {
+    "message": "प्लेबैक",
+    "description": "Section."
+  },
+  "sectionKeyboard": {
+    "message": "कीबोर्ड",
+    "description": "Section."
+  },
+  "sectionOverlay": {
+    "message": "प्लेयर के ऊपर पट्टी",
+    "description": "Section."
+  },
+  "sectionMenu": {
+    "message": "राइट-क्लिक मेन्यू",
+    "description": "Section."
+  },
+  "presetsField": {
+    "message": "गति के शॉर्टकट",
+    "description": "Field."
+  },
+  "presetsHelp": {
+    "message": "स्पेस से अलग की गई ज़्यादा से ज़्यादा 12 गतियाँ, जैसे 1 1.5 2।",
+    "description": "Help."
+  },
+  "presetsInvalid": {
+    "message": "स्पेस से अलग करके 1 से $MAX$ गतियाँ लिखें।",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "rateStepField": {
+    "message": "धीमा और तेज़ करने का अंतर",
+    "description": "Field."
+  },
+  "rateStepHelp": {
+    "message": "0.01 से 1.00 तक।",
+    "description": "Help."
+  },
+  "favoriteField": {
+    "message": "पसंदीदा गति",
+    "description": "Field."
+  },
+  "holdField": {
+    "message": "कुंजी दबाए रखने पर गति",
+    "description": "Field."
+  },
+  "rateRangeHelp": {
+    "message": "0.10 से 16.00 तक।",
+    "description": "Help."
+  },
+  "policyField": {
+    "message": "अगर साइट गति बदल दे",
+    "description": "Legend."
+  },
+  "policyFollowHelp": {
+    "message": "आपकी गति एक बार लागू होती है। उदाहरण: अगला एपिसोड 1× पर शुरू होता है और 1× पर ही रहता है।",
+    "description": "Help."
+  },
+  "policySmartHelp": {
+    "message": "उदाहरण: अगला एपिसोड 1× पर शुरू होता है और आपकी गति लौट आती है। देखते समय अगर साइट गति बदल दे, तो अगले वीडियो तक गति वैसी ही रहती है जैसी साइट ने रखी।",
+    "description": "Help."
+  },
+  "policyLockHelp": {
+    "message": "उदाहरण: देखते समय साइट गति को 1× कर देती है और पल भर बाद आपकी गति लौट आती है। उन साइटों के लिए जो गति बार-बार बदलती हैं।",
+    "description": "Help."
+  },
+  "targetField": {
+    "message": "गति किस पर लागू हो",
+    "description": "Legend."
+  },
+  "targetActive": {
+    "message": "सक्रिय प्लेयर",
+    "description": "Option."
+  },
+  "targetAll": {
+    "message": "पेज के सभी प्लेयर",
+    "description": "Option."
+  },
+  "pitchField": {
+    "message": "गति बदलने पर स्वाभाविक आवाज़",
+    "description": "Field."
+  },
+  "skipSilenceField": {
+    "message": "चुप्पी छोड़ें",
+    "description": "Name of Skip Silence: options switch, site profile field, popup button."
+  },
+  "skipSilenceHelp": {
+    "message": "रुकावटों में प्लेयर चुप्पी वाली गति पर चला जाता है और आवाज़ लौटते ही आपकी गति पर वापस आ जाता है। आवाज़ सिर्फ़ आपके डिवाइस पर सुनी जाती है, न कभी रिकॉर्ड होती है, न भेजी जाती है।",
+    "description": "What Skip Silence does and that the sound stays on the device: options help, popup card."
+  },
+  "skipSilenceSettings": {
+    "message": "“चुप्पी छोड़ें” की सेटिंग",
+    "description": "Link in the popup card of Skip Silence, to its place on the options page."
+  },
+  "silenceModeField": {
+    "message": "चुप्पी किसे मानें",
+    "description": "Options legend: how readily a pause counts as a silence."
+  },
+  "silenceConservative": {
+    "message": "सिर्फ़ लंबी और शांत रुकावटें",
+    "description": "Options choice: only long, quiet pauses count."
+  },
+  "silenceNormal": {
+    "message": "वाक्यों के बीच की रुकावटें भी (सुझाया गया)",
+    "description": "Options choice, the default: pauses between sentences count too."
+  },
+  "silenceAggressive": {
+    "message": "हर रुकावट, थोड़े पृष्ठभूमि शोर के साथ भी",
+    "description": "Options choice: every pause counts, even with background noise."
+  },
+  "silenceRateField": {
+    "message": "चुप्पी में गति",
+    "description": "Options field: the speed a silence plays at."
+  },
+  "noticeSkipSilenceWaiting": {
+    "message": "“चुप्पी छोड़ें” पेज पर आपके पहले क्लिक से शुरू होगा।",
+    "description": "Notice: the browser starts audio only after a click on the page."
+  },
+  "noticeSkipSilenceUnavailable": {
+    "message": "इस मीडिया पर “चुप्पी छोड़ें” उपलब्ध नहीं है।",
+    "description": "Notice: the browser does not let the extension hear this media."
+  },
+  "seekStepField": {
+    "message": "छलांग, सेकंड में",
+    "description": "Field."
+  },
+  "seekStepInvalid": {
+    "message": "$MIN$ से $MAX$ तक पूरे सेकंड लिखें।",
+    "description": "Error.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "pageShortcutsField": {
+    "message": "पेज पर शॉर्टकट",
+    "description": "Field."
+  },
+  "pageShortcutsHelp": {
+    "message": "पेज पर FleetFoot Engine खोलने के बाद काम करते हैं, और किसी फ़ील्ड में टाइप करते समय कभी नहीं।",
+    "description": "Help."
+  },
+  "shortcutsTable": {
+    "message": "पेज पर कुंजियाँ",
+    "description": "Table caption."
+  },
+  "keyPress": {
+    "message": "कोई कुंजी दबाएँ… (रद्द करने के लिए Esc)",
+    "description": "While recording."
+  },
+  "keyNone": {
+    "message": "कोई नहीं",
+    "description": "Unbound."
+  },
+  "keyRemove": {
+    "message": "“$ACTION$” की कुंजी हटाएँ",
+    "description": "Button label: the button shows only a cross.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "keyChange": {
+    "message": "$ACTION$: $KEY$। बदलें",
+    "description": "Button label.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "keyTaken": {
+    "message": "$KEY$ पहले से “$ACTION$” के लिए इस्तेमाल हो रही है।",
+    "description": "Conflict.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "action": {
+        "content": "$2"
+      }
+    }
+  },
+  "browserShortcutsHelp": {
+    "message": "हर पेज पर काम करने वाले शॉर्टकट ब्राउज़र की एक्सटेंशन शॉर्टकट सेटिंग में तय किए जाते हैं।",
+    "description": "Help."
+  },
+  "browserShortcutsOpen": {
+    "message": "ब्राउज़र के शॉर्टकट खोलें",
+    "description": "Button."
+  },
+  "overlayField": {
+    "message": "प्लेयर के ऊपर पट्टी दिखाएँ",
+    "description": "Field."
+  },
+  "overlayHelp": {
+    "message": "एक छोटी पट्टी, जो पॉइंटर के प्लेयर पर होने तक दिखती है।",
+    "description": "Help."
+  },
+  "overlayResetPosition": {
+    "message": "पट्टी को वापस कोने में ले जाएँ",
+    "description": "Button."
+  },
+  "contextMenuField": {
+    "message": "वीडियो या ऑडियो पर राइट-क्लिक करने पर गति का मेन्यू",
+    "description": "Field."
+  },
+  "contextMenuHelp": {
+    "message": "सिर्फ़ वीडियो और ऑडियो पर दिखता है।",
+    "description": "Help."
+  },
+  "saved": {
+    "message": "सहेजा गया।",
+    "description": "Status."
+  },
+  "invalidValue": {
+    "message": "यह मान मान्य नहीं है।",
+    "description": "Error."
+  },
+  "restoreDefaults": {
+    "message": "डिफ़ॉल्ट वापस लाएँ",
+    "description": "Button."
+  },
+  "restoreConfirm": {
+    "message": "सब कुछ वापस लाने के लिए फिर क्लिक करें",
+    "description": "Button, armed."
+  },
+  "restored": {
+    "message": "डिफ़ॉल्ट वापस आ गए।",
+    "description": "Status."
+  },
+  "actionSlower": {
+    "message": "धीमा",
+    "description": "Shortcut action."
+  },
+  "actionFaster": {
+    "message": "तेज़",
+    "description": "Shortcut action."
+  },
+  "actionReset": {
+    "message": "1× पर लौटें",
+    "description": "Shortcut action."
+  },
+  "actionFavorite": {
+    "message": "पसंदीदा गति",
+    "description": "Shortcut action."
+  },
+  "actionHold": {
+    "message": "दबाए रखने पर तेज़",
+    "description": "Shortcut action."
+  },
+  "actionSeekBackward": {
+    "message": "पीछे",
+    "description": "Shortcut action."
+  },
+  "actionSeekForward": {
+    "message": "आगे",
+    "description": "Shortcut action."
+  },
+  "actionTogglePitch": {
+    "message": "स्वाभाविक आवाज़ चालू/बंद",
+    "description": "Shortcut action."
+  },
+  "actionLoopA": {
+    "message": "लूप की शुरुआत (A)",
+    "description": "Shortcut action."
+  },
+  "actionLoopB": {
+    "message": "लूप का अंत (B)",
+    "description": "Shortcut action."
+  },
+  "actionLoopToggle": {
+    "message": "लूप चालू/बंद",
+    "description": "Shortcut action."
+  },
+  "actionNextPlayer": {
+    "message": "अगला प्लेयर",
+    "description": "Shortcut action."
+  },
+  "actionToggleOverlay": {
+    "message": "पट्टी दिखाएँ या छिपाएँ",
+    "description": "Shortcut action."
+  },
+  "controlling": {
+    "message": "नियंत्रित प्लेयर",
+    "description": "Caption above the player list."
+  },
+  "live": {
+    "message": "लाइव",
+    "description": "Badge for a live stream."
+  },
+  "timeLeftAt": {
+    "message": "$RATE$ पर $TIME$ बाकी",
+    "description": "Remaining time at the current speed.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      },
+      "rate": {
+        "content": "$2"
+      }
+    }
+  },
+  "timeLeftNormal": {
+    "message": "सामान्य गति पर $TIME$",
+    "description": "Remaining time at 1×.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipOpen": {
+    "message": "खोलें",
+    "description": "Picture-in-picture button."
+  },
+  "pipClose": {
+    "message": "बंद करें",
+    "description": "Picture-in-picture button."
+  },
+  "savedHours": {
+    "message": "$HOURS$ $MINUTES$",
+    "description": "Time saved: hours then minutes, each already with its unit («12 h», «34 min»).",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      },
+      "minutes": {
+        "content": "$2"
+      }
+    }
+  },
+  "savedUnderMinute": {
+    "message": "एक मिनट से कम",
+    "description": "Time saved below one minute."
+  },
+  "savedPopup": {
+    "message": "$TIME$ बचे",
+    "description": "Popup header: total time saved.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedTitle": {
+    "message": "बचाया गया समय",
+    "description": "Options section."
+  },
+  "savedHelp": {
+    "message": "वह समय जो आपको खर्च नहीं करना पड़ा, क्योंकि FleetFoot Engine ने आपके वीडियो और ऑडियो तेज़ चलाए। यह सिर्फ़ इस डिवाइस पर, एक कुल संख्या के रूप में रहता है।",
+    "description": "Help."
+  },
+  "savedTotal": {
+    "message": "अब तक: $TIME$",
+    "description": "Options: the total.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedReset": {
+    "message": "गिनती शून्य करें",
+    "description": "Button."
+  },
+  "savedResetConfirm": {
+    "message": "शून्य करने के लिए फिर क्लिक करें",
+    "description": "Button, armed."
+  },
+  "savedResetDone": {
+    "message": "गिनती शून्य हो गई।",
+    "description": "Status."
+  },
+  "sectionAppearance": {
+    "message": "रूप-रंग",
+    "description": "Options section."
+  },
+  "themeField": {
+    "message": "रंग थीम",
+    "description": "Legend."
+  },
+  "textSizeField": {
+    "message": "टेक्स्ट का आकार",
+    "description": "Options, Appearance: label of the choice of text size for this page, from 100% to 200%."
+  },
+  "textSizeHelp": {
+    "message": "इस पेज के टेक्स्ट और कंट्रोल बड़े करता है।",
+    "description": "Options, Appearance: under textSizeField."
+  },
+  "themeYellow": {
+    "message": "पीला (डिफ़ॉल्ट)",
+    "description": "Theme."
+  },
+  "themeCyan": {
+    "message": "आसमानी",
+    "description": "Theme."
+  },
+  "themeMagenta": {
+    "message": "मैजेंटा",
+    "description": "Theme."
+  },
+  "themeGreen": {
+    "message": "हरा",
+    "description": "Theme."
+  },
+  "themeViolet": {
+    "message": "बैंगनी",
+    "description": "Theme."
+  },
+  "themeCoral": {
+    "message": "मूँगिया",
+    "description": "Theme."
+  },
+  "themeSlate": {
+    "message": "स्लेटी",
+    "description": "Theme: dimmed blue-grey, easy on the eyes."
+  },
+  "themeSepia": {
+    "message": "सीपिया",
+    "description": "Theme: dimmed warm brown, easy on the eyes."
+  },
+  "themeSage": {
+    "message": "सेज हरा",
+    "description": "Theme: dimmed green, easy on the eyes."
+  },
+  "themeLight": {
+    "message": "हल्का",
+    "description": "Theme."
+  },
+  "pitchHelpShort": {
+    "message": "आवाज़ें पतली और तीखी नहीं होतीं",
+    "description": "Popup subtitle of the natural voice switch."
+  },
+  "rateOutOfRange": {
+    "message": "$MIN$ से $MAX$ तक की गति लिखें।",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "stepOutOfRange": {
+    "message": "$MIN$ से $MAX$ तक का अंतर लिखें।",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "privacyBadge": {
+    "message": "FULL PRIVACY",
+    "description": "Badge; the same words in every language."
+  },
+  "privacyBadgeSub": {
+    "message": "शून्य टेलीमेट्री · कोई खाता नहीं · सेटिंग सिर्फ़ डिवाइस पर",
+    "description": "Badge subtitle."
+  },
+  "privacyStatement": {
+    "message": "आप कौन-सी साइटें खोलते हैं और क्या देखते हैं, यह FleetFoot Engine किसी को नहीं भेजता।",
+    "description": "Privacy section: the promise about browsing activity."
+  },
+  "verifySource": {
+    "message": "हम पर भरोसा मत कीजिए। कोड पढ़िए।",
+    "description": "Privacy section: the invitation to read the source, before its link."
+  },
+  "sourceLink": {
+    "message": "GitHub पर कोड पढ़ें",
+    "description": "Link to the public repository."
+  },
+  "supportDevelopment": {
+    "message": "विकास में सहयोग करें",
+    "description": "Popup footer link."
+  },
+  "supportQuestion": {
+    "message": "काम का लगा?",
+    "description": "Popup footer question before the support link."
+  },
+  "supportSaved": {
+    "message": "क्या इसने आपके $DURATION$ बचा दिए?",
+    "description": "Popup footer question before the support link, once the time saved reaches an hour; whole hours, with the unit («12 h»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "supportDevelopmentKofi": {
+    "message": "Ko-fi पर विकास में सहयोग करें",
+    "description": "Options link."
+  },
+  "reviewStore": {
+    "message": "पसंद आया? समीक्षा लिखें",
+    "description": "Accessible name of the heart at the top of the popup, which opens this extension's page in the store it was installed from, to leave a review."
+  },
+  "sectionPrivacy": {
+    "message": "निजता और अनुमतियाँ",
+    "description": "Options section."
+  },
+  "sectionMemory": {
+    "message": "याददाश्त",
+    "description": "Options section."
+  },
+  "memoryField": {
+    "message": "FleetFoot Engine क्या याद रखता है",
+    "description": "Group label."
+  },
+  "memoryNone": {
+    "message": "कुछ नहीं",
+    "description": "Memory choice."
+  },
+  "memoryNoneHelp": {
+    "message": "हर पेज अपनी ही गति से शुरू होता है।",
+    "description": "Help."
+  },
+  "memoryGlobal": {
+    "message": "सभी साइटों के लिए एक गति",
+    "description": "Memory choice."
+  },
+  "memoryGlobalHelp": {
+    "message": "आपकी चुनी आख़िरी गति हर जगह लागू होती है। सिर्फ़ संख्या सहेजी जाती है।",
+    "description": "Help."
+  },
+  "memorySite": {
+    "message": "हर साइट के लिए अलग गति",
+    "description": "Memory choice."
+  },
+  "memorySiteHelp": {
+    "message": "हर साइट अपनी गति और, अगर आप चाहें, अपनी सेटिंग सहेजती है। सिर्फ़ साइट का नाम सहेजा जाता है, आप क्या देखते हैं यह कभी नहीं।",
+    "description": "Help."
+  },
+  "profilesTitle": {
+    "message": "याद रखी गई साइटें",
+    "description": "Heading."
+  },
+  "profilesEmpty": {
+    "message": "अभी कोई साइट नहीं है। किसी साइट पर गति बदलें, वह यहाँ दिखेगी।",
+    "description": "Empty list."
+  },
+  "profileSpeed": {
+    "message": "गति (साइट की गति के लिए खाली छोड़ें)",
+    "description": "Field of a site profile."
+  },
+  "profileGeneralValue": {
+    "message": "सामान्य ($VALUE$)",
+    "description": "Option or placeholder: no value of its own on this site; the value it takes from the general settings in brackets.",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "policyFollowShort": {
+    "message": "साइट तय करे",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policySmartShort": {
+    "message": "अगले वीडियो पर",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policyLockShort": {
+    "message": "हमेशा, तुरंत",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "fightField": {
+    "message": "अगर साइट तुरंत फिर बदल दे",
+    "description": "Options legend: what LOCK does when a page answers every restore at once."
+  },
+  "fightYield": {
+    "message": "छोड़ दें और मुझे बताएँ (सुझाया गया)",
+    "description": "LOCK fight answer: yield."
+  },
+  "fightBraked": {
+    "message": "वापस लाते रहें, ब्रेक के साथ",
+    "description": "LOCK fight answer: keep imposing, bounded."
+  },
+  "fightUnbraked": {
+    "message": "वापस लाते रहें, बिना ब्रेक",
+    "description": "LOCK fight answer: keep imposing, unbounded."
+  },
+  "fightYieldShort": {
+    "message": "छोड़ दें",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightBrakedShort": {
+    "message": "ब्रेक के साथ",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightUnbrakedShort": {
+    "message": "बिना ब्रेक",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightHelpLabel": {
+    "message": "तीनों में क्या फ़र्क है?",
+    "description": "Accessible name of the info button next to the LOCK fight choices."
+  },
+  "fightYieldHelp": {
+    "message": "FleetFoot Engine उस प्लेयर में गति वापस लाना बंद कर देता है और एक्सटेंशन की विंडो में आपको बताता है।",
+    "description": "Info popover, first answer."
+  },
+  "fightBrakedHelp": {
+    "message": "साइट को पता चले बिना आपकी गति वापस लाता रहता है, एक सीमा के साथ जो खपत कम रखती है। साइट का प्लेयर असली गति से अलग गति दिखा सकता है।",
+    "description": "Info popover, second answer."
+  },
+  "fightUnbrakedHelp": {
+    "message": "यही, पर बिना सीमा के। कुछ साइटों पर यह प्रोसेसर का एक पूरा कोर घेर सकता है, जिससे खपत बढ़ती है और बैटरी जल्दी खत्म होती है।",
+    "description": "Info popover, third answer and its risk."
+  },
+  "profileOn": {
+    "message": "चालू",
+    "description": "Option."
+  },
+  "profileOff": {
+    "message": "बंद",
+    "description": "Option."
+  },
+  "profileForget": {
+    "message": "यह साइट भूल जाएँ",
+    "description": "Button."
+  },
+  "profileForgetSite": {
+    "message": "$SITE$ को भूल जाएँ",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "sectionAccess": {
+    "message": "साइटों तक पहुँच",
+    "description": "Options section."
+  },
+  "accessField": {
+    "message": "FleetFoot Engine कहाँ काम करे",
+    "description": "Group label."
+  },
+  "accessOnClick": {
+    "message": "सिर्फ़ जब आप बुलाएँ",
+    "description": "Access choice."
+  },
+  "accessOnClickHelp": {
+    "message": "आइकन पर क्लिक करने, शॉर्टकट या राइट-क्लिक मेन्यू इस्तेमाल करने के बाद उस टैब में काम करता है। किसी साइट तक इसकी पहुँच नहीं होती।",
+    "description": "Help."
+  },
+  "accessSelected": {
+    "message": "हमेशा, आपकी चुनी साइटों पर",
+    "description": "Access choice."
+  },
+  "accessSelectedHelp": {
+    "message": "इन साइटों पर अपने-आप शुरू होता है, शॉर्टकट तैयार रहते हैं।",
+    "description": "Help."
+  },
+  "accessAll": {
+    "message": "हमेशा, सभी साइटों पर",
+    "description": "Access choice."
+  },
+  "accessAllHelp": {
+    "message": "ब्राउज़र सभी साइटों तक पहुँच माँगेगा। FleetFoot Engine सिर्फ़ वीडियो और ऑडियो ढूँढता है। यह पेजों को कभी नहीं पढ़ता और कभी कुछ नहीं भेजता।",
+    "description": "Help."
+  },
+  "accessDeclined": {
+    "message": "ब्राउज़र ने पहुँच नहीं दी, इसलिए कुछ नहीं बदला।",
+    "description": "Status."
+  },
+  "accessFiles": {
+    "message": "आपके कंप्यूटर से खोले गए वीडियो इन विकल्पों में नहीं आते; FleetFoot Engine को उसके आइकन पर क्लिक करके खोलें।",
+    "description": "Help."
+  },
+  "sitesChosen": {
+    "message": "आपकी साइटें",
+    "description": "Heading."
+  },
+  "sitesExcluded": {
+    "message": "इन साइटों को छोड़कर",
+    "description": "Heading."
+  },
+  "sitesExcludedHelp": {
+    "message": "इन साइटों पर यह कभी अपने-आप शुरू नहीं होता, पर आप इसे एक क्लिक से अब भी बुला सकते हैं।",
+    "description": "Help."
+  },
+  "sitesNone": {
+    "message": "अभी कोई साइट नहीं है।",
+    "description": "Empty list."
+  },
+  "siteField": {
+    "message": "साइट",
+    "description": "Field label."
+  },
+  "siteHelp": {
+    "message": "example.com जैसा नाम, या उसके किसी पेज का पता।",
+    "description": "Help."
+  },
+  "siteAdd": {
+    "message": "जोड़ें",
+    "description": "Button."
+  },
+  "siteInvalid": {
+    "message": "यह साइट नहीं है। example.com की तरह लिखें।",
+    "description": "Error."
+  },
+  "siteRemoveShort": {
+    "message": "हटाएँ",
+    "description": "Button."
+  },
+  "siteRemove": {
+    "message": "$SITE$ हटाएँ",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "excludedFull": {
+    "message": "आप ज़्यादा से ज़्यादा $MAX$ साइटें बाहर रख सकते हैं।",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "privacyTelemetry": {
+    "message": "टेलीमेट्री",
+    "description": "Label."
+  },
+  "privacyTelemetryNone": {
+    "message": "कोई नहीं",
+    "description": "Value."
+  },
+  "privacyAnalytics": {
+    "message": "इस्तेमाल के आँकड़े",
+    "description": "Label."
+  },
+  "privacyAnalyticsNone": {
+    "message": "कोई नहीं",
+    "description": "Value."
+  },
+  "privacyAccounts": {
+    "message": "खाते",
+    "description": "Label."
+  },
+  "privacyAccountsNone": {
+    "message": "कोई नहीं",
+    "description": "Value."
+  },
+  "privacyServers": {
+    "message": "रिमोट सर्वर",
+    "description": "Label."
+  },
+  "privacyServersNone": {
+    "message": "कोई नहीं",
+    "description": "Value."
+  },
+  "privacyAds": {
+    "message": "विज्ञापन",
+    "description": "Label."
+  },
+  "privacyAdsNone": {
+    "message": "कोई नहीं",
+    "description": "Value."
+  },
+  "privacyAffiliate": {
+    "message": "एफ़िलिएट लिंक",
+    "description": "Label."
+  },
+  "privacyAffiliateNone": {
+    "message": "कोई नहीं",
+    "description": "Value."
+  },
+  "privacyStorage": {
+    "message": "आपकी सेटिंग",
+    "description": "Label."
+  },
+  "privacyStorageLocal": {
+    "message": "सिर्फ़ इस डिवाइस पर",
+    "description": "Value."
+  },
+  "privacyWhereOnClick": {
+    "message": "कहाँ काम करता है: सिर्फ़ जब आप बुलाएँ",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereSelected": {
+    "message": "कहाँ काम करता है: हमेशा, आपकी चुनी साइटों पर",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereAll": {
+    "message": "कहाँ काम करता है: हमेशा, सभी साइटों पर",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyAccessChange": {
+    "message": "साइटों तक पहुँच बदलें",
+    "description": "Link to the site access section."
+  },
+  "backupTitle": {
+    "message": "आपकी सेटिंग की एक कॉपी",
+    "description": "Heading."
+  },
+  "backupHelp": {
+    "message": "आपकी सेटिंग और सहेजी गई साइटों वाली एक फ़ाइल, रखने या किसी दूसरे ब्राउज़र में ले जाने के लिए। यह वहीं रहती है जहाँ आप इसे रखें।",
+    "description": "Help."
+  },
+  "exportSettings": {
+    "message": "सेटिंग एक्सपोर्ट करें",
+    "description": "Button."
+  },
+  "exportDone": {
+    "message": "सेटिंग एक्सपोर्ट हो गई।",
+    "description": "Status."
+  },
+  "exportFailed": {
+    "message": "सेटिंग एक्सपोर्ट नहीं हो सकी।",
+    "description": "Status."
+  },
+  "importSettings": {
+    "message": "सेटिंग इंपोर्ट करें",
+    "description": "Button."
+  },
+  "importSummary": {
+    "message": "फ़ाइल में सेटिंग: $SETTINGS$ · साइटें: $SITES$",
+    "description": "What an import would bring.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      },
+      "sites": {
+        "content": "$2"
+      }
+    }
+  },
+  "importIgnored": {
+    "message": "मान्य न होने के कारण छोड़े गए मान: $COUNT$",
+    "description": "Import summary.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "importReplace": {
+    "message": "ये मौजूदा सेटिंग की जगह लेंगी। जो साइटें फ़ाइल में नहीं हैं, वे जैसी हैं वैसी रहेंगी।",
+    "description": "Import summary."
+  },
+  "importConfirm": {
+    "message": "इंपोर्ट करें",
+    "description": "Button."
+  },
+  "importCancel": {
+    "message": "रद्द करें",
+    "description": "Button."
+  },
+  "importDone": {
+    "message": "सेटिंग इंपोर्ट हो गई।",
+    "description": "Status."
+  },
+  "importFailed": {
+    "message": "सेटिंग इंपोर्ट नहीं हो सकी।",
+    "description": "Status."
+  },
+  "importTooLarge": {
+    "message": "यह फ़ाइल सेटिंग की कॉपी होने के लिए बहुत बड़ी है।",
+    "description": "Status."
+  },
+  "importNotJson": {
+    "message": "इस फ़ाइल को सेटिंग की कॉपी के रूप में नहीं पढ़ा जा सकता।",
+    "description": "Status."
+  },
+  "importNotBackup": {
+    "message": "यह फ़ाइल FleetFoot Engine की सेटिंग की कॉपी नहीं है।",
+    "description": "Status."
+  },
+  "importNewer": {
+    "message": "यह कॉपी FleetFoot Engine के नए संस्करण से बनी है। एक्सटेंशन अपडेट करें और फिर से इंपोर्ट करें।",
+    "description": "Status."
+  },
+  "deleteAll": {
+    "message": "इस डिवाइस पर सब कुछ मिटाएँ",
+    "description": "Button."
+  },
+  "deleteAllConfirm": {
+    "message": "सब कुछ मिटाने के लिए फिर क्लिक करें",
+    "description": "Button, armed."
+  },
+  "deleteAllHelp": {
+    "message": "सेटिंग, सहेजी गई साइटें और बचाया गया समय मिटा देता है। साइटों की अनुमतियाँ बनी रहती हैं; उन्हें आप “$SECTION$” में हटा सकते हैं।",
+    "description": "Help; the substitution is the site access section title.",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "deletedAll": {
+    "message": "FleetFoot Engine ने इस डिवाइस पर जो कुछ रखा था, वह सब मिटा दिया गया।",
+    "description": "Status."
+  },
+  "deleteFailed": {
+    "message": "सब कुछ मिटाया नहीं जा सका।",
+    "description": "Status."
+  },
+  "sectionAbout": {
+    "message": "परिचय",
+    "description": "Section title."
+  },
+  "aboutVersion": {
+    "message": "संस्करण $VERSION$",
+    "description": "The version of this build.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "aboutLicense": {
+    "message": "PolyForm Strict 1.0.0 लाइसेंस के तहत निजी और गैर-व्यावसायिक इस्तेमाल के लिए मुफ़्त। कोड में बदलाव करना या उसे दोबारा बाँटना मना है।",
+    "description": "Licence summary; the licence text decides."
+  },
+  "aboutSource": {
+    "message": "इस संस्करण का सोर्स कोड",
+    "description": "Link."
+  },
+  "aboutLicenseLink": {
+    "message": "लाइसेंस पढ़ें",
+    "description": "Link."
+  },
+  "aboutIssues": {
+    "message": "समस्या बताएँ",
+    "description": "Link to GitHub Issues."
+  },
+  "aboutDiscussions": {
+    "message": "सवाल और सुझाव",
+    "description": "Link to GitHub Discussions."
+  },
+  "moreFromDeveloper": {
+    "message": "डेवलपर की और रचनाएँ",
+    "description": "Heading."
+  },
+  "welcomeTitle": {
+    "message": "तीन कदमों में तैयार",
+    "description": "First-run page title."
+  },
+  "welcomePrivacy": {
+    "message": "आपका डेटा आपका है",
+    "description": "First-run page, first step heading."
+  },
+  "welcomeSpeed": {
+    "message": "आपकी पसंदीदा गति",
+    "description": "First-run page, third step heading."
+  },
+  "welcomeSpeedHelp": {
+    "message": "एक्सटेंशन की विंडो में तारे पर एक टैप, और गति यही हो जाती है। 0.10 से 16.00 तक।",
+    "description": "First-run page, favorite speed help."
+  },
+  "welcomeDone": {
+    "message": "हो गया",
+    "description": "First-run page button that closes it."
+  },
+  "welcomeAllSettings": {
+    "message": "सभी सेटिंग",
+    "description": "First-run page link to the options page."
+  }
+}

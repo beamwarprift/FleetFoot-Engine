@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FFE fixture: rate-reset</title>
+  </head>
+  <body>
+    <video src="/tone.wav" muted style="width: 640px; height: 360px"><track kind="captions" src="/captions.vtt" /></video>
+    <script>
+      // A player that puts the speed back to 1x a while after something else changes it, as a
+      // player does when it reloads its settings: not an immediate fight.
+      const video = document.querySelector('video');
+      window.resets = 0;
+      video.addEventListener('ratechange', () => {
+        if (video.playbackRate !== 1) {
+          setTimeout(() => {
+            window.resets += 1;
+            video.playbackRate = 1;
+          }, 300);
+        }
+      });
+    </script>
+  </body>
+</html>

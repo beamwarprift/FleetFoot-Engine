@@ -1,0 +1,1372 @@
+{
+  "extensionDescription": {
+    "message": "HTML5 video ve ses için hız ve oynatma denetimi: hızlı, hafif ve gizliliğinize saygılı.",
+    "description": "Store and browser description."
+  },
+  "connectingTitle": {
+    "message": "Sayfaya bağlanılıyor…",
+    "description": "Popup, while injecting."
+  },
+  "pageUnavailableTitle": {
+    "message": "FleetFoot Engine bu sayfada çalışmaz.",
+    "description": "Popup, page refuses extensions."
+  },
+  "pageUnavailableHint": {
+    "message": "Tarayıcı sayfaları ve eklenti mağazaları eklentilere izin vermez.",
+    "description": "Popup hint."
+  },
+  "noAnswerTitle": {
+    "message": "Sayfa yanıt vermiyor.",
+    "description": "Popup, no answer."
+  },
+  "noAnswerHint": {
+    "message": "Meşgul olabilir ya da az önce değişmiş olabilir. Yeniden deneyin.",
+    "description": "Popup hint."
+  },
+  "noMediaTitle": {
+    "message": "Bu sayfada video ya da ses yok.",
+    "description": "Popup, no media."
+  },
+  "noMediaHint": {
+    "message": "Başka bir siteden yerleştirilmiş bir oynatıcıya buradan ulaşılamaz.",
+    "description": "Popup hint."
+  },
+  "framedTitle": {
+    "message": "Oynatıcı $SITE$ sitesinden gelen bir çerçevenin içinde.",
+    "description": "Popup: no player here, but a frame from another site is on screen; $SITE$ is that site, e.g. «vixcloud.co».",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedHint": {
+    "message": "Ona ulaşmak için tarayıcı o siteye erişim ister; bundan sonra FleetFoot Engine orada kendiliğinden başlar.",
+    "description": "Popup, under framedTitle: allowing the site lets the extension reach the frame, and it then starts there by itself."
+  },
+  "framedAllowSite": {
+    "message": "$SITE$ için izin ver",
+    "description": "Popup button: asks the browser for access to that one site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedAllowAll": {
+    "message": "Tüm siteler için izin ver",
+    "description": "Popup button: asks the browser for access to every site (as «Always, on every site» in the options)."
+  },
+  "retry": {
+    "message": "Yeniden dene",
+    "description": "Button."
+  },
+  "slower": {
+    "message": "Daha yavaş",
+    "description": "Button label."
+  },
+  "faster": {
+    "message": "Daha hızlı",
+    "description": "Button label."
+  },
+  "rateInputLabel": {
+    "message": "Oynatma hızı",
+    "description": "Rate input label."
+  },
+  "rateInvalid": {
+    "message": "$MIN$ ile $MAX$ arasında bir hız girin.",
+    "description": "Invalid typed rate.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "resetTo": {
+    "message": "$RATE$ değerine dön",
+    "description": "Reset button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "previousRate": {
+    "message": "Önceki hız",
+    "description": "Button label."
+  },
+  "favoriteRate": {
+    "message": "Favori hız, $RATE$",
+    "description": "Button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "presets": {
+    "message": "Hazır hızlar",
+    "description": "Group label."
+  },
+  "preservePitch": {
+    "message": "Doğal ses",
+    "description": "Switch label."
+  },
+  "on": {
+    "message": "Açık",
+    "description": "Switch state."
+  },
+  "off": {
+    "message": "Kapalı",
+    "description": "Switch state."
+  },
+  "seekBack": {
+    "message": "$DURATION$ geri",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "seekForward": {
+    "message": "$DURATION$ ileri",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipEnter": {
+    "message": "Pencere içinde pencere",
+    "description": "Button."
+  },
+  "pipExit": {
+    "message": "Pencere içinde pencereden çık",
+    "description": "Button."
+  },
+  "loopGroup": {
+    "message": "A–B döngüsü",
+    "description": "Group label."
+  },
+  "loopHelpLabel": {
+    "message": "A–B döngüsü nedir?",
+    "description": "Accessible name of the info button next to the loop."
+  },
+  "loopHelp": {
+    "message": "Bir bölümü yeniden izlemek ya da üzerinde çalışmak için durmadan tekrarlar.",
+    "description": "Popover explaining the A–B loop: what it is for."
+  },
+  "loopHelpSteps": {
+    "message": "Başladığı yerde A'ya, bittiği yerde B'ye, sonra Döngü'ye dokunun.",
+    "description": "Popover explaining the A–B loop: how to set it."
+  },
+  "loopHelpClear": {
+    "message": "× düğmesi döngüyü kaldırır.",
+    "description": "Last line of the loop help; × is the clear button."
+  },
+  "loopA": {
+    "message": "A'yı işaretle",
+    "description": "Button."
+  },
+  "loopB": {
+    "message": "B'yi işaretle",
+    "description": "Button."
+  },
+  "loopAAt": {
+    "message": "A $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loopBAt": {
+    "message": "B $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loop": {
+    "message": "Döngü",
+    "description": "Toggle button."
+  },
+  "loopClear": {
+    "message": "Döngüyü kaldır",
+    "description": "Button label."
+  },
+  "copyTimestamp": {
+    "message": "Zamanı kopyala",
+    "description": "Button."
+  },
+  "copied": {
+    "message": "$TIME$ kopyalandı",
+    "description": "After copying.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "Zaman kopyalanamadı.",
+    "description": "Copy failed."
+  },
+  "player": {
+    "message": "Oynatıcı",
+    "description": "Select label."
+  },
+  "playerAuto": {
+    "message": "Otomatik",
+    "description": "Option."
+  },
+  "playerAll": {
+    "message": "Tüm oynatıcılar",
+    "description": "Option."
+  },
+  "playerVideo": {
+    "message": "Video $NUMBER$",
+    "description": "Short name of a video player, numbered in order of discovery.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerAudio": {
+    "message": "Ses $NUMBER$",
+    "description": "Player name.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerPlaying": {
+    "message": "oynatılıyor",
+    "description": "Detail of a player that is playing now."
+  },
+  "playerEmbedded": {
+    "message": "$SITE$ kaynaklı",
+    "description": "Detail of a player inside a frame of the page; $SITE$ is that frame's site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerEmbeddedUnknown": {
+    "message": "yerleştirilmiş",
+    "description": "Detail of a player inside a frame of the page that has no site."
+  },
+  "options": {
+    "message": "Ayarlar",
+    "description": "Button."
+  },
+  "policyFollow": {
+    "message": "Kararı siteye bırak",
+    "description": "Rate policy name."
+  },
+  "policySmart": {
+    "message": "Sonraki videoda geri getir (önerilen)",
+    "description": "Rate policy name."
+  },
+  "policyLock": {
+    "message": "Hemen geri getir, her zaman",
+    "description": "Rate policy name."
+  },
+  "noticeContested": {
+    "message": "Başka bir eklenti ya da sayfanın kendisi bu oynatıcının hızını sürekli değiştiriyor. FleetFoot Engine, bir halat çekmeye girmemek için hızı geri getirmeyi bıraktı.",
+    "description": "Notice."
+  },
+  "noticeContestedChoose": {
+    "message": "Ne yapılacağını seç",
+    "description": "Popup link after the LOCK yielded notice: opens the option."
+  },
+  "noticeExtremeRate": {
+    "message": "Bu hızda tarayıcı sesi kısabilir ya da bozabilir.",
+    "description": "Notice."
+  },
+  "noticeLive": {
+    "message": "Bu bir canlı yayın, bu yüzden ileri sarılamaz ve kalan süre görülemez.",
+    "description": "Notice."
+  },
+  "errorInvalidCommand": {
+    "message": "Bir şeyler ters gitti. Yeniden deneyin.",
+    "description": "Error."
+  },
+  "errorNoPlayer": {
+    "message": "Oynatıcı artık sayfada değil.",
+    "description": "Error."
+  },
+  "errorRateRejected": {
+    "message": "Sayfa bu hızı reddetti.",
+    "description": "Error."
+  },
+  "errorPitchUnsupported": {
+    "message": "Bu oynatıcı doğal sesi koruyamıyor.",
+    "description": "Error."
+  },
+  "errorNoPreviousRate": {
+    "message": "Henüz önceki bir hız yok.",
+    "description": "Error."
+  },
+  "errorNotSeekable": {
+    "message": "Bu medya şu anda ileri ya da geri sarılamıyor.",
+    "description": "Error."
+  },
+  "errorNotLoopable": {
+    "message": "Döngü için süresi bilinen bir medya gerekir.",
+    "description": "Error."
+  },
+  "errorLoopInvalid": {
+    "message": "B, A'dan sonra gelmeli.",
+    "description": "Error."
+  },
+  "errorPipUnavailable": {
+    "message": "Bu oynatıcı için pencere içinde pencere kullanılamıyor.",
+    "description": "Error."
+  },
+  "errorPipRejected": {
+    "message": "Tarayıcı pencere içinde pencereyi reddetti. Oynatıcının üstündeki çubukta bulunan düğmeyi ya da sayfadaki bir kısayolu kullanın.",
+    "description": "Error."
+  },
+  "overlayLabel": {
+    "message": "FleetFoot Engine denetimleri",
+    "description": "Toolbar label."
+  },
+  "overlayMove": {
+    "message": "Taşı (ok tuşları)",
+    "description": "Drag handle."
+  },
+  "overlayMore": {
+    "message": "Daha fazla denetim",
+    "description": "Button."
+  },
+  "overlayLess": {
+    "message": "Daha az denetim",
+    "description": "Button."
+  },
+  "menuSpeed": {
+    "message": "Hız",
+    "description": "Context menu."
+  },
+  "menuFavorite": {
+    "message": "Favori ($RATE$)",
+    "description": "Context menu.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "Ayarlar",
+    "description": "Page subtitle."
+  },
+  "sectionSpeed": {
+    "message": "Hız",
+    "description": "Section."
+  },
+  "speedGroupRates": {
+    "message": "Hızlarınız",
+    "description": "Options, Speed section: heading of the user's own speeds (presets, step, favorite and hold speeds)."
+  },
+  "speedGroupRestore": {
+    "message": "Hızınızı geri getirme",
+    "description": "Options, Speed section: heading of what happens when a site changes the speed."
+  },
+  "speedGroupPlayers": {
+    "message": "Etkilenen oynatıcılar",
+    "description": "Options, Speed section: heading of which players a speed applies to."
+  },
+  "sectionPlayback": {
+    "message": "Oynatma",
+    "description": "Section."
+  },
+  "sectionKeyboard": {
+    "message": "Klavye",
+    "description": "Section."
+  },
+  "sectionOverlay": {
+    "message": "Oynatıcı üstündeki çubuk",
+    "description": "Section."
+  },
+  "sectionMenu": {
+    "message": "Sağ tık menüsü",
+    "description": "Section."
+  },
+  "presetsField": {
+    "message": "Hazır hızlar",
+    "description": "Field."
+  },
+  "presetsHelp": {
+    "message": "Boşlukla ayrılmış en fazla 12 hız, örneğin 1 1,5 2.",
+    "description": "Help."
+  },
+  "presetsInvalid": {
+    "message": "Boşlukla ayrılmış, 1 ile $MAX$ arasında sayıda hız girin.",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "rateStepField": {
+    "message": "Daha yavaş ve daha hızlı için adım",
+    "description": "Field."
+  },
+  "rateStepHelp": {
+    "message": "0,01 ile 1,00 arasında.",
+    "description": "Help."
+  },
+  "favoriteField": {
+    "message": "Favori hız",
+    "description": "Field."
+  },
+  "holdField": {
+    "message": "Bir tuşu basılı tutarken hız",
+    "description": "Field."
+  },
+  "rateRangeHelp": {
+    "message": "0,10 ile 16,00 arasında.",
+    "description": "Help."
+  },
+  "policyField": {
+    "message": "Site hızı değiştirirse",
+    "description": "Legend."
+  },
+  "policyFollowHelp": {
+    "message": "Hızınız bir kez uygulanır. Örnek: sonraki bölüm 1× ile başlar ve 1× kalır.",
+    "description": "Help."
+  },
+  "policySmartHelp": {
+    "message": "Örnek: sonraki bölüm 1× ile başlar ve hızınız geri gelir. Siz izlerken site hızı değiştirirse, hız sonraki videoya kadar sitenin bıraktığı gibi kalır.",
+    "description": "Help."
+  },
+  "policyLockHelp": {
+    "message": "Örnek: siz izlerken site hızı 1× yapar ve bir an sonra hızınız geri gelir. Hızı sürekli değiştiren siteler için.",
+    "description": "Help."
+  },
+  "targetField": {
+    "message": "Hızın uygulanacağı yer",
+    "description": "Legend."
+  },
+  "targetActive": {
+    "message": "Etkin oynatıcı",
+    "description": "Option."
+  },
+  "targetAll": {
+    "message": "Sayfadaki tüm oynatıcılar",
+    "description": "Option."
+  },
+  "pitchField": {
+    "message": "Hız değişirken doğal ses",
+    "description": "Field."
+  },
+  "skipSilenceField": {
+    "message": "Sessizlikleri atla",
+    "description": "Name of Skip Silence: options switch, site profile field, popup button."
+  },
+  "skipSilenceHelp": {
+    "message": "Duraklamalarda oynatıcı sessizlik hızına geçer ve ses geri gelir gelmez sizin hızınıza döner. Ses yalnızca cihazınızda dinlenir; asla kaydedilmez ya da gönderilmez.",
+    "description": "What Skip Silence does and that the sound stays on the device: options help, popup card."
+  },
+  "skipSilenceSettings": {
+    "message": "“Sessizlikleri atla” ayarları",
+    "description": "Link in the popup card of Skip Silence, to its place on the options page."
+  },
+  "silenceModeField": {
+    "message": "Neler sessizlik sayılır",
+    "description": "Options legend: how readily a pause counts as a silence."
+  },
+  "silenceConservative": {
+    "message": "Yalnızca uzun ve sessiz duraklamalar",
+    "description": "Options choice: only long, quiet pauses count."
+  },
+  "silenceNormal": {
+    "message": "Cümle aralarındaki duraklamalar da (önerilen)",
+    "description": "Options choice, the default: pauses between sentences count too."
+  },
+  "silenceAggressive": {
+    "message": "Biraz arka plan gürültüsü olsa da her duraklama",
+    "description": "Options choice: every pause counts, even with background noise."
+  },
+  "silenceRateField": {
+    "message": "Sessizlikte hız",
+    "description": "Options field: the speed a silence plays at."
+  },
+  "noticeSkipSilenceWaiting": {
+    "message": "“Sessizlikleri atla”, sayfadaki ilk tıklamanızla başlar.",
+    "description": "Notice: the browser starts audio only after a click on the page."
+  },
+  "noticeSkipSilenceUnavailable": {
+    "message": "“Sessizlikleri atla” bu medyada kullanılamıyor.",
+    "description": "Notice: the browser does not let the extension hear this media."
+  },
+  "seekStepField": {
+    "message": "Saniye cinsinden atlama",
+    "description": "Field."
+  },
+  "seekStepInvalid": {
+    "message": "$MIN$ ile $MAX$ arasında tam sayı olarak saniye girin.",
+    "description": "Error.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "pageShortcutsField": {
+    "message": "Sayfadaki kısayollar",
+    "description": "Field."
+  },
+  "pageShortcutsHelp": {
+    "message": "FleetFoot Engine'i sayfada açtıktan sonra çalışır, bir alana yazarken asla çalışmaz.",
+    "description": "Help."
+  },
+  "shortcutsTable": {
+    "message": "Sayfadaki tuşlar",
+    "description": "Table caption."
+  },
+  "keyPress": {
+    "message": "Bir tuşa basın… (iptal için Esc)",
+    "description": "While recording."
+  },
+  "keyNone": {
+    "message": "Yok",
+    "description": "Unbound."
+  },
+  "keyRemove": {
+    "message": "$ACTION$ için tuşu kaldır",
+    "description": "Button label: the button shows only a cross.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "keyChange": {
+    "message": "$ACTION$: $KEY$. Değiştir",
+    "description": "Button label.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "keyTaken": {
+    "message": "$KEY$ zaten $ACTION$ için kullanılıyor.",
+    "description": "Conflict.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "action": {
+        "content": "$2"
+      }
+    }
+  },
+  "browserShortcutsHelp": {
+    "message": "Her sayfada çalışan kısayollar, tarayıcının eklenti kısayolları ayarlarından belirlenir.",
+    "description": "Help."
+  },
+  "browserShortcutsOpen": {
+    "message": "Tarayıcı kısayollarını aç",
+    "description": "Button."
+  },
+  "overlayField": {
+    "message": "Oynatıcıların üstünde çubuğu göster",
+    "description": "Field."
+  },
+  "overlayHelp": {
+    "message": "İşaretçi oynatıcının üstündeyken görünen küçük bir çubuk.",
+    "description": "Help."
+  },
+  "overlayResetPosition": {
+    "message": "Çubuğu köşeye geri taşı",
+    "description": "Button."
+  },
+  "contextMenuField": {
+    "message": "Video ya da sese sağ tıklayınca hız menüsü",
+    "description": "Field."
+  },
+  "contextMenuHelp": {
+    "message": "Yalnızca video ve seste görünür.",
+    "description": "Help."
+  },
+  "saved": {
+    "message": "Kaydedildi.",
+    "description": "Status."
+  },
+  "invalidValue": {
+    "message": "Bu değer geçerli değil.",
+    "description": "Error."
+  },
+  "restoreDefaults": {
+    "message": "Varsayılanlara dön",
+    "description": "Button."
+  },
+  "restoreConfirm": {
+    "message": "Tümünü geri yüklemek için yeniden tıklayın",
+    "description": "Button, armed."
+  },
+  "restored": {
+    "message": "Varsayılanlar geri yüklendi.",
+    "description": "Status."
+  },
+  "actionSlower": {
+    "message": "Daha yavaş",
+    "description": "Shortcut action."
+  },
+  "actionFaster": {
+    "message": "Daha hızlı",
+    "description": "Shortcut action."
+  },
+  "actionReset": {
+    "message": "Normal hız (1×)",
+    "description": "Shortcut action."
+  },
+  "actionFavorite": {
+    "message": "Favori hız",
+    "description": "Shortcut action."
+  },
+  "actionHold": {
+    "message": "Hızlandırmak için basılı tut",
+    "description": "Shortcut action."
+  },
+  "actionSeekBackward": {
+    "message": "Geri sar",
+    "description": "Shortcut action."
+  },
+  "actionSeekForward": {
+    "message": "İleri sar",
+    "description": "Shortcut action."
+  },
+  "actionTogglePitch": {
+    "message": "Doğal ses açık/kapalı",
+    "description": "Shortcut action."
+  },
+  "actionLoopA": {
+    "message": "Döngü başı (A)",
+    "description": "Shortcut action."
+  },
+  "actionLoopB": {
+    "message": "Döngü sonu (B)",
+    "description": "Shortcut action."
+  },
+  "actionLoopToggle": {
+    "message": "Döngü açık/kapalı",
+    "description": "Shortcut action."
+  },
+  "actionNextPlayer": {
+    "message": "Sonraki oynatıcı",
+    "description": "Shortcut action."
+  },
+  "actionToggleOverlay": {
+    "message": "Çubuğu göster ya da gizle",
+    "description": "Shortcut action."
+  },
+  "controlling": {
+    "message": "Denetlenen oynatıcı",
+    "description": "Caption above the player list."
+  },
+  "live": {
+    "message": "Canlı",
+    "description": "Badge for a live stream."
+  },
+  "timeLeftAt": {
+    "message": "$RATE$ hızda $TIME$ kaldı",
+    "description": "Remaining time at the current speed.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      },
+      "rate": {
+        "content": "$2"
+      }
+    }
+  },
+  "timeLeftNormal": {
+    "message": "Normal hızda $TIME$",
+    "description": "Remaining time at 1×.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipOpen": {
+    "message": "Aç",
+    "description": "Picture-in-picture button."
+  },
+  "pipClose": {
+    "message": "Kapat",
+    "description": "Picture-in-picture button."
+  },
+  "savedHours": {
+    "message": "$HOURS$ $MINUTES$",
+    "description": "Time saved: hours then minutes, each already with its unit («12 h», «34 min»).",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      },
+      "minutes": {
+        "content": "$2"
+      }
+    }
+  },
+  "savedUnderMinute": {
+    "message": "bir dakikadan az",
+    "description": "Time saved below one minute."
+  },
+  "savedPopup": {
+    "message": "$TIME$ kazanıldı",
+    "description": "Popup header: total time saved.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedTitle": {
+    "message": "Kazanılan süre",
+    "description": "Options section."
+  },
+  "savedHelp": {
+    "message": "FleetFoot Engine videolarınızı ve seslerinizi daha hızlı oynattığı için harcamadığınız süre. Yalnızca bu cihazda, tek bir toplam olarak durur.",
+    "description": "Help."
+  },
+  "savedTotal": {
+    "message": "Şimdiye kadar: $TIME$",
+    "description": "Options: the total.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedReset": {
+    "message": "Sayacı sıfırla",
+    "description": "Button."
+  },
+  "savedResetConfirm": {
+    "message": "Sıfırlamak için yeniden tıklayın",
+    "description": "Button, armed."
+  },
+  "savedResetDone": {
+    "message": "Sayaç sıfırlandı.",
+    "description": "Status."
+  },
+  "sectionAppearance": {
+    "message": "Görünüm",
+    "description": "Options section."
+  },
+  "themeField": {
+    "message": "Renk teması",
+    "description": "Legend."
+  },
+  "textSizeField": {
+    "message": "Metin boyutu",
+    "description": "Options, Appearance: label of the choice of text size for this page, from 100% to 200%."
+  },
+  "textSizeHelp": {
+    "message": "Bu sayfadaki metni ve denetimleri büyütür.",
+    "description": "Options, Appearance: under textSizeField."
+  },
+  "themeYellow": {
+    "message": "Sarı (varsayılan)",
+    "description": "Theme."
+  },
+  "themeCyan": {
+    "message": "Camgöbeği",
+    "description": "Theme."
+  },
+  "themeMagenta": {
+    "message": "Eflatun",
+    "description": "Theme."
+  },
+  "themeGreen": {
+    "message": "Yeşil",
+    "description": "Theme."
+  },
+  "themeViolet": {
+    "message": "Mor",
+    "description": "Theme."
+  },
+  "themeCoral": {
+    "message": "Mercan",
+    "description": "Theme."
+  },
+  "themeSlate": {
+    "message": "Arduvaz",
+    "description": "Theme: dimmed blue-grey, easy on the eyes."
+  },
+  "themeSepia": {
+    "message": "Sepya",
+    "description": "Theme: dimmed warm brown, easy on the eyes."
+  },
+  "themeSage": {
+    "message": "Adaçayı",
+    "description": "Theme: dimmed green, easy on the eyes."
+  },
+  "themeLight": {
+    "message": "Açık",
+    "description": "Theme."
+  },
+  "pitchHelpShort": {
+    "message": "Sesler incelip cırlaklaşmaz",
+    "description": "Popup subtitle of the natural voice switch."
+  },
+  "rateOutOfRange": {
+    "message": "$MIN$ ile $MAX$ arasında bir hız girin.",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "stepOutOfRange": {
+    "message": "$MIN$ ile $MAX$ arasında bir adım girin.",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "privacyBadge": {
+    "message": "FULL PRIVACY",
+    "description": "Badge; the same words in every language."
+  },
+  "privacyBadgeSub": {
+    "message": "Sıfır telemetri · Hesap yok · Ayarlar yalnızca cihazda",
+    "description": "Badge subtitle."
+  },
+  "privacyStatement": {
+    "message": "FleetFoot Engine ziyaret ettiğiniz siteleri ve izlediklerinizi kimseye göndermez.",
+    "description": "Privacy section: the promise about browsing activity."
+  },
+  "verifySource": {
+    "message": "Bize güvenmeyin. Kodu okuyun.",
+    "description": "Privacy section: the invitation to read the source, before its link."
+  },
+  "sourceLink": {
+    "message": "Kodu GitHub'da oku",
+    "description": "Link to the public repository."
+  },
+  "supportDevelopment": {
+    "message": "Geliştirmeyi destekle",
+    "description": "Popup footer link."
+  },
+  "supportQuestion": {
+    "message": "İşinize yarıyor mu?",
+    "description": "Popup footer question before the support link."
+  },
+  "supportSaved": {
+    "message": "Size şimdiden $DURATION$ kazandırdı mı?",
+    "description": "Popup footer question before the support link, once the time saved reaches an hour; whole hours, with the unit («12 h»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "supportDevelopmentKofi": {
+    "message": "Geliştirmeyi Ko-fi'de destekle",
+    "description": "Options link."
+  },
+  "reviewStore": {
+    "message": "Beğendiniz mi? Bir değerlendirme yazın",
+    "description": "Accessible name of the heart at the top of the popup, which opens this extension's page in the store it was installed from, to leave a review."
+  },
+  "sectionPrivacy": {
+    "message": "Gizlilik ve izinler",
+    "description": "Options section."
+  },
+  "sectionMemory": {
+    "message": "Bellek",
+    "description": "Options section."
+  },
+  "memoryField": {
+    "message": "FleetFoot Engine'in hatırladıkları",
+    "description": "Group label."
+  },
+  "memoryNone": {
+    "message": "Hiçbir şey",
+    "description": "Memory choice."
+  },
+  "memoryNoneHelp": {
+    "message": "Her sayfa kendi hızıyla başlar.",
+    "description": "Help."
+  },
+  "memoryGlobal": {
+    "message": "Tüm siteler için tek hız",
+    "description": "Memory choice."
+  },
+  "memoryGlobalHelp": {
+    "message": "Seçtiğiniz son hız her yerde geçerli olur. Yalnızca sayı saklanır.",
+    "description": "Help."
+  },
+  "memorySite": {
+    "message": "Her site için ayrı hız",
+    "description": "Memory choice."
+  },
+  "memorySiteHelp": {
+    "message": "Her site kendi hızını ve isterseniz kendi ayarlarını saklar. Yalnızca sitenin adı saklanır, izledikleriniz asla.",
+    "description": "Help."
+  },
+  "profilesTitle": {
+    "message": "Hatırlanan siteler",
+    "description": "Heading."
+  },
+  "profilesEmpty": {
+    "message": "Henüz site yok. Bir sitede hızı değiştirin, o site burada görünür.",
+    "description": "Empty list."
+  },
+  "profileSpeed": {
+    "message": "Hız (sitenin hızı için boş bırakın)",
+    "description": "Field of a site profile."
+  },
+  "profileGeneralValue": {
+    "message": "Genel ($VALUE$)",
+    "description": "Option or placeholder: no value of its own on this site; the value it takes from the general settings in brackets.",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "policyFollowShort": {
+    "message": "Site karar verir",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policySmartShort": {
+    "message": "Sonraki videoda",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policyLockShort": {
+    "message": "Hemen, her zaman",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "fightField": {
+    "message": "Site hemen yeniden değiştirirse",
+    "description": "Options legend: what LOCK does when a page answers every restore at once."
+  },
+  "fightYield": {
+    "message": "Bırak ve bana haber ver (önerilen)",
+    "description": "LOCK fight answer: yield."
+  },
+  "fightBraked": {
+    "message": "Geri getirmeye devam et, frenli",
+    "description": "LOCK fight answer: keep imposing, bounded."
+  },
+  "fightUnbraked": {
+    "message": "Geri getirmeye devam et, frensiz",
+    "description": "LOCK fight answer: keep imposing, unbounded."
+  },
+  "fightYieldShort": {
+    "message": "Bırak",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightBrakedShort": {
+    "message": "Frenli",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightUnbrakedShort": {
+    "message": "Frensiz",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightHelpLabel": {
+    "message": "Üçü arasındaki fark ne?",
+    "description": "Accessible name of the info button next to the LOCK fight choices."
+  },
+  "fightYieldHelp": {
+    "message": "FleetFoot Engine o oynatıcıda hızı geri getirmeyi bırakır ve eklenti penceresinde size haber verir.",
+    "description": "Info popover, first answer."
+  },
+  "fightBrakedHelp": {
+    "message": "Site fark etmeden hızınızı geri getirmeye devam eder ve bir sınır, tüketimi düşük tutar. Sitenin oynatıcısı gerçek hızdan farklı bir hız gösterebilir.",
+    "description": "Info popover, second answer."
+  },
+  "fightUnbrakedHelp": {
+    "message": "Aynısı, ama sınırsız. Bazı sitelerde işlemcinin bir çekirdeğini tamamen meşgul edebilir; tüketim artar ve pil daha çabuk biter.",
+    "description": "Info popover, third answer and its risk."
+  },
+  "profileOn": {
+    "message": "Açık",
+    "description": "Option."
+  },
+  "profileOff": {
+    "message": "Kapalı",
+    "description": "Option."
+  },
+  "profileForget": {
+    "message": "Bu siteyi unut",
+    "description": "Button."
+  },
+  "profileForgetSite": {
+    "message": "$SITE$ sitesini unut",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "sectionAccess": {
+    "message": "Sitelere erişim",
+    "description": "Options section."
+  },
+  "accessField": {
+    "message": "FleetFoot Engine'in çalıştığı yerler",
+    "description": "Group label."
+  },
+  "accessOnClick": {
+    "message": "Yalnızca siz çağırınca",
+    "description": "Access choice."
+  },
+  "accessOnClickHelp": {
+    "message": "Simgeye tıkladıktan ya da bir kısayolu veya sağ tık menüsünü kullandıktan sonra o sekmede çalışır. Hiçbir siteye erişimi yoktur.",
+    "description": "Help."
+  },
+  "accessSelected": {
+    "message": "Her zaman, seçtiğiniz sitelerde",
+    "description": "Access choice."
+  },
+  "accessSelectedHelp": {
+    "message": "Bu sitelerde kendiliğinden başlar, kısayollar hazır olur.",
+    "description": "Help."
+  },
+  "accessAll": {
+    "message": "Her zaman, tüm sitelerde",
+    "description": "Access choice."
+  },
+  "accessAllHelp": {
+    "message": "Tarayıcı tüm sitelere erişim ister. FleetFoot Engine yalnızca video ve ses arar. Sayfaları asla okumaz ve hiçbir şey göndermez.",
+    "description": "Help."
+  },
+  "accessDeclined": {
+    "message": "Tarayıcı erişim vermedi, bu yüzden hiçbir şey değişmedi.",
+    "description": "Status."
+  },
+  "accessFiles": {
+    "message": "Bilgisayarınızdan açılan videolar bu seçeneklere girmez; FleetFoot Engine'i simgesine tıklayarak açın.",
+    "description": "Help."
+  },
+  "sitesChosen": {
+    "message": "Siteleriniz",
+    "description": "Heading."
+  },
+  "sitesExcluded": {
+    "message": "Bu siteler hariç",
+    "description": "Heading."
+  },
+  "sitesExcludedHelp": {
+    "message": "Bu sitelerde asla kendiliğinden başlamaz, ama yine de bir tıkla çağırabilirsiniz.",
+    "description": "Help."
+  },
+  "sitesNone": {
+    "message": "Henüz site yok.",
+    "description": "Empty list."
+  },
+  "siteField": {
+    "message": "Site",
+    "description": "Field label."
+  },
+  "siteHelp": {
+    "message": "example.com gibi bir ad ya da sayfalarından birinin adresi.",
+    "description": "Help."
+  },
+  "siteAdd": {
+    "message": "Ekle",
+    "description": "Button."
+  },
+  "siteInvalid": {
+    "message": "Bu bir site değil. example.com biçiminde yazın.",
+    "description": "Error."
+  },
+  "siteRemoveShort": {
+    "message": "Kaldır",
+    "description": "Button."
+  },
+  "siteRemove": {
+    "message": "$SITE$ sitesini kaldır",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "excludedFull": {
+    "message": "En fazla $MAX$ site hariç tutabilirsiniz.",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "privacyTelemetry": {
+    "message": "Telemetri",
+    "description": "Label."
+  },
+  "privacyTelemetryNone": {
+    "message": "Yok",
+    "description": "Value."
+  },
+  "privacyAnalytics": {
+    "message": "Kullanım istatistikleri",
+    "description": "Label."
+  },
+  "privacyAnalyticsNone": {
+    "message": "Yok",
+    "description": "Value."
+  },
+  "privacyAccounts": {
+    "message": "Hesaplar",
+    "description": "Label."
+  },
+  "privacyAccountsNone": {
+    "message": "Yok",
+    "description": "Value."
+  },
+  "privacyServers": {
+    "message": "Uzak sunucular",
+    "description": "Label."
+  },
+  "privacyServersNone": {
+    "message": "Yok",
+    "description": "Value."
+  },
+  "privacyAds": {
+    "message": "Reklamlar",
+    "description": "Label."
+  },
+  "privacyAdsNone": {
+    "message": "Yok",
+    "description": "Value."
+  },
+  "privacyAffiliate": {
+    "message": "Satış ortaklığı bağlantıları",
+    "description": "Label."
+  },
+  "privacyAffiliateNone": {
+    "message": "Yok",
+    "description": "Value."
+  },
+  "privacyStorage": {
+    "message": "Ayarlarınız",
+    "description": "Label."
+  },
+  "privacyStorageLocal": {
+    "message": "Yalnızca bu cihazda",
+    "description": "Value."
+  },
+  "privacyWhereOnClick": {
+    "message": "Çalıştığı yer: yalnızca siz çağırınca",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereSelected": {
+    "message": "Çalıştığı yer: her zaman, seçtiğiniz sitelerde",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereAll": {
+    "message": "Çalıştığı yer: her zaman, tüm sitelerde",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyAccessChange": {
+    "message": "Sitelere erişimi değiştir",
+    "description": "Link to the site access section."
+  },
+  "backupTitle": {
+    "message": "Ayarlarınızın bir kopyası",
+    "description": "Heading."
+  },
+  "backupHelp": {
+    "message": "Ayarlarınızı ve kayıtlı siteleri içeren, saklamak ya da başka bir tarayıcıya taşımak için bir dosya. Onu nereye koyarsanız orada durur.",
+    "description": "Help."
+  },
+  "exportSettings": {
+    "message": "Ayarları dışa aktar",
+    "description": "Button."
+  },
+  "exportDone": {
+    "message": "Ayarlar dışa aktarıldı.",
+    "description": "Status."
+  },
+  "exportFailed": {
+    "message": "Ayarlar dışa aktarılamadı.",
+    "description": "Status."
+  },
+  "importSettings": {
+    "message": "Ayarları içe aktar",
+    "description": "Button."
+  },
+  "importSummary": {
+    "message": "Dosyadaki ayarlar: $SETTINGS$ · Siteler: $SITES$",
+    "description": "What an import would bring.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      },
+      "sites": {
+        "content": "$2"
+      }
+    }
+  },
+  "importIgnored": {
+    "message": "Geçerli olmadığı için dışarıda bırakılan değerler: $COUNT$",
+    "description": "Import summary.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "importReplace": {
+    "message": "Bunlar mevcut ayarların yerine geçer. Dosyada olmayan siteler olduğu gibi kalır.",
+    "description": "Import summary."
+  },
+  "importConfirm": {
+    "message": "İçe aktar",
+    "description": "Button."
+  },
+  "importCancel": {
+    "message": "İptal",
+    "description": "Button."
+  },
+  "importDone": {
+    "message": "Ayarlar içe aktarıldı.",
+    "description": "Status."
+  },
+  "importFailed": {
+    "message": "Ayarlar içe aktarılamadı.",
+    "description": "Status."
+  },
+  "importTooLarge": {
+    "message": "Bu dosya bir ayar kopyası olmak için fazla büyük.",
+    "description": "Status."
+  },
+  "importNotJson": {
+    "message": "Bu dosya bir ayar kopyası olarak okunamıyor.",
+    "description": "Status."
+  },
+  "importNotBackup": {
+    "message": "Bu dosya bir FleetFoot Engine ayar kopyası değil.",
+    "description": "Status."
+  },
+  "importNewer": {
+    "message": "Bu kopya FleetFoot Engine'in daha yeni bir sürümünden. Eklentiyi güncelleyip yeniden içe aktarın.",
+    "description": "Status."
+  },
+  "deleteAll": {
+    "message": "Bu cihazdaki her şeyi sil",
+    "description": "Button."
+  },
+  "deleteAllConfirm": {
+    "message": "Her şeyi silmek için yeniden tıklayın",
+    "description": "Button, armed."
+  },
+  "deleteAllHelp": {
+    "message": "Ayarları, kayıtlı siteleri ve kazanılan süreyi siler. Site izinleri kalır; bunları “$SECTION$” bölümünden kaldırabilirsiniz.",
+    "description": "Help; the substitution is the site access section title.",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "deletedAll": {
+    "message": "FleetFoot Engine'in bu cihazda sakladığı her şey silindi.",
+    "description": "Status."
+  },
+  "deleteFailed": {
+    "message": "Her şey silinemedi.",
+    "description": "Status."
+  },
+  "sectionAbout": {
+    "message": "Hakkında",
+    "description": "Section title."
+  },
+  "aboutVersion": {
+    "message": "Sürüm $VERSION$",
+    "description": "The version of this build.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "aboutLicense": {
+    "message": "PolyForm Strict 1.0.0 lisansıyla kişisel ve ticari olmayan kullanım için ücretsizdir. Kodun değiştirilmesine ve yeniden dağıtılmasına izin verilmez.",
+    "description": "Licence summary; the licence text decides."
+  },
+  "aboutSource": {
+    "message": "Bu sürümün kaynak kodu",
+    "description": "Link."
+  },
+  "aboutLicenseLink": {
+    "message": "Lisansı oku",
+    "description": "Link."
+  },
+  "aboutIssues": {
+    "message": "Bir sorun bildir",
+    "description": "Link to GitHub Issues."
+  },
+  "aboutDiscussions": {
+    "message": "Sorular ve fikirler",
+    "description": "Link to GitHub Discussions."
+  },
+  "moreFromDeveloper": {
+    "message": "Geliştiricinin diğer işleri",
+    "description": "Heading."
+  },
+  "welcomeTitle": {
+    "message": "Üç adımda hazır",
+    "description": "First-run page title."
+  },
+  "welcomePrivacy": {
+    "message": "Verileriniz sizindir",
+    "description": "First-run page, first step heading."
+  },
+  "welcomeSpeed": {
+    "message": "Favori hızınız",
+    "description": "First-run page, third step heading."
+  },
+  "welcomeSpeedHelp": {
+    "message": "Eklenti penceresindeki yıldıza bir dokunuş ve hız bu olur. 0,10 ile 16,00 arasında.",
+    "description": "First-run page, favorite speed help."
+  },
+  "welcomeDone": {
+    "message": "Tamam",
+    "description": "First-run page button that closes it."
+  },
+  "welcomeAllSettings": {
+    "message": "Tüm ayarlar",
+    "description": "First-run page link to the options page."
+  }
+}

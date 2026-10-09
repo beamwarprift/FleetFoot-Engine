@@ -1,0 +1,1372 @@
+{
+  "extensionDescription": {
+    "message": "Controllo di velocità e riproduzione per video e audio HTML5: veloce, leggero, rispettoso della privacy.",
+    "description": "Store and browser description."
+  },
+  "connectingTitle": {
+    "message": "Collegamento alla pagina…",
+    "description": "Popup, while injecting."
+  },
+  "pageUnavailableTitle": {
+    "message": "FleetFoot Engine non può funzionare su questa pagina.",
+    "description": "Popup, page refuses extensions."
+  },
+  "pageUnavailableHint": {
+    "message": "Le pagine del browser e gli store delle estensioni non permettono le estensioni.",
+    "description": "Popup hint."
+  },
+  "noAnswerTitle": {
+    "message": "La pagina non risponde.",
+    "description": "Popup, no answer."
+  },
+  "noAnswerHint": {
+    "message": "Potrebbe essere occupata o appena cambiata. Riprova.",
+    "description": "Popup hint."
+  },
+  "noMediaTitle": {
+    "message": "Nessun video o audio in questa pagina.",
+    "description": "Popup, no media."
+  },
+  "noMediaHint": {
+    "message": "Un player dentro un riquadro di un altro sito non è raggiungibile da qui.",
+    "description": "Popup hint."
+  },
+  "framedTitle": {
+    "message": "Il player è in un riquadro di $SITE$.",
+    "description": "Popup: no player here, but a frame from another site is on screen; $SITE$ is that site, e.g. «vixcloud.co».",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedHint": {
+    "message": "Per raggiungerlo il browser chiede l'accesso a quel sito; da lì in poi FleetFoot Engine ci parte da solo.",
+    "description": "Popup, under framedTitle: allowing the site lets the extension reach the frame, and it then starts there by itself."
+  },
+  "framedAllowSite": {
+    "message": "Consenti su $SITE$",
+    "description": "Popup button: asks the browser for access to that one site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedAllowAll": {
+    "message": "Consenti su tutti i siti",
+    "description": "Popup button: asks the browser for access to every site (as «Always, on every site» in the options)."
+  },
+  "retry": {
+    "message": "Riprova",
+    "description": "Button."
+  },
+  "slower": {
+    "message": "Più lento",
+    "description": "Button label."
+  },
+  "faster": {
+    "message": "Più veloce",
+    "description": "Button label."
+  },
+  "rateInputLabel": {
+    "message": "Velocità di riproduzione",
+    "description": "Rate input label."
+  },
+  "rateInvalid": {
+    "message": "Scrivi una velocità da $MIN$ a $MAX$.",
+    "description": "Invalid typed rate.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "resetTo": {
+    "message": "Torna a $RATE$",
+    "description": "Reset button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "previousRate": {
+    "message": "Velocità precedente",
+    "description": "Button label."
+  },
+  "favoriteRate": {
+    "message": "Velocità preferita, $RATE$",
+    "description": "Button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "presets": {
+    "message": "Preimpostate",
+    "description": "Group label."
+  },
+  "preservePitch": {
+    "message": "Voce naturale",
+    "description": "Switch label."
+  },
+  "on": {
+    "message": "Sì",
+    "description": "Switch state."
+  },
+  "off": {
+    "message": "No",
+    "description": "Switch state."
+  },
+  "seekBack": {
+    "message": "Indietro di $DURATION$",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "seekForward": {
+    "message": "Avanti di $DURATION$",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipEnter": {
+    "message": "Picture-in-picture",
+    "description": "Button."
+  },
+  "pipExit": {
+    "message": "Esci dal picture-in-picture",
+    "description": "Button."
+  },
+  "loopGroup": {
+    "message": "Loop A–B",
+    "description": "Group label."
+  },
+  "loopHelpLabel": {
+    "message": "Cos'è il loop A–B?",
+    "description": "Accessible name of the info button next to the loop."
+  },
+  "loopHelp": {
+    "message": "Ripete un tratto a ciclo continuo, per rivederlo o studiarlo.",
+    "description": "Popover explaining the A–B loop: what it is for."
+  },
+  "loopHelpSteps": {
+    "message": "Premi A dove inizia, B dove finisce, poi Loop.",
+    "description": "Popover explaining the A–B loop: how to set it."
+  },
+  "loopHelpClear": {
+    "message": "× lo cancella.",
+    "description": "Last line of the loop help; × is the clear button."
+  },
+  "loopA": {
+    "message": "Imposta A",
+    "description": "Button."
+  },
+  "loopB": {
+    "message": "Imposta B",
+    "description": "Button."
+  },
+  "loopAAt": {
+    "message": "A $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loopBAt": {
+    "message": "B $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loop": {
+    "message": "Loop",
+    "description": "Toggle button."
+  },
+  "loopClear": {
+    "message": "Cancella il loop",
+    "description": "Button label."
+  },
+  "copyTimestamp": {
+    "message": "Copia il minutaggio",
+    "description": "Button."
+  },
+  "copied": {
+    "message": "Copiato $TIME$",
+    "description": "After copying.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "Non è stato possibile copiare il minutaggio.",
+    "description": "Copy failed."
+  },
+  "player": {
+    "message": "Player",
+    "description": "Select label."
+  },
+  "playerAuto": {
+    "message": "Automatico",
+    "description": "Option."
+  },
+  "playerAll": {
+    "message": "Tutti i player",
+    "description": "Option."
+  },
+  "playerVideo": {
+    "message": "Video $NUMBER$",
+    "description": "Short name of a video player, numbered in order of discovery.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerAudio": {
+    "message": "Audio $NUMBER$",
+    "description": "Player name.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerPlaying": {
+    "message": "in riproduzione",
+    "description": "Detail of a player that is playing now."
+  },
+  "playerEmbedded": {
+    "message": "incorporato da $SITE$",
+    "description": "Detail of a player inside a frame of the page; $SITE$ is that frame's site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerEmbeddedUnknown": {
+    "message": "incorporato",
+    "description": "Detail of a player inside a frame of the page that has no site."
+  },
+  "options": {
+    "message": "Opzioni",
+    "description": "Button."
+  },
+  "policyFollow": {
+    "message": "Lascia decidere al sito",
+    "description": "Rate policy name."
+  },
+  "policySmart": {
+    "message": "Rimettila al video successivo (consigliato)",
+    "description": "Rate policy name."
+  },
+  "policyLock": {
+    "message": "Rimettila subito, ogni volta",
+    "description": "Rate policy name."
+  },
+  "noticeContested": {
+    "message": "Un'altra estensione o la pagina continua a cambiare la velocità di questo player. Per evitare un braccio di ferro, FleetFoot Engine ha smesso di rimetterla.",
+    "description": "Notice."
+  },
+  "noticeContestedChoose": {
+    "message": "Scegli cosa fare",
+    "description": "Popup link after the LOCK yielded notice: opens the option."
+  },
+  "noticeExtremeRate": {
+    "message": "A questa velocità il browser potrebbe silenziare o distorcere l'audio.",
+    "description": "Notice."
+  },
+  "noticeLive": {
+    "message": "In diretta non puoi spostarti nel tempo né vedere il tempo residuo.",
+    "description": "Notice."
+  },
+  "errorInvalidCommand": {
+    "message": "Qualcosa è andato storto. Riprova.",
+    "description": "Error."
+  },
+  "errorNoPlayer": {
+    "message": "Il player non è più nella pagina.",
+    "description": "Error."
+  },
+  "errorRateRejected": {
+    "message": "La pagina ha rifiutato questa velocità.",
+    "description": "Error."
+  },
+  "errorPitchUnsupported": {
+    "message": "Questo player non può mantenere naturali le voci.",
+    "description": "Error."
+  },
+  "errorNoPreviousRate": {
+    "message": "Non c'è ancora una velocità precedente.",
+    "description": "Error."
+  },
+  "errorNotSeekable": {
+    "message": "In questo momento non ci si può spostare nel tempo di questo media.",
+    "description": "Error."
+  },
+  "errorNotLoopable": {
+    "message": "Un loop richiede un media di durata nota.",
+    "description": "Error."
+  },
+  "errorLoopInvalid": {
+    "message": "B deve venire dopo A.",
+    "description": "Error."
+  },
+  "errorPipUnavailable": {
+    "message": "Il picture-in-picture non è disponibile per questo player.",
+    "description": "Error."
+  },
+  "errorPipRejected": {
+    "message": "Il browser ha rifiutato il picture-in-picture. Usa il pulsante dell'overlay o una scorciatoia nella pagina.",
+    "description": "Error."
+  },
+  "overlayLabel": {
+    "message": "Controlli di FleetFoot Engine",
+    "description": "Toolbar label."
+  },
+  "overlayMove": {
+    "message": "Sposta (tasti freccia)",
+    "description": "Drag handle."
+  },
+  "overlayMore": {
+    "message": "Altri controlli",
+    "description": "Button."
+  },
+  "overlayLess": {
+    "message": "Meno controlli",
+    "description": "Button."
+  },
+  "menuSpeed": {
+    "message": "Velocità",
+    "description": "Context menu."
+  },
+  "menuFavorite": {
+    "message": "Preferita ($RATE$)",
+    "description": "Context menu.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "Opzioni",
+    "description": "Page subtitle."
+  },
+  "sectionSpeed": {
+    "message": "Velocità",
+    "description": "Section."
+  },
+  "speedGroupRates": {
+    "message": "Le tue velocità",
+    "description": "Options, Speed section: heading of the user's own speeds (presets, step, favorite and hold speeds)."
+  },
+  "speedGroupRestore": {
+    "message": "Ripristino della velocità",
+    "description": "Options, Speed section: heading of what happens when a site changes the speed."
+  },
+  "speedGroupPlayers": {
+    "message": "Player interessati",
+    "description": "Options, Speed section: heading of which players a speed applies to."
+  },
+  "sectionPlayback": {
+    "message": "Riproduzione",
+    "description": "Section."
+  },
+  "sectionKeyboard": {
+    "message": "Tastiera",
+    "description": "Section."
+  },
+  "sectionOverlay": {
+    "message": "Overlay",
+    "description": "Section."
+  },
+  "sectionMenu": {
+    "message": "Menu del tasto destro",
+    "description": "Section."
+  },
+  "presetsField": {
+    "message": "Velocità predefinite",
+    "description": "Field."
+  },
+  "presetsHelp": {
+    "message": "Fino a 12 velocità separate da spazi, per esempio 1 1,5 2.",
+    "description": "Help."
+  },
+  "presetsInvalid": {
+    "message": "Scrivi da 1 a $MAX$ velocità, separate da spazi.",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "rateStepField": {
+    "message": "Passo per più lento e più veloce",
+    "description": "Field."
+  },
+  "rateStepHelp": {
+    "message": "Da 0,01 a 1,00.",
+    "description": "Help."
+  },
+  "favoriteField": {
+    "message": "Velocità preferita",
+    "description": "Field."
+  },
+  "holdField": {
+    "message": "Velocità tenendo premuto un tasto",
+    "description": "Field."
+  },
+  "rateRangeHelp": {
+    "message": "Da 0,10 a 16,00.",
+    "description": "Help."
+  },
+  "policyField": {
+    "message": "Se il sito cambia la velocità",
+    "description": "Legend."
+  },
+  "policyFollowHelp": {
+    "message": "La tua velocità viene applicata una volta. Esempio: il prossimo episodio parte a 1× e resta a 1×.",
+    "description": "Help."
+  },
+  "policySmartHelp": {
+    "message": "Esempio: il prossimo episodio parte a 1× e torna la tua velocità. Se il sito cambia la velocità mentre guardi, resta come l'ha messa il sito fino al video successivo.",
+    "description": "Help."
+  },
+  "policyLockHelp": {
+    "message": "Esempio: mentre guardi, il sito rimette 1× e un attimo dopo torna la tua velocità. Per i siti che continuano a reimpostarla.",
+    "description": "Help."
+  },
+  "targetField": {
+    "message": "La velocità si applica a",
+    "description": "Legend."
+  },
+  "targetActive": {
+    "message": "Il player attivo",
+    "description": "Option."
+  },
+  "targetAll": {
+    "message": "Tutti i player della pagina",
+    "description": "Option."
+  },
+  "pitchField": {
+    "message": "Voce naturale quando cambia la velocità",
+    "description": "Field."
+  },
+  "skipSilenceField": {
+    "message": "Salta i silenzi",
+    "description": "Name of Skip Silence: options switch, site profile field, popup button."
+  },
+  "skipSilenceHelp": {
+    "message": "Nelle pause il player passa alla velocità dei silenzi e torna alla tua appena riprende il suono. Il suono si ascolta solo sul tuo dispositivo e non viene mai registrato né inviato.",
+    "description": "What Skip Silence does and that the sound stays on the device: options help, popup card."
+  },
+  "skipSilenceSettings": {
+    "message": "Impostazioni di «Salta i silenzi»",
+    "description": "Link in the popup card of Skip Silence, to its place on the options page."
+  },
+  "silenceModeField": {
+    "message": "Cosa conta come silenzio",
+    "description": "Options legend: how readily a pause counts as a silence."
+  },
+  "silenceConservative": {
+    "message": "Solo le pause lunghe e silenziose",
+    "description": "Options choice: only long, quiet pauses count."
+  },
+  "silenceNormal": {
+    "message": "Anche le pause fra le frasi (consigliato)",
+    "description": "Options choice, the default: pauses between sentences count too."
+  },
+  "silenceAggressive": {
+    "message": "Ogni pausa, anche con un po' di rumore di fondo",
+    "description": "Options choice: every pause counts, even with background noise."
+  },
+  "silenceRateField": {
+    "message": "Velocità nei silenzi",
+    "description": "Options field: the speed a silence plays at."
+  },
+  "noticeSkipSilenceWaiting": {
+    "message": "«Salta i silenzi» si attiva al primo clic sulla pagina.",
+    "description": "Notice: the browser starts audio only after a click on the page."
+  },
+  "noticeSkipSilenceUnavailable": {
+    "message": "«Salta i silenzi» non è disponibile su questo media.",
+    "description": "Notice: the browser does not let the extension hear this media."
+  },
+  "seekStepField": {
+    "message": "Passo di spostamento in secondi",
+    "description": "Field."
+  },
+  "seekStepInvalid": {
+    "message": "Scrivi un numero intero di secondi da $MIN$ a $MAX$.",
+    "description": "Error.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "pageShortcutsField": {
+    "message": "Scorciatoie nella pagina",
+    "description": "Field."
+  },
+  "pageShortcutsHelp": {
+    "message": "Funzionano dopo aver aperto FleetFoot Engine sulla pagina, e mai mentre scrivi in un campo.",
+    "description": "Help."
+  },
+  "shortcutsTable": {
+    "message": "Tasti nella pagina",
+    "description": "Table caption."
+  },
+  "keyPress": {
+    "message": "Premi un tasto… (Esc per annullare)",
+    "description": "While recording."
+  },
+  "keyNone": {
+    "message": "Nessuno",
+    "description": "Unbound."
+  },
+  "keyRemove": {
+    "message": "Rimuovi il tasto di $ACTION$",
+    "description": "Button label: the button shows only a cross.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "keyChange": {
+    "message": "$ACTION$: $KEY$. Cambia",
+    "description": "Button label.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "keyTaken": {
+    "message": "$KEY$ è già usato da $ACTION$.",
+    "description": "Conflict.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "action": {
+        "content": "$2"
+      }
+    }
+  },
+  "browserShortcutsHelp": {
+    "message": "Le scorciatoie che funzionano su ogni pagina si assegnano nelle impostazioni delle scorciatoie delle estensioni del browser.",
+    "description": "Help."
+  },
+  "browserShortcutsOpen": {
+    "message": "Apri le impostazioni delle scorciatoie del browser",
+    "description": "Button."
+  },
+  "overlayField": {
+    "message": "Mostra l'overlay sui player",
+    "description": "Field."
+  },
+  "overlayHelp": {
+    "message": "Una piccola barra che compare quando il puntatore è sul player.",
+    "description": "Help."
+  },
+  "overlayResetPosition": {
+    "message": "Rimetti l'overlay nel suo angolo",
+    "description": "Button."
+  },
+  "contextMenuField": {
+    "message": "Menu della velocità col tasto destro su video e audio",
+    "description": "Field."
+  },
+  "contextMenuHelp": {
+    "message": "Compare solo su video e audio.",
+    "description": "Help."
+  },
+  "saved": {
+    "message": "Salvato.",
+    "description": "Status."
+  },
+  "invalidValue": {
+    "message": "Questo valore non è valido.",
+    "description": "Error."
+  },
+  "restoreDefaults": {
+    "message": "Ripristina i predefiniti",
+    "description": "Button."
+  },
+  "restoreConfirm": {
+    "message": "Clicca di nuovo per ripristinare tutti i predefiniti",
+    "description": "Button, armed."
+  },
+  "restored": {
+    "message": "Predefiniti ripristinati.",
+    "description": "Status."
+  },
+  "actionSlower": {
+    "message": "Più lento",
+    "description": "Shortcut action."
+  },
+  "actionFaster": {
+    "message": "Più veloce",
+    "description": "Shortcut action."
+  },
+  "actionReset": {
+    "message": "Riporta la velocità a 1×",
+    "description": "Shortcut action."
+  },
+  "actionFavorite": {
+    "message": "Velocità preferita",
+    "description": "Shortcut action."
+  },
+  "actionHold": {
+    "message": "Tieni premuto per la velocità rapida",
+    "description": "Shortcut action."
+  },
+  "actionSeekBackward": {
+    "message": "Indietro",
+    "description": "Shortcut action."
+  },
+  "actionSeekForward": {
+    "message": "Avanti",
+    "description": "Shortcut action."
+  },
+  "actionTogglePitch": {
+    "message": "Voce naturale sì o no",
+    "description": "Shortcut action."
+  },
+  "actionLoopA": {
+    "message": "Imposta l'inizio del loop (A)",
+    "description": "Shortcut action."
+  },
+  "actionLoopB": {
+    "message": "Imposta la fine del loop (B)",
+    "description": "Shortcut action."
+  },
+  "actionLoopToggle": {
+    "message": "Loop sì o no",
+    "description": "Shortcut action."
+  },
+  "actionNextPlayer": {
+    "message": "Player successivo",
+    "description": "Shortcut action."
+  },
+  "actionToggleOverlay": {
+    "message": "Mostra o nascondi l'overlay",
+    "description": "Shortcut action."
+  },
+  "controlling": {
+    "message": "Player da controllare",
+    "description": "Caption above the player list."
+  },
+  "live": {
+    "message": "Diretta",
+    "description": "Badge for a live stream."
+  },
+  "timeLeftAt": {
+    "message": "Mancano $TIME$ a $RATE$",
+    "description": "Remaining time at the current speed.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      },
+      "rate": {
+        "content": "$2"
+      }
+    }
+  },
+  "timeLeftNormal": {
+    "message": "$TIME$ a velocità normale",
+    "description": "Remaining time at 1×.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipOpen": {
+    "message": "Apri",
+    "description": "Picture-in-picture button."
+  },
+  "pipClose": {
+    "message": "Chiudi",
+    "description": "Picture-in-picture button."
+  },
+  "savedHours": {
+    "message": "$HOURS$ $MINUTES$",
+    "description": "Time saved: hours then minutes, each already with its unit («12 h», «34 min»).",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      },
+      "minutes": {
+        "content": "$2"
+      }
+    }
+  },
+  "savedUnderMinute": {
+    "message": "meno di un minuto",
+    "description": "Time saved below one minute."
+  },
+  "savedPopup": {
+    "message": "$TIME$ risparmiati",
+    "description": "Popup header: total time saved.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedTitle": {
+    "message": "Tempo risparmiato",
+    "description": "Options section."
+  },
+  "savedHelp": {
+    "message": "Il tempo che non hai dovuto passare perché FleetFoot Engine ha riprodotto più veloce i tuoi video e audio. Resta solo su questo dispositivo, come un unico totale.",
+    "description": "Help."
+  },
+  "savedTotal": {
+    "message": "Finora: $TIME$",
+    "description": "Options: the total.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedReset": {
+    "message": "Azzera il contatore",
+    "description": "Button."
+  },
+  "savedResetConfirm": {
+    "message": "Clicca di nuovo per azzerarlo",
+    "description": "Button, armed."
+  },
+  "savedResetDone": {
+    "message": "Contatore azzerato.",
+    "description": "Status."
+  },
+  "sectionAppearance": {
+    "message": "Aspetto",
+    "description": "Options section."
+  },
+  "themeField": {
+    "message": "Tema colori",
+    "description": "Legend."
+  },
+  "textSizeField": {
+    "message": "Dimensione del testo",
+    "description": "Options, Appearance: label of the choice of text size for this page, from 100% to 200%."
+  },
+  "textSizeHelp": {
+    "message": "Ingrandisce testo e controlli di questa pagina.",
+    "description": "Options, Appearance: under textSizeField."
+  },
+  "themeYellow": {
+    "message": "Giallo (predefinito)",
+    "description": "Theme."
+  },
+  "themeCyan": {
+    "message": "Ciano",
+    "description": "Theme."
+  },
+  "themeMagenta": {
+    "message": "Magenta",
+    "description": "Theme."
+  },
+  "themeGreen": {
+    "message": "Verde",
+    "description": "Theme."
+  },
+  "themeViolet": {
+    "message": "Viola",
+    "description": "Theme."
+  },
+  "themeCoral": {
+    "message": "Corallo",
+    "description": "Theme."
+  },
+  "themeSlate": {
+    "message": "Ardesia",
+    "description": "Theme: dimmed blue-grey, easy on the eyes."
+  },
+  "themeSepia": {
+    "message": "Seppia",
+    "description": "Theme: dimmed warm brown, easy on the eyes."
+  },
+  "themeSage": {
+    "message": "Salvia",
+    "description": "Theme: dimmed green, easy on the eyes."
+  },
+  "themeLight": {
+    "message": "Chiaro",
+    "description": "Theme."
+  },
+  "pitchHelpShort": {
+    "message": "Le voci non diventano acute",
+    "description": "Popup subtitle of the natural voice switch."
+  },
+  "rateOutOfRange": {
+    "message": "Scrivi una velocità da $MIN$ a $MAX$.",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "stepOutOfRange": {
+    "message": "Scrivi un passo da $MIN$ a $MAX$.",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "privacyBadge": {
+    "message": "FULL PRIVACY",
+    "description": "Badge; the same words in every language."
+  },
+  "privacyBadgeSub": {
+    "message": "Zero telemetria · Nessun account · Impostazioni solo locali",
+    "description": "Badge subtitle."
+  },
+  "privacyStatement": {
+    "message": "FleetFoot Engine non invia a nessuno i siti che visiti né quello che guardi.",
+    "description": "Privacy section: the promise about browsing activity."
+  },
+  "verifySource": {
+    "message": "Non fidarti di noi. Leggi il codice.",
+    "description": "Privacy section: the invitation to read the source, before its link."
+  },
+  "sourceLink": {
+    "message": "Leggi il codice su GitHub",
+    "description": "Link to the public repository."
+  },
+  "supportDevelopment": {
+    "message": "Sostieni lo sviluppo",
+    "description": "Popup footer link."
+  },
+  "supportQuestion": {
+    "message": "Ti è utile?",
+    "description": "Popup footer question before the support link."
+  },
+  "supportSaved": {
+    "message": "Ti ha fatto risparmiare $DURATION$?",
+    "description": "Popup footer question before the support link, once the time saved reaches an hour; whole hours, with the unit («12 h»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "supportDevelopmentKofi": {
+    "message": "Sostieni lo sviluppo su Ko-fi",
+    "description": "Options link."
+  },
+  "reviewStore": {
+    "message": "Ti piace? Lascia una recensione",
+    "description": "Accessible name of the heart at the top of the popup, which opens this extension's page in the store it was installed from, to leave a review."
+  },
+  "sectionPrivacy": {
+    "message": "Privacy e permessi",
+    "description": "Options section."
+  },
+  "sectionMemory": {
+    "message": "Memoria",
+    "description": "Options section."
+  },
+  "memoryField": {
+    "message": "Cosa ricorda FleetFoot Engine",
+    "description": "Group label."
+  },
+  "memoryNone": {
+    "message": "Niente",
+    "description": "Memory choice."
+  },
+  "memoryNoneHelp": {
+    "message": "Ogni pagina parte alla sua velocità.",
+    "description": "Help."
+  },
+  "memoryGlobal": {
+    "message": "Una velocità per tutti i siti",
+    "description": "Memory choice."
+  },
+  "memoryGlobalHelp": {
+    "message": "L'ultima velocità che hai scelto vale ovunque. Si conserva solo il numero.",
+    "description": "Help."
+  },
+  "memorySite": {
+    "message": "Una velocità per ogni sito",
+    "description": "Memory choice."
+  },
+  "memorySiteHelp": {
+    "message": "Ogni sito tiene la sua velocità e, se vuoi, le sue impostazioni. Si conserva solo il nome del sito, mai cosa guardi.",
+    "description": "Help."
+  },
+  "profilesTitle": {
+    "message": "Siti ricordati",
+    "description": "Heading."
+  },
+  "profilesEmpty": {
+    "message": "Ancora nessun sito. Cambia la velocità su un sito e comparirà qui.",
+    "description": "Empty list."
+  },
+  "profileSpeed": {
+    "message": "Velocità (se vuoto, quella del sito)",
+    "description": "Field of a site profile."
+  },
+  "profileGeneralValue": {
+    "message": "Generale ($VALUE$)",
+    "description": "Option or placeholder: no value of its own on this site; the value it takes from the general settings in brackets.",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "policyFollowShort": {
+    "message": "Decide il sito",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policySmartShort": {
+    "message": "Al video successivo",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policyLockShort": {
+    "message": "Subito, ogni volta",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "fightField": {
+    "message": "Se il sito la ricambia all'istante",
+    "description": "Options legend: what LOCK does when a page answers every restore at once."
+  },
+  "fightYield": {
+    "message": "Lascia stare e avvisami (consigliato)",
+    "description": "LOCK fight answer: yield."
+  },
+  "fightBraked": {
+    "message": "Continua a rimetterla, con un freno",
+    "description": "LOCK fight answer: keep imposing, bounded."
+  },
+  "fightUnbraked": {
+    "message": "Continua a rimetterla, senza freno",
+    "description": "LOCK fight answer: keep imposing, unbounded."
+  },
+  "fightYieldShort": {
+    "message": "Lascia stare",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightBrakedShort": {
+    "message": "Con un freno",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightUnbrakedShort": {
+    "message": "Senza freno",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightHelpLabel": {
+    "message": "Che differenza c'è tra le tre?",
+    "description": "Accessible name of the info button next to the LOCK fight choices."
+  },
+  "fightYieldHelp": {
+    "message": "FleetFoot Engine smette di rimettere la velocità su quel player e te lo dice nel popup.",
+    "description": "Info popover, first answer."
+  },
+  "fightBrakedHelp": {
+    "message": "Continua a rimettere la tua velocità senza che il sito se ne accorga, entro un limite che tiene basso il consumo. Il player del sito può mostrare una velocità diversa da quella reale.",
+    "description": "Info popover, second answer."
+  },
+  "fightUnbrakedHelp": {
+    "message": "Lo stesso, ma senza limite. Su alcuni siti può tenere occupato un intero core del processore, con più consumi e la batteria che cala prima.",
+    "description": "Info popover, third answer and its risk."
+  },
+  "profileOn": {
+    "message": "Attivo",
+    "description": "Option."
+  },
+  "profileOff": {
+    "message": "Spento",
+    "description": "Option."
+  },
+  "profileForget": {
+    "message": "Dimentica questo sito",
+    "description": "Button."
+  },
+  "profileForgetSite": {
+    "message": "Dimentica $SITE$",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "sectionAccess": {
+    "message": "Accesso ai siti",
+    "description": "Options section."
+  },
+  "accessField": {
+    "message": "Dove funziona FleetFoot Engine",
+    "description": "Group label."
+  },
+  "accessOnClick": {
+    "message": "Solo quando lo chiami",
+    "description": "Access choice."
+  },
+  "accessOnClickHelp": {
+    "message": "Funziona su una scheda dopo un clic sull'icona, una scorciatoia o il menu del tasto destro. Non ha accesso a nessun sito.",
+    "description": "Help."
+  },
+  "accessSelected": {
+    "message": "Sempre, sui siti che scegli",
+    "description": "Access choice."
+  },
+  "accessSelectedHelp": {
+    "message": "Parte da solo su quei siti, con le scorciatoie già pronte.",
+    "description": "Help."
+  },
+  "accessAll": {
+    "message": "Sempre, su tutti i siti",
+    "description": "Access choice."
+  },
+  "accessAllHelp": {
+    "message": "Il browser chiede l'accesso a tutti i siti. FleetFoot Engine cerca solo video e audio; non legge mai le pagine e non invia niente.",
+    "description": "Help."
+  },
+  "accessDeclined": {
+    "message": "Il browser non ha dato l'accesso, quindi non è cambiato nulla.",
+    "description": "Status."
+  },
+  "accessFiles": {
+    "message": "I video aperti dal tuo computer non rientrano in queste scelte; apri FleetFoot Engine con un clic sulla sua icona.",
+    "description": "Help."
+  },
+  "sitesChosen": {
+    "message": "I tuoi siti",
+    "description": "Heading."
+  },
+  "sitesExcluded": {
+    "message": "Tranne su questi siti",
+    "description": "Heading."
+  },
+  "sitesExcludedHelp": {
+    "message": "Su questi siti non parte mai da solo; puoi sempre chiamarlo con un clic.",
+    "description": "Help."
+  },
+  "sitesNone": {
+    "message": "Ancora nessun sito.",
+    "description": "Empty list."
+  },
+  "siteField": {
+    "message": "Sito",
+    "description": "Field label."
+  },
+  "siteHelp": {
+    "message": "Un nome come esempio.it, o l'indirizzo di una sua pagina.",
+    "description": "Help."
+  },
+  "siteAdd": {
+    "message": "Aggiungi",
+    "description": "Button."
+  },
+  "siteInvalid": {
+    "message": "Questo non è un sito. Scrivilo come esempio.it.",
+    "description": "Error."
+  },
+  "siteRemoveShort": {
+    "message": "Togli",
+    "description": "Button."
+  },
+  "siteRemove": {
+    "message": "Togli $SITE$",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "excludedFull": {
+    "message": "Puoi escludere fino a $MAX$ siti.",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "privacyTelemetry": {
+    "message": "Telemetria",
+    "description": "Label."
+  },
+  "privacyTelemetryNone": {
+    "message": "Nessuna",
+    "description": "Value."
+  },
+  "privacyAnalytics": {
+    "message": "Statistiche d'uso",
+    "description": "Label."
+  },
+  "privacyAnalyticsNone": {
+    "message": "Nessuna",
+    "description": "Value."
+  },
+  "privacyAccounts": {
+    "message": "Account",
+    "description": "Label."
+  },
+  "privacyAccountsNone": {
+    "message": "Nessuno",
+    "description": "Value."
+  },
+  "privacyServers": {
+    "message": "Server remoti",
+    "description": "Label."
+  },
+  "privacyServersNone": {
+    "message": "Nessuno",
+    "description": "Value."
+  },
+  "privacyAds": {
+    "message": "Pubblicità",
+    "description": "Label."
+  },
+  "privacyAdsNone": {
+    "message": "Nessuna",
+    "description": "Value."
+  },
+  "privacyAffiliate": {
+    "message": "Link di affiliazione",
+    "description": "Label."
+  },
+  "privacyAffiliateNone": {
+    "message": "Nessuno",
+    "description": "Value."
+  },
+  "privacyStorage": {
+    "message": "Le tue impostazioni",
+    "description": "Label."
+  },
+  "privacyStorageLocal": {
+    "message": "Solo su questo dispositivo",
+    "description": "Value."
+  },
+  "privacyWhereOnClick": {
+    "message": "Dove funziona: solo quando lo chiami",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereSelected": {
+    "message": "Dove funziona: sempre, sui siti che scegli",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereAll": {
+    "message": "Dove funziona: sempre, su tutti i siti",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyAccessChange": {
+    "message": "Cambia l'accesso ai siti",
+    "description": "Link to the site access section."
+  },
+  "backupTitle": {
+    "message": "Una copia delle impostazioni",
+    "description": "Heading."
+  },
+  "backupHelp": {
+    "message": "Un file con le impostazioni e i siti salvati, da tenere o da portare su un altro browser. Resta dove lo metti tu.",
+    "description": "Help."
+  },
+  "exportSettings": {
+    "message": "Esporta le impostazioni",
+    "description": "Button."
+  },
+  "exportDone": {
+    "message": "Impostazioni esportate.",
+    "description": "Status."
+  },
+  "exportFailed": {
+    "message": "Non è stato possibile esportare le impostazioni.",
+    "description": "Status."
+  },
+  "importSettings": {
+    "message": "Importa le impostazioni",
+    "description": "Button."
+  },
+  "importSummary": {
+    "message": "Impostazioni nel file: $SETTINGS$ · Siti: $SITES$",
+    "description": "What an import would bring.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      },
+      "sites": {
+        "content": "$2"
+      }
+    }
+  },
+  "importIgnored": {
+    "message": "Valori esclusi perché non validi: $COUNT$",
+    "description": "Import summary.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "importReplace": {
+    "message": "Prendono il posto di quelli attuali. I siti che non sono nel file restano come sono.",
+    "description": "Import summary."
+  },
+  "importConfirm": {
+    "message": "Importa",
+    "description": "Button."
+  },
+  "importCancel": {
+    "message": "Annulla",
+    "description": "Button."
+  },
+  "importDone": {
+    "message": "Impostazioni importate.",
+    "description": "Status."
+  },
+  "importFailed": {
+    "message": "Non è stato possibile importare le impostazioni.",
+    "description": "Status."
+  },
+  "importTooLarge": {
+    "message": "Questo file è troppo grande per essere una copia delle impostazioni.",
+    "description": "Status."
+  },
+  "importNotJson": {
+    "message": "Questo file non si può leggere come copia delle impostazioni.",
+    "description": "Status."
+  },
+  "importNotBackup": {
+    "message": "Questo file non è una copia delle impostazioni di FleetFoot Engine.",
+    "description": "Status."
+  },
+  "importNewer": {
+    "message": "Questa copia viene da una versione più recente di FleetFoot Engine. Aggiornalo, poi importa di nuovo.",
+    "description": "Status."
+  },
+  "deleteAll": {
+    "message": "Cancella tutto da questo dispositivo",
+    "description": "Button."
+  },
+  "deleteAllConfirm": {
+    "message": "Clicca di nuovo per cancellare tutto",
+    "description": "Button, armed."
+  },
+  "deleteAllHelp": {
+    "message": "Cancella le impostazioni, i siti salvati e il tempo risparmiato. I permessi dei siti restano e si tolgono da $SECTION$.",
+    "description": "Help; the substitution is the site access section title.",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "deletedAll": {
+    "message": "Tutto ciò che FleetFoot Engine teneva su questo dispositivo è stato cancellato.",
+    "description": "Status."
+  },
+  "deleteFailed": {
+    "message": "Non è stato possibile cancellare tutto.",
+    "description": "Status."
+  },
+  "sectionAbout": {
+    "message": "Informazioni",
+    "description": "Section title."
+  },
+  "aboutVersion": {
+    "message": "Versione $VERSION$",
+    "description": "The version of this build.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "aboutLicense": {
+    "message": "Gratuito per uso personale e non commerciale, con la licenza PolyForm Strict 1.0.0. Non è consentito modificare o ridistribuire il codice.",
+    "description": "Licence summary; the licence text decides."
+  },
+  "aboutSource": {
+    "message": "Il codice di questa versione",
+    "description": "Link."
+  },
+  "aboutLicenseLink": {
+    "message": "Leggi la licenza",
+    "description": "Link."
+  },
+  "aboutIssues": {
+    "message": "Segnala un problema",
+    "description": "Link to GitHub Issues."
+  },
+  "aboutDiscussions": {
+    "message": "Domande e idee",
+    "description": "Link to GitHub Discussions."
+  },
+  "moreFromDeveloper": {
+    "message": "Altro dallo sviluppatore",
+    "description": "Heading."
+  },
+  "welcomeTitle": {
+    "message": "Pronto in tre passi",
+    "description": "First-run page title."
+  },
+  "welcomePrivacy": {
+    "message": "I tuoi dati restano tuoi",
+    "description": "First-run page, first step heading."
+  },
+  "welcomeSpeed": {
+    "message": "La tua velocità preferita",
+    "description": "First-run page, third step heading."
+  },
+  "welcomeSpeedHelp": {
+    "message": "Un tocco sulla stella nel popup e la velocità è questa. Da 0,10 a 16,00.",
+    "description": "First-run page, favorite speed help."
+  },
+  "welcomeDone": {
+    "message": "Fatto",
+    "description": "First-run page button that closes it."
+  },
+  "welcomeAllSettings": {
+    "message": "Tutte le impostazioni",
+    "description": "First-run page link to the options page."
+  }
+}

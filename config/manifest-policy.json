@@ -1,0 +1,52 @@
+{
+  "$comment": "Expected manifest for every target. Changing any value requires: issue, motivation, threat assessment, docs/PERMISSIONS.md update, test, review. Checked by `pnpm audit:manifest`.",
+  "manifestVersion": 3,
+  "allowedTopLevelKeys": [
+    "manifest_version",
+    "name",
+    "description",
+    "version",
+    "permissions",
+    "optional_host_permissions",
+    "content_security_policy",
+    "background",
+    "browser_specific_settings",
+    "default_locale",
+    "action",
+    "options_ui",
+    "commands",
+    "icons"
+  ],
+  "permissions": ["activeTab", "contextMenus", "scripting", "storage"],
+  "optionalPermissions": [],
+  "hostPermissions": [],
+  "optionalHostPermissions": ["http://*/*", "https://*/*"],
+  "forbiddenPermissions": [
+    "<all_urls>",
+    "bookmarks",
+    "cookies",
+    "debugger",
+    "downloads",
+    "geolocation",
+    "history",
+    "management",
+    "nativeMessaging",
+    "tabs",
+    "topSites",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "forbiddenKeys": [
+    "externally_connectable",
+    "content_scripts",
+    "web_accessible_resources",
+    "sandbox"
+  ],
+  "extensionPagesCsp": "script-src 'self'; object-src 'none'; connect-src 'none'; base-uri 'none'; form-action 'none'",
+  "gecko": {
+    "id": "fleetfoot-engine@ffe",
+    "strictMinVersion": "142.0",
+    "androidStrictMinVersion": "142.0",
+    "dataCollectionRequired": ["none"]
+  }
+}

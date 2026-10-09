@@ -1,0 +1,5 @@
+{
+  "$comment": "Per-target product size budget. 1 KB = 1000 bytes. Changing a budget requires a written motivation.",
+  "jsBytesMax": 150000,
+  "zipBytesMax": 300000
+}

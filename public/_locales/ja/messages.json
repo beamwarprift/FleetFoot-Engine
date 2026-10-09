@@ -1,0 +1,1372 @@
+{
+  "extensionDescription": {
+    "message": "HTML5 の動画と音声の速度・再生コントロール。速く、軽く、プライバシーを尊重します。",
+    "description": "Store and browser description."
+  },
+  "connectingTitle": {
+    "message": "ページに接続しています…",
+    "description": "Popup, while injecting."
+  },
+  "pageUnavailableTitle": {
+    "message": "このページでは FleetFoot Engine は動作しません。",
+    "description": "Popup, page refuses extensions."
+  },
+  "pageUnavailableHint": {
+    "message": "ブラウザのページや拡張機能ストアでは、拡張機能は動作できません。",
+    "description": "Popup hint."
+  },
+  "noAnswerTitle": {
+    "message": "ページが応答しません。",
+    "description": "Popup, no answer."
+  },
+  "noAnswerHint": {
+    "message": "ページが処理中か、切り替わったばかりの可能性があります。もう一度お試しください。",
+    "description": "Popup hint."
+  },
+  "noMediaTitle": {
+    "message": "このページには動画も音声もありません。",
+    "description": "Popup, no media."
+  },
+  "noMediaHint": {
+    "message": "別のサイトから埋め込まれたプレーヤーは、ここから操作できません。",
+    "description": "Popup hint."
+  },
+  "framedTitle": {
+    "message": "プレーヤーは $SITE$ のフレームの中にあります。",
+    "description": "Popup: no player here, but a frame from another site is on screen; $SITE$ is that site, e.g. «vixcloud.co».",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedHint": {
+    "message": "そこに届くには、ブラウザーがそのサイトへのアクセスを求めます。以後、FleetFoot Engine はそこで自動的に起動します。",
+    "description": "Popup, under framedTitle: allowing the site lets the extension reach the frame, and it then starts there by itself."
+  },
+  "framedAllowSite": {
+    "message": "$SITE$ で許可",
+    "description": "Popup button: asks the browser for access to that one site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedAllowAll": {
+    "message": "すべてのサイトで許可",
+    "description": "Popup button: asks the browser for access to every site (as «Always, on every site» in the options)."
+  },
+  "retry": {
+    "message": "再試行",
+    "description": "Button."
+  },
+  "slower": {
+    "message": "遅く",
+    "description": "Button label."
+  },
+  "faster": {
+    "message": "速く",
+    "description": "Button label."
+  },
+  "rateInputLabel": {
+    "message": "再生速度",
+    "description": "Rate input label."
+  },
+  "rateInvalid": {
+    "message": "$MIN$〜$MAX$ の速度を入力してください。",
+    "description": "Invalid typed rate.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "resetTo": {
+    "message": "$RATE$ に戻す",
+    "description": "Reset button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "previousRate": {
+    "message": "前の速度",
+    "description": "Button label."
+  },
+  "favoriteRate": {
+    "message": "お気に入りの速度、$RATE$",
+    "description": "Button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "presets": {
+    "message": "速度のショートカット",
+    "description": "Group label."
+  },
+  "preservePitch": {
+    "message": "自然な声",
+    "description": "Switch label."
+  },
+  "on": {
+    "message": "オン",
+    "description": "Switch state."
+  },
+  "off": {
+    "message": "オフ",
+    "description": "Switch state."
+  },
+  "seekBack": {
+    "message": "$DURATION$ 戻る",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "seekForward": {
+    "message": "$DURATION$ 進む",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipEnter": {
+    "message": "ピクチャー イン ピクチャー",
+    "description": "Button."
+  },
+  "pipExit": {
+    "message": "ピクチャー イン ピクチャーを終了",
+    "description": "Button."
+  },
+  "loopGroup": {
+    "message": "A–B リピート",
+    "description": "Group label."
+  },
+  "loopHelpLabel": {
+    "message": "A–B リピートとは？",
+    "description": "Accessible name of the info button next to the loop."
+  },
+  "loopHelp": {
+    "message": "区間を止まらずに繰り返します。見直しや学習に便利です。",
+    "description": "Popover explaining the A–B loop: what it is for."
+  },
+  "loopHelpSteps": {
+    "message": "始まりで A、終わりで B をタップし、最後に「リピート」をタップします。",
+    "description": "Popover explaining the A–B loop: how to set it."
+  },
+  "loopHelpClear": {
+    "message": "× でリピートを解除します。",
+    "description": "Last line of the loop help; × is the clear button."
+  },
+  "loopA": {
+    "message": "A を設定",
+    "description": "Button."
+  },
+  "loopB": {
+    "message": "B を設定",
+    "description": "Button."
+  },
+  "loopAAt": {
+    "message": "A $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loopBAt": {
+    "message": "B $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loop": {
+    "message": "リピート",
+    "description": "Toggle button."
+  },
+  "loopClear": {
+    "message": "リピートを解除",
+    "description": "Button label."
+  },
+  "copyTimestamp": {
+    "message": "この時点をコピー",
+    "description": "Button."
+  },
+  "copied": {
+    "message": "$TIME$ をコピーしました",
+    "description": "After copying.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "時点をコピーできませんでした。",
+    "description": "Copy failed."
+  },
+  "player": {
+    "message": "プレーヤー",
+    "description": "Select label."
+  },
+  "playerAuto": {
+    "message": "自動",
+    "description": "Option."
+  },
+  "playerAll": {
+    "message": "すべてのプレーヤー",
+    "description": "Option."
+  },
+  "playerVideo": {
+    "message": "動画 $NUMBER$",
+    "description": "Short name of a video player, numbered in order of discovery.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerAudio": {
+    "message": "音声 $NUMBER$",
+    "description": "Player name.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerPlaying": {
+    "message": "再生中",
+    "description": "Detail of a player that is playing now."
+  },
+  "playerEmbedded": {
+    "message": "$SITE$ から埋め込み",
+    "description": "Detail of a player inside a frame of the page; $SITE$ is that frame's site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerEmbeddedUnknown": {
+    "message": "埋め込み",
+    "description": "Detail of a player inside a frame of the page that has no site."
+  },
+  "options": {
+    "message": "設定",
+    "description": "Button."
+  },
+  "policyFollow": {
+    "message": "サイトに任せる",
+    "description": "Rate policy name."
+  },
+  "policySmart": {
+    "message": "次の動画で戻す（おすすめ）",
+    "description": "Rate policy name."
+  },
+  "policyLock": {
+    "message": "常にすぐ戻す",
+    "description": "Rate policy name."
+  },
+  "noticeContested": {
+    "message": "別の拡張機能かページ自体が、このプレーヤーの速度を変え続けています。綱引きを避けるため、FleetFoot Engine は速度を戻すのをやめました。",
+    "description": "Notice."
+  },
+  "noticeContestedChoose": {
+    "message": "対応を選ぶ",
+    "description": "Popup link after the LOCK yielded notice: opens the option."
+  },
+  "noticeExtremeRate": {
+    "message": "この速度では、ブラウザが音声をミュートしたり歪ませたりすることがあります。",
+    "description": "Notice."
+  },
+  "noticeLive": {
+    "message": "ライブ配信のため、早送りも残り時間の表示もできません。",
+    "description": "Notice."
+  },
+  "errorInvalidCommand": {
+    "message": "問題が発生しました。もう一度お試しください。",
+    "description": "Error."
+  },
+  "errorNoPlayer": {
+    "message": "プレーヤーはもうページにありません。",
+    "description": "Error."
+  },
+  "errorRateRejected": {
+    "message": "ページがこの速度を受け付けませんでした。",
+    "description": "Error."
+  },
+  "errorPitchUnsupported": {
+    "message": "このプレーヤーでは自然な声を保てません。",
+    "description": "Error."
+  },
+  "errorNoPreviousRate": {
+    "message": "前の速度はまだありません。",
+    "description": "Error."
+  },
+  "errorNotSeekable": {
+    "message": "今はこのメディアを早送り・巻き戻しできません。",
+    "description": "Error."
+  },
+  "errorNotLoopable": {
+    "message": "リピートには長さがわかるメディアが必要です。",
+    "description": "Error."
+  },
+  "errorLoopInvalid": {
+    "message": "B は A より後にしてください。",
+    "description": "Error."
+  },
+  "errorPipUnavailable": {
+    "message": "このプレーヤーではピクチャー イン ピクチャーを使えません。",
+    "description": "Error."
+  },
+  "errorPipRejected": {
+    "message": "ブラウザがピクチャー イン ピクチャーを拒否しました。プレーヤー上のバーのボタンか、ページのショートカットを使ってください。",
+    "description": "Error."
+  },
+  "overlayLabel": {
+    "message": "FleetFoot Engine のコントロール",
+    "description": "Toolbar label."
+  },
+  "overlayMove": {
+    "message": "移動（矢印キー）",
+    "description": "Drag handle."
+  },
+  "overlayMore": {
+    "message": "ボタンを増やす",
+    "description": "Button."
+  },
+  "overlayLess": {
+    "message": "ボタンを減らす",
+    "description": "Button."
+  },
+  "menuSpeed": {
+    "message": "速度",
+    "description": "Context menu."
+  },
+  "menuFavorite": {
+    "message": "お気に入り（$RATE$）",
+    "description": "Context menu.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "設定",
+    "description": "Page subtitle."
+  },
+  "sectionSpeed": {
+    "message": "速度",
+    "description": "Section."
+  },
+  "speedGroupRates": {
+    "message": "あなたの速度",
+    "description": "Options, Speed section: heading of the user's own speeds (presets, step, favorite and hold speeds)."
+  },
+  "speedGroupRestore": {
+    "message": "速度を戻す",
+    "description": "Options, Speed section: heading of what happens when a site changes the speed."
+  },
+  "speedGroupPlayers": {
+    "message": "対象のプレーヤー",
+    "description": "Options, Speed section: heading of which players a speed applies to."
+  },
+  "sectionPlayback": {
+    "message": "再生",
+    "description": "Section."
+  },
+  "sectionKeyboard": {
+    "message": "キーボード",
+    "description": "Section."
+  },
+  "sectionOverlay": {
+    "message": "プレーヤー上のバー",
+    "description": "Section."
+  },
+  "sectionMenu": {
+    "message": "右クリックメニュー",
+    "description": "Section."
+  },
+  "presetsField": {
+    "message": "速度のショートカット",
+    "description": "Field."
+  },
+  "presetsHelp": {
+    "message": "最大 12 個の速度をスペースで区切って入力します（例 1 1.5 2）。",
+    "description": "Help."
+  },
+  "presetsInvalid": {
+    "message": "1〜$MAX$ 個の速度をスペースで区切って入力してください。",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "rateStepField": {
+    "message": "「遅く」「速く」の刻み",
+    "description": "Field."
+  },
+  "rateStepHelp": {
+    "message": "0.01〜1.00。",
+    "description": "Help."
+  },
+  "favoriteField": {
+    "message": "お気に入りの速度",
+    "description": "Field."
+  },
+  "holdField": {
+    "message": "キーを押している間の速度",
+    "description": "Field."
+  },
+  "rateRangeHelp": {
+    "message": "0.10〜16.00。",
+    "description": "Help."
+  },
+  "policyField": {
+    "message": "サイトが速度を変えたとき",
+    "description": "Legend."
+  },
+  "policyFollowHelp": {
+    "message": "あなたの速度は一度だけ適用されます。例：次のエピソードは 1× で始まり、1× のままです。",
+    "description": "Help."
+  },
+  "policySmartHelp": {
+    "message": "例：次のエピソードは 1× で始まり、あなたの速度に戻ります。視聴中にサイトが速度を変えた場合は、次の動画までサイトが決めた速度のままです。",
+    "description": "Help."
+  },
+  "policyLockHelp": {
+    "message": "例：視聴中にサイトが 1× に戻しても、すぐにあなたの速度に戻ります。速度を頻繁に変えるサイト向けです。",
+    "description": "Help."
+  },
+  "targetField": {
+    "message": "速度を適用する対象",
+    "description": "Legend."
+  },
+  "targetActive": {
+    "message": "操作中のプレーヤー",
+    "description": "Option."
+  },
+  "targetAll": {
+    "message": "ページ内のすべてのプレーヤー",
+    "description": "Option."
+  },
+  "pitchField": {
+    "message": "速度を変えても自然な声",
+    "description": "Field."
+  },
+  "skipSilenceField": {
+    "message": "無音をスキップ",
+    "description": "Name of Skip Silence: options switch, site profile field, popup button."
+  },
+  "skipSilenceHelp": {
+    "message": "無音の部分では無音用の速度に切り替わり、音が戻るとすぐにあなたの速度に戻ります。音はこのデバイス上でだけ聞き取り、録音も送信もしません。",
+    "description": "What Skip Silence does and that the sound stays on the device: options help, popup card."
+  },
+  "skipSilenceSettings": {
+    "message": "「無音をスキップ」の設定",
+    "description": "Link in the popup card of Skip Silence, to its place on the options page."
+  },
+  "silenceModeField": {
+    "message": "無音とみなす範囲",
+    "description": "Options legend: how readily a pause counts as a silence."
+  },
+  "silenceConservative": {
+    "message": "長く静かな部分だけ",
+    "description": "Options choice: only long, quiet pauses count."
+  },
+  "silenceNormal": {
+    "message": "文と文の間も（おすすめ）",
+    "description": "Options choice, the default: pauses between sentences count too."
+  },
+  "silenceAggressive": {
+    "message": "少し雑音があっても、すべての切れ目",
+    "description": "Options choice: every pause counts, even with background noise."
+  },
+  "silenceRateField": {
+    "message": "無音のときの速度",
+    "description": "Options field: the speed a silence plays at."
+  },
+  "noticeSkipSilenceWaiting": {
+    "message": "「無音をスキップ」はページを最初にクリックすると始まります。",
+    "description": "Notice: the browser starts audio only after a click on the page."
+  },
+  "noticeSkipSilenceUnavailable": {
+    "message": "このメディアでは「無音をスキップ」を使えません。",
+    "description": "Notice: the browser does not let the extension hear this media."
+  },
+  "seekStepField": {
+    "message": "スキップの秒数",
+    "description": "Field."
+  },
+  "seekStepInvalid": {
+    "message": "$MIN$〜$MAX$ の整数で秒数を入力してください。",
+    "description": "Error.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "pageShortcutsField": {
+    "message": "ページ上のショートカット",
+    "description": "Field."
+  },
+  "pageShortcutsHelp": {
+    "message": "ページで FleetFoot Engine を開いた後に使えます。入力欄に入力している間は動作しません。",
+    "description": "Help."
+  },
+  "shortcutsTable": {
+    "message": "ページ上のキー",
+    "description": "Table caption."
+  },
+  "keyPress": {
+    "message": "キーを押してください…（Esc でキャンセル）",
+    "description": "While recording."
+  },
+  "keyNone": {
+    "message": "なし",
+    "description": "Unbound."
+  },
+  "keyRemove": {
+    "message": "「$ACTION$」のキーを削除",
+    "description": "Button label: the button shows only a cross.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "keyChange": {
+    "message": "$ACTION$：$KEY$。変更",
+    "description": "Button label.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "keyTaken": {
+    "message": "$KEY$ はすでに「$ACTION$」に使われています。",
+    "description": "Conflict.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "action": {
+        "content": "$2"
+      }
+    }
+  },
+  "browserShortcutsHelp": {
+    "message": "どのページでも使えるショートカットは、ブラウザの拡張機能ショートカット設定で決めます。",
+    "description": "Help."
+  },
+  "browserShortcutsOpen": {
+    "message": "ブラウザのショートカットを開く",
+    "description": "Button."
+  },
+  "overlayField": {
+    "message": "プレーヤー上にバーを表示",
+    "description": "Field."
+  },
+  "overlayHelp": {
+    "message": "ポインターがプレーヤー上にある間だけ表示される小さなバーです。",
+    "description": "Help."
+  },
+  "overlayResetPosition": {
+    "message": "バーを隅に戻す",
+    "description": "Button."
+  },
+  "contextMenuField": {
+    "message": "動画や音声の右クリックで速度メニュー",
+    "description": "Field."
+  },
+  "contextMenuHelp": {
+    "message": "動画と音声の上でだけ表示されます。",
+    "description": "Help."
+  },
+  "saved": {
+    "message": "保存しました。",
+    "description": "Status."
+  },
+  "invalidValue": {
+    "message": "この値は無効です。",
+    "description": "Error."
+  },
+  "restoreDefaults": {
+    "message": "初期設定に戻す",
+    "description": "Button."
+  },
+  "restoreConfirm": {
+    "message": "もう一度クリックするとすべて戻します",
+    "description": "Button, armed."
+  },
+  "restored": {
+    "message": "初期設定に戻しました。",
+    "description": "Status."
+  },
+  "actionSlower": {
+    "message": "遅く",
+    "description": "Shortcut action."
+  },
+  "actionFaster": {
+    "message": "速く",
+    "description": "Shortcut action."
+  },
+  "actionReset": {
+    "message": "1× に戻す",
+    "description": "Shortcut action."
+  },
+  "actionFavorite": {
+    "message": "お気に入りの速度",
+    "description": "Shortcut action."
+  },
+  "actionHold": {
+    "message": "押している間だけ速く",
+    "description": "Shortcut action."
+  },
+  "actionSeekBackward": {
+    "message": "戻る",
+    "description": "Shortcut action."
+  },
+  "actionSeekForward": {
+    "message": "進む",
+    "description": "Shortcut action."
+  },
+  "actionTogglePitch": {
+    "message": "自然な声のオン・オフ",
+    "description": "Shortcut action."
+  },
+  "actionLoopA": {
+    "message": "リピート開始（A）",
+    "description": "Shortcut action."
+  },
+  "actionLoopB": {
+    "message": "リピート終了（B）",
+    "description": "Shortcut action."
+  },
+  "actionLoopToggle": {
+    "message": "リピートのオン・オフ",
+    "description": "Shortcut action."
+  },
+  "actionNextPlayer": {
+    "message": "次のプレーヤー",
+    "description": "Shortcut action."
+  },
+  "actionToggleOverlay": {
+    "message": "バーの表示・非表示",
+    "description": "Shortcut action."
+  },
+  "controlling": {
+    "message": "操作中のプレーヤー",
+    "description": "Caption above the player list."
+  },
+  "live": {
+    "message": "ライブ",
+    "description": "Badge for a live stream."
+  },
+  "timeLeftAt": {
+    "message": "$RATE$ で残り $TIME$",
+    "description": "Remaining time at the current speed.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      },
+      "rate": {
+        "content": "$2"
+      }
+    }
+  },
+  "timeLeftNormal": {
+    "message": "通常速度で $TIME$",
+    "description": "Remaining time at 1×.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipOpen": {
+    "message": "開く",
+    "description": "Picture-in-picture button."
+  },
+  "pipClose": {
+    "message": "閉じる",
+    "description": "Picture-in-picture button."
+  },
+  "savedHours": {
+    "message": "$HOURS$ $MINUTES$",
+    "description": "Time saved: hours then minutes, each already with its unit («12 h», «34 min»).",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      },
+      "minutes": {
+        "content": "$2"
+      }
+    }
+  },
+  "savedUnderMinute": {
+    "message": "1 分未満",
+    "description": "Time saved below one minute."
+  },
+  "savedPopup": {
+    "message": "$TIME$ 節約",
+    "description": "Popup header: total time saved.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedTitle": {
+    "message": "節約した時間",
+    "description": "Options section."
+  },
+  "savedHelp": {
+    "message": "FleetFoot Engine が動画や音声を速く再生したおかげで使わずに済んだ時間です。合計の数値ひとつだけを、このデバイスにのみ保存します。",
+    "description": "Help."
+  },
+  "savedTotal": {
+    "message": "これまでの合計：$TIME$",
+    "description": "Options: the total.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedReset": {
+    "message": "カウンターをリセット",
+    "description": "Button."
+  },
+  "savedResetConfirm": {
+    "message": "もう一度クリックするとリセットします",
+    "description": "Button, armed."
+  },
+  "savedResetDone": {
+    "message": "カウンターをリセットしました。",
+    "description": "Status."
+  },
+  "sectionAppearance": {
+    "message": "外観",
+    "description": "Options section."
+  },
+  "themeField": {
+    "message": "カラーテーマ",
+    "description": "Legend."
+  },
+  "textSizeField": {
+    "message": "文字の大きさ",
+    "description": "Options, Appearance: label of the choice of text size for this page, from 100% to 200%."
+  },
+  "textSizeHelp": {
+    "message": "このページの文字と操作ボタンを大きくします。",
+    "description": "Options, Appearance: under textSizeField."
+  },
+  "themeYellow": {
+    "message": "イエロー（初期設定）",
+    "description": "Theme."
+  },
+  "themeCyan": {
+    "message": "シアン",
+    "description": "Theme."
+  },
+  "themeMagenta": {
+    "message": "マゼンタ",
+    "description": "Theme."
+  },
+  "themeGreen": {
+    "message": "グリーン",
+    "description": "Theme."
+  },
+  "themeViolet": {
+    "message": "バイオレット",
+    "description": "Theme."
+  },
+  "themeCoral": {
+    "message": "コーラル",
+    "description": "Theme."
+  },
+  "themeSlate": {
+    "message": "スレート",
+    "description": "Theme: dimmed blue-grey, easy on the eyes."
+  },
+  "themeSepia": {
+    "message": "セピア",
+    "description": "Theme: dimmed warm brown, easy on the eyes."
+  },
+  "themeSage": {
+    "message": "セージ",
+    "description": "Theme: dimmed green, easy on the eyes."
+  },
+  "themeLight": {
+    "message": "ライト",
+    "description": "Theme."
+  },
+  "pitchHelpShort": {
+    "message": "声が甲高くなりません",
+    "description": "Popup subtitle of the natural voice switch."
+  },
+  "rateOutOfRange": {
+    "message": "$MIN$〜$MAX$ の速度を入力してください。",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "stepOutOfRange": {
+    "message": "$MIN$〜$MAX$ の刻みを入力してください。",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "privacyBadge": {
+    "message": "FULL PRIVACY",
+    "description": "Badge; the same words in every language."
+  },
+  "privacyBadgeSub": {
+    "message": "テレメトリなし · アカウント不要 · 設定はデバイス内のみ",
+    "description": "Badge subtitle."
+  },
+  "privacyStatement": {
+    "message": "FleetFoot Engine は、あなたが訪れたサイトや見ている内容を誰にも送りません。",
+    "description": "Privacy section: the promise about browsing activity."
+  },
+  "verifySource": {
+    "message": "私たちを信じる必要はありません。コードを読んでください。",
+    "description": "Privacy section: the invitation to read the source, before its link."
+  },
+  "sourceLink": {
+    "message": "GitHub でコードを読む",
+    "description": "Link to the public repository."
+  },
+  "supportDevelopment": {
+    "message": "開発を支援",
+    "description": "Popup footer link."
+  },
+  "supportQuestion": {
+    "message": "役に立っていますか？",
+    "description": "Popup footer question before the support link."
+  },
+  "supportSaved": {
+    "message": "もう $DURATION$ 節約できましたか？",
+    "description": "Popup footer question before the support link, once the time saved reaches an hour; whole hours, with the unit («12 h»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "supportDevelopmentKofi": {
+    "message": "Ko-fi で開発を支援",
+    "description": "Options link."
+  },
+  "reviewStore": {
+    "message": "気に入りましたか？レビューを書く",
+    "description": "Accessible name of the heart at the top of the popup, which opens this extension's page in the store it was installed from, to leave a review."
+  },
+  "sectionPrivacy": {
+    "message": "プライバシーと権限",
+    "description": "Options section."
+  },
+  "sectionMemory": {
+    "message": "記憶",
+    "description": "Options section."
+  },
+  "memoryField": {
+    "message": "FleetFoot Engine が覚えること",
+    "description": "Group label."
+  },
+  "memoryNone": {
+    "message": "何も覚えない",
+    "description": "Memory choice."
+  },
+  "memoryNoneHelp": {
+    "message": "どのページも、そのページ自身の速度で始まります。",
+    "description": "Help."
+  },
+  "memoryGlobal": {
+    "message": "すべてのサイトで同じ速度",
+    "description": "Memory choice."
+  },
+  "memoryGlobalHelp": {
+    "message": "最後に選んだ速度がどこでも使われます。保存するのはその数値だけです。",
+    "description": "Help."
+  },
+  "memorySite": {
+    "message": "サイトごとの速度",
+    "description": "Memory choice."
+  },
+  "memorySiteHelp": {
+    "message": "サイトごとに速度を保存し、必要ならそのサイトの設定も保存します。保存するのはサイト名だけで、見ている内容は保存しません。",
+    "description": "Help."
+  },
+  "profilesTitle": {
+    "message": "覚えているサイト",
+    "description": "Heading."
+  },
+  "profilesEmpty": {
+    "message": "まだサイトはありません。サイトで速度を変えると、ここに表示されます。",
+    "description": "Empty list."
+  },
+  "profileSpeed": {
+    "message": "速度（空欄ならサイトの速度）",
+    "description": "Field of a site profile."
+  },
+  "profileGeneralValue": {
+    "message": "全体の設定（$VALUE$）",
+    "description": "Option or placeholder: no value of its own on this site; the value it takes from the general settings in brackets.",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "policyFollowShort": {
+    "message": "サイトに任せる",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policySmartShort": {
+    "message": "次の動画で",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policyLockShort": {
+    "message": "常にすぐ",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "fightField": {
+    "message": "サイトがすぐにまた変えたとき",
+    "description": "Options legend: what LOCK does when a page answers every restore at once."
+  },
+  "fightYield": {
+    "message": "譲って知らせる（おすすめ）",
+    "description": "LOCK fight answer: yield."
+  },
+  "fightBraked": {
+    "message": "ブレーキ付きで戻し続ける",
+    "description": "LOCK fight answer: keep imposing, bounded."
+  },
+  "fightUnbraked": {
+    "message": "ブレーキなしで戻し続ける",
+    "description": "LOCK fight answer: keep imposing, unbounded."
+  },
+  "fightYieldShort": {
+    "message": "譲る",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightBrakedShort": {
+    "message": "ブレーキ付き",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightUnbrakedShort": {
+    "message": "ブレーキなし",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightHelpLabel": {
+    "message": "3 つの違いは？",
+    "description": "Accessible name of the info button next to the LOCK fight choices."
+  },
+  "fightYieldHelp": {
+    "message": "FleetFoot Engine はそのプレーヤーで速度を戻すのをやめ、拡張機能のウィンドウでお知らせします。",
+    "description": "Info popover, first answer."
+  },
+  "fightBrakedHelp": {
+    "message": "サイトに気づかれないまま速度を戻し続けます。上限があるので負荷は低く抑えられます。サイトのプレーヤーには実際とは違う速度が表示されることがあります。",
+    "description": "Info popover, second answer."
+  },
+  "fightUnbrakedHelp": {
+    "message": "同じですが、上限がありません。サイトによってはプロセッサのコアをひとつ使い切り、負荷が増えてバッテリーの減りも早くなります。",
+    "description": "Info popover, third answer and its risk."
+  },
+  "profileOn": {
+    "message": "オン",
+    "description": "Option."
+  },
+  "profileOff": {
+    "message": "オフ",
+    "description": "Option."
+  },
+  "profileForget": {
+    "message": "このサイトを忘れる",
+    "description": "Button."
+  },
+  "profileForgetSite": {
+    "message": "$SITE$ を忘れる",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "sectionAccess": {
+    "message": "サイトへのアクセス",
+    "description": "Options section."
+  },
+  "accessField": {
+    "message": "FleetFoot Engine が動作する場所",
+    "description": "Group label."
+  },
+  "accessOnClick": {
+    "message": "呼び出したときだけ",
+    "description": "Access choice."
+  },
+  "accessOnClickHelp": {
+    "message": "アイコンのクリック、ショートカット、右クリックメニューのあと、そのタブで動作します。どのサイトにもアクセスしません。",
+    "description": "Help."
+  },
+  "accessSelected": {
+    "message": "選んだサイトでは常に",
+    "description": "Access choice."
+  },
+  "accessSelectedHelp": {
+    "message": "これらのサイトでは自動で起動し、ショートカットもすぐ使えます。",
+    "description": "Help."
+  },
+  "accessAll": {
+    "message": "すべてのサイトで常に",
+    "description": "Access choice."
+  },
+  "accessAllHelp": {
+    "message": "ブラウザがすべてのサイトへのアクセスを求めます。FleetFoot Engine が探すのは動画と音声だけです。ページの内容を読むことも、何かを送ることもありません。",
+    "description": "Help."
+  },
+  "accessDeclined": {
+    "message": "ブラウザがアクセスを許可しなかったため、何も変わっていません。",
+    "description": "Status."
+  },
+  "accessFiles": {
+    "message": "パソコンから開いた動画は、これらの選択肢の対象外です。FleetFoot Engine はアイコンをクリックして開いてください。",
+    "description": "Help."
+  },
+  "sitesChosen": {
+    "message": "選んだサイト",
+    "description": "Heading."
+  },
+  "sitesExcluded": {
+    "message": "これらのサイトを除く",
+    "description": "Heading."
+  },
+  "sitesExcludedHelp": {
+    "message": "これらのサイトでは自動で起動しませんが、クリックすれば呼び出せます。",
+    "description": "Help."
+  },
+  "sitesNone": {
+    "message": "まだサイトはありません。",
+    "description": "Empty list."
+  },
+  "siteField": {
+    "message": "サイト",
+    "description": "Field label."
+  },
+  "siteHelp": {
+    "message": "example.com のような名前か、そのサイトのページのアドレス。",
+    "description": "Help."
+  },
+  "siteAdd": {
+    "message": "追加",
+    "description": "Button."
+  },
+  "siteInvalid": {
+    "message": "サイトではありません。example.com の形で入力してください。",
+    "description": "Error."
+  },
+  "siteRemoveShort": {
+    "message": "削除",
+    "description": "Button."
+  },
+  "siteRemove": {
+    "message": "$SITE$ を削除",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "excludedFull": {
+    "message": "除外できるサイトは $MAX$ 件までです。",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "privacyTelemetry": {
+    "message": "テレメトリ",
+    "description": "Label."
+  },
+  "privacyTelemetryNone": {
+    "message": "なし",
+    "description": "Value."
+  },
+  "privacyAnalytics": {
+    "message": "利用統計",
+    "description": "Label."
+  },
+  "privacyAnalyticsNone": {
+    "message": "なし",
+    "description": "Value."
+  },
+  "privacyAccounts": {
+    "message": "アカウント",
+    "description": "Label."
+  },
+  "privacyAccountsNone": {
+    "message": "なし",
+    "description": "Value."
+  },
+  "privacyServers": {
+    "message": "外部サーバー",
+    "description": "Label."
+  },
+  "privacyServersNone": {
+    "message": "なし",
+    "description": "Value."
+  },
+  "privacyAds": {
+    "message": "広告",
+    "description": "Label."
+  },
+  "privacyAdsNone": {
+    "message": "なし",
+    "description": "Value."
+  },
+  "privacyAffiliate": {
+    "message": "アフィリエイトリンク",
+    "description": "Label."
+  },
+  "privacyAffiliateNone": {
+    "message": "なし",
+    "description": "Value."
+  },
+  "privacyStorage": {
+    "message": "あなたの設定",
+    "description": "Label."
+  },
+  "privacyStorageLocal": {
+    "message": "このデバイスのみ",
+    "description": "Value."
+  },
+  "privacyWhereOnClick": {
+    "message": "動作する場所：呼び出したときだけ",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereSelected": {
+    "message": "動作する場所：選んだサイトでは常に",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereAll": {
+    "message": "動作する場所：すべてのサイトで常に",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyAccessChange": {
+    "message": "サイトへのアクセスを変更",
+    "description": "Link to the site access section."
+  },
+  "backupTitle": {
+    "message": "設定のコピー",
+    "description": "Heading."
+  },
+  "backupHelp": {
+    "message": "設定と保存したサイトを含むファイルです。保管したり、別のブラウザに移したりできます。ファイルは保存した場所に残ります。",
+    "description": "Help."
+  },
+  "exportSettings": {
+    "message": "設定をエクスポート",
+    "description": "Button."
+  },
+  "exportDone": {
+    "message": "設定をエクスポートしました。",
+    "description": "Status."
+  },
+  "exportFailed": {
+    "message": "設定をエクスポートできませんでした。",
+    "description": "Status."
+  },
+  "importSettings": {
+    "message": "設定をインポート",
+    "description": "Button."
+  },
+  "importSummary": {
+    "message": "ファイル内の設定：$SETTINGS$ · サイト：$SITES$",
+    "description": "What an import would bring.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      },
+      "sites": {
+        "content": "$2"
+      }
+    }
+  },
+  "importIgnored": {
+    "message": "無効なため除外した値：$COUNT$",
+    "description": "Import summary.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "importReplace": {
+    "message": "現在の設定と置き換わります。ファイルにないサイトはそのままです。",
+    "description": "Import summary."
+  },
+  "importConfirm": {
+    "message": "インポート",
+    "description": "Button."
+  },
+  "importCancel": {
+    "message": "キャンセル",
+    "description": "Button."
+  },
+  "importDone": {
+    "message": "設定をインポートしました。",
+    "description": "Status."
+  },
+  "importFailed": {
+    "message": "設定をインポートできませんでした。",
+    "description": "Status."
+  },
+  "importTooLarge": {
+    "message": "このファイルは設定のコピーにしては大きすぎます。",
+    "description": "Status."
+  },
+  "importNotJson": {
+    "message": "このファイルは設定のコピーとして読み込めません。",
+    "description": "Status."
+  },
+  "importNotBackup": {
+    "message": "このファイルは FleetFoot Engine の設定のコピーではありません。",
+    "description": "Status."
+  },
+  "importNewer": {
+    "message": "このコピーは新しいバージョンの FleetFoot Engine で作られています。拡張機能を更新してから、もう一度インポートしてください。",
+    "description": "Status."
+  },
+  "deleteAll": {
+    "message": "このデバイスのデータをすべて削除",
+    "description": "Button."
+  },
+  "deleteAllConfirm": {
+    "message": "もう一度クリックするとすべて削除します",
+    "description": "Button, armed."
+  },
+  "deleteAllHelp": {
+    "message": "設定、保存したサイト、節約した時間を削除します。サイトの権限は残り、「$SECTION$」で削除できます。",
+    "description": "Help; the substitution is the site access section title.",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "deletedAll": {
+    "message": "FleetFoot Engine がこのデバイスに保存していたものはすべて削除されました。",
+    "description": "Status."
+  },
+  "deleteFailed": {
+    "message": "すべてを削除できませんでした。",
+    "description": "Status."
+  },
+  "sectionAbout": {
+    "message": "情報",
+    "description": "Section title."
+  },
+  "aboutVersion": {
+    "message": "バージョン $VERSION$",
+    "description": "The version of this build.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "aboutLicense": {
+    "message": "PolyForm Strict 1.0.0 ライセンスのもと、個人の非営利利用に限り無料です。コードの改変と再配布は認められていません。",
+    "description": "Licence summary; the licence text decides."
+  },
+  "aboutSource": {
+    "message": "このバージョンのソースコード",
+    "description": "Link."
+  },
+  "aboutLicenseLink": {
+    "message": "ライセンスを読む",
+    "description": "Link."
+  },
+  "aboutIssues": {
+    "message": "問題を報告",
+    "description": "Link to GitHub Issues."
+  },
+  "aboutDiscussions": {
+    "message": "質問とアイデア",
+    "description": "Link to GitHub Discussions."
+  },
+  "moreFromDeveloper": {
+    "message": "開発者のほかの作品",
+    "description": "Heading."
+  },
+  "welcomeTitle": {
+    "message": "3 ステップで準備完了",
+    "description": "First-run page title."
+  },
+  "welcomePrivacy": {
+    "message": "あなたのデータはあなたのもの",
+    "description": "First-run page, first step heading."
+  },
+  "welcomeSpeed": {
+    "message": "お気に入りの速度",
+    "description": "First-run page, third step heading."
+  },
+  "welcomeSpeedHelp": {
+    "message": "拡張機能のウィンドウで星をタップすると、この速度になります。0.10〜16.00。",
+    "description": "First-run page, favorite speed help."
+  },
+  "welcomeDone": {
+    "message": "完了",
+    "description": "First-run page button that closes it."
+  },
+  "welcomeAllSettings": {
+    "message": "すべての設定",
+    "description": "First-run page link to the options page."
+  }
+}

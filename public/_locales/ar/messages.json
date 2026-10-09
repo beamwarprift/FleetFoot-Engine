@@ -1,0 +1,1372 @@
+{
+  "extensionDescription": {
+    "message": "التحكم في سرعة تشغيل الفيديو والصوت بتقنية HTML5: سريع وخفيف ويحترم خصوصيتك.",
+    "description": "Store and browser description."
+  },
+  "connectingTitle": {
+    "message": "جارٍ الاتصال بالصفحة…",
+    "description": "Popup, while injecting."
+  },
+  "pageUnavailableTitle": {
+    "message": "لا يعمل FleetFoot Engine في هذه الصفحة.",
+    "description": "Popup, page refuses extensions."
+  },
+  "pageUnavailableHint": {
+    "message": "صفحات المتصفح ومتاجر الإضافات لا تسمح بتشغيل الإضافات.",
+    "description": "Popup hint."
+  },
+  "noAnswerTitle": {
+    "message": "الصفحة لا تستجيب.",
+    "description": "Popup, no answer."
+  },
+  "noAnswerHint": {
+    "message": "ربما تكون مشغولة أو تغيّرت للتو. حاول مرة أخرى.",
+    "description": "Popup hint."
+  },
+  "noMediaTitle": {
+    "message": "لا يوجد فيديو أو صوت في هذه الصفحة.",
+    "description": "Popup, no media."
+  },
+  "noMediaHint": {
+    "message": "لا يمكن الوصول من هنا إلى مشغّل مضمَّن من موقع آخر.",
+    "description": "Popup hint."
+  },
+  "framedTitle": {
+    "message": "المشغّل داخل إطار من $SITE$.",
+    "description": "Popup: no player here, but a frame from another site is on screen; $SITE$ is that site, e.g. «vixcloud.co».",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedHint": {
+    "message": "للوصول إليه يطلب المتصفح إذنًا بالوصول إلى ذلك الموقع؛ وبعدها يبدأ FleetFoot Engine هناك تلقائيًا.",
+    "description": "Popup, under framedTitle: allowing the site lets the extension reach the frame, and it then starts there by itself."
+  },
+  "framedAllowSite": {
+    "message": "السماح على $SITE$",
+    "description": "Popup button: asks the browser for access to that one site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedAllowAll": {
+    "message": "السماح على كل المواقع",
+    "description": "Popup button: asks the browser for access to every site (as «Always, on every site» in the options)."
+  },
+  "retry": {
+    "message": "إعادة المحاولة",
+    "description": "Button."
+  },
+  "slower": {
+    "message": "أبطأ",
+    "description": "Button label."
+  },
+  "faster": {
+    "message": "أسرع",
+    "description": "Button label."
+  },
+  "rateInputLabel": {
+    "message": "سرعة التشغيل",
+    "description": "Rate input label."
+  },
+  "rateInvalid": {
+    "message": "أدخل سرعة من $MIN$ إلى $MAX$.",
+    "description": "Invalid typed rate.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "resetTo": {
+    "message": "العودة إلى $RATE$",
+    "description": "Reset button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "previousRate": {
+    "message": "السرعة السابقة",
+    "description": "Button label."
+  },
+  "favoriteRate": {
+    "message": "السرعة المفضلة، $RATE$",
+    "description": "Button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "presets": {
+    "message": "سرعات جاهزة",
+    "description": "Group label."
+  },
+  "preservePitch": {
+    "message": "صوت طبيعي",
+    "description": "Switch label."
+  },
+  "on": {
+    "message": "مفعّل",
+    "description": "Switch state."
+  },
+  "off": {
+    "message": "متوقف",
+    "description": "Switch state."
+  },
+  "seekBack": {
+    "message": "رجوع $DURATION$",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "seekForward": {
+    "message": "تقدّم $DURATION$",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipEnter": {
+    "message": "صورة داخل صورة",
+    "description": "Button."
+  },
+  "pipExit": {
+    "message": "الخروج من صورة داخل صورة",
+    "description": "Button."
+  },
+  "loopGroup": {
+    "message": "تكرار A–B",
+    "description": "Group label."
+  },
+  "loopHelpLabel": {
+    "message": "ما تكرار A–B؟",
+    "description": "Accessible name of the info button next to the loop."
+  },
+  "loopHelp": {
+    "message": "يكرر مقطعًا دون توقف، لمشاهدته مجددًا أو لدراسته.",
+    "description": "Popover explaining the A–B loop: what it is for."
+  },
+  "loopHelpSteps": {
+    "message": "انقر A حيث يبدأ المقطع، وB حيث ينتهي، ثم «تكرار».",
+    "description": "Popover explaining the A–B loop: how to set it."
+  },
+  "loopHelpClear": {
+    "message": "زر × يلغي التكرار.",
+    "description": "Last line of the loop help; × is the clear button."
+  },
+  "loopA": {
+    "message": "تحديد A",
+    "description": "Button."
+  },
+  "loopB": {
+    "message": "تحديد B",
+    "description": "Button."
+  },
+  "loopAAt": {
+    "message": "A $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loopBAt": {
+    "message": "B $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loop": {
+    "message": "تكرار",
+    "description": "Toggle button."
+  },
+  "loopClear": {
+    "message": "إلغاء التكرار",
+    "description": "Button label."
+  },
+  "copyTimestamp": {
+    "message": "نسخ هذه اللحظة",
+    "description": "Button."
+  },
+  "copied": {
+    "message": "تم نسخ $TIME$",
+    "description": "After copying.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "تعذّر نسخ اللحظة.",
+    "description": "Copy failed."
+  },
+  "player": {
+    "message": "المشغّل",
+    "description": "Select label."
+  },
+  "playerAuto": {
+    "message": "تلقائي",
+    "description": "Option."
+  },
+  "playerAll": {
+    "message": "كل المشغّلات",
+    "description": "Option."
+  },
+  "playerVideo": {
+    "message": "فيديو $NUMBER$",
+    "description": "Short name of a video player, numbered in order of discovery.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerAudio": {
+    "message": "صوت $NUMBER$",
+    "description": "Player name.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerPlaying": {
+    "message": "قيد التشغيل",
+    "description": "Detail of a player that is playing now."
+  },
+  "playerEmbedded": {
+    "message": "مضمَّن من $SITE$",
+    "description": "Detail of a player inside a frame of the page; $SITE$ is that frame's site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerEmbeddedUnknown": {
+    "message": "مضمَّن",
+    "description": "Detail of a player inside a frame of the page that has no site."
+  },
+  "options": {
+    "message": "الإعدادات",
+    "description": "Button."
+  },
+  "policyFollow": {
+    "message": "ترك القرار للموقع",
+    "description": "Rate policy name."
+  },
+  "policySmart": {
+    "message": "الاستعادة في الفيديو التالي (موصى به)",
+    "description": "Rate policy name."
+  },
+  "policyLock": {
+    "message": "الاستعادة فورًا، دائمًا",
+    "description": "Rate policy name."
+  },
+  "noticeContested": {
+    "message": "إضافة أخرى أو الصفحة نفسها تواصل تغيير سرعة هذا المشغّل. لتجنّب شدّ الحبل، توقف FleetFoot Engine عن استعادتها.",
+    "description": "Notice."
+  },
+  "noticeContestedChoose": {
+    "message": "اختر ما تريد فعله",
+    "description": "Popup link after the LOCK yielded notice: opens the option."
+  },
+  "noticeExtremeRate": {
+    "message": "بهذه السرعة قد يكتم المتصفح الصوت أو يشوّهه.",
+    "description": "Notice."
+  },
+  "noticeLive": {
+    "message": "هذا بث مباشر، لذا لا يمكن التقديم ولا معرفة الوقت المتبقي.",
+    "description": "Notice."
+  },
+  "errorInvalidCommand": {
+    "message": "حدث خطأ ما. حاول مرة أخرى.",
+    "description": "Error."
+  },
+  "errorNoPlayer": {
+    "message": "لم يعد المشغّل في الصفحة.",
+    "description": "Error."
+  },
+  "errorRateRejected": {
+    "message": "رفضت الصفحة هذه السرعة.",
+    "description": "Error."
+  },
+  "errorPitchUnsupported": {
+    "message": "لا يستطيع هذا المشغّل الحفاظ على الصوت الطبيعي.",
+    "description": "Error."
+  },
+  "errorNoPreviousRate": {
+    "message": "لا توجد سرعة سابقة بعد.",
+    "description": "Error."
+  },
+  "errorNotSeekable": {
+    "message": "لا يمكن التقديم أو الإرجاع في هذه الوسائط الآن.",
+    "description": "Error."
+  },
+  "errorNotLoopable": {
+    "message": "يحتاج التكرار إلى وسائط معروفة المدة.",
+    "description": "Error."
+  },
+  "errorLoopInvalid": {
+    "message": "يجب أن تأتي B بعد A.",
+    "description": "Error."
+  },
+  "errorPipUnavailable": {
+    "message": "ميزة صورة داخل صورة غير متاحة لهذا المشغّل.",
+    "description": "Error."
+  },
+  "errorPipRejected": {
+    "message": "رفض المتصفح ميزة صورة داخل صورة. استخدم الزر في الشريط فوق المشغّل أو اختصارًا في الصفحة.",
+    "description": "Error."
+  },
+  "overlayLabel": {
+    "message": "عناصر تحكم FleetFoot Engine",
+    "description": "Toolbar label."
+  },
+  "overlayMove": {
+    "message": "نقل (مفاتيح الأسهم)",
+    "description": "Drag handle."
+  },
+  "overlayMore": {
+    "message": "عناصر تحكم أكثر",
+    "description": "Button."
+  },
+  "overlayLess": {
+    "message": "عناصر تحكم أقل",
+    "description": "Button."
+  },
+  "menuSpeed": {
+    "message": "السرعة",
+    "description": "Context menu."
+  },
+  "menuFavorite": {
+    "message": "المفضلة ($RATE$)",
+    "description": "Context menu.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "الإعدادات",
+    "description": "Page subtitle."
+  },
+  "sectionSpeed": {
+    "message": "السرعة",
+    "description": "Section."
+  },
+  "speedGroupRates": {
+    "message": "سرعاتك",
+    "description": "Options, Speed section: heading of the user's own speeds (presets, step, favorite and hold speeds)."
+  },
+  "speedGroupRestore": {
+    "message": "استعادة سرعتك",
+    "description": "Options, Speed section: heading of what happens when a site changes the speed."
+  },
+  "speedGroupPlayers": {
+    "message": "المشغّلات المعنيّة",
+    "description": "Options, Speed section: heading of which players a speed applies to."
+  },
+  "sectionPlayback": {
+    "message": "التشغيل",
+    "description": "Section."
+  },
+  "sectionKeyboard": {
+    "message": "لوحة المفاتيح",
+    "description": "Section."
+  },
+  "sectionOverlay": {
+    "message": "الشريط فوق المشغّل",
+    "description": "Section."
+  },
+  "sectionMenu": {
+    "message": "قائمة النقر بالزر الأيمن",
+    "description": "Section."
+  },
+  "presetsField": {
+    "message": "سرعات جاهزة",
+    "description": "Field."
+  },
+  "presetsHelp": {
+    "message": "حتى 12 سرعة تفصل بينها مسافات، مثل 1 1.5 2.",
+    "description": "Help."
+  },
+  "presetsInvalid": {
+    "message": "أدخل من 1 إلى $MAX$ من السرعات، تفصل بينها مسافات.",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "rateStepField": {
+    "message": "مقدار الخطوة للإبطاء والإسراع",
+    "description": "Field."
+  },
+  "rateStepHelp": {
+    "message": "من 0.01 إلى 1.00.",
+    "description": "Help."
+  },
+  "favoriteField": {
+    "message": "السرعة المفضلة",
+    "description": "Field."
+  },
+  "holdField": {
+    "message": "السرعة أثناء الضغط المستمر على مفتاح",
+    "description": "Field."
+  },
+  "rateRangeHelp": {
+    "message": "من 0.10 إلى 16.00.",
+    "description": "Help."
+  },
+  "policyField": {
+    "message": "إذا غيّر الموقع السرعة",
+    "description": "Legend."
+  },
+  "policyFollowHelp": {
+    "message": "تُطبَّق سرعتك مرة واحدة. مثال: تبدأ الحلقة التالية بسرعة 1× وتبقى على 1×.",
+    "description": "Help."
+  },
+  "policySmartHelp": {
+    "message": "مثال: تبدأ الحلقة التالية بسرعة 1× ثم تعود سرعتك. إذا غيّر الموقع السرعة أثناء المشاهدة، تبقى كما تركها الموقع حتى الفيديو التالي.",
+    "description": "Help."
+  },
+  "policyLockHelp": {
+    "message": "مثال: أثناء المشاهدة يعيد الموقع السرعة إلى 1×، وبعد لحظة تعود سرعتك. للمواقع التي تغيّر السرعة باستمرار.",
+    "description": "Help."
+  },
+  "targetField": {
+    "message": "تُطبَّق السرعة على",
+    "description": "Legend."
+  },
+  "targetActive": {
+    "message": "المشغّل النشط",
+    "description": "Option."
+  },
+  "targetAll": {
+    "message": "كل المشغّلات في الصفحة",
+    "description": "Option."
+  },
+  "pitchField": {
+    "message": "صوت طبيعي عند تغيير السرعة",
+    "description": "Field."
+  },
+  "skipSilenceField": {
+    "message": "تخطّي الصمت",
+    "description": "Name of Skip Silence: options switch, site profile field, popup button."
+  },
+  "skipSilenceHelp": {
+    "message": "في فترات التوقف ينتقل المشغّل إلى سرعة الصمت، ويعود إلى سرعتك فور عودة الصوت. يُستمع إلى الصوت على جهازك فقط، ولا يُسجَّل أو يُرسَل أبدًا.",
+    "description": "What Skip Silence does and that the sound stays on the device: options help, popup card."
+  },
+  "skipSilenceSettings": {
+    "message": "إعدادات «تخطّي الصمت»",
+    "description": "Link in the popup card of Skip Silence, to its place on the options page."
+  },
+  "silenceModeField": {
+    "message": "ما يُعدّ صمتًا",
+    "description": "Options legend: how readily a pause counts as a silence."
+  },
+  "silenceConservative": {
+    "message": "فترات التوقف الطويلة والهادئة فقط",
+    "description": "Options choice: only long, quiet pauses count."
+  },
+  "silenceNormal": {
+    "message": "فترات التوقف بين الجمل أيضًا (موصى به)",
+    "description": "Options choice, the default: pauses between sentences count too."
+  },
+  "silenceAggressive": {
+    "message": "كل توقف، حتى مع قليل من الضوضاء في الخلفية",
+    "description": "Options choice: every pause counts, even with background noise."
+  },
+  "silenceRateField": {
+    "message": "السرعة أثناء الصمت",
+    "description": "Options field: the speed a silence plays at."
+  },
+  "noticeSkipSilenceWaiting": {
+    "message": "يعمل «تخطّي الصمت» مع أول نقرة لك على الصفحة.",
+    "description": "Notice: the browser starts audio only after a click on the page."
+  },
+  "noticeSkipSilenceUnavailable": {
+    "message": "«تخطّي الصمت» غير متاح لهذه الوسائط.",
+    "description": "Notice: the browser does not let the extension hear this media."
+  },
+  "seekStepField": {
+    "message": "مقدار القفز بالثواني",
+    "description": "Field."
+  },
+  "seekStepInvalid": {
+    "message": "أدخل عددًا صحيحًا من الثواني من $MIN$ إلى $MAX$.",
+    "description": "Error.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "pageShortcutsField": {
+    "message": "اختصارات الصفحة",
+    "description": "Field."
+  },
+  "pageShortcutsHelp": {
+    "message": "تعمل بعد أن تفتح FleetFoot Engine في الصفحة، ولا تعمل أبدًا أثناء الكتابة في حقل.",
+    "description": "Help."
+  },
+  "shortcutsTable": {
+    "message": "المفاتيح في الصفحة",
+    "description": "Table caption."
+  },
+  "keyPress": {
+    "message": "اضغط مفتاحًا… (Esc للإلغاء)",
+    "description": "While recording."
+  },
+  "keyNone": {
+    "message": "لا شيء",
+    "description": "Unbound."
+  },
+  "keyRemove": {
+    "message": "إزالة مفتاح «$ACTION$»",
+    "description": "Button label: the button shows only a cross.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "keyChange": {
+    "message": "$ACTION$: $KEY$. تغيير",
+    "description": "Button label.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "keyTaken": {
+    "message": "المفتاح $KEY$ مستخدم بالفعل لـ«$ACTION$».",
+    "description": "Conflict.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "action": {
+        "content": "$2"
+      }
+    }
+  },
+  "browserShortcutsHelp": {
+    "message": "تُضبط الاختصارات التي تعمل في أي صفحة من إعدادات اختصارات الإضافات في المتصفح.",
+    "description": "Help."
+  },
+  "browserShortcutsOpen": {
+    "message": "فتح اختصارات المتصفح",
+    "description": "Button."
+  },
+  "overlayField": {
+    "message": "إظهار الشريط فوق المشغّلات",
+    "description": "Field."
+  },
+  "overlayHelp": {
+    "message": "شريط صغير يظهر ما دام المؤشر فوق المشغّل.",
+    "description": "Help."
+  },
+  "overlayResetPosition": {
+    "message": "إعادة الشريط إلى الزاوية",
+    "description": "Button."
+  },
+  "contextMenuField": {
+    "message": "قائمة السرعة عند النقر بالزر الأيمن على فيديو أو صوت",
+    "description": "Field."
+  },
+  "contextMenuHelp": {
+    "message": "تظهر فقط على الفيديو والصوت.",
+    "description": "Help."
+  },
+  "saved": {
+    "message": "تم الحفظ.",
+    "description": "Status."
+  },
+  "invalidValue": {
+    "message": "هذه القيمة غير صالحة.",
+    "description": "Error."
+  },
+  "restoreDefaults": {
+    "message": "استعادة الإعدادات الافتراضية",
+    "description": "Button."
+  },
+  "restoreConfirm": {
+    "message": "انقر مرة أخرى لاستعادة كل شيء",
+    "description": "Button, armed."
+  },
+  "restored": {
+    "message": "تمت استعادة الإعدادات الافتراضية.",
+    "description": "Status."
+  },
+  "actionSlower": {
+    "message": "أبطأ",
+    "description": "Shortcut action."
+  },
+  "actionFaster": {
+    "message": "أسرع",
+    "description": "Shortcut action."
+  },
+  "actionReset": {
+    "message": "العودة إلى 1×",
+    "description": "Shortcut action."
+  },
+  "actionFavorite": {
+    "message": "السرعة المفضلة",
+    "description": "Shortcut action."
+  },
+  "actionHold": {
+    "message": "اضغط باستمرار للإسراع",
+    "description": "Shortcut action."
+  },
+  "actionSeekBackward": {
+    "message": "رجوع",
+    "description": "Shortcut action."
+  },
+  "actionSeekForward": {
+    "message": "تقدّم",
+    "description": "Shortcut action."
+  },
+  "actionTogglePitch": {
+    "message": "تشغيل الصوت الطبيعي أو إيقافه",
+    "description": "Shortcut action."
+  },
+  "actionLoopA": {
+    "message": "بداية التكرار (A)",
+    "description": "Shortcut action."
+  },
+  "actionLoopB": {
+    "message": "نهاية التكرار (B)",
+    "description": "Shortcut action."
+  },
+  "actionLoopToggle": {
+    "message": "تشغيل التكرار أو إيقافه",
+    "description": "Shortcut action."
+  },
+  "actionNextPlayer": {
+    "message": "المشغّل التالي",
+    "description": "Shortcut action."
+  },
+  "actionToggleOverlay": {
+    "message": "إظهار الشريط أو إخفاؤه",
+    "description": "Shortcut action."
+  },
+  "controlling": {
+    "message": "المشغّل المتحكَّم به",
+    "description": "Caption above the player list."
+  },
+  "live": {
+    "message": "مباشر",
+    "description": "Badge for a live stream."
+  },
+  "timeLeftAt": {
+    "message": "يتبقى $TIME$ بسرعة $RATE$",
+    "description": "Remaining time at the current speed.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      },
+      "rate": {
+        "content": "$2"
+      }
+    }
+  },
+  "timeLeftNormal": {
+    "message": "$TIME$ بالسرعة العادية",
+    "description": "Remaining time at 1×.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipOpen": {
+    "message": "فتح",
+    "description": "Picture-in-picture button."
+  },
+  "pipClose": {
+    "message": "إغلاق",
+    "description": "Picture-in-picture button."
+  },
+  "savedHours": {
+    "message": "$HOURS$ $MINUTES$",
+    "description": "Time saved: hours then minutes, each already with its unit («12 h», «34 min»).",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      },
+      "minutes": {
+        "content": "$2"
+      }
+    }
+  },
+  "savedUnderMinute": {
+    "message": "أقل من دقيقة",
+    "description": "Time saved below one minute."
+  },
+  "savedPopup": {
+    "message": "تم توفير $TIME$",
+    "description": "Popup header: total time saved.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedTitle": {
+    "message": "الوقت الموفَّر",
+    "description": "Options section."
+  },
+  "savedHelp": {
+    "message": "الوقت الذي لم تضطر إلى قضائه لأن FleetFoot Engine شغّل الفيديو والصوت لديك بسرعة أكبر. يُحفظ على هذا الجهاز فقط، كمجموع واحد.",
+    "description": "Help."
+  },
+  "savedTotal": {
+    "message": "حتى الآن: $TIME$",
+    "description": "Options: the total.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedReset": {
+    "message": "تصفير العدّاد",
+    "description": "Button."
+  },
+  "savedResetConfirm": {
+    "message": "انقر مرة أخرى للتصفير",
+    "description": "Button, armed."
+  },
+  "savedResetDone": {
+    "message": "تم تصفير العدّاد.",
+    "description": "Status."
+  },
+  "sectionAppearance": {
+    "message": "المظهر",
+    "description": "Options section."
+  },
+  "themeField": {
+    "message": "سمة الألوان",
+    "description": "Legend."
+  },
+  "textSizeField": {
+    "message": "حجم النص",
+    "description": "Options, Appearance: label of the choice of text size for this page, from 100% to 200%."
+  },
+  "textSizeHelp": {
+    "message": "يكبّر النص وعناصر التحكم في هذه الصفحة.",
+    "description": "Options, Appearance: under textSizeField."
+  },
+  "themeYellow": {
+    "message": "أصفر (افتراضي)",
+    "description": "Theme."
+  },
+  "themeCyan": {
+    "message": "سماوي",
+    "description": "Theme."
+  },
+  "themeMagenta": {
+    "message": "أرجواني",
+    "description": "Theme."
+  },
+  "themeGreen": {
+    "message": "أخضر",
+    "description": "Theme."
+  },
+  "themeViolet": {
+    "message": "بنفسجي",
+    "description": "Theme."
+  },
+  "themeCoral": {
+    "message": "مرجاني",
+    "description": "Theme."
+  },
+  "themeSlate": {
+    "message": "رمادي أردوازي",
+    "description": "Theme: dimmed blue-grey, easy on the eyes."
+  },
+  "themeSepia": {
+    "message": "سيبيا",
+    "description": "Theme: dimmed warm brown, easy on the eyes."
+  },
+  "themeSage": {
+    "message": "أخضر مريمي",
+    "description": "Theme: dimmed green, easy on the eyes."
+  },
+  "themeLight": {
+    "message": "فاتح",
+    "description": "Theme."
+  },
+  "pitchHelpShort": {
+    "message": "لا تصبح الأصوات حادّة",
+    "description": "Popup subtitle of the natural voice switch."
+  },
+  "rateOutOfRange": {
+    "message": "أدخل سرعة من $MIN$ إلى $MAX$.",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "stepOutOfRange": {
+    "message": "أدخل خطوة من $MIN$ إلى $MAX$.",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "privacyBadge": {
+    "message": "FULL PRIVACY",
+    "description": "Badge; the same words in every language."
+  },
+  "privacyBadgeSub": {
+    "message": "دون قياس عن بُعد · دون حسابات · الإعدادات على الجهاز فقط",
+    "description": "Badge subtitle."
+  },
+  "privacyStatement": {
+    "message": "لا يرسل FleetFoot Engine إلى أي أحد المواقع التي تزورها ولا ما تشاهده.",
+    "description": "Privacy section: the promise about browsing activity."
+  },
+  "verifySource": {
+    "message": "لا تثق بكلامنا. اقرأ الشيفرة.",
+    "description": "Privacy section: the invitation to read the source, before its link."
+  },
+  "sourceLink": {
+    "message": "قراءة الشيفرة على GitHub",
+    "description": "Link to the public repository."
+  },
+  "supportDevelopment": {
+    "message": "ادعم التطوير",
+    "description": "Popup footer link."
+  },
+  "supportQuestion": {
+    "message": "هل أفادك؟",
+    "description": "Popup footer question before the support link."
+  },
+  "supportSaved": {
+    "message": "هل وفّر لك $DURATION$ حتى الآن؟",
+    "description": "Popup footer question before the support link, once the time saved reaches an hour; whole hours, with the unit («12 h»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "supportDevelopmentKofi": {
+    "message": "ادعم التطوير عبر Ko-fi",
+    "description": "Options link."
+  },
+  "reviewStore": {
+    "message": "هل أعجبك؟ اترك تقييمًا",
+    "description": "Accessible name of the heart at the top of the popup, which opens this extension's page in the store it was installed from, to leave a review."
+  },
+  "sectionPrivacy": {
+    "message": "الخصوصية والأذونات",
+    "description": "Options section."
+  },
+  "sectionMemory": {
+    "message": "الذاكرة",
+    "description": "Options section."
+  },
+  "memoryField": {
+    "message": "ما يتذكره FleetFoot Engine",
+    "description": "Group label."
+  },
+  "memoryNone": {
+    "message": "لا شيء",
+    "description": "Memory choice."
+  },
+  "memoryNoneHelp": {
+    "message": "تبدأ كل صفحة بسرعتها الخاصة.",
+    "description": "Help."
+  },
+  "memoryGlobal": {
+    "message": "سرعة واحدة لكل المواقع",
+    "description": "Memory choice."
+  },
+  "memoryGlobalHelp": {
+    "message": "آخر سرعة اخترتها تُطبَّق في كل مكان. لا يُحفظ إلا الرقم.",
+    "description": "Help."
+  },
+  "memorySite": {
+    "message": "سرعة لكل موقع",
+    "description": "Memory choice."
+  },
+  "memorySiteHelp": {
+    "message": "يحفظ كل موقع سرعته، وإعداداته أيضًا إن أردت. لا يُحفظ إلا اسم الموقع، ولا يُحفظ أبدًا ما تشاهده.",
+    "description": "Help."
+  },
+  "profilesTitle": {
+    "message": "المواقع المحفوظة",
+    "description": "Heading."
+  },
+  "profilesEmpty": {
+    "message": "لا توجد مواقع بعد. غيّر السرعة في موقع ما وسيظهر هنا.",
+    "description": "Empty list."
+  },
+  "profileSpeed": {
+    "message": "السرعة (اتركها فارغة لاستخدام سرعة الموقع)",
+    "description": "Field of a site profile."
+  },
+  "profileGeneralValue": {
+    "message": "العام ($VALUE$)",
+    "description": "Option or placeholder: no value of its own on this site; the value it takes from the general settings in brackets.",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "policyFollowShort": {
+    "message": "الموقع يقرر",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policySmartShort": {
+    "message": "في الفيديو التالي",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policyLockShort": {
+    "message": "فورًا، دائمًا",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "fightField": {
+    "message": "إذا غيّرها الموقع فورًا مرة أخرى",
+    "description": "Options legend: what LOCK does when a page answers every restore at once."
+  },
+  "fightYield": {
+    "message": "التخلي مع تنبيهي (موصى به)",
+    "description": "LOCK fight answer: yield."
+  },
+  "fightBraked": {
+    "message": "مواصلة الاستعادة، مع مكابح",
+    "description": "LOCK fight answer: keep imposing, bounded."
+  },
+  "fightUnbraked": {
+    "message": "مواصلة الاستعادة، دون مكابح",
+    "description": "LOCK fight answer: keep imposing, unbounded."
+  },
+  "fightYieldShort": {
+    "message": "التخلي",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightBrakedShort": {
+    "message": "مع مكابح",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightUnbrakedShort": {
+    "message": "دون مكابح",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightHelpLabel": {
+    "message": "ما الفرق بين الخيارات الثلاثة؟",
+    "description": "Accessible name of the info button next to the LOCK fight choices."
+  },
+  "fightYieldHelp": {
+    "message": "يتوقف FleetFoot Engine عن استعادة السرعة في ذلك المشغّل وينبّهك في نافذة الإضافة.",
+    "description": "Info popover, first answer."
+  },
+  "fightBrakedHelp": {
+    "message": "يواصل استعادة سرعتك دون أن يلاحظ الموقع، مع حدّ يُبقي الاستهلاك منخفضًا. قد يعرض مشغّل الموقع سرعة مختلفة عن السرعة الفعلية.",
+    "description": "Info popover, second answer."
+  },
+  "fightUnbrakedHelp": {
+    "message": "الشيء نفسه، لكن دون حدّ. في بعض المواقع قد يشغل نواة كاملة من المعالج، فيزيد الاستهلاك وتنفد البطارية أسرع.",
+    "description": "Info popover, third answer and its risk."
+  },
+  "profileOn": {
+    "message": "مفعّل",
+    "description": "Option."
+  },
+  "profileOff": {
+    "message": "متوقف",
+    "description": "Option."
+  },
+  "profileForget": {
+    "message": "نسيان هذا الموقع",
+    "description": "Button."
+  },
+  "profileForgetSite": {
+    "message": "نسيان $SITE$",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "sectionAccess": {
+    "message": "الوصول إلى المواقع",
+    "description": "Options section."
+  },
+  "accessField": {
+    "message": "أين يعمل FleetFoot Engine",
+    "description": "Group label."
+  },
+  "accessOnClick": {
+    "message": "فقط عندما تستدعيه",
+    "description": "Access choice."
+  },
+  "accessOnClickHelp": {
+    "message": "يعمل في علامة التبويب بعد النقر على أيقونته أو استخدام اختصار أو قائمة النقر بالزر الأيمن. لا يملك وصولًا إلى أي موقع.",
+    "description": "Help."
+  },
+  "accessSelected": {
+    "message": "دائمًا، في المواقع التي تختارها",
+    "description": "Access choice."
+  },
+  "accessSelectedHelp": {
+    "message": "يبدأ تلقائيًا في هذه المواقع، والاختصارات جاهزة.",
+    "description": "Help."
+  },
+  "accessAll": {
+    "message": "دائمًا، في كل المواقع",
+    "description": "Access choice."
+  },
+  "accessAllHelp": {
+    "message": "سيطلب المتصفح الوصول إلى كل المواقع. لا يبحث FleetFoot Engine إلا عن الفيديو والصوت. لا يقرأ الصفحات أبدًا ولا يرسل أي شيء.",
+    "description": "Help."
+  },
+  "accessDeclined": {
+    "message": "لم يمنح المتصفح الوصول، لذا لم يتغيّر شيء.",
+    "description": "Status."
+  },
+  "accessFiles": {
+    "message": "مقاطع الفيديو المفتوحة من حاسوبك لا تشملها هذه الخيارات؛ افتح FleetFoot Engine بالنقر على أيقونته.",
+    "description": "Help."
+  },
+  "sitesChosen": {
+    "message": "مواقعك",
+    "description": "Heading."
+  },
+  "sitesExcluded": {
+    "message": "باستثناء هذه المواقع",
+    "description": "Heading."
+  },
+  "sitesExcludedHelp": {
+    "message": "لا يبدأ تلقائيًا أبدًا في هذه المواقع، لكن يمكنك استدعاؤه بنقرة.",
+    "description": "Help."
+  },
+  "sitesNone": {
+    "message": "لا توجد مواقع بعد.",
+    "description": "Empty list."
+  },
+  "siteField": {
+    "message": "الموقع",
+    "description": "Field label."
+  },
+  "siteHelp": {
+    "message": "اسم مثل example.com أو عنوان إحدى صفحاته.",
+    "description": "Help."
+  },
+  "siteAdd": {
+    "message": "إضافة",
+    "description": "Button."
+  },
+  "siteInvalid": {
+    "message": "هذا ليس موقعًا. اكتبه بالشكل example.com.",
+    "description": "Error."
+  },
+  "siteRemoveShort": {
+    "message": "إزالة",
+    "description": "Button."
+  },
+  "siteRemove": {
+    "message": "إزالة $SITE$",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "excludedFull": {
+    "message": "الحد الأقصى للمواقع المستثناة هو $MAX$.",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "privacyTelemetry": {
+    "message": "القياس عن بُعد",
+    "description": "Label."
+  },
+  "privacyTelemetryNone": {
+    "message": "لا يوجد",
+    "description": "Value."
+  },
+  "privacyAnalytics": {
+    "message": "إحصاءات الاستخدام",
+    "description": "Label."
+  },
+  "privacyAnalyticsNone": {
+    "message": "لا توجد",
+    "description": "Value."
+  },
+  "privacyAccounts": {
+    "message": "الحسابات",
+    "description": "Label."
+  },
+  "privacyAccountsNone": {
+    "message": "لا توجد",
+    "description": "Value."
+  },
+  "privacyServers": {
+    "message": "الخوادم البعيدة",
+    "description": "Label."
+  },
+  "privacyServersNone": {
+    "message": "لا توجد",
+    "description": "Value."
+  },
+  "privacyAds": {
+    "message": "الإعلانات",
+    "description": "Label."
+  },
+  "privacyAdsNone": {
+    "message": "لا توجد",
+    "description": "Value."
+  },
+  "privacyAffiliate": {
+    "message": "روابط التسويق بالعمولة",
+    "description": "Label."
+  },
+  "privacyAffiliateNone": {
+    "message": "لا توجد",
+    "description": "Value."
+  },
+  "privacyStorage": {
+    "message": "إعداداتك",
+    "description": "Label."
+  },
+  "privacyStorageLocal": {
+    "message": "على هذا الجهاز فقط",
+    "description": "Value."
+  },
+  "privacyWhereOnClick": {
+    "message": "أين يعمل: فقط عندما تستدعيه",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereSelected": {
+    "message": "أين يعمل: دائمًا، في المواقع التي تختارها",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereAll": {
+    "message": "أين يعمل: دائمًا، في كل المواقع",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyAccessChange": {
+    "message": "تغيير الوصول إلى المواقع",
+    "description": "Link to the site access section."
+  },
+  "backupTitle": {
+    "message": "نسخة من إعداداتك",
+    "description": "Heading."
+  },
+  "backupHelp": {
+    "message": "ملف يضم إعداداتك والمواقع المحفوظة، للاحتفاظ به أو نقله إلى متصفح آخر. يبقى حيث تضعه.",
+    "description": "Help."
+  },
+  "exportSettings": {
+    "message": "تصدير الإعدادات",
+    "description": "Button."
+  },
+  "exportDone": {
+    "message": "تم تصدير الإعدادات.",
+    "description": "Status."
+  },
+  "exportFailed": {
+    "message": "تعذّر تصدير الإعدادات.",
+    "description": "Status."
+  },
+  "importSettings": {
+    "message": "استيراد الإعدادات",
+    "description": "Button."
+  },
+  "importSummary": {
+    "message": "الإعدادات في الملف: $SETTINGS$ · المواقع: $SITES$",
+    "description": "What an import would bring.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      },
+      "sites": {
+        "content": "$2"
+      }
+    }
+  },
+  "importIgnored": {
+    "message": "قيم مستبعدة لأنها غير صالحة: $COUNT$",
+    "description": "Import summary.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "importReplace": {
+    "message": "ستحل محل الإعدادات الحالية. المواقع غير الموجودة في الملف تبقى كما هي.",
+    "description": "Import summary."
+  },
+  "importConfirm": {
+    "message": "استيراد",
+    "description": "Button."
+  },
+  "importCancel": {
+    "message": "إلغاء",
+    "description": "Button."
+  },
+  "importDone": {
+    "message": "تم استيراد الإعدادات.",
+    "description": "Status."
+  },
+  "importFailed": {
+    "message": "تعذّر استيراد الإعدادات.",
+    "description": "Status."
+  },
+  "importTooLarge": {
+    "message": "هذا الملف أكبر من أن يكون نسخة من الإعدادات.",
+    "description": "Status."
+  },
+  "importNotJson": {
+    "message": "تعذّرت قراءة هذا الملف كنسخة من الإعدادات.",
+    "description": "Status."
+  },
+  "importNotBackup": {
+    "message": "هذا الملف ليس نسخة من إعدادات FleetFoot Engine.",
+    "description": "Status."
+  },
+  "importNewer": {
+    "message": "هذه النسخة من إصدار أحدث من FleetFoot Engine. حدّث الإضافة ثم استورد مرة أخرى.",
+    "description": "Status."
+  },
+  "deleteAll": {
+    "message": "حذف كل شيء على هذا الجهاز",
+    "description": "Button."
+  },
+  "deleteAllConfirm": {
+    "message": "انقر مرة أخرى لحذف كل شيء",
+    "description": "Button, armed."
+  },
+  "deleteAllHelp": {
+    "message": "يحذف الإعدادات والمواقع المحفوظة والوقت الموفَّر. تبقى أذونات المواقع؛ يمكنك إزالتها من قسم «$SECTION$».",
+    "description": "Help; the substitution is the site access section title.",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "deletedAll": {
+    "message": "حُذف كل ما كان FleetFoot Engine يحفظه على هذا الجهاز.",
+    "description": "Status."
+  },
+  "deleteFailed": {
+    "message": "تعذّر حذف كل شيء.",
+    "description": "Status."
+  },
+  "sectionAbout": {
+    "message": "حول",
+    "description": "Section title."
+  },
+  "aboutVersion": {
+    "message": "الإصدار $VERSION$",
+    "description": "The version of this build.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "aboutLicense": {
+    "message": "مجاني للاستخدام الشخصي غير التجاري بموجب ترخيص PolyForm Strict 1.0.0. لا يُسمح بتعديل الشيفرة أو إعادة توزيعها.",
+    "description": "Licence summary; the licence text decides."
+  },
+  "aboutSource": {
+    "message": "الشيفرة المصدرية لهذا الإصدار",
+    "description": "Link."
+  },
+  "aboutLicenseLink": {
+    "message": "قراءة الترخيص",
+    "description": "Link."
+  },
+  "aboutIssues": {
+    "message": "الإبلاغ عن مشكلة",
+    "description": "Link to GitHub Issues."
+  },
+  "aboutDiscussions": {
+    "message": "أسئلة وأفكار",
+    "description": "Link to GitHub Discussions."
+  },
+  "moreFromDeveloper": {
+    "message": "المزيد من المطوّر",
+    "description": "Heading."
+  },
+  "welcomeTitle": {
+    "message": "جاهز في ثلاث خطوات",
+    "description": "First-run page title."
+  },
+  "welcomePrivacy": {
+    "message": "بياناتك ملكك",
+    "description": "First-run page, first step heading."
+  },
+  "welcomeSpeed": {
+    "message": "سرعتك المفضلة",
+    "description": "First-run page, third step heading."
+  },
+  "welcomeSpeedHelp": {
+    "message": "نقرة واحدة على النجمة في نافذة الإضافة وتصبح السرعة هذه. من 0.10 إلى 16.00.",
+    "description": "First-run page, favorite speed help."
+  },
+  "welcomeDone": {
+    "message": "تم",
+    "description": "First-run page button that closes it."
+  },
+  "welcomeAllSettings": {
+    "message": "كل الإعدادات",
+    "description": "First-run page link to the options page."
+  }
+}

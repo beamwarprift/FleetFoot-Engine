@@ -1,0 +1,26 @@
+# Single-package workspace: keeps pnpm from resolving a parent directory as the workspace root.
+# Supply-chain settings.
+
+# Refuse package versions published less than 7 days ago (minutes).
+minimumReleaseAge: 10080
+
+# Dependency lifecycle scripts are blocked unless listed here.
+onlyBuiltDependencies: []
+
+# Audited advisories accepted with a documented reason.
+# Each entry must be re-reviewed when the dependency that pulls it in is updated.
+auditConfig:
+  ignoreGhsas:
+    # node-forge via web-ext > @devicefarmer/adbkit: Android debugging only, never used here
+    # (web-ext runs `lint` only). Dev-only, not shipped. No patched version exists.
+    - GHSA-86w9-cpqp-85rv
+
+# Transitive versions raised past published advisories. Each entry goes when the package that
+# pulls it in depends on a fixed version by itself.
+overrides:
+  # GHSA-pqg4-j6r4-53mv (critical) via web-ext > fx-runner, which pins 1.10.0; fx-runner 1.7.0
+  # pins 1.11.0 itself and is newer than minimumReleaseAge allows.
+  shell-quote: 1.11.0
+  # GHSA-68fv-2mgg-jv7q (high) via vite > postcss, whose range (^1.2.1) already admits it.
+  source-map-js: ^1.2.2
+

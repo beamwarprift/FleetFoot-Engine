@@ -1,0 +1,27 @@
+{
+  // Browser code: entrypoints and src. Node code (scripts, tests, configs) lives in tsconfig.node.json.
+  "extends": "./.wxt/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "erasableSyntaxOnly": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": []
+  },
+  "include": [
+    "entrypoints/**/*",
+    "src/**/*",
+    "tests/browser/**/*",
+    "tests/phone/**/*",
+    ".wxt/wxt.d.ts"
+  ],
+  "exclude": ["node_modules", ".output"]
+}

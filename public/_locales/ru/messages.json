@@ -1,0 +1,1372 @@
+{
+  "extensionDescription": {
+    "message": "Управление скоростью и воспроизведением видео и аудио HTML5: быстро, легко и с уважением к вашей приватности.",
+    "description": "Store and browser description."
+  },
+  "connectingTitle": {
+    "message": "Подключение к странице…",
+    "description": "Popup, while injecting."
+  },
+  "pageUnavailableTitle": {
+    "message": "FleetFoot Engine не работает на этой странице.",
+    "description": "Popup, page refuses extensions."
+  },
+  "pageUnavailableHint": {
+    "message": "Страницы браузера и магазины расширений не допускают расширения.",
+    "description": "Popup hint."
+  },
+  "noAnswerTitle": {
+    "message": "Страница не отвечает.",
+    "description": "Popup, no answer."
+  },
+  "noAnswerHint": {
+    "message": "Возможно, она занята или только что сменилась. Попробуйте ещё раз.",
+    "description": "Popup hint."
+  },
+  "noMediaTitle": {
+    "message": "На этой странице нет видео или аудио.",
+    "description": "Popup, no media."
+  },
+  "noMediaHint": {
+    "message": "Плеер, встроенный с другого сайта, отсюда недоступен.",
+    "description": "Popup hint."
+  },
+  "framedTitle": {
+    "message": "Плеер находится во фрейме с сайта $SITE$.",
+    "description": "Popup: no player here, but a frame from another site is on screen; $SITE$ is that site, e.g. «vixcloud.co».",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedHint": {
+    "message": "Чтобы до него добраться, браузер запросит доступ к этому сайту; после этого FleetFoot Engine будет запускаться там сам.",
+    "description": "Popup, under framedTitle: allowing the site lets the extension reach the frame, and it then starts there by itself."
+  },
+  "framedAllowSite": {
+    "message": "Разрешить на $SITE$",
+    "description": "Popup button: asks the browser for access to that one site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedAllowAll": {
+    "message": "Разрешить на всех сайтах",
+    "description": "Popup button: asks the browser for access to every site (as «Always, on every site» in the options)."
+  },
+  "retry": {
+    "message": "Попробовать ещё раз",
+    "description": "Button."
+  },
+  "slower": {
+    "message": "Медленнее",
+    "description": "Button label."
+  },
+  "faster": {
+    "message": "Быстрее",
+    "description": "Button label."
+  },
+  "rateInputLabel": {
+    "message": "Скорость воспроизведения",
+    "description": "Rate input label."
+  },
+  "rateInvalid": {
+    "message": "Введите скорость от $MIN$ до $MAX$.",
+    "description": "Invalid typed rate.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "resetTo": {
+    "message": "Вернуть $RATE$",
+    "description": "Reset button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "previousRate": {
+    "message": "Предыдущая скорость",
+    "description": "Button label."
+  },
+  "favoriteRate": {
+    "message": "Любимая скорость, $RATE$",
+    "description": "Button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "presets": {
+    "message": "Быстрый выбор скорости",
+    "description": "Group label."
+  },
+  "preservePitch": {
+    "message": "Естественный голос",
+    "description": "Switch label."
+  },
+  "on": {
+    "message": "Вкл.",
+    "description": "Switch state."
+  },
+  "off": {
+    "message": "Выкл.",
+    "description": "Switch state."
+  },
+  "seekBack": {
+    "message": "Назад на $DURATION$",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "seekForward": {
+    "message": "Вперёд на $DURATION$",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipEnter": {
+    "message": "Картинка в картинке",
+    "description": "Button."
+  },
+  "pipExit": {
+    "message": "Выйти из режима «картинка в картинке»",
+    "description": "Button."
+  },
+  "loopGroup": {
+    "message": "Повтор A–B",
+    "description": "Group label."
+  },
+  "loopHelpLabel": {
+    "message": "Что такое повтор A–B?",
+    "description": "Accessible name of the info button next to the loop."
+  },
+  "loopHelp": {
+    "message": "Повторяет фрагмент без остановки, чтобы пересмотреть или разобрать его.",
+    "description": "Popover explaining the A–B loop: what it is for."
+  },
+  "loopHelpSteps": {
+    "message": "Нажмите A там, где фрагмент начинается, B — где заканчивается, затем «Повтор».",
+    "description": "Popover explaining the A–B loop: how to set it."
+  },
+  "loopHelpClear": {
+    "message": "Кнопка × убирает повтор.",
+    "description": "Last line of the loop help; × is the clear button."
+  },
+  "loopA": {
+    "message": "Отметить A",
+    "description": "Button."
+  },
+  "loopB": {
+    "message": "Отметить B",
+    "description": "Button."
+  },
+  "loopAAt": {
+    "message": "A $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loopBAt": {
+    "message": "B $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loop": {
+    "message": "Повтор",
+    "description": "Toggle button."
+  },
+  "loopClear": {
+    "message": "Убрать повтор",
+    "description": "Button label."
+  },
+  "copyTimestamp": {
+    "message": "Скопировать момент",
+    "description": "Button."
+  },
+  "copied": {
+    "message": "Момент $TIME$ скопирован",
+    "description": "After copying.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "Не удалось скопировать момент.",
+    "description": "Copy failed."
+  },
+  "player": {
+    "message": "Плеер",
+    "description": "Select label."
+  },
+  "playerAuto": {
+    "message": "Автоматически",
+    "description": "Option."
+  },
+  "playerAll": {
+    "message": "Все плееры",
+    "description": "Option."
+  },
+  "playerVideo": {
+    "message": "Видео $NUMBER$",
+    "description": "Short name of a video player, numbered in order of discovery.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerAudio": {
+    "message": "Аудио $NUMBER$",
+    "description": "Player name.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerPlaying": {
+    "message": "воспроизводится",
+    "description": "Detail of a player that is playing now."
+  },
+  "playerEmbedded": {
+    "message": "встроен с $SITE$",
+    "description": "Detail of a player inside a frame of the page; $SITE$ is that frame's site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerEmbeddedUnknown": {
+    "message": "встроенный",
+    "description": "Detail of a player inside a frame of the page that has no site."
+  },
+  "options": {
+    "message": "Настройки",
+    "description": "Button."
+  },
+  "policyFollow": {
+    "message": "Пусть решает сайт",
+    "description": "Rate policy name."
+  },
+  "policySmart": {
+    "message": "Вернуть на следующем видео (рекомендуется)",
+    "description": "Rate policy name."
+  },
+  "policyLock": {
+    "message": "Возвращать сразу, всегда",
+    "description": "Rate policy name."
+  },
+  "noticeContested": {
+    "message": "Другое расширение или сама страница снова и снова меняет скорость этого плеера. Чтобы не перетягивать канат, FleetFoot Engine перестал её возвращать.",
+    "description": "Notice."
+  },
+  "noticeContestedChoose": {
+    "message": "Выбрать, что делать",
+    "description": "Popup link after the LOCK yielded notice: opens the option."
+  },
+  "noticeExtremeRate": {
+    "message": "На такой скорости браузер может приглушить или исказить звук.",
+    "description": "Notice."
+  },
+  "noticeLive": {
+    "message": "Это прямой эфир, поэтому перемотать вперёд или узнать оставшееся время нельзя.",
+    "description": "Notice."
+  },
+  "errorInvalidCommand": {
+    "message": "Что-то пошло не так. Попробуйте ещё раз.",
+    "description": "Error."
+  },
+  "errorNoPlayer": {
+    "message": "Плеера больше нет на странице.",
+    "description": "Error."
+  },
+  "errorRateRejected": {
+    "message": "Страница отклонила эту скорость.",
+    "description": "Error."
+  },
+  "errorPitchUnsupported": {
+    "message": "Этот плеер не может сохранить естественный голос.",
+    "description": "Error."
+  },
+  "errorNoPreviousRate": {
+    "message": "Предыдущей скорости пока нет.",
+    "description": "Error."
+  },
+  "errorNotSeekable": {
+    "message": "Сейчас эту запись нельзя перематывать.",
+    "description": "Error."
+  },
+  "errorNotLoopable": {
+    "message": "Для повтора нужна запись с известной длительностью.",
+    "description": "Error."
+  },
+  "errorLoopInvalid": {
+    "message": "Точка B должна стоять после A.",
+    "description": "Error."
+  },
+  "errorPipUnavailable": {
+    "message": "Для этого плеера режим «картинка в картинке» недоступен.",
+    "description": "Error."
+  },
+  "errorPipRejected": {
+    "message": "Браузер не разрешил режим «картинка в картинке». Воспользуйтесь кнопкой на панели над плеером или клавишей на странице.",
+    "description": "Error."
+  },
+  "overlayLabel": {
+    "message": "Управление FleetFoot Engine",
+    "description": "Toolbar label."
+  },
+  "overlayMove": {
+    "message": "Переместить (стрелки на клавиатуре)",
+    "description": "Drag handle."
+  },
+  "overlayMore": {
+    "message": "Больше кнопок",
+    "description": "Button."
+  },
+  "overlayLess": {
+    "message": "Меньше кнопок",
+    "description": "Button."
+  },
+  "menuSpeed": {
+    "message": "Скорость",
+    "description": "Context menu."
+  },
+  "menuFavorite": {
+    "message": "Любимая ($RATE$)",
+    "description": "Context menu.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "Настройки",
+    "description": "Page subtitle."
+  },
+  "sectionSpeed": {
+    "message": "Скорость",
+    "description": "Section."
+  },
+  "speedGroupRates": {
+    "message": "Ваши скорости",
+    "description": "Options, Speed section: heading of the user's own speeds (presets, step, favorite and hold speeds)."
+  },
+  "speedGroupRestore": {
+    "message": "Возврат вашей скорости",
+    "description": "Options, Speed section: heading of what happens when a site changes the speed."
+  },
+  "speedGroupPlayers": {
+    "message": "Какие плееры",
+    "description": "Options, Speed section: heading of which players a speed applies to."
+  },
+  "sectionPlayback": {
+    "message": "Воспроизведение",
+    "description": "Section."
+  },
+  "sectionKeyboard": {
+    "message": "Клавиатура",
+    "description": "Section."
+  },
+  "sectionOverlay": {
+    "message": "Панель над плеером",
+    "description": "Section."
+  },
+  "sectionMenu": {
+    "message": "Меню правой кнопки",
+    "description": "Section."
+  },
+  "presetsField": {
+    "message": "Быстрый выбор скорости",
+    "description": "Field."
+  },
+  "presetsHelp": {
+    "message": "До 12 значений через пробел, например 1 1,5 2.",
+    "description": "Help."
+  },
+  "presetsInvalid": {
+    "message": "Введите значения скорости через пробел; их может быть не больше $MAX$.",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "rateStepField": {
+    "message": "Шаг для «Медленнее» и «Быстрее»",
+    "description": "Field."
+  },
+  "rateStepHelp": {
+    "message": "От 0,01 до 1,00.",
+    "description": "Help."
+  },
+  "favoriteField": {
+    "message": "Любимая скорость",
+    "description": "Field."
+  },
+  "holdField": {
+    "message": "Скорость, пока клавиша зажата",
+    "description": "Field."
+  },
+  "rateRangeHelp": {
+    "message": "От 0,10 до 16,00.",
+    "description": "Help."
+  },
+  "policyField": {
+    "message": "Если сайт меняет скорость",
+    "description": "Legend."
+  },
+  "policyFollowHelp": {
+    "message": "Ваша скорость задаётся один раз. Пример: следующая серия начинается на 1× и так и остаётся на 1×.",
+    "description": "Help."
+  },
+  "policySmartHelp": {
+    "message": "Пример: следующая серия начинается на 1×, и ваша скорость возвращается. Если сайт меняет скорость во время просмотра, она остаётся такой до следующего видео.",
+    "description": "Help."
+  },
+  "policyLockHelp": {
+    "message": "Пример: во время просмотра сайт ставит 1×, и через мгновение ваша скорость возвращается. Для сайтов, которые постоянно меняют скорость.",
+    "description": "Help."
+  },
+  "targetField": {
+    "message": "Скорость применяется к",
+    "description": "Legend."
+  },
+  "targetActive": {
+    "message": "Активному плееру",
+    "description": "Option."
+  },
+  "targetAll": {
+    "message": "Всем плеерам на странице",
+    "description": "Option."
+  },
+  "pitchField": {
+    "message": "Естественный голос при смене скорости",
+    "description": "Field."
+  },
+  "skipSilenceField": {
+    "message": "Пропуск тишины",
+    "description": "Name of Skip Silence: options switch, site profile field, popup button."
+  },
+  "skipSilenceHelp": {
+    "message": "В паузах плеер переходит на скорость для тишины и возвращается к вашей, как только снова появляется звук. Звук слушается только на вашем устройстве, никогда не записывается и не отправляется.",
+    "description": "What Skip Silence does and that the sound stays on the device: options help, popup card."
+  },
+  "skipSilenceSettings": {
+    "message": "Настройки «Пропуска тишины»",
+    "description": "Link in the popup card of Skip Silence, to its place on the options page."
+  },
+  "silenceModeField": {
+    "message": "Что считается тишиной",
+    "description": "Options legend: how readily a pause counts as a silence."
+  },
+  "silenceConservative": {
+    "message": "Только долгие тихие паузы",
+    "description": "Options choice: only long, quiet pauses count."
+  },
+  "silenceNormal": {
+    "message": "И паузы между фразами (рекомендуется)",
+    "description": "Options choice, the default: pauses between sentences count too."
+  },
+  "silenceAggressive": {
+    "message": "Любая пауза, даже с небольшим фоновым шумом",
+    "description": "Options choice: every pause counts, even with background noise."
+  },
+  "silenceRateField": {
+    "message": "Скорость в тишине",
+    "description": "Options field: the speed a silence plays at."
+  },
+  "noticeSkipSilenceWaiting": {
+    "message": "«Пропуск тишины» включится после первого щелчка на странице.",
+    "description": "Notice: the browser starts audio only after a click on the page."
+  },
+  "noticeSkipSilenceUnavailable": {
+    "message": "«Пропуск тишины» недоступен для этой записи.",
+    "description": "Notice: the browser does not let the extension hear this media."
+  },
+  "seekStepField": {
+    "message": "Шаг перемотки в секундах",
+    "description": "Field."
+  },
+  "seekStepInvalid": {
+    "message": "Введите целое число секунд от $MIN$ до $MAX$.",
+    "description": "Error.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "pageShortcutsField": {
+    "message": "Клавиши на странице",
+    "description": "Field."
+  },
+  "pageShortcutsHelp": {
+    "message": "Работают после того, как вы откроете FleetFoot Engine на странице, и никогда — пока вы печатаете в поле.",
+    "description": "Help."
+  },
+  "shortcutsTable": {
+    "message": "Клавиши на странице",
+    "description": "Table caption."
+  },
+  "keyPress": {
+    "message": "Нажмите клавишу… (Esc — отмена)",
+    "description": "While recording."
+  },
+  "keyNone": {
+    "message": "Нет",
+    "description": "Unbound."
+  },
+  "keyRemove": {
+    "message": "Убрать клавишу действия «$ACTION$»",
+    "description": "Button label: the button shows only a cross.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "keyChange": {
+    "message": "$ACTION$: $KEY$. Изменить",
+    "description": "Button label.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "keyTaken": {
+    "message": "$KEY$ уже назначена действию «$ACTION$».",
+    "description": "Conflict.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "action": {
+        "content": "$2"
+      }
+    }
+  },
+  "browserShortcutsHelp": {
+    "message": "Сочетания клавиш, которые работают на любой странице, настраиваются в браузере, в разделе сочетаний клавиш для расширений.",
+    "description": "Help."
+  },
+  "browserShortcutsOpen": {
+    "message": "Открыть сочетания клавиш браузера",
+    "description": "Button."
+  },
+  "overlayField": {
+    "message": "Показывать панель над плеерами",
+    "description": "Field."
+  },
+  "overlayHelp": {
+    "message": "Небольшая панель, которая появляется, когда указатель над плеером.",
+    "description": "Help."
+  },
+  "overlayResetPosition": {
+    "message": "Вернуть панель в угол",
+    "description": "Button."
+  },
+  "contextMenuField": {
+    "message": "Меню скорости по правому щелчку на видео или аудио",
+    "description": "Field."
+  },
+  "contextMenuHelp": {
+    "message": "Появляется только на видео и аудио.",
+    "description": "Help."
+  },
+  "saved": {
+    "message": "Сохранено.",
+    "description": "Status."
+  },
+  "invalidValue": {
+    "message": "Недопустимое значение.",
+    "description": "Error."
+  },
+  "restoreDefaults": {
+    "message": "Восстановить по умолчанию",
+    "description": "Button."
+  },
+  "restoreConfirm": {
+    "message": "Нажмите ещё раз, чтобы восстановить всё",
+    "description": "Button, armed."
+  },
+  "restored": {
+    "message": "Настройки по умолчанию восстановлены.",
+    "description": "Status."
+  },
+  "actionSlower": {
+    "message": "Медленнее",
+    "description": "Shortcut action."
+  },
+  "actionFaster": {
+    "message": "Быстрее",
+    "description": "Shortcut action."
+  },
+  "actionReset": {
+    "message": "Вернуть 1×",
+    "description": "Shortcut action."
+  },
+  "actionFavorite": {
+    "message": "Любимая скорость",
+    "description": "Shortcut action."
+  },
+  "actionHold": {
+    "message": "Ускорить, пока зажато",
+    "description": "Shortcut action."
+  },
+  "actionSeekBackward": {
+    "message": "Назад",
+    "description": "Shortcut action."
+  },
+  "actionSeekForward": {
+    "message": "Вперёд",
+    "description": "Shortcut action."
+  },
+  "actionTogglePitch": {
+    "message": "Естественный голос вкл./выкл.",
+    "description": "Shortcut action."
+  },
+  "actionLoopA": {
+    "message": "Начало повтора (A)",
+    "description": "Shortcut action."
+  },
+  "actionLoopB": {
+    "message": "Конец повтора (B)",
+    "description": "Shortcut action."
+  },
+  "actionLoopToggle": {
+    "message": "Повтор вкл./выкл.",
+    "description": "Shortcut action."
+  },
+  "actionNextPlayer": {
+    "message": "Следующий плеер",
+    "description": "Shortcut action."
+  },
+  "actionToggleOverlay": {
+    "message": "Показать или скрыть панель",
+    "description": "Shortcut action."
+  },
+  "controlling": {
+    "message": "Управляемый плеер",
+    "description": "Caption above the player list."
+  },
+  "live": {
+    "message": "Прямой эфир",
+    "description": "Badge for a live stream."
+  },
+  "timeLeftAt": {
+    "message": "Осталось $TIME$ на $RATE$",
+    "description": "Remaining time at the current speed.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      },
+      "rate": {
+        "content": "$2"
+      }
+    }
+  },
+  "timeLeftNormal": {
+    "message": "$TIME$ на обычной скорости",
+    "description": "Remaining time at 1×.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipOpen": {
+    "message": "Открыть",
+    "description": "Picture-in-picture button."
+  },
+  "pipClose": {
+    "message": "Закрыть",
+    "description": "Picture-in-picture button."
+  },
+  "savedHours": {
+    "message": "$HOURS$ $MINUTES$",
+    "description": "Time saved: hours then minutes, each already with its unit («12 h», «34 min»).",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      },
+      "minutes": {
+        "content": "$2"
+      }
+    }
+  },
+  "savedUnderMinute": {
+    "message": "меньше минуты",
+    "description": "Time saved below one minute."
+  },
+  "savedPopup": {
+    "message": "Сэкономлено $TIME$",
+    "description": "Popup header: total time saved.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedTitle": {
+    "message": "Сэкономленное время",
+    "description": "Options section."
+  },
+  "savedHelp": {
+    "message": "Время, которое вам не пришлось тратить, потому что FleetFoot Engine воспроизводил ваши видео и аудио быстрее. Хранится только на этом устройстве, одним общим числом.",
+    "description": "Help."
+  },
+  "savedTotal": {
+    "message": "Всего: $TIME$",
+    "description": "Options: the total.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedReset": {
+    "message": "Обнулить счётчик",
+    "description": "Button."
+  },
+  "savedResetConfirm": {
+    "message": "Нажмите ещё раз, чтобы обнулить",
+    "description": "Button, armed."
+  },
+  "savedResetDone": {
+    "message": "Счётчик обнулён.",
+    "description": "Status."
+  },
+  "sectionAppearance": {
+    "message": "Внешний вид",
+    "description": "Options section."
+  },
+  "themeField": {
+    "message": "Цветовая тема",
+    "description": "Legend."
+  },
+  "textSizeField": {
+    "message": "Размер текста",
+    "description": "Options, Appearance: label of the choice of text size for this page, from 100% to 200%."
+  },
+  "textSizeHelp": {
+    "message": "Увеличивает текст и элементы управления на этой странице.",
+    "description": "Options, Appearance: under textSizeField."
+  },
+  "themeYellow": {
+    "message": "Жёлтая (по умолчанию)",
+    "description": "Theme."
+  },
+  "themeCyan": {
+    "message": "Бирюзовая",
+    "description": "Theme."
+  },
+  "themeMagenta": {
+    "message": "Пурпурная",
+    "description": "Theme."
+  },
+  "themeGreen": {
+    "message": "Зелёная",
+    "description": "Theme."
+  },
+  "themeViolet": {
+    "message": "Фиолетовая",
+    "description": "Theme."
+  },
+  "themeCoral": {
+    "message": "Коралловая",
+    "description": "Theme."
+  },
+  "themeSlate": {
+    "message": "Сланцевая",
+    "description": "Theme: dimmed blue-grey, easy on the eyes."
+  },
+  "themeSepia": {
+    "message": "Сепия",
+    "description": "Theme: dimmed warm brown, easy on the eyes."
+  },
+  "themeSage": {
+    "message": "Шалфейная",
+    "description": "Theme: dimmed green, easy on the eyes."
+  },
+  "themeLight": {
+    "message": "Светлая",
+    "description": "Theme."
+  },
+  "pitchHelpShort": {
+    "message": "Голоса не становятся писклявыми",
+    "description": "Popup subtitle of the natural voice switch."
+  },
+  "rateOutOfRange": {
+    "message": "Введите скорость от $MIN$ до $MAX$.",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "stepOutOfRange": {
+    "message": "Введите шаг от $MIN$ до $MAX$.",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "privacyBadge": {
+    "message": "FULL PRIVACY",
+    "description": "Badge; the same words in every language."
+  },
+  "privacyBadgeSub": {
+    "message": "Без телеметрии · Без аккаунтов · Настройки только на устройстве",
+    "description": "Badge subtitle."
+  },
+  "privacyStatement": {
+    "message": "FleetFoot Engine никому не передаёт, какие сайты вы посещаете и что смотрите.",
+    "description": "Privacy section: the promise about browsing activity."
+  },
+  "verifySource": {
+    "message": "Не верьте нам на слово. Прочитайте код.",
+    "description": "Privacy section: the invitation to read the source, before its link."
+  },
+  "sourceLink": {
+    "message": "Читать код на GitHub",
+    "description": "Link to the public repository."
+  },
+  "supportDevelopment": {
+    "message": "Поддержать разработку",
+    "description": "Popup footer link."
+  },
+  "supportQuestion": {
+    "message": "Пригодилось?",
+    "description": "Popup footer question before the support link."
+  },
+  "supportSaved": {
+    "message": "Уже сэкономило вам $DURATION$?",
+    "description": "Popup footer question before the support link, once the time saved reaches an hour; whole hours, with the unit («12 h»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "supportDevelopmentKofi": {
+    "message": "Поддержать разработку на Ko-fi",
+    "description": "Options link."
+  },
+  "reviewStore": {
+    "message": "Нравится? Оставьте отзыв",
+    "description": "Accessible name of the heart at the top of the popup, which opens this extension's page in the store it was installed from, to leave a review."
+  },
+  "sectionPrivacy": {
+    "message": "Приватность и разрешения",
+    "description": "Options section."
+  },
+  "sectionMemory": {
+    "message": "Память",
+    "description": "Options section."
+  },
+  "memoryField": {
+    "message": "Что запоминает FleetFoot Engine",
+    "description": "Group label."
+  },
+  "memoryNone": {
+    "message": "Ничего",
+    "description": "Memory choice."
+  },
+  "memoryNoneHelp": {
+    "message": "Каждая страница начинает со своей скорости.",
+    "description": "Help."
+  },
+  "memoryGlobal": {
+    "message": "Одна скорость для всех сайтов",
+    "description": "Memory choice."
+  },
+  "memoryGlobalHelp": {
+    "message": "Последняя выбранная скорость действует везде. Хранится только число.",
+    "description": "Help."
+  },
+  "memorySite": {
+    "message": "Своя скорость для каждого сайта",
+    "description": "Memory choice."
+  },
+  "memorySiteHelp": {
+    "message": "Каждый сайт хранит свою скорость и, если хотите, свои настройки. Хранится только имя сайта, а не то, что вы смотрите.",
+    "description": "Help."
+  },
+  "profilesTitle": {
+    "message": "Запомненные сайты",
+    "description": "Heading."
+  },
+  "profilesEmpty": {
+    "message": "Сайтов пока нет. Измените скорость на сайте, и он появится здесь.",
+    "description": "Empty list."
+  },
+  "profileSpeed": {
+    "message": "Скорость (пусто — как на сайте)",
+    "description": "Field of a site profile."
+  },
+  "profileGeneralValue": {
+    "message": "Как везде ($VALUE$)",
+    "description": "Option or placeholder: no value of its own on this site; the value it takes from the general settings in brackets.",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "policyFollowShort": {
+    "message": "Решает сайт",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policySmartShort": {
+    "message": "На следующем видео",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policyLockShort": {
+    "message": "Сразу, всегда",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "fightField": {
+    "message": "Если сайт тут же меняет её снова",
+    "description": "Options legend: what LOCK does when a page answers every restore at once."
+  },
+  "fightYield": {
+    "message": "Уступить и сообщить мне (рекомендуется)",
+    "description": "LOCK fight answer: yield."
+  },
+  "fightBraked": {
+    "message": "Продолжать возвращать, с тормозом",
+    "description": "LOCK fight answer: keep imposing, bounded."
+  },
+  "fightUnbraked": {
+    "message": "Продолжать возвращать, без тормоза",
+    "description": "LOCK fight answer: keep imposing, unbounded."
+  },
+  "fightYieldShort": {
+    "message": "Уступить",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightBrakedShort": {
+    "message": "С тормозом",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightUnbrakedShort": {
+    "message": "Без тормоза",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightHelpLabel": {
+    "message": "Чем отличаются эти три варианта?",
+    "description": "Accessible name of the info button next to the LOCK fight choices."
+  },
+  "fightYieldHelp": {
+    "message": "FleetFoot Engine перестаёт возвращать скорость в этом плеере и сообщает вам об этом в окне расширения.",
+    "description": "Info popover, first answer."
+  },
+  "fightBrakedHelp": {
+    "message": "Продолжает незаметно для сайта возвращать вашу скорость, с ограничением, при котором нагрузка остаётся низкой. Плеер сайта может показывать не ту скорость, что на самом деле.",
+    "description": "Info popover, second answer."
+  },
+  "fightUnbrakedHelp": {
+    "message": "То же самое, но без ограничения. На некоторых сайтах это может занять целое ядро процессора, увеличить нагрузку и быстрее разрядить батарею.",
+    "description": "Info popover, third answer and its risk."
+  },
+  "profileOn": {
+    "message": "Вкл.",
+    "description": "Option."
+  },
+  "profileOff": {
+    "message": "Выкл.",
+    "description": "Option."
+  },
+  "profileForget": {
+    "message": "Забыть этот сайт",
+    "description": "Button."
+  },
+  "profileForgetSite": {
+    "message": "Забыть $SITE$",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "sectionAccess": {
+    "message": "Доступ к сайтам",
+    "description": "Options section."
+  },
+  "accessField": {
+    "message": "Где работает FleetFoot Engine",
+    "description": "Group label."
+  },
+  "accessOnClick": {
+    "message": "Только когда вы его вызываете",
+    "description": "Access choice."
+  },
+  "accessOnClickHelp": {
+    "message": "Работает на вкладке после щелчка по значку, клавиши или пункта в меню правой кнопки. Доступа к сайтам не имеет.",
+    "description": "Help."
+  },
+  "accessSelected": {
+    "message": "Всегда, на выбранных вами сайтах",
+    "description": "Access choice."
+  },
+  "accessSelectedHelp": {
+    "message": "Запускается сам на этих сайтах, клавиши сразу готовы.",
+    "description": "Help."
+  },
+  "accessAll": {
+    "message": "Всегда, на всех сайтах",
+    "description": "Access choice."
+  },
+  "accessAllHelp": {
+    "message": "Браузер запросит доступ ко всем сайтам. FleetFoot Engine ищет только видео и аудио. Он никогда не читает страницы и ничего не отправляет.",
+    "description": "Help."
+  },
+  "accessDeclined": {
+    "message": "Браузер не дал доступа, поэтому ничего не изменилось.",
+    "description": "Status."
+  },
+  "accessFiles": {
+    "message": "Видео, открытые с вашего компьютера, не подпадают под эти варианты; откройте FleetFoot Engine щелчком по его значку.",
+    "description": "Help."
+  },
+  "sitesChosen": {
+    "message": "Ваши сайты",
+    "description": "Heading."
+  },
+  "sitesExcluded": {
+    "message": "Кроме этих сайтов",
+    "description": "Heading."
+  },
+  "sitesExcludedHelp": {
+    "message": "На этих сайтах он никогда не запускается сам, но вызвать его щелчком по-прежнему можно.",
+    "description": "Help."
+  },
+  "sitesNone": {
+    "message": "Сайтов пока нет.",
+    "description": "Empty list."
+  },
+  "siteField": {
+    "message": "Сайт",
+    "description": "Field label."
+  },
+  "siteHelp": {
+    "message": "Имя вроде example.com или адрес одной из его страниц.",
+    "description": "Help."
+  },
+  "siteAdd": {
+    "message": "Добавить",
+    "description": "Button."
+  },
+  "siteInvalid": {
+    "message": "Это не сайт. Напишите в виде example.com.",
+    "description": "Error."
+  },
+  "siteRemoveShort": {
+    "message": "Убрать",
+    "description": "Button."
+  },
+  "siteRemove": {
+    "message": "Убрать $SITE$",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "excludedFull": {
+    "message": "Исключённых сайтов может быть не больше $MAX$.",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "privacyTelemetry": {
+    "message": "Телеметрия",
+    "description": "Label."
+  },
+  "privacyTelemetryNone": {
+    "message": "Нет",
+    "description": "Value."
+  },
+  "privacyAnalytics": {
+    "message": "Статистика использования",
+    "description": "Label."
+  },
+  "privacyAnalyticsNone": {
+    "message": "Нет",
+    "description": "Value."
+  },
+  "privacyAccounts": {
+    "message": "Аккаунты",
+    "description": "Label."
+  },
+  "privacyAccountsNone": {
+    "message": "Нет",
+    "description": "Value."
+  },
+  "privacyServers": {
+    "message": "Удалённые серверы",
+    "description": "Label."
+  },
+  "privacyServersNone": {
+    "message": "Нет",
+    "description": "Value."
+  },
+  "privacyAds": {
+    "message": "Реклама",
+    "description": "Label."
+  },
+  "privacyAdsNone": {
+    "message": "Нет",
+    "description": "Value."
+  },
+  "privacyAffiliate": {
+    "message": "Партнёрские ссылки",
+    "description": "Label."
+  },
+  "privacyAffiliateNone": {
+    "message": "Нет",
+    "description": "Value."
+  },
+  "privacyStorage": {
+    "message": "Ваши настройки",
+    "description": "Label."
+  },
+  "privacyStorageLocal": {
+    "message": "Только на этом устройстве",
+    "description": "Value."
+  },
+  "privacyWhereOnClick": {
+    "message": "Где работает: только когда вы его вызываете",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereSelected": {
+    "message": "Где работает: всегда, на выбранных вами сайтах",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereAll": {
+    "message": "Где работает: всегда, на всех сайтах",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyAccessChange": {
+    "message": "Изменить доступ к сайтам",
+    "description": "Link to the site access section."
+  },
+  "backupTitle": {
+    "message": "Копия ваших настроек",
+    "description": "Heading."
+  },
+  "backupHelp": {
+    "message": "Файл с вашими настройками и сохранёнными сайтами, чтобы хранить его или перенести в другой браузер. Он лежит там, куда вы его положите.",
+    "description": "Help."
+  },
+  "exportSettings": {
+    "message": "Экспортировать настройки",
+    "description": "Button."
+  },
+  "exportDone": {
+    "message": "Настройки экспортированы.",
+    "description": "Status."
+  },
+  "exportFailed": {
+    "message": "Не удалось экспортировать настройки.",
+    "description": "Status."
+  },
+  "importSettings": {
+    "message": "Импортировать настройки",
+    "description": "Button."
+  },
+  "importSummary": {
+    "message": "Настроек в файле: $SETTINGS$ · Сайтов: $SITES$",
+    "description": "What an import would bring.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      },
+      "sites": {
+        "content": "$2"
+      }
+    }
+  },
+  "importIgnored": {
+    "message": "Пропущено недопустимых значений: $COUNT$",
+    "description": "Import summary.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "importReplace": {
+    "message": "Они заменят текущие. Сайты, которых нет в файле, останутся как есть.",
+    "description": "Import summary."
+  },
+  "importConfirm": {
+    "message": "Импортировать",
+    "description": "Button."
+  },
+  "importCancel": {
+    "message": "Отмена",
+    "description": "Button."
+  },
+  "importDone": {
+    "message": "Настройки импортированы.",
+    "description": "Status."
+  },
+  "importFailed": {
+    "message": "Не удалось импортировать настройки.",
+    "description": "Status."
+  },
+  "importTooLarge": {
+    "message": "Файл слишком большой для копии настроек.",
+    "description": "Status."
+  },
+  "importNotJson": {
+    "message": "Этот файл не удаётся прочитать как копию настроек.",
+    "description": "Status."
+  },
+  "importNotBackup": {
+    "message": "Этот файл не является копией настроек FleetFoot Engine.",
+    "description": "Status."
+  },
+  "importNewer": {
+    "message": "Эта копия сделана в более новой версии FleetFoot Engine. Обновите расширение и импортируйте снова.",
+    "description": "Status."
+  },
+  "deleteAll": {
+    "message": "Удалить всё с этого устройства",
+    "description": "Button."
+  },
+  "deleteAllConfirm": {
+    "message": "Нажмите ещё раз, чтобы удалить всё",
+    "description": "Button, armed."
+  },
+  "deleteAllHelp": {
+    "message": "Удаляет настройки, сохранённые сайты и сэкономленное время. Разрешения для сайтов остаются; их можно убрать в разделе «$SECTION$».",
+    "description": "Help; the substitution is the site access section title.",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "deletedAll": {
+    "message": "Всё, что FleetFoot Engine хранил на этом устройстве, удалено.",
+    "description": "Status."
+  },
+  "deleteFailed": {
+    "message": "Не удалось удалить всё.",
+    "description": "Status."
+  },
+  "sectionAbout": {
+    "message": "О расширении",
+    "description": "Section title."
+  },
+  "aboutVersion": {
+    "message": "Версия $VERSION$",
+    "description": "The version of this build.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "aboutLicense": {
+    "message": "Бесплатно для личного некоммерческого использования по лицензии PolyForm Strict 1.0.0. Изменять и распространять код запрещено.",
+    "description": "Licence summary; the licence text decides."
+  },
+  "aboutSource": {
+    "message": "Исходный код этой версии",
+    "description": "Link."
+  },
+  "aboutLicenseLink": {
+    "message": "Прочитать лицензию",
+    "description": "Link."
+  },
+  "aboutIssues": {
+    "message": "Сообщить о проблеме",
+    "description": "Link to GitHub Issues."
+  },
+  "aboutDiscussions": {
+    "message": "Вопросы и идеи",
+    "description": "Link to GitHub Discussions."
+  },
+  "moreFromDeveloper": {
+    "message": "Другие проекты разработчика",
+    "description": "Heading."
+  },
+  "welcomeTitle": {
+    "message": "Готово за три шага",
+    "description": "First-run page title."
+  },
+  "welcomePrivacy": {
+    "message": "Ваши данные принадлежат вам",
+    "description": "First-run page, first step heading."
+  },
+  "welcomeSpeed": {
+    "message": "Ваша любимая скорость",
+    "description": "First-run page, third step heading."
+  },
+  "welcomeSpeedHelp": {
+    "message": "Одно нажатие на звёздочку в окне расширения — и скорость станет такой. От 0,10 до 16,00.",
+    "description": "First-run page, favorite speed help."
+  },
+  "welcomeDone": {
+    "message": "Готово",
+    "description": "First-run page button that closes it."
+  },
+  "welcomeAllSettings": {
+    "message": "Все настройки",
+    "description": "First-run page link to the options page."
+  }
+}

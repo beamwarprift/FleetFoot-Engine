@@ -1,0 +1,1372 @@
+{
+  "extensionDescription": {
+    "message": "Керування швидкістю та відтворенням відео й аудіо HTML5: швидко, легко й з повагою до вашої приватності.",
+    "description": "Store and browser description."
+  },
+  "connectingTitle": {
+    "message": "Підключення до сторінки…",
+    "description": "Popup, while injecting."
+  },
+  "pageUnavailableTitle": {
+    "message": "FleetFoot Engine не працює на цій сторінці.",
+    "description": "Popup, page refuses extensions."
+  },
+  "pageUnavailableHint": {
+    "message": "Сторінки браузера й магазини розширень не допускають розширень.",
+    "description": "Popup hint."
+  },
+  "noAnswerTitle": {
+    "message": "Сторінка не відповідає.",
+    "description": "Popup, no answer."
+  },
+  "noAnswerHint": {
+    "message": "Можливо, вона зайнята або щойно змінилася. Спробуйте ще раз.",
+    "description": "Popup hint."
+  },
+  "noMediaTitle": {
+    "message": "На цій сторінці немає відео чи аудіо.",
+    "description": "Popup, no media."
+  },
+  "noMediaHint": {
+    "message": "Плеєр, вбудований з іншого сайту, звідси недоступний.",
+    "description": "Popup hint."
+  },
+  "framedTitle": {
+    "message": "Плеєр у фреймі з сайту $SITE$.",
+    "description": "Popup: no player here, but a frame from another site is on screen; $SITE$ is that site, e.g. «vixcloud.co».",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedHint": {
+    "message": "Щоб до нього дістатися, браузер попросить доступ до цього сайту; після цього FleetFoot Engine запускатиметься там сам.",
+    "description": "Popup, under framedTitle: allowing the site lets the extension reach the frame, and it then starts there by itself."
+  },
+  "framedAllowSite": {
+    "message": "Дозволити на $SITE$",
+    "description": "Popup button: asks the browser for access to that one site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedAllowAll": {
+    "message": "Дозволити на всіх сайтах",
+    "description": "Popup button: asks the browser for access to every site (as «Always, on every site» in the options)."
+  },
+  "retry": {
+    "message": "Спробувати ще раз",
+    "description": "Button."
+  },
+  "slower": {
+    "message": "Повільніше",
+    "description": "Button label."
+  },
+  "faster": {
+    "message": "Швидше",
+    "description": "Button label."
+  },
+  "rateInputLabel": {
+    "message": "Швидкість відтворення",
+    "description": "Rate input label."
+  },
+  "rateInvalid": {
+    "message": "Введіть швидкість від $MIN$ до $MAX$.",
+    "description": "Invalid typed rate.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "resetTo": {
+    "message": "Повернути $RATE$",
+    "description": "Reset button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "previousRate": {
+    "message": "Попередня швидкість",
+    "description": "Button label."
+  },
+  "favoriteRate": {
+    "message": "Улюблена швидкість, $RATE$",
+    "description": "Button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "presets": {
+    "message": "Готові швидкості",
+    "description": "Group label."
+  },
+  "preservePitch": {
+    "message": "Природний голос",
+    "description": "Switch label."
+  },
+  "on": {
+    "message": "Увімк.",
+    "description": "Switch state."
+  },
+  "off": {
+    "message": "Вимк.",
+    "description": "Switch state."
+  },
+  "seekBack": {
+    "message": "Назад на $DURATION$",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "seekForward": {
+    "message": "Уперед на $DURATION$",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipEnter": {
+    "message": "Картинка в картинці",
+    "description": "Button."
+  },
+  "pipExit": {
+    "message": "Вийти з режиму «картинка в картинці»",
+    "description": "Button."
+  },
+  "loopGroup": {
+    "message": "Повтор A–B",
+    "description": "Group label."
+  },
+  "loopHelpLabel": {
+    "message": "Що таке повтор A–B?",
+    "description": "Accessible name of the info button next to the loop."
+  },
+  "loopHelp": {
+    "message": "Повторює фрагмент без зупинки, щоб переглянути або розібрати його.",
+    "description": "Popover explaining the A–B loop: what it is for."
+  },
+  "loopHelpSteps": {
+    "message": "Натисніть A там, де фрагмент починається, B — де закінчується, потім «Повтор».",
+    "description": "Popover explaining the A–B loop: how to set it."
+  },
+  "loopHelpClear": {
+    "message": "Кнопка × прибирає повтор.",
+    "description": "Last line of the loop help; × is the clear button."
+  },
+  "loopA": {
+    "message": "Позначити A",
+    "description": "Button."
+  },
+  "loopB": {
+    "message": "Позначити B",
+    "description": "Button."
+  },
+  "loopAAt": {
+    "message": "A $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loopBAt": {
+    "message": "B $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loop": {
+    "message": "Повтор",
+    "description": "Toggle button."
+  },
+  "loopClear": {
+    "message": "Прибрати повтор",
+    "description": "Button label."
+  },
+  "copyTimestamp": {
+    "message": "Скопіювати момент",
+    "description": "Button."
+  },
+  "copied": {
+    "message": "Момент $TIME$ скопійовано",
+    "description": "After copying.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "Не вдалося скопіювати момент.",
+    "description": "Copy failed."
+  },
+  "player": {
+    "message": "Плеєр",
+    "description": "Select label."
+  },
+  "playerAuto": {
+    "message": "Автоматично",
+    "description": "Option."
+  },
+  "playerAll": {
+    "message": "Усі плеєри",
+    "description": "Option."
+  },
+  "playerVideo": {
+    "message": "Відео $NUMBER$",
+    "description": "Short name of a video player, numbered in order of discovery.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerAudio": {
+    "message": "Аудіо $NUMBER$",
+    "description": "Player name.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerPlaying": {
+    "message": "відтворюється",
+    "description": "Detail of a player that is playing now."
+  },
+  "playerEmbedded": {
+    "message": "вбудований з $SITE$",
+    "description": "Detail of a player inside a frame of the page; $SITE$ is that frame's site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerEmbeddedUnknown": {
+    "message": "вбудований",
+    "description": "Detail of a player inside a frame of the page that has no site."
+  },
+  "options": {
+    "message": "Налаштування",
+    "description": "Button."
+  },
+  "policyFollow": {
+    "message": "Хай вирішує сайт",
+    "description": "Rate policy name."
+  },
+  "policySmart": {
+    "message": "Повернути на наступному відео (рекомендовано)",
+    "description": "Rate policy name."
+  },
+  "policyLock": {
+    "message": "Повертати одразу, завжди",
+    "description": "Rate policy name."
+  },
+  "noticeContested": {
+    "message": "Інше розширення або сама сторінка знову й знову змінює швидкість цього плеєра. Щоб не перетягувати канат, FleetFoot Engine перестав її повертати.",
+    "description": "Notice."
+  },
+  "noticeContestedChoose": {
+    "message": "Вибрати, що робити",
+    "description": "Popup link after the LOCK yielded notice: opens the option."
+  },
+  "noticeExtremeRate": {
+    "message": "На такій швидкості браузер може приглушити або спотворити звук.",
+    "description": "Notice."
+  },
+  "noticeLive": {
+    "message": "Це пряма трансляція, тому перемотати вперед чи дізнатися, скільки залишилося, не можна.",
+    "description": "Notice."
+  },
+  "errorInvalidCommand": {
+    "message": "Щось пішло не так. Спробуйте ще раз.",
+    "description": "Error."
+  },
+  "errorNoPlayer": {
+    "message": "Плеєра вже немає на сторінці.",
+    "description": "Error."
+  },
+  "errorRateRejected": {
+    "message": "Сторінка відхилила цю швидкість.",
+    "description": "Error."
+  },
+  "errorPitchUnsupported": {
+    "message": "Цей плеєр не може зберегти природний голос.",
+    "description": "Error."
+  },
+  "errorNoPreviousRate": {
+    "message": "Попередньої швидкості ще немає.",
+    "description": "Error."
+  },
+  "errorNotSeekable": {
+    "message": "Зараз цей запис не можна перемотувати.",
+    "description": "Error."
+  },
+  "errorNotLoopable": {
+    "message": "Для повтору потрібен запис із відомою тривалістю.",
+    "description": "Error."
+  },
+  "errorLoopInvalid": {
+    "message": "Точка B має бути після A.",
+    "description": "Error."
+  },
+  "errorPipUnavailable": {
+    "message": "Для цього плеєра режим «картинка в картинці» недоступний.",
+    "description": "Error."
+  },
+  "errorPipRejected": {
+    "message": "Браузер не дозволив режим «картинка в картинці». Скористайтеся кнопкою на панелі над плеєром або клавішею на сторінці.",
+    "description": "Error."
+  },
+  "overlayLabel": {
+    "message": "Керування FleetFoot Engine",
+    "description": "Toolbar label."
+  },
+  "overlayMove": {
+    "message": "Перемістити (стрілки на клавіатурі)",
+    "description": "Drag handle."
+  },
+  "overlayMore": {
+    "message": "Більше кнопок",
+    "description": "Button."
+  },
+  "overlayLess": {
+    "message": "Менше кнопок",
+    "description": "Button."
+  },
+  "menuSpeed": {
+    "message": "Швидкість",
+    "description": "Context menu."
+  },
+  "menuFavorite": {
+    "message": "Улюблена ($RATE$)",
+    "description": "Context menu.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "Налаштування",
+    "description": "Page subtitle."
+  },
+  "sectionSpeed": {
+    "message": "Швидкість",
+    "description": "Section."
+  },
+  "speedGroupRates": {
+    "message": "Ваші швидкості",
+    "description": "Options, Speed section: heading of the user's own speeds (presets, step, favorite and hold speeds)."
+  },
+  "speedGroupRestore": {
+    "message": "Повернення вашої швидкості",
+    "description": "Options, Speed section: heading of what happens when a site changes the speed."
+  },
+  "speedGroupPlayers": {
+    "message": "Які плеєри",
+    "description": "Options, Speed section: heading of which players a speed applies to."
+  },
+  "sectionPlayback": {
+    "message": "Відтворення",
+    "description": "Section."
+  },
+  "sectionKeyboard": {
+    "message": "Клавіатура",
+    "description": "Section."
+  },
+  "sectionOverlay": {
+    "message": "Панель над плеєром",
+    "description": "Section."
+  },
+  "sectionMenu": {
+    "message": "Меню правої кнопки",
+    "description": "Section."
+  },
+  "presetsField": {
+    "message": "Готові швидкості",
+    "description": "Field."
+  },
+  "presetsHelp": {
+    "message": "До 12 значень через пробіл, наприклад 1 1,5 2.",
+    "description": "Help."
+  },
+  "presetsInvalid": {
+    "message": "Введіть значення швидкості через пробіл; їх може бути не більше $MAX$.",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "rateStepField": {
+    "message": "Крок для «Повільніше» і «Швидше»",
+    "description": "Field."
+  },
+  "rateStepHelp": {
+    "message": "Від 0,01 до 1,00.",
+    "description": "Help."
+  },
+  "favoriteField": {
+    "message": "Улюблена швидкість",
+    "description": "Field."
+  },
+  "holdField": {
+    "message": "Швидкість, поки клавішу затиснуто",
+    "description": "Field."
+  },
+  "rateRangeHelp": {
+    "message": "Від 0,10 до 16,00.",
+    "description": "Help."
+  },
+  "policyField": {
+    "message": "Якщо сайт змінює швидкість",
+    "description": "Legend."
+  },
+  "policyFollowHelp": {
+    "message": "Ваша швидкість застосовується один раз. Приклад: наступна серія починається на 1× і так і лишається на 1×.",
+    "description": "Help."
+  },
+  "policySmartHelp": {
+    "message": "Приклад: наступна серія починається на 1×, і ваша швидкість повертається. Якщо сайт змінює швидкість під час перегляду, вона лишається такою до наступного відео.",
+    "description": "Help."
+  },
+  "policyLockHelp": {
+    "message": "Приклад: під час перегляду сайт ставить 1×, і за мить ваша швидкість повертається. Для сайтів, які постійно змінюють швидкість.",
+    "description": "Help."
+  },
+  "targetField": {
+    "message": "Швидкість застосовується до",
+    "description": "Legend."
+  },
+  "targetActive": {
+    "message": "Активного плеєра",
+    "description": "Option."
+  },
+  "targetAll": {
+    "message": "Усіх плеєрів на сторінці",
+    "description": "Option."
+  },
+  "pitchField": {
+    "message": "Природний голос під час зміни швидкості",
+    "description": "Field."
+  },
+  "skipSilenceField": {
+    "message": "Пропуск тиші",
+    "description": "Name of Skip Silence: options switch, site profile field, popup button."
+  },
+  "skipSilenceHelp": {
+    "message": "У паузах плеєр переходить на швидкість для тиші й повертається до вашої, щойно знову з’являється звук. Звук слухається лише на вашому пристрої, ніколи не записується й не надсилається.",
+    "description": "What Skip Silence does and that the sound stays on the device: options help, popup card."
+  },
+  "skipSilenceSettings": {
+    "message": "Налаштування «Пропуску тиші»",
+    "description": "Link in the popup card of Skip Silence, to its place on the options page."
+  },
+  "silenceModeField": {
+    "message": "Що вважається тишею",
+    "description": "Options legend: how readily a pause counts as a silence."
+  },
+  "silenceConservative": {
+    "message": "Лише довгі тихі паузи",
+    "description": "Options choice: only long, quiet pauses count."
+  },
+  "silenceNormal": {
+    "message": "І паузи між фразами (рекомендовано)",
+    "description": "Options choice, the default: pauses between sentences count too."
+  },
+  "silenceAggressive": {
+    "message": "Будь-яка пауза, навіть із невеликим фоновим шумом",
+    "description": "Options choice: every pause counts, even with background noise."
+  },
+  "silenceRateField": {
+    "message": "Швидкість у тиші",
+    "description": "Options field: the speed a silence plays at."
+  },
+  "noticeSkipSilenceWaiting": {
+    "message": "«Пропуск тиші» увімкнеться після першого клацання на сторінці.",
+    "description": "Notice: the browser starts audio only after a click on the page."
+  },
+  "noticeSkipSilenceUnavailable": {
+    "message": "«Пропуск тиші» недоступний для цього запису.",
+    "description": "Notice: the browser does not let the extension hear this media."
+  },
+  "seekStepField": {
+    "message": "Крок перемотування в секундах",
+    "description": "Field."
+  },
+  "seekStepInvalid": {
+    "message": "Введіть ціле число секунд від $MIN$ до $MAX$.",
+    "description": "Error.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "pageShortcutsField": {
+    "message": "Клавіші на сторінці",
+    "description": "Field."
+  },
+  "pageShortcutsHelp": {
+    "message": "Працюють після того, як ви відкриєте FleetFoot Engine на сторінці, і ніколи — поки ви друкуєте в полі.",
+    "description": "Help."
+  },
+  "shortcutsTable": {
+    "message": "Клавіші на сторінці",
+    "description": "Table caption."
+  },
+  "keyPress": {
+    "message": "Натисніть клавішу… (Esc — скасувати)",
+    "description": "While recording."
+  },
+  "keyNone": {
+    "message": "Немає",
+    "description": "Unbound."
+  },
+  "keyRemove": {
+    "message": "Прибрати клавішу дії «$ACTION$»",
+    "description": "Button label: the button shows only a cross.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "keyChange": {
+    "message": "$ACTION$: $KEY$. Змінити",
+    "description": "Button label.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "keyTaken": {
+    "message": "$KEY$ уже призначено дії «$ACTION$».",
+    "description": "Conflict.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "action": {
+        "content": "$2"
+      }
+    }
+  },
+  "browserShortcutsHelp": {
+    "message": "Комбінації клавіш, що працюють на будь-якій сторінці, налаштовуються в браузері, у розділі комбінацій клавіш для розширень.",
+    "description": "Help."
+  },
+  "browserShortcutsOpen": {
+    "message": "Відкрити комбінації клавіш браузера",
+    "description": "Button."
+  },
+  "overlayField": {
+    "message": "Показувати панель над плеєрами",
+    "description": "Field."
+  },
+  "overlayHelp": {
+    "message": "Невелика панель, що з’являється, коли вказівник над плеєром.",
+    "description": "Help."
+  },
+  "overlayResetPosition": {
+    "message": "Повернути панель у кут",
+    "description": "Button."
+  },
+  "contextMenuField": {
+    "message": "Меню швидкості за правим клацанням на відео чи аудіо",
+    "description": "Field."
+  },
+  "contextMenuHelp": {
+    "message": "З’являється лише на відео й аудіо.",
+    "description": "Help."
+  },
+  "saved": {
+    "message": "Збережено.",
+    "description": "Status."
+  },
+  "invalidValue": {
+    "message": "Неприпустиме значення.",
+    "description": "Error."
+  },
+  "restoreDefaults": {
+    "message": "Відновити типові",
+    "description": "Button."
+  },
+  "restoreConfirm": {
+    "message": "Натисніть ще раз, щоб відновити все",
+    "description": "Button, armed."
+  },
+  "restored": {
+    "message": "Типові налаштування відновлено.",
+    "description": "Status."
+  },
+  "actionSlower": {
+    "message": "Повільніше",
+    "description": "Shortcut action."
+  },
+  "actionFaster": {
+    "message": "Швидше",
+    "description": "Shortcut action."
+  },
+  "actionReset": {
+    "message": "Повернути 1×",
+    "description": "Shortcut action."
+  },
+  "actionFavorite": {
+    "message": "Улюблена швидкість",
+    "description": "Shortcut action."
+  },
+  "actionHold": {
+    "message": "Пришвидшити, поки затиснуто",
+    "description": "Shortcut action."
+  },
+  "actionSeekBackward": {
+    "message": "Назад",
+    "description": "Shortcut action."
+  },
+  "actionSeekForward": {
+    "message": "Уперед",
+    "description": "Shortcut action."
+  },
+  "actionTogglePitch": {
+    "message": "Природний голос увімк./вимк.",
+    "description": "Shortcut action."
+  },
+  "actionLoopA": {
+    "message": "Початок повтору (A)",
+    "description": "Shortcut action."
+  },
+  "actionLoopB": {
+    "message": "Кінець повтору (B)",
+    "description": "Shortcut action."
+  },
+  "actionLoopToggle": {
+    "message": "Повтор увімк./вимк.",
+    "description": "Shortcut action."
+  },
+  "actionNextPlayer": {
+    "message": "Наступний плеєр",
+    "description": "Shortcut action."
+  },
+  "actionToggleOverlay": {
+    "message": "Показати чи сховати панель",
+    "description": "Shortcut action."
+  },
+  "controlling": {
+    "message": "Керований плеєр",
+    "description": "Caption above the player list."
+  },
+  "live": {
+    "message": "Наживо",
+    "description": "Badge for a live stream."
+  },
+  "timeLeftAt": {
+    "message": "Залишилося $TIME$ на $RATE$",
+    "description": "Remaining time at the current speed.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      },
+      "rate": {
+        "content": "$2"
+      }
+    }
+  },
+  "timeLeftNormal": {
+    "message": "$TIME$ на звичайній швидкості",
+    "description": "Remaining time at 1×.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipOpen": {
+    "message": "Відкрити",
+    "description": "Picture-in-picture button."
+  },
+  "pipClose": {
+    "message": "Закрити",
+    "description": "Picture-in-picture button."
+  },
+  "savedHours": {
+    "message": "$HOURS$ $MINUTES$",
+    "description": "Time saved: hours then minutes, each already with its unit («12 h», «34 min»).",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      },
+      "minutes": {
+        "content": "$2"
+      }
+    }
+  },
+  "savedUnderMinute": {
+    "message": "менше хвилини",
+    "description": "Time saved below one minute."
+  },
+  "savedPopup": {
+    "message": "Заощаджено $TIME$",
+    "description": "Popup header: total time saved.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedTitle": {
+    "message": "Заощаджений час",
+    "description": "Options section."
+  },
+  "savedHelp": {
+    "message": "Час, який вам не довелося витрачати, бо FleetFoot Engine відтворював ваші відео й аудіо швидше. Зберігається лише на цьому пристрої, одним загальним числом.",
+    "description": "Help."
+  },
+  "savedTotal": {
+    "message": "Усього: $TIME$",
+    "description": "Options: the total.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedReset": {
+    "message": "Обнулити лічильник",
+    "description": "Button."
+  },
+  "savedResetConfirm": {
+    "message": "Натисніть ще раз, щоб обнулити",
+    "description": "Button, armed."
+  },
+  "savedResetDone": {
+    "message": "Лічильник обнулено.",
+    "description": "Status."
+  },
+  "sectionAppearance": {
+    "message": "Вигляд",
+    "description": "Options section."
+  },
+  "themeField": {
+    "message": "Колірна тема",
+    "description": "Legend."
+  },
+  "textSizeField": {
+    "message": "Розмір тексту",
+    "description": "Options, Appearance: label of the choice of text size for this page, from 100% to 200%."
+  },
+  "textSizeHelp": {
+    "message": "Збільшує текст і елементи керування на цій сторінці.",
+    "description": "Options, Appearance: under textSizeField."
+  },
+  "themeYellow": {
+    "message": "Жовта (типова)",
+    "description": "Theme."
+  },
+  "themeCyan": {
+    "message": "Бірюзова",
+    "description": "Theme."
+  },
+  "themeMagenta": {
+    "message": "Пурпурова",
+    "description": "Theme."
+  },
+  "themeGreen": {
+    "message": "Зелена",
+    "description": "Theme."
+  },
+  "themeViolet": {
+    "message": "Фіолетова",
+    "description": "Theme."
+  },
+  "themeCoral": {
+    "message": "Коралова",
+    "description": "Theme."
+  },
+  "themeSlate": {
+    "message": "Сланцева",
+    "description": "Theme: dimmed blue-grey, easy on the eyes."
+  },
+  "themeSepia": {
+    "message": "Сепія",
+    "description": "Theme: dimmed warm brown, easy on the eyes."
+  },
+  "themeSage": {
+    "message": "Шавлієва",
+    "description": "Theme: dimmed green, easy on the eyes."
+  },
+  "themeLight": {
+    "message": "Світла",
+    "description": "Theme."
+  },
+  "pitchHelpShort": {
+    "message": "Голоси не стають пискливими",
+    "description": "Popup subtitle of the natural voice switch."
+  },
+  "rateOutOfRange": {
+    "message": "Введіть швидкість від $MIN$ до $MAX$.",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "stepOutOfRange": {
+    "message": "Введіть крок від $MIN$ до $MAX$.",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "privacyBadge": {
+    "message": "FULL PRIVACY",
+    "description": "Badge; the same words in every language."
+  },
+  "privacyBadgeSub": {
+    "message": "Без телеметрії · Без облікових записів · Налаштування лише на пристрої",
+    "description": "Badge subtitle."
+  },
+  "privacyStatement": {
+    "message": "FleetFoot Engine нікому не передає, які сайти ви відвідуєте і що дивитеся.",
+    "description": "Privacy section: the promise about browsing activity."
+  },
+  "verifySource": {
+    "message": "Не вірте нам на слово. Прочитайте код.",
+    "description": "Privacy section: the invitation to read the source, before its link."
+  },
+  "sourceLink": {
+    "message": "Читати код на GitHub",
+    "description": "Link to the public repository."
+  },
+  "supportDevelopment": {
+    "message": "Підтримати розробку",
+    "description": "Popup footer link."
+  },
+  "supportQuestion": {
+    "message": "Знадобилося?",
+    "description": "Popup footer question before the support link."
+  },
+  "supportSaved": {
+    "message": "Уже заощадило вам $DURATION$?",
+    "description": "Popup footer question before the support link, once the time saved reaches an hour; whole hours, with the unit («12 h»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "supportDevelopmentKofi": {
+    "message": "Підтримати розробку на Ko-fi",
+    "description": "Options link."
+  },
+  "reviewStore": {
+    "message": "Подобається? Залиште відгук",
+    "description": "Accessible name of the heart at the top of the popup, which opens this extension's page in the store it was installed from, to leave a review."
+  },
+  "sectionPrivacy": {
+    "message": "Приватність і дозволи",
+    "description": "Options section."
+  },
+  "sectionMemory": {
+    "message": "Пам’ять",
+    "description": "Options section."
+  },
+  "memoryField": {
+    "message": "Що запам’ятовує FleetFoot Engine",
+    "description": "Group label."
+  },
+  "memoryNone": {
+    "message": "Нічого",
+    "description": "Memory choice."
+  },
+  "memoryNoneHelp": {
+    "message": "Кожна сторінка починає зі своєї швидкості.",
+    "description": "Help."
+  },
+  "memoryGlobal": {
+    "message": "Одна швидкість для всіх сайтів",
+    "description": "Memory choice."
+  },
+  "memoryGlobalHelp": {
+    "message": "Остання вибрана швидкість діє скрізь. Зберігається лише число.",
+    "description": "Help."
+  },
+  "memorySite": {
+    "message": "Своя швидкість для кожного сайту",
+    "description": "Memory choice."
+  },
+  "memorySiteHelp": {
+    "message": "Кожен сайт зберігає свою швидкість і, якщо хочете, свої налаштування. Зберігається лише назва сайту, а не те, що ви дивитеся.",
+    "description": "Help."
+  },
+  "profilesTitle": {
+    "message": "Запам’ятовані сайти",
+    "description": "Heading."
+  },
+  "profilesEmpty": {
+    "message": "Сайтів ще немає. Змініть швидкість на сайті, і він з’явиться тут.",
+    "description": "Empty list."
+  },
+  "profileSpeed": {
+    "message": "Швидкість (порожньо — як на сайті)",
+    "description": "Field of a site profile."
+  },
+  "profileGeneralValue": {
+    "message": "Як скрізь ($VALUE$)",
+    "description": "Option or placeholder: no value of its own on this site; the value it takes from the general settings in brackets.",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "policyFollowShort": {
+    "message": "Вирішує сайт",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policySmartShort": {
+    "message": "На наступному відео",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policyLockShort": {
+    "message": "Одразу, завжди",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "fightField": {
+    "message": "Якщо сайт одразу змінює її знову",
+    "description": "Options legend: what LOCK does when a page answers every restore at once."
+  },
+  "fightYield": {
+    "message": "Поступитися й повідомити мене (рекомендовано)",
+    "description": "LOCK fight answer: yield."
+  },
+  "fightBraked": {
+    "message": "Далі повертати, з гальмом",
+    "description": "LOCK fight answer: keep imposing, bounded."
+  },
+  "fightUnbraked": {
+    "message": "Далі повертати, без гальма",
+    "description": "LOCK fight answer: keep imposing, unbounded."
+  },
+  "fightYieldShort": {
+    "message": "Поступитися",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightBrakedShort": {
+    "message": "З гальмом",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightUnbrakedShort": {
+    "message": "Без гальма",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightHelpLabel": {
+    "message": "Чим відрізняються ці три варіанти?",
+    "description": "Accessible name of the info button next to the LOCK fight choices."
+  },
+  "fightYieldHelp": {
+    "message": "FleetFoot Engine перестає повертати швидкість у цьому плеєрі й повідомляє вас про це у вікні розширення.",
+    "description": "Info popover, first answer."
+  },
+  "fightBrakedHelp": {
+    "message": "Далі непомітно для сайту повертає вашу швидкість, з обмеженням, за якого навантаження лишається низьким. Плеєр сайту може показувати не ту швидкість, що насправді.",
+    "description": "Info popover, second answer."
+  },
+  "fightUnbrakedHelp": {
+    "message": "Те саме, але без обмеження. На деяких сайтах це може зайняти ціле ядро процесора, збільшити навантаження й швидше розрядити батарею.",
+    "description": "Info popover, third answer and its risk."
+  },
+  "profileOn": {
+    "message": "Увімк.",
+    "description": "Option."
+  },
+  "profileOff": {
+    "message": "Вимк.",
+    "description": "Option."
+  },
+  "profileForget": {
+    "message": "Забути цей сайт",
+    "description": "Button."
+  },
+  "profileForgetSite": {
+    "message": "Забути $SITE$",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "sectionAccess": {
+    "message": "Доступ до сайтів",
+    "description": "Options section."
+  },
+  "accessField": {
+    "message": "Де працює FleetFoot Engine",
+    "description": "Group label."
+  },
+  "accessOnClick": {
+    "message": "Лише коли ви його викликаєте",
+    "description": "Access choice."
+  },
+  "accessOnClickHelp": {
+    "message": "Працює на вкладці після клацання по значку, клавіші чи пункту в меню правої кнопки. Доступу до сайтів не має.",
+    "description": "Help."
+  },
+  "accessSelected": {
+    "message": "Завжди, на вибраних вами сайтах",
+    "description": "Access choice."
+  },
+  "accessSelectedHelp": {
+    "message": "Запускається сам на цих сайтах, клавіші одразу готові.",
+    "description": "Help."
+  },
+  "accessAll": {
+    "message": "Завжди, на всіх сайтах",
+    "description": "Access choice."
+  },
+  "accessAllHelp": {
+    "message": "Браузер попросить доступ до всіх сайтів. FleetFoot Engine шукає лише відео й аудіо. Він ніколи не читає сторінок і нічого не надсилає.",
+    "description": "Help."
+  },
+  "accessDeclined": {
+    "message": "Браузер не дав доступу, тому нічого не змінилося.",
+    "description": "Status."
+  },
+  "accessFiles": {
+    "message": "Відео, відкриті з вашого комп’ютера, не входять у ці варіанти; відкрийте FleetFoot Engine клацанням по його значку.",
+    "description": "Help."
+  },
+  "sitesChosen": {
+    "message": "Ваші сайти",
+    "description": "Heading."
+  },
+  "sitesExcluded": {
+    "message": "Крім цих сайтів",
+    "description": "Heading."
+  },
+  "sitesExcludedHelp": {
+    "message": "На цих сайтах він ніколи не запускається сам, але викликати його клацанням усе одно можна.",
+    "description": "Help."
+  },
+  "sitesNone": {
+    "message": "Сайтів ще немає.",
+    "description": "Empty list."
+  },
+  "siteField": {
+    "message": "Сайт",
+    "description": "Field label."
+  },
+  "siteHelp": {
+    "message": "Назва на кшталт example.com або адреса однієї з його сторінок.",
+    "description": "Help."
+  },
+  "siteAdd": {
+    "message": "Додати",
+    "description": "Button."
+  },
+  "siteInvalid": {
+    "message": "Це не сайт. Напишіть у вигляді example.com.",
+    "description": "Error."
+  },
+  "siteRemoveShort": {
+    "message": "Прибрати",
+    "description": "Button."
+  },
+  "siteRemove": {
+    "message": "Прибрати $SITE$",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "excludedFull": {
+    "message": "Виключених сайтів може бути не більше $MAX$.",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "privacyTelemetry": {
+    "message": "Телеметрія",
+    "description": "Label."
+  },
+  "privacyTelemetryNone": {
+    "message": "Немає",
+    "description": "Value."
+  },
+  "privacyAnalytics": {
+    "message": "Статистика використання",
+    "description": "Label."
+  },
+  "privacyAnalyticsNone": {
+    "message": "Немає",
+    "description": "Value."
+  },
+  "privacyAccounts": {
+    "message": "Облікові записи",
+    "description": "Label."
+  },
+  "privacyAccountsNone": {
+    "message": "Немає",
+    "description": "Value."
+  },
+  "privacyServers": {
+    "message": "Віддалені сервери",
+    "description": "Label."
+  },
+  "privacyServersNone": {
+    "message": "Немає",
+    "description": "Value."
+  },
+  "privacyAds": {
+    "message": "Реклама",
+    "description": "Label."
+  },
+  "privacyAdsNone": {
+    "message": "Немає",
+    "description": "Value."
+  },
+  "privacyAffiliate": {
+    "message": "Партнерські посилання",
+    "description": "Label."
+  },
+  "privacyAffiliateNone": {
+    "message": "Немає",
+    "description": "Value."
+  },
+  "privacyStorage": {
+    "message": "Ваші налаштування",
+    "description": "Label."
+  },
+  "privacyStorageLocal": {
+    "message": "Лише на цьому пристрої",
+    "description": "Value."
+  },
+  "privacyWhereOnClick": {
+    "message": "Де працює: лише коли ви його викликаєте",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereSelected": {
+    "message": "Де працює: завжди, на вибраних вами сайтах",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereAll": {
+    "message": "Де працює: завжди, на всіх сайтах",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyAccessChange": {
+    "message": "Змінити доступ до сайтів",
+    "description": "Link to the site access section."
+  },
+  "backupTitle": {
+    "message": "Копія ваших налаштувань",
+    "description": "Heading."
+  },
+  "backupHelp": {
+    "message": "Файл із вашими налаштуваннями та збереженими сайтами, щоб зберігати його або перенести в інший браузер. Він лежить там, куди ви його покладете.",
+    "description": "Help."
+  },
+  "exportSettings": {
+    "message": "Експортувати налаштування",
+    "description": "Button."
+  },
+  "exportDone": {
+    "message": "Налаштування експортовано.",
+    "description": "Status."
+  },
+  "exportFailed": {
+    "message": "Не вдалося експортувати налаштування.",
+    "description": "Status."
+  },
+  "importSettings": {
+    "message": "Імпортувати налаштування",
+    "description": "Button."
+  },
+  "importSummary": {
+    "message": "Налаштувань у файлі: $SETTINGS$ · Сайтів: $SITES$",
+    "description": "What an import would bring.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      },
+      "sites": {
+        "content": "$2"
+      }
+    }
+  },
+  "importIgnored": {
+    "message": "Пропущено неприпустимих значень: $COUNT$",
+    "description": "Import summary.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "importReplace": {
+    "message": "Вони замінять поточні. Сайти, яких немає у файлі, лишаться як є.",
+    "description": "Import summary."
+  },
+  "importConfirm": {
+    "message": "Імпортувати",
+    "description": "Button."
+  },
+  "importCancel": {
+    "message": "Скасувати",
+    "description": "Button."
+  },
+  "importDone": {
+    "message": "Налаштування імпортовано.",
+    "description": "Status."
+  },
+  "importFailed": {
+    "message": "Не вдалося імпортувати налаштування.",
+    "description": "Status."
+  },
+  "importTooLarge": {
+    "message": "Файл завеликий для копії налаштувань.",
+    "description": "Status."
+  },
+  "importNotJson": {
+    "message": "Цей файл не вдається прочитати як копію налаштувань.",
+    "description": "Status."
+  },
+  "importNotBackup": {
+    "message": "Цей файл не є копією налаштувань FleetFoot Engine.",
+    "description": "Status."
+  },
+  "importNewer": {
+    "message": "Цю копію зроблено в новішій версії FleetFoot Engine. Оновіть розширення й імпортуйте знову.",
+    "description": "Status."
+  },
+  "deleteAll": {
+    "message": "Видалити все з цього пристрою",
+    "description": "Button."
+  },
+  "deleteAllConfirm": {
+    "message": "Натисніть ще раз, щоб видалити все",
+    "description": "Button, armed."
+  },
+  "deleteAllHelp": {
+    "message": "Видаляє налаштування, збережені сайти й заощаджений час. Дозволи для сайтів лишаються; їх можна прибрати в розділі «$SECTION$».",
+    "description": "Help; the substitution is the site access section title.",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "deletedAll": {
+    "message": "Усе, що FleetFoot Engine зберігав на цьому пристрої, видалено.",
+    "description": "Status."
+  },
+  "deleteFailed": {
+    "message": "Не вдалося видалити все.",
+    "description": "Status."
+  },
+  "sectionAbout": {
+    "message": "Про розширення",
+    "description": "Section title."
+  },
+  "aboutVersion": {
+    "message": "Версія $VERSION$",
+    "description": "The version of this build.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "aboutLicense": {
+    "message": "Безкоштовно для особистого некомерційного використання за ліцензією PolyForm Strict 1.0.0. Змінювати й поширювати код заборонено.",
+    "description": "Licence summary; the licence text decides."
+  },
+  "aboutSource": {
+    "message": "Вихідний код цієї версії",
+    "description": "Link."
+  },
+  "aboutLicenseLink": {
+    "message": "Прочитати ліцензію",
+    "description": "Link."
+  },
+  "aboutIssues": {
+    "message": "Повідомити про проблему",
+    "description": "Link to GitHub Issues."
+  },
+  "aboutDiscussions": {
+    "message": "Питання та ідеї",
+    "description": "Link to GitHub Discussions."
+  },
+  "moreFromDeveloper": {
+    "message": "Інші проєкти розробника",
+    "description": "Heading."
+  },
+  "welcomeTitle": {
+    "message": "Готово за три кроки",
+    "description": "First-run page title."
+  },
+  "welcomePrivacy": {
+    "message": "Ваші дані належать вам",
+    "description": "First-run page, first step heading."
+  },
+  "welcomeSpeed": {
+    "message": "Ваша улюблена швидкість",
+    "description": "First-run page, third step heading."
+  },
+  "welcomeSpeedHelp": {
+    "message": "Одне натискання на зірочку у вікні розширення — і швидкість стане такою. Від 0,10 до 16,00.",
+    "description": "First-run page, favorite speed help."
+  },
+  "welcomeDone": {
+    "message": "Готово",
+    "description": "First-run page button that closes it."
+  },
+  "welcomeAllSettings": {
+    "message": "Усі налаштування",
+    "description": "First-run page link to the options page."
+  }
+}

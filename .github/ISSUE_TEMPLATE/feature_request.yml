@@ -1,0 +1,16 @@
+name: A missing playback feature
+description: Something FleetFoot Engine could do with the playback of video and audio.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What you want to do
+      description: The situation, and what gets in your way today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How it could work
+      description: Optional. Ideas outside playback control stay out by design.

@@ -1,0 +1,202 @@
+/* FleetFoot Engine base styles. Text pairs meet WCAG 2.2 AA (4.5:1) in every theme. */
+/* Colours come from the chosen theme (src/ui/themes.ts), set on the root before anything shows. */
+:root {
+  --radius: 8px;
+  /* One spacing scale on a 4 px grid: every gap and padding is one of these steps. */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  background: var(--bg);
+  color: var(--text);
+}
+
+:root:not([data-theme]) {
+  visibility: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Chrome gives an extension's page a body font of its own, at 75% of the root (observed in
+   Chromium 141: 10.5 px in another family): every page reads at the size and in the font it was
+   drawn with. */
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Numbers typed by the user (speeds, seconds) read left to right in every language. */
+input[inputmode] {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+button,
+select,
+input[type="text"],
+input[type="number"] {
+  min-height: 28px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface-2);
+  padding: 2px 8px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--on-accent);
+  border-color: var(--accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+[hidden] {
+  /* biome-ignore lint/complexity/noImportantStyles: the hidden attribute must win over any display rule. */
+  display: none !important;
+}
+
+/* The logo's own colours (the user's brand identity): the same in every theme. */
+.brand-name {
+  color: #ffd23f;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+/* The logo keeps its colours in every theme: where they would lose contrast, on its dark plate. */
+:root[data-logo-plate="true"] .brand {
+  width: fit-content;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: #0c0b07;
+}
+
+.brand-engine {
+  color: #fe314b;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+.muted,
+.help {
+  color: var(--muted);
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon .filled {
+  fill: currentColor;
+  stroke: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.text:empty {
+  display: none;
+}
+
+@media (forced-colors: active) {
+  button[aria-pressed="true"] {
+    forced-color-adjust: none;
+    background: Highlight;
+    color: HighlightText;
+  }
+}
+
+button.info {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  min-height: 24px;
+  padding: 0;
+  border-color: transparent;
+  background: transparent;
+  color: var(--muted);
+}
+
+button.info:hover,
+button.info:focus-visible {
+  color: var(--text);
+}
+
+button.info .icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* The explanation an (i) button opens (`infoTip.ts`), in the top layer above the page. */
+.tip {
+  max-width: 280px;
+  margin: auto;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.45;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.35);
+}
+
+.tip > * {
+  margin: 0;
+}
+
+.tip > * + * {
+  margin-block-start: 6px;
+}
+
+/* The name of what a paragraph explains, on its own line above it. */
+.tip strong {
+  display: block;
+}

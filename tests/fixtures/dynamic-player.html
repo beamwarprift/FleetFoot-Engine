@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FFE fixture: dynamic-player</title>
+  </head>
+  <body>
+    <button id="add" type="button">Add a player</button>
+    <script>
+      document.getElementById('add').addEventListener('click', () => {
+        const video = document.createElement('video');
+        video.src = '/tone.wav';
+        video.muted = true;
+        video.style.cssText = 'width: 640px; height: 360px';
+        document.body.append(video);
+      });
+    </script>
+  </body>
+</html>

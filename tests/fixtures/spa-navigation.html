@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FFE fixture: spa-navigation</title>
+  </head>
+  <body>
+    <main id="view"><video src="/tone.wav" muted style="width: 640px; height: 360px"><track kind="captions" src="/captions.vtt" /></video></main>
+    <button id="next" type="button">Next episode</button>
+    <script>
+      document.getElementById('next').addEventListener('click', () => {
+        history.pushState({}, '', '/fixtures/spa-navigation.html?episode=2');
+        const video = document.createElement('video');
+        video.src = '/tone.wav?episode=2';
+        video.muted = true;
+        video.id = 'episode-2';
+        video.style.cssText = 'width: 640px; height: 360px';
+        document.getElementById('view').replaceChildren(video);
+      });
+    </script>
+  </body>
+</html>

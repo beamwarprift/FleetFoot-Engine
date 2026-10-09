@@ -1,0 +1,1372 @@
+{
+  "extensionDescription": {
+    "message": "HTML5 ভিডিও ও অডিওর জন্য গতি ও প্লেব্যাক নিয়ন্ত্রণ: দ্রুত, হালকা এবং আপনার গোপনীয়তার প্রতি শ্রদ্ধাশীল।",
+    "description": "Store and browser description."
+  },
+  "connectingTitle": {
+    "message": "পেজের সঙ্গে সংযোগ হচ্ছে…",
+    "description": "Popup, while injecting."
+  },
+  "pageUnavailableTitle": {
+    "message": "এই পেজে FleetFoot Engine কাজ করে না।",
+    "description": "Popup, page refuses extensions."
+  },
+  "pageUnavailableHint": {
+    "message": "ব্রাউজারের নিজস্ব পেজ আর এক্সটেনশন স্টোর এক্সটেনশন চলতে দেয় না।",
+    "description": "Popup hint."
+  },
+  "noAnswerTitle": {
+    "message": "পেজ সাড়া দিচ্ছে না।",
+    "description": "Popup, no answer."
+  },
+  "noAnswerHint": {
+    "message": "হয়তো পেজটি ব্যস্ত, বা এইমাত্র বদলেছে। আবার চেষ্টা করুন।",
+    "description": "Popup hint."
+  },
+  "noMediaTitle": {
+    "message": "এই পেজে কোনো ভিডিও বা অডিও নেই।",
+    "description": "Popup, no media."
+  },
+  "noMediaHint": {
+    "message": "অন্য সাইট থেকে বসানো প্লেয়ারে এখান থেকে পৌঁছানো যায় না।",
+    "description": "Popup hint."
+  },
+  "framedTitle": {
+    "message": "প্লেয়ারটি $SITE$-এর একটি ফ্রেমের ভেতরে আছে।",
+    "description": "Popup: no player here, but a frame from another site is on screen; $SITE$ is that site, e.g. «vixcloud.co».",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedHint": {
+    "message": "সেখানে পৌঁছাতে ব্রাউজার ওই সাইটের অনুমতি চাইবে; এরপর থেকে FleetFoot Engine সেখানে নিজে থেকেই চালু হবে।",
+    "description": "Popup, under framedTitle: allowing the site lets the extension reach the frame, and it then starts there by itself."
+  },
+  "framedAllowSite": {
+    "message": "$SITE$-এ অনুমতি দিন",
+    "description": "Popup button: asks the browser for access to that one site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "framedAllowAll": {
+    "message": "সব সাইটে অনুমতি দিন",
+    "description": "Popup button: asks the browser for access to every site (as «Always, on every site» in the options)."
+  },
+  "retry": {
+    "message": "আবার চেষ্টা করুন",
+    "description": "Button."
+  },
+  "slower": {
+    "message": "ধীরে",
+    "description": "Button label."
+  },
+  "faster": {
+    "message": "দ্রুত",
+    "description": "Button label."
+  },
+  "rateInputLabel": {
+    "message": "প্লেব্যাকের গতি",
+    "description": "Rate input label."
+  },
+  "rateInvalid": {
+    "message": "$MIN$ থেকে $MAX$ পর্যন্ত একটি গতি লিখুন।",
+    "description": "Invalid typed rate.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "resetTo": {
+    "message": "$RATE$ গতিতে ফিরুন",
+    "description": "Reset button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "previousRate": {
+    "message": "আগের গতি",
+    "description": "Button label."
+  },
+  "favoriteRate": {
+    "message": "প্রিয় গতি, $RATE$",
+    "description": "Button label.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "presets": {
+    "message": "গতির শর্টকাট",
+    "description": "Group label."
+  },
+  "preservePitch": {
+    "message": "স্বাভাবিক কণ্ঠ",
+    "description": "Switch label."
+  },
+  "on": {
+    "message": "চালু",
+    "description": "Switch state."
+  },
+  "off": {
+    "message": "বন্ধ",
+    "description": "Switch state."
+  },
+  "seekBack": {
+    "message": "$DURATION$ পিছনে",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "seekForward": {
+    "message": "$DURATION$ সামনে",
+    "description": "Accessible name; the duration comes with its unit («5 seconds»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipEnter": {
+    "message": "ছবির মধ্যে ছবি",
+    "description": "Button."
+  },
+  "pipExit": {
+    "message": "ছবির মধ্যে ছবি থেকে বেরোন",
+    "description": "Button."
+  },
+  "loopGroup": {
+    "message": "A–B লুপ",
+    "description": "Group label."
+  },
+  "loopHelpLabel": {
+    "message": "A–B লুপ কী?",
+    "description": "Accessible name of the info button next to the loop."
+  },
+  "loopHelp": {
+    "message": "একটি অংশ না থেমে বারবার চালায়, আবার দেখার বা শেখার জন্য।",
+    "description": "Popover explaining the A–B loop: what it is for."
+  },
+  "loopHelpSteps": {
+    "message": "অংশটি যেখানে শুরু সেখানে A, যেখানে শেষ সেখানে B, তারপর লুপ ট্যাপ করুন।",
+    "description": "Popover explaining the A–B loop: how to set it."
+  },
+  "loopHelpClear": {
+    "message": "× লুপ সরিয়ে দেয়।",
+    "description": "Last line of the loop help; × is the clear button."
+  },
+  "loopA": {
+    "message": "A চিহ্নিত করুন",
+    "description": "Button."
+  },
+  "loopB": {
+    "message": "B চিহ্নিত করুন",
+    "description": "Button."
+  },
+  "loopAAt": {
+    "message": "A $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loopBAt": {
+    "message": "B $TIME$",
+    "description": "Button with the marker time.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "loop": {
+    "message": "লুপ",
+    "description": "Toggle button."
+  },
+  "loopClear": {
+    "message": "লুপ সরান",
+    "description": "Button label."
+  },
+  "copyTimestamp": {
+    "message": "এই মুহূর্ত কপি করুন",
+    "description": "Button."
+  },
+  "copied": {
+    "message": "$TIME$ কপি হয়েছে",
+    "description": "After copying.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "copyFailed": {
+    "message": "মুহূর্তটি কপি করা গেল না।",
+    "description": "Copy failed."
+  },
+  "player": {
+    "message": "প্লেয়ার",
+    "description": "Select label."
+  },
+  "playerAuto": {
+    "message": "স্বয়ংক্রিয়",
+    "description": "Option."
+  },
+  "playerAll": {
+    "message": "সব প্লেয়ার",
+    "description": "Option."
+  },
+  "playerVideo": {
+    "message": "ভিডিও $NUMBER$",
+    "description": "Short name of a video player, numbered in order of discovery.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerAudio": {
+    "message": "অডিও $NUMBER$",
+    "description": "Player name.",
+    "placeholders": {
+      "number": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerPlaying": {
+    "message": "চলছে",
+    "description": "Detail of a player that is playing now."
+  },
+  "playerEmbedded": {
+    "message": "$SITE$ থেকে বসানো",
+    "description": "Detail of a player inside a frame of the page; $SITE$ is that frame's site.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "playerEmbeddedUnknown": {
+    "message": "বসানো",
+    "description": "Detail of a player inside a frame of the page that has no site."
+  },
+  "options": {
+    "message": "সেটিংস",
+    "description": "Button."
+  },
+  "policyFollow": {
+    "message": "সাইটকে ঠিক করতে দিন",
+    "description": "Rate policy name."
+  },
+  "policySmart": {
+    "message": "পরের ভিডিওতে ফিরিয়ে আনুন (প্রস্তাবিত)",
+    "description": "Rate policy name."
+  },
+  "policyLock": {
+    "message": "সবসময়, সঙ্গে সঙ্গে ফিরিয়ে আনুন",
+    "description": "Rate policy name."
+  },
+  "noticeContested": {
+    "message": "অন্য কোনো এক্সটেনশন বা পেজ নিজেই এই প্লেয়ারের গতি বারবার বদলাচ্ছে। টানাটানি এড়াতে FleetFoot Engine গতি ফিরিয়ে আনা বন্ধ করেছে।",
+    "description": "Notice."
+  },
+  "noticeContestedChoose": {
+    "message": "কী করবেন বেছে নিন",
+    "description": "Popup link after the LOCK yielded notice: opens the option."
+  },
+  "noticeExtremeRate": {
+    "message": "এই গতিতে ব্রাউজার অডিও মিউট বা বিকৃত করতে পারে।",
+    "description": "Notice."
+  },
+  "noticeLive": {
+    "message": "এটি সরাসরি সম্প্রচার, তাই সামনে এগোনো বা বাকি সময় দেখা যায় না।",
+    "description": "Notice."
+  },
+  "errorInvalidCommand": {
+    "message": "কিছু একটা গোলমাল হয়েছে। আবার চেষ্টা করুন।",
+    "description": "Error."
+  },
+  "errorNoPlayer": {
+    "message": "প্লেয়ারটি আর পেজে নেই।",
+    "description": "Error."
+  },
+  "errorRateRejected": {
+    "message": "পেজ এই গতি মেনে নেয়নি।",
+    "description": "Error."
+  },
+  "errorPitchUnsupported": {
+    "message": "এই প্লেয়ার স্বাভাবিক কণ্ঠ ধরে রাখতে পারে না।",
+    "description": "Error."
+  },
+  "errorNoPreviousRate": {
+    "message": "এখনও আগের কোনো গতি নেই।",
+    "description": "Error."
+  },
+  "errorNotSeekable": {
+    "message": "এই মিডিয়া এখন সামনে বা পিছনে নেওয়া যাচ্ছে না।",
+    "description": "Error."
+  },
+  "errorNotLoopable": {
+    "message": "লুপের জন্য এমন মিডিয়া দরকার যার দৈর্ঘ্য জানা।",
+    "description": "Error."
+  },
+  "errorLoopInvalid": {
+    "message": "B-কে A-এর পরে হতে হবে।",
+    "description": "Error."
+  },
+  "errorPipUnavailable": {
+    "message": "এই প্লেয়ারে ছবির মধ্যে ছবি পাওয়া যায় না।",
+    "description": "Error."
+  },
+  "errorPipRejected": {
+    "message": "ব্রাউজার ছবির মধ্যে ছবির অনুমতি দেয়নি। প্লেয়ারের ওপরের বারের বোতাম বা পেজের কোনো শর্টকাট ব্যবহার করুন।",
+    "description": "Error."
+  },
+  "overlayLabel": {
+    "message": "FleetFoot Engine-এর নিয়ন্ত্রণ",
+    "description": "Toolbar label."
+  },
+  "overlayMove": {
+    "message": "সরান (তীর কী)",
+    "description": "Drag handle."
+  },
+  "overlayMore": {
+    "message": "আরও নিয়ন্ত্রণ",
+    "description": "Button."
+  },
+  "overlayLess": {
+    "message": "কম নিয়ন্ত্রণ",
+    "description": "Button."
+  },
+  "menuSpeed": {
+    "message": "গতি",
+    "description": "Context menu."
+  },
+  "menuFavorite": {
+    "message": "প্রিয় ($RATE$)",
+    "description": "Context menu.",
+    "placeholders": {
+      "rate": {
+        "content": "$1"
+      }
+    }
+  },
+  "optionsTitle": {
+    "message": "সেটিংস",
+    "description": "Page subtitle."
+  },
+  "sectionSpeed": {
+    "message": "গতি",
+    "description": "Section."
+  },
+  "speedGroupRates": {
+    "message": "আপনার গতি",
+    "description": "Options, Speed section: heading of the user's own speeds (presets, step, favorite and hold speeds)."
+  },
+  "speedGroupRestore": {
+    "message": "আপনার গতি ফিরিয়ে আনা",
+    "description": "Options, Speed section: heading of what happens when a site changes the speed."
+  },
+  "speedGroupPlayers": {
+    "message": "যেসব প্লেয়ারে প্রযোজ্য",
+    "description": "Options, Speed section: heading of which players a speed applies to."
+  },
+  "sectionPlayback": {
+    "message": "প্লেব্যাক",
+    "description": "Section."
+  },
+  "sectionKeyboard": {
+    "message": "কিবোর্ড",
+    "description": "Section."
+  },
+  "sectionOverlay": {
+    "message": "প্লেয়ারের ওপরের বার",
+    "description": "Section."
+  },
+  "sectionMenu": {
+    "message": "রাইট-ক্লিক মেনু",
+    "description": "Section."
+  },
+  "presetsField": {
+    "message": "গতির শর্টকাট",
+    "description": "Field."
+  },
+  "presetsHelp": {
+    "message": "স্পেস দিয়ে আলাদা করা সর্বোচ্চ ১২টি গতি, যেমন ১ ১.৫ ২।",
+    "description": "Help."
+  },
+  "presetsInvalid": {
+    "message": "স্পেস দিয়ে আলাদা করে ১ থেকে $MAX$টি গতি লিখুন।",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "rateStepField": {
+    "message": "ধীরে ও দ্রুত করার ধাপ",
+    "description": "Field."
+  },
+  "rateStepHelp": {
+    "message": "০.০১ থেকে ১.০০ পর্যন্ত।",
+    "description": "Help."
+  },
+  "favoriteField": {
+    "message": "প্রিয় গতি",
+    "description": "Field."
+  },
+  "holdField": {
+    "message": "কী চেপে ধরে রাখার সময় গতি",
+    "description": "Field."
+  },
+  "rateRangeHelp": {
+    "message": "০.১০ থেকে ১৬.০০ পর্যন্ত।",
+    "description": "Help."
+  },
+  "policyField": {
+    "message": "সাইট যদি গতি বদলায়",
+    "description": "Legend."
+  },
+  "policyFollowHelp": {
+    "message": "আপনার গতি একবার প্রয়োগ হয়। উদাহরণ: পরের পর্ব ১× গতিতে শুরু হয় এবং ১× গতিতেই থাকে।",
+    "description": "Help."
+  },
+  "policySmartHelp": {
+    "message": "উদাহরণ: পরের পর্ব ১× গতিতে শুরু হয় এবং আপনার গতি ফিরে আসে। দেখার সময় সাইট গতি বদলালে, পরের ভিডিও পর্যন্ত গতি সাইট যেমন রেখেছে তেমনই থাকে।",
+    "description": "Help."
+  },
+  "policyLockHelp": {
+    "message": "উদাহরণ: দেখার সময় সাইট গতি ১× করে দেয়, আর এক মুহূর্ত পরে আপনার গতি ফিরে আসে। যে সাইটগুলো বারবার গতি বদলায় সেগুলোর জন্য।",
+    "description": "Help."
+  },
+  "targetField": {
+    "message": "গতি প্রযোজ্য হবে",
+    "description": "Legend."
+  },
+  "targetActive": {
+    "message": "সক্রিয় প্লেয়ারে",
+    "description": "Option."
+  },
+  "targetAll": {
+    "message": "পেজের সব প্লেয়ারে",
+    "description": "Option."
+  },
+  "pitchField": {
+    "message": "গতি বদলালে স্বাভাবিক কণ্ঠ",
+    "description": "Field."
+  },
+  "skipSilenceField": {
+    "message": "নীরবতা এড়ান",
+    "description": "Name of Skip Silence: options switch, site profile field, popup button."
+  },
+  "skipSilenceHelp": {
+    "message": "বিরতিতে প্লেয়ার নীরবতার গতিতে চলে যায়, আর শব্দ ফিরলেই আপনার গতিতে ফিরে আসে। শব্দ শুধু আপনার ডিভাইসেই শোনা হয়, কখনও রেকর্ড বা পাঠানো হয় না।",
+    "description": "What Skip Silence does and that the sound stays on the device: options help, popup card."
+  },
+  "skipSilenceSettings": {
+    "message": "“নীরবতা এড়ান”-এর সেটিংস",
+    "description": "Link in the popup card of Skip Silence, to its place on the options page."
+  },
+  "silenceModeField": {
+    "message": "কোনটিকে নীরবতা ধরা হবে",
+    "description": "Options legend: how readily a pause counts as a silence."
+  },
+  "silenceConservative": {
+    "message": "শুধু লম্বা ও শান্ত বিরতি",
+    "description": "Options choice: only long, quiet pauses count."
+  },
+  "silenceNormal": {
+    "message": "বাক্যের মাঝের বিরতিও (প্রস্তাবিত)",
+    "description": "Options choice, the default: pauses between sentences count too."
+  },
+  "silenceAggressive": {
+    "message": "প্রতিটি বিরতি, একটু পেছনের শব্দ থাকলেও",
+    "description": "Options choice: every pause counts, even with background noise."
+  },
+  "silenceRateField": {
+    "message": "নীরবতায় গতি",
+    "description": "Options field: the speed a silence plays at."
+  },
+  "noticeSkipSilenceWaiting": {
+    "message": "পেজে আপনার প্রথম ক্লিকে “নীরবতা এড়ান” চালু হবে।",
+    "description": "Notice: the browser starts audio only after a click on the page."
+  },
+  "noticeSkipSilenceUnavailable": {
+    "message": "এই মিডিয়ায় “নীরবতা এড়ান” পাওয়া যায় না।",
+    "description": "Notice: the browser does not let the extension hear this media."
+  },
+  "seekStepField": {
+    "message": "লাফ, সেকেন্ডে",
+    "description": "Field."
+  },
+  "seekStepInvalid": {
+    "message": "$MIN$ থেকে $MAX$ পর্যন্ত পূর্ণ সংখ্যায় সেকেন্ড লিখুন।",
+    "description": "Error.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "pageShortcutsField": {
+    "message": "পেজের শর্টকাট",
+    "description": "Field."
+  },
+  "pageShortcutsHelp": {
+    "message": "পেজে FleetFoot Engine খোলার পরে কাজ করে, আর কোনো ঘরে টাইপ করার সময় কখনও নয়।",
+    "description": "Help."
+  },
+  "shortcutsTable": {
+    "message": "পেজের কী",
+    "description": "Table caption."
+  },
+  "keyPress": {
+    "message": "একটি কী চাপুন… (বাতিল করতে Esc)",
+    "description": "While recording."
+  },
+  "keyNone": {
+    "message": "নেই",
+    "description": "Unbound."
+  },
+  "keyRemove": {
+    "message": "“$ACTION$” কাজের কী সরান",
+    "description": "Button label: the button shows only a cross.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "keyChange": {
+    "message": "$ACTION$: $KEY$। বদলান",
+    "description": "Button label.",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      },
+      "key": {
+        "content": "$2"
+      }
+    }
+  },
+  "keyTaken": {
+    "message": "$KEY$ ইতিমধ্যে “$ACTION$” কাজে ব্যবহৃত হচ্ছে।",
+    "description": "Conflict.",
+    "placeholders": {
+      "key": {
+        "content": "$1"
+      },
+      "action": {
+        "content": "$2"
+      }
+    }
+  },
+  "browserShortcutsHelp": {
+    "message": "যে শর্টকাট সব পেজে কাজ করে, সেগুলো ব্রাউজারের এক্সটেনশন শর্টকাট সেটিংসে ঠিক করা হয়।",
+    "description": "Help."
+  },
+  "browserShortcutsOpen": {
+    "message": "ব্রাউজারের শর্টকাট খুলুন",
+    "description": "Button."
+  },
+  "overlayField": {
+    "message": "প্লেয়ারের ওপর বার দেখান",
+    "description": "Field."
+  },
+  "overlayHelp": {
+    "message": "একটি ছোট বার, যা পয়েন্টার প্লেয়ারের ওপর থাকলে দেখা যায়।",
+    "description": "Help."
+  },
+  "overlayResetPosition": {
+    "message": "বারটিকে কোণে ফিরিয়ে আনুন",
+    "description": "Button."
+  },
+  "contextMenuField": {
+    "message": "ভিডিও বা অডিওতে রাইট-ক্লিক করলে গতির মেনু",
+    "description": "Field."
+  },
+  "contextMenuHelp": {
+    "message": "শুধু ভিডিও ও অডিওতে দেখা যায়।",
+    "description": "Help."
+  },
+  "saved": {
+    "message": "সংরক্ষিত হয়েছে।",
+    "description": "Status."
+  },
+  "invalidValue": {
+    "message": "এই মানটি বৈধ নয়।",
+    "description": "Error."
+  },
+  "restoreDefaults": {
+    "message": "ডিফল্ট ফিরিয়ে আনুন",
+    "description": "Button."
+  },
+  "restoreConfirm": {
+    "message": "সব ফিরিয়ে আনতে আবার ক্লিক করুন",
+    "description": "Button, armed."
+  },
+  "restored": {
+    "message": "ডিফল্ট ফিরিয়ে আনা হয়েছে।",
+    "description": "Status."
+  },
+  "actionSlower": {
+    "message": "ধীরে",
+    "description": "Shortcut action."
+  },
+  "actionFaster": {
+    "message": "দ্রুত",
+    "description": "Shortcut action."
+  },
+  "actionReset": {
+    "message": "১× গতিতে ফিরুন",
+    "description": "Shortcut action."
+  },
+  "actionFavorite": {
+    "message": "প্রিয় গতি",
+    "description": "Shortcut action."
+  },
+  "actionHold": {
+    "message": "চেপে ধরলে দ্রুত",
+    "description": "Shortcut action."
+  },
+  "actionSeekBackward": {
+    "message": "পিছনে",
+    "description": "Shortcut action."
+  },
+  "actionSeekForward": {
+    "message": "সামনে",
+    "description": "Shortcut action."
+  },
+  "actionTogglePitch": {
+    "message": "স্বাভাবিক কণ্ঠ চালু/বন্ধ",
+    "description": "Shortcut action."
+  },
+  "actionLoopA": {
+    "message": "লুপের শুরু (A)",
+    "description": "Shortcut action."
+  },
+  "actionLoopB": {
+    "message": "লুপের শেষ (B)",
+    "description": "Shortcut action."
+  },
+  "actionLoopToggle": {
+    "message": "লুপ চালু/বন্ধ",
+    "description": "Shortcut action."
+  },
+  "actionNextPlayer": {
+    "message": "পরের প্লেয়ার",
+    "description": "Shortcut action."
+  },
+  "actionToggleOverlay": {
+    "message": "বার দেখান বা লুকান",
+    "description": "Shortcut action."
+  },
+  "controlling": {
+    "message": "নিয়ন্ত্রিত প্লেয়ার",
+    "description": "Caption above the player list."
+  },
+  "live": {
+    "message": "সরাসরি",
+    "description": "Badge for a live stream."
+  },
+  "timeLeftAt": {
+    "message": "$RATE$ গতিতে $TIME$ বাকি",
+    "description": "Remaining time at the current speed.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      },
+      "rate": {
+        "content": "$2"
+      }
+    }
+  },
+  "timeLeftNormal": {
+    "message": "স্বাভাবিক গতিতে $TIME$",
+    "description": "Remaining time at 1×.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "pipOpen": {
+    "message": "খুলুন",
+    "description": "Picture-in-picture button."
+  },
+  "pipClose": {
+    "message": "বন্ধ করুন",
+    "description": "Picture-in-picture button."
+  },
+  "savedHours": {
+    "message": "$HOURS$ $MINUTES$",
+    "description": "Time saved: hours then minutes, each already with its unit («12 h», «34 min»).",
+    "placeholders": {
+      "hours": {
+        "content": "$1"
+      },
+      "minutes": {
+        "content": "$2"
+      }
+    }
+  },
+  "savedUnderMinute": {
+    "message": "এক মিনিটের কম",
+    "description": "Time saved below one minute."
+  },
+  "savedPopup": {
+    "message": "$TIME$ বাঁচল",
+    "description": "Popup header: total time saved.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedTitle": {
+    "message": "বাঁচানো সময়",
+    "description": "Options section."
+  },
+  "savedHelp": {
+    "message": "যে সময় আপনাকে খরচ করতে হয়নি, কারণ FleetFoot Engine আপনার ভিডিও ও অডিও দ্রুত চালিয়েছে। এটি শুধু এই ডিভাইসে, একটি মোট সংখ্যা হিসেবে থাকে।",
+    "description": "Help."
+  },
+  "savedTotal": {
+    "message": "এ পর্যন্ত: $TIME$",
+    "description": "Options: the total.",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "savedReset": {
+    "message": "গণনা শূন্য করুন",
+    "description": "Button."
+  },
+  "savedResetConfirm": {
+    "message": "শূন্য করতে আবার ক্লিক করুন",
+    "description": "Button, armed."
+  },
+  "savedResetDone": {
+    "message": "গণনা শূন্য করা হয়েছে।",
+    "description": "Status."
+  },
+  "sectionAppearance": {
+    "message": "চেহারা",
+    "description": "Options section."
+  },
+  "themeField": {
+    "message": "রঙের থিম",
+    "description": "Legend."
+  },
+  "textSizeField": {
+    "message": "লেখার আকার",
+    "description": "Options, Appearance: label of the choice of text size for this page, from 100% to 200%."
+  },
+  "textSizeHelp": {
+    "message": "এই পেজের লেখা ও নিয়ন্ত্রণ বড় করে।",
+    "description": "Options, Appearance: under textSizeField."
+  },
+  "themeYellow": {
+    "message": "হলুদ (ডিফল্ট)",
+    "description": "Theme."
+  },
+  "themeCyan": {
+    "message": "নীলাভ সবুজ",
+    "description": "Theme."
+  },
+  "themeMagenta": {
+    "message": "ম্যাজেন্টা",
+    "description": "Theme."
+  },
+  "themeGreen": {
+    "message": "সবুজ",
+    "description": "Theme."
+  },
+  "themeViolet": {
+    "message": "বেগুনি",
+    "description": "Theme."
+  },
+  "themeCoral": {
+    "message": "প্রবাল",
+    "description": "Theme."
+  },
+  "themeSlate": {
+    "message": "স্লেট",
+    "description": "Theme: dimmed blue-grey, easy on the eyes."
+  },
+  "themeSepia": {
+    "message": "সেপিয়া",
+    "description": "Theme: dimmed warm brown, easy on the eyes."
+  },
+  "themeSage": {
+    "message": "সেজ সবুজ",
+    "description": "Theme: dimmed green, easy on the eyes."
+  },
+  "themeLight": {
+    "message": "হালকা",
+    "description": "Theme."
+  },
+  "pitchHelpShort": {
+    "message": "কণ্ঠ সরু আর তীক্ষ্ণ হয় না",
+    "description": "Popup subtitle of the natural voice switch."
+  },
+  "rateOutOfRange": {
+    "message": "$MIN$ থেকে $MAX$ পর্যন্ত একটি গতি লিখুন।",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "stepOutOfRange": {
+    "message": "$MIN$ থেকে $MAX$ পর্যন্ত একটি ধাপ লিখুন।",
+    "description": "Error in options.",
+    "placeholders": {
+      "min": {
+        "content": "$1"
+      },
+      "max": {
+        "content": "$2"
+      }
+    }
+  },
+  "privacyBadge": {
+    "message": "FULL PRIVACY",
+    "description": "Badge; the same words in every language."
+  },
+  "privacyBadgeSub": {
+    "message": "শূন্য টেলিমেট্রি · কোনো অ্যাকাউন্ট নেই · সেটিংস শুধু ডিভাইসে",
+    "description": "Badge subtitle."
+  },
+  "privacyStatement": {
+    "message": "আপনি কোন সাইটে যান আর কী দেখেন, FleetFoot Engine তা কাউকে পাঠায় না।",
+    "description": "Privacy section: the promise about browsing activity."
+  },
+  "verifySource": {
+    "message": "আমাদের কথায় বিশ্বাস করবেন না। কোডটি পড়ুন।",
+    "description": "Privacy section: the invitation to read the source, before its link."
+  },
+  "sourceLink": {
+    "message": "GitHub-এ কোড পড়ুন",
+    "description": "Link to the public repository."
+  },
+  "supportDevelopment": {
+    "message": "উন্নয়নে সহায়তা করুন",
+    "description": "Popup footer link."
+  },
+  "supportQuestion": {
+    "message": "কাজে লাগছে?",
+    "description": "Popup footer question before the support link."
+  },
+  "supportSaved": {
+    "message": "এর মধ্যেই কি আপনার $DURATION$ বাঁচিয়েছে?",
+    "description": "Popup footer question before the support link, once the time saved reaches an hour; whole hours, with the unit («12 h»).",
+    "placeholders": {
+      "duration": {
+        "content": "$1"
+      }
+    }
+  },
+  "supportDevelopmentKofi": {
+    "message": "Ko-fi-তে উন্নয়নে সহায়তা করুন",
+    "description": "Options link."
+  },
+  "reviewStore": {
+    "message": "ভালো লাগছে? একটি রিভিউ দিন",
+    "description": "Accessible name of the heart at the top of the popup, which opens this extension's page in the store it was installed from, to leave a review."
+  },
+  "sectionPrivacy": {
+    "message": "গোপনীয়তা ও অনুমতি",
+    "description": "Options section."
+  },
+  "sectionMemory": {
+    "message": "মনে রাখা",
+    "description": "Options section."
+  },
+  "memoryField": {
+    "message": "FleetFoot Engine কী মনে রাখে",
+    "description": "Group label."
+  },
+  "memoryNone": {
+    "message": "কিছুই না",
+    "description": "Memory choice."
+  },
+  "memoryNoneHelp": {
+    "message": "প্রতিটি পেজ নিজের গতিতে শুরু হয়।",
+    "description": "Help."
+  },
+  "memoryGlobal": {
+    "message": "সব সাইটের জন্য একটি গতি",
+    "description": "Memory choice."
+  },
+  "memoryGlobalHelp": {
+    "message": "আপনার বেছে নেওয়া শেষ গতি সব জায়গায় প্রযোজ্য। শুধু সংখ্যাটি রাখা হয়।",
+    "description": "Help."
+  },
+  "memorySite": {
+    "message": "প্রতিটি সাইটের জন্য আলাদা গতি",
+    "description": "Memory choice."
+  },
+  "memorySiteHelp": {
+    "message": "প্রতিটি সাইট নিজের গতি আর, আপনি চাইলে, নিজের সেটিংস রাখে। শুধু সাইটের নাম রাখা হয়, আপনি কী দেখেন তা কখনও নয়।",
+    "description": "Help."
+  },
+  "profilesTitle": {
+    "message": "মনে রাখা সাইট",
+    "description": "Heading."
+  },
+  "profilesEmpty": {
+    "message": "এখনও কোনো সাইট নেই। কোনো সাইটে গতি বদলান, সেটি এখানে দেখা যাবে।",
+    "description": "Empty list."
+  },
+  "profileSpeed": {
+    "message": "গতি (সাইটের গতির জন্য খালি রাখুন)",
+    "description": "Field of a site profile."
+  },
+  "profileGeneralValue": {
+    "message": "সাধারণ ($VALUE$)",
+    "description": "Option or placeholder: no value of its own on this site; the value it takes from the general settings in brackets.",
+    "placeholders": {
+      "value": {
+        "content": "$1"
+      }
+    }
+  },
+  "policyFollowShort": {
+    "message": "সাইট ঠিক করে",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policySmartShort": {
+    "message": "পরের ভিডিওতে",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "policyLockShort": {
+    "message": "সবসময়, সঙ্গে সঙ্গে",
+    "description": "Short name of a rate policy, inside «General (…)»."
+  },
+  "fightField": {
+    "message": "সাইট যদি সঙ্গে সঙ্গে আবার বদলায়",
+    "description": "Options legend: what LOCK does when a page answers every restore at once."
+  },
+  "fightYield": {
+    "message": "ছেড়ে দিন ও আমাকে জানান (প্রস্তাবিত)",
+    "description": "LOCK fight answer: yield."
+  },
+  "fightBraked": {
+    "message": "ফিরিয়ে আনতে থাকুন, ব্রেকসহ",
+    "description": "LOCK fight answer: keep imposing, bounded."
+  },
+  "fightUnbraked": {
+    "message": "ফিরিয়ে আনতে থাকুন, ব্রেক ছাড়া",
+    "description": "LOCK fight answer: keep imposing, unbounded."
+  },
+  "fightYieldShort": {
+    "message": "ছেড়ে দিন",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightBrakedShort": {
+    "message": "ব্রেকসহ",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightUnbrakedShort": {
+    "message": "ব্রেক ছাড়া",
+    "description": "Short name inside «General (…)»."
+  },
+  "fightHelpLabel": {
+    "message": "তিনটির মধ্যে পার্থক্য কী?",
+    "description": "Accessible name of the info button next to the LOCK fight choices."
+  },
+  "fightYieldHelp": {
+    "message": "FleetFoot Engine ওই প্লেয়ারে গতি ফিরিয়ে আনা বন্ধ করে এবং এক্সটেনশনের উইন্ডোতে আপনাকে জানায়।",
+    "description": "Info popover, first answer."
+  },
+  "fightBrakedHelp": {
+    "message": "সাইট টের না পেয়ে আপনার গতি ফিরিয়ে আনতে থাকে, এমন একটি সীমা সহ যা খরচ কম রাখে। সাইটের প্লেয়ার আসল গতির চেয়ে আলাদা গতি দেখাতে পারে।",
+    "description": "Info popover, second answer."
+  },
+  "fightUnbrakedHelp": {
+    "message": "একই, তবে সীমা ছাড়া। কিছু সাইটে এটি প্রসেসরের একটি পুরো কোর দখল করতে পারে, তাতে খরচ বাড়ে আর ব্যাটারি তাড়াতাড়ি ফুরায়।",
+    "description": "Info popover, third answer and its risk."
+  },
+  "profileOn": {
+    "message": "চালু",
+    "description": "Option."
+  },
+  "profileOff": {
+    "message": "বন্ধ",
+    "description": "Option."
+  },
+  "profileForget": {
+    "message": "এই সাইটটি ভুলে যান",
+    "description": "Button."
+  },
+  "profileForgetSite": {
+    "message": "$SITE$ ভুলে যান",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "sectionAccess": {
+    "message": "সাইটে প্রবেশাধিকার",
+    "description": "Options section."
+  },
+  "accessField": {
+    "message": "FleetFoot Engine কোথায় কাজ করবে",
+    "description": "Group label."
+  },
+  "accessOnClick": {
+    "message": "শুধু যখন আপনি ডাকবেন",
+    "description": "Access choice."
+  },
+  "accessOnClickHelp": {
+    "message": "আইকনে ক্লিক, শর্টকাট বা রাইট-ক্লিক মেনু ব্যবহারের পরে সেই ট্যাবে কাজ করে। কোনো সাইটে এর প্রবেশাধিকার নেই।",
+    "description": "Help."
+  },
+  "accessSelected": {
+    "message": "সবসময়, আপনার বেছে নেওয়া সাইটে",
+    "description": "Access choice."
+  },
+  "accessSelectedHelp": {
+    "message": "এই সাইটগুলোতে নিজে থেকে চালু হয়, শর্টকাট তৈরি থাকে।",
+    "description": "Help."
+  },
+  "accessAll": {
+    "message": "সবসময়, সব সাইটে",
+    "description": "Access choice."
+  },
+  "accessAllHelp": {
+    "message": "ব্রাউজার সব সাইটে প্রবেশাধিকার চাইবে। FleetFoot Engine শুধু ভিডিও ও অডিও খোঁজে। এটি কখনও পেজ পড়ে না এবং কখনও কিছু পাঠায় না।",
+    "description": "Help."
+  },
+  "accessDeclined": {
+    "message": "ব্রাউজার প্রবেশাধিকার দেয়নি, তাই কিছুই বদলায়নি।",
+    "description": "Status."
+  },
+  "accessFiles": {
+    "message": "আপনার কম্পিউটার থেকে খোলা ভিডিও এই বিকল্পগুলোর মধ্যে পড়ে না; FleetFoot Engine-এর আইকনে ক্লিক করে এটি খুলুন।",
+    "description": "Help."
+  },
+  "sitesChosen": {
+    "message": "আপনার সাইট",
+    "description": "Heading."
+  },
+  "sitesExcluded": {
+    "message": "এই সাইটগুলো বাদে",
+    "description": "Heading."
+  },
+  "sitesExcludedHelp": {
+    "message": "এই সাইটগুলোতে এটি কখনও নিজে থেকে চালু হয় না, তবে এক ক্লিকে আপনি এখনও একে ডাকতে পারেন।",
+    "description": "Help."
+  },
+  "sitesNone": {
+    "message": "এখনও কোনো সাইট নেই।",
+    "description": "Empty list."
+  },
+  "siteField": {
+    "message": "সাইট",
+    "description": "Field label."
+  },
+  "siteHelp": {
+    "message": "example.com-এর মতো একটি নাম, বা এর কোনো পেজের ঠিকানা।",
+    "description": "Help."
+  },
+  "siteAdd": {
+    "message": "যোগ করুন",
+    "description": "Button."
+  },
+  "siteInvalid": {
+    "message": "এটি কোনো সাইট নয়। example.com-এর মতো করে লিখুন।",
+    "description": "Error."
+  },
+  "siteRemoveShort": {
+    "message": "সরান",
+    "description": "Button."
+  },
+  "siteRemove": {
+    "message": "$SITE$ সরান",
+    "description": "Accessible name.",
+    "placeholders": {
+      "site": {
+        "content": "$1"
+      }
+    }
+  },
+  "excludedFull": {
+    "message": "আপনি সর্বোচ্চ $MAX$টি সাইট বাদ রাখতে পারেন।",
+    "description": "Error.",
+    "placeholders": {
+      "max": {
+        "content": "$1"
+      }
+    }
+  },
+  "privacyTelemetry": {
+    "message": "টেলিমেট্রি",
+    "description": "Label."
+  },
+  "privacyTelemetryNone": {
+    "message": "নেই",
+    "description": "Value."
+  },
+  "privacyAnalytics": {
+    "message": "ব্যবহারের পরিসংখ্যান",
+    "description": "Label."
+  },
+  "privacyAnalyticsNone": {
+    "message": "নেই",
+    "description": "Value."
+  },
+  "privacyAccounts": {
+    "message": "অ্যাকাউন্ট",
+    "description": "Label."
+  },
+  "privacyAccountsNone": {
+    "message": "নেই",
+    "description": "Value."
+  },
+  "privacyServers": {
+    "message": "দূরের সার্ভার",
+    "description": "Label."
+  },
+  "privacyServersNone": {
+    "message": "নেই",
+    "description": "Value."
+  },
+  "privacyAds": {
+    "message": "বিজ্ঞাপন",
+    "description": "Label."
+  },
+  "privacyAdsNone": {
+    "message": "নেই",
+    "description": "Value."
+  },
+  "privacyAffiliate": {
+    "message": "অ্যাফিলিয়েট লিংক",
+    "description": "Label."
+  },
+  "privacyAffiliateNone": {
+    "message": "নেই",
+    "description": "Value."
+  },
+  "privacyStorage": {
+    "message": "আপনার সেটিংস",
+    "description": "Label."
+  },
+  "privacyStorageLocal": {
+    "message": "শুধু এই ডিভাইসে",
+    "description": "Value."
+  },
+  "privacyWhereOnClick": {
+    "message": "কোথায় কাজ করে: শুধু যখন আপনি ডাকবেন",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereSelected": {
+    "message": "কোথায় কাজ করে: সবসময়, আপনার বেছে নেওয়া সাইটে",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyWhereAll": {
+    "message": "কোথায় কাজ করে: সবসময়, সব সাইটে",
+    "description": "Where FleetFoot Engine runs today: one whole sentence per access mode."
+  },
+  "privacyAccessChange": {
+    "message": "সাইটে প্রবেশাধিকার বদলান",
+    "description": "Link to the site access section."
+  },
+  "backupTitle": {
+    "message": "আপনার সেটিংসের একটি কপি",
+    "description": "Heading."
+  },
+  "backupHelp": {
+    "message": "আপনার সেটিংস ও সংরক্ষিত সাইট নিয়ে একটি ফাইল, রেখে দেওয়ার বা অন্য ব্রাউজারে নেওয়ার জন্য। আপনি যেখানে রাখবেন, ফাইলটি সেখানেই থাকবে।",
+    "description": "Help."
+  },
+  "exportSettings": {
+    "message": "সেটিংস এক্সপোর্ট করুন",
+    "description": "Button."
+  },
+  "exportDone": {
+    "message": "সেটিংস এক্সপোর্ট হয়েছে।",
+    "description": "Status."
+  },
+  "exportFailed": {
+    "message": "সেটিংস এক্সপোর্ট করা গেল না।",
+    "description": "Status."
+  },
+  "importSettings": {
+    "message": "সেটিংস ইমপোর্ট করুন",
+    "description": "Button."
+  },
+  "importSummary": {
+    "message": "ফাইলে সেটিংস: $SETTINGS$ · সাইট: $SITES$",
+    "description": "What an import would bring.",
+    "placeholders": {
+      "settings": {
+        "content": "$1"
+      },
+      "sites": {
+        "content": "$2"
+      }
+    }
+  },
+  "importIgnored": {
+    "message": "বৈধ না হওয়ায় বাদ দেওয়া মান: $COUNT$",
+    "description": "Import summary.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "importReplace": {
+    "message": "এগুলো বর্তমান সেটিংসের জায়গা নেবে। যে সাইটগুলো ফাইলে নেই, সেগুলো যেমন আছে তেমনই থাকবে।",
+    "description": "Import summary."
+  },
+  "importConfirm": {
+    "message": "ইমপোর্ট করুন",
+    "description": "Button."
+  },
+  "importCancel": {
+    "message": "বাতিল",
+    "description": "Button."
+  },
+  "importDone": {
+    "message": "সেটিংস ইমপোর্ট হয়েছে।",
+    "description": "Status."
+  },
+  "importFailed": {
+    "message": "সেটিংস ইমপোর্ট করা গেল না।",
+    "description": "Status."
+  },
+  "importTooLarge": {
+    "message": "সেটিংসের কপি হিসেবে এই ফাইলটি খুব বড়।",
+    "description": "Status."
+  },
+  "importNotJson": {
+    "message": "এই ফাইলটি সেটিংসের কপি হিসেবে পড়া যাচ্ছে না।",
+    "description": "Status."
+  },
+  "importNotBackup": {
+    "message": "এই ফাইলটি FleetFoot Engine-এর সেটিংসের কপি নয়।",
+    "description": "Status."
+  },
+  "importNewer": {
+    "message": "এই কপিটি FleetFoot Engine-এর নতুন সংস্করণ থেকে তৈরি। এক্সটেনশন আপডেট করে আবার ইমপোর্ট করুন।",
+    "description": "Status."
+  },
+  "deleteAll": {
+    "message": "এই ডিভাইসের সবকিছু মুছুন",
+    "description": "Button."
+  },
+  "deleteAllConfirm": {
+    "message": "সবকিছু মুছতে আবার ক্লিক করুন",
+    "description": "Button, armed."
+  },
+  "deleteAllHelp": {
+    "message": "সেটিংস, সংরক্ষিত সাইট আর বাঁচানো সময় মুছে দেয়। সাইটের অনুমতি থেকে যায়; সেগুলো “$SECTION$” অংশে সরাতে পারেন।",
+    "description": "Help; the substitution is the site access section title.",
+    "placeholders": {
+      "section": {
+        "content": "$1"
+      }
+    }
+  },
+  "deletedAll": {
+    "message": "FleetFoot Engine এই ডিভাইসে যা রেখেছিল, সব মুছে ফেলা হয়েছে।",
+    "description": "Status."
+  },
+  "deleteFailed": {
+    "message": "সবকিছু মোছা গেল না।",
+    "description": "Status."
+  },
+  "sectionAbout": {
+    "message": "পরিচিতি",
+    "description": "Section title."
+  },
+  "aboutVersion": {
+    "message": "সংস্করণ $VERSION$",
+    "description": "The version of this build.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "aboutLicense": {
+    "message": "PolyForm Strict 1.0.0 লাইসেন্সের অধীনে ব্যক্তিগত ও অবাণিজ্যিক ব্যবহারের জন্য বিনামূল্যে। কোড পরিবর্তন বা পুনর্বিতরণের অনুমতি নেই।",
+    "description": "Licence summary; the licence text decides."
+  },
+  "aboutSource": {
+    "message": "এই সংস্করণের সোর্স কোড",
+    "description": "Link."
+  },
+  "aboutLicenseLink": {
+    "message": "লাইসেন্স পড়ুন",
+    "description": "Link."
+  },
+  "aboutIssues": {
+    "message": "সমস্যা জানান",
+    "description": "Link to GitHub Issues."
+  },
+  "aboutDiscussions": {
+    "message": "প্রশ্ন ও ভাবনা",
+    "description": "Link to GitHub Discussions."
+  },
+  "moreFromDeveloper": {
+    "message": "ডেভেলপারের আরও কাজ",
+    "description": "Heading."
+  },
+  "welcomeTitle": {
+    "message": "তিন ধাপে তৈরি",
+    "description": "First-run page title."
+  },
+  "welcomePrivacy": {
+    "message": "আপনার ডেটা আপনারই",
+    "description": "First-run page, first step heading."
+  },
+  "welcomeSpeed": {
+    "message": "আপনার প্রিয় গতি",
+    "description": "First-run page, third step heading."
+  },
+  "welcomeSpeedHelp": {
+    "message": "এক্সটেনশনের উইন্ডোতে তারায় একবার ট্যাপ করলেই গতি এটা হয়ে যায়। ০.১০ থেকে ১৬.০০ পর্যন্ত।",
+    "description": "First-run page, favorite speed help."
+  },
+  "welcomeDone": {
+    "message": "হয়ে গেছে",
+    "description": "First-run page button that closes it."
+  },
+  "welcomeAllSettings": {
+    "message": "সব সেটিংস",
+    "description": "First-run page link to the options page."
+  }
+}

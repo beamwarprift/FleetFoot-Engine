@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FFE fixture: hostile-listener</title>
+  </head>
+  <body>
+    <video src="/tone.wav" muted style="width: 640px; height: 360px"><track kind="captions" src="/captions.vtt" /></video>
+    <script>
+      // The page listens for any sign of an extension, and tries to command one.
+      window.messages = 0;
+      window.addEventListener('message', () => {
+        window.messages += 1;
+      });
+      window.attributes = () =>
+        [document.documentElement, document.body]
+          .flatMap((element) => element.getAttributeNames())
+          .join(' ');
+      window.tryToCommand = () => {
+        const command = { v: 1, type: 'set-rate', rate: 16 };
+        window.postMessage(command, '*');
+        document.dispatchEvent(new CustomEvent('fleetfoot-engine', { detail: command }));
+        window.dispatchEvent(new CustomEvent('message', { detail: command }));
+      };
+    </script>
+  </body>
+</html>

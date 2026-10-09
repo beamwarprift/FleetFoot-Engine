@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FFE fixture: rate-fight</title>
+  </head>
+  <body>
+    <video src="/tone.wav" muted style="width: 640px; height: 360px"><track kind="captions" src="/captions.vtt" /></video>
+    <script>
+      // A player that answers every change at once with 1x: a fight LOCK must not keep up.
+      const video = document.querySelector('video');
+      window.resets = 0;
+      video.addEventListener('ratechange', () => {
+        if (video.playbackRate !== 1) {
+          setTimeout(() => {
+            window.resets += 1;
+            video.playbackRate = 1;
+          }, 10);
+        }
+      });
+    </script>
+  </body>
+</html>

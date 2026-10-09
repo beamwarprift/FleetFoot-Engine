@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FFE fixture: cross-site-player</title>
+  </head>
+  <body>
+    <h1>An episode</h1>
+    <script>
+      // The page has no player of its own: it embeds one from another site, as streaming sites do.
+      const frame = document.createElement('iframe');
+      frame.src = `http://localhost:${location.port}/fixtures/single-video.html`;
+      frame.title = 'Player';
+      frame.allow = 'autoplay; fullscreen; encrypted-media';
+      frame.allowFullscreen = true;
+      frame.style.cssText = 'width: 800px; height: 450px';
+      document.body.append(frame);
+    </script>
+  </body>
+</html>

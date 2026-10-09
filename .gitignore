@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# WXT build output: per-browser bundles and store zips
+.output/
+# End-to-end build (test-only host access, never shipped)
+.output-e2e/
+.wxt/
+
+# The pinned Firefox the end-to-end suite downloads (scripts/firefox.ts)
+.cache/
+
+# web-ext build output (Firefox)
+web-ext-artifacts/
+
+# Test reports (Vitest coverage, Playwright)
+coverage/
+playwright-report/
+test-results/
+blob-report/
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
+# pnpm debug log
+pnpm-debug.log*
+
+# Secrets: never committed
+.env
+.env.*
+!.env.example
+
+# OS noise
+Thumbs.db
+.DS_Store

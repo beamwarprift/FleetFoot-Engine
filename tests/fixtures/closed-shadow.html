@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>FFE fixture: closed-shadow</title>
+  </head>
+  <body>
+    <div id="host"></div>
+    <script>
+      // A player inside a closed shadow root: the page keeps the only reference to it.
+      const root = document.querySelector('#host').attachShadow({ mode: 'closed' });
+      const video = document.createElement('video');
+      video.src = '/tone.wav';
+      video.muted = true;
+      video.style.cssText = 'width: 640px; height: 360px';
+      root.append(video);
+      window.closedVideo = video;
+    </script>
+  </body>
+</html>
