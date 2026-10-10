@@ -31,6 +31,10 @@ describe('parseSettings', () => {
       skipSilence: false,
       silenceMode: 'normal',
       silenceRate: 5,
+      // The user's choice (2026-10-10): the favorite starts at 1.50×.
+      favoriteRate: 1.5,
+      language: 'browser',
+      presetsOpen: false,
     });
   });
 
@@ -52,6 +56,8 @@ describe('parseSettings', () => {
       skipSilence: true,
       silenceMode: 'aggressive',
       silenceRate: 3.5,
+      language: 'pt_BR',
+      presetsOpen: true,
     };
     expect(parseSettings(stored)).toMatchObject({ ...stored, presets: [1, 2, 3] });
   });

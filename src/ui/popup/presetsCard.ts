@@ -1,32 +1,48 @@
-// The preset speeds, one button each, the current one pressed.
+// The preset speeds, one button each, the current one pressed. Their title opens and closes them,
+// so the popup stays short for whoever does not use them; the popup remembers which.
 
-import { h, setAttr } from '../dom.ts';
+import { h, setAttr, setHidden } from '../dom.ts';
 import { formatRate } from '../format.ts';
 import type { Localization } from '../i18n.ts';
+import { icon } from '../icons.ts';
 
 export function presetsCard(
   document: Document,
   l10n: Localization,
   choose: (rate: number) => void,
+  setOpen: (open: boolean) => void,
 ) {
   const { t, locale } = l10n;
   const buttons = h(document, 'div', {
     className: 'presets',
-    attrs: { role: 'group', 'aria-labelledby': 'presets-caption' },
+    attrs: { id: 'presets-list', role: 'group', 'aria-labelledby': 'presets-caption' },
   });
+  const disclosure = h(
+    document,
+    'button',
+    {
+      className: 'disclosure',
+      attrs: {
+        type: 'button',
+        id: 'presets-caption',
+        'aria-expanded': 'false',
+        'aria-controls': 'presets-list',
+      },
+      on: { click: () => setOpen(disclosure.getAttribute('aria-expanded') !== 'true') },
+    },
+    [t('presets'), icon(document, 'chevron')],
+  );
   const element = h(document, 'section', { className: 'section' }, [
-    h(document, 'h2', {
-      className: 'caption',
-      text: t('presets'),
-      attrs: { id: 'presets-caption' },
-    }),
+    h(document, 'h2', { className: 'caption' }, [disclosure]),
     buttons,
   ]);
   // Rebuilt only when the presets change; otherwise only which one is pressed.
   let shown = '';
   return {
     element,
-    render(presets: readonly number[], current: number | null): void {
+    render(presets: readonly number[], current: number | null, open: boolean): void {
+      setAttr(disclosure, 'aria-expanded', String(open));
+      setHidden(buttons, !open);
       const values = presets.join(',');
       if (values !== shown) {
         shown = values;

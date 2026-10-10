@@ -3,6 +3,10 @@
     "message": "Control de velocidad y reproducción para vídeo y audio HTML5: rápido, ligero y respetuoso con tu privacidad.",
     "description": "Store and browser description."
   },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Not shown: the direction this language is written in, exactly ltr or rtl. Read when the user chooses this language in the options."
+  },
   "connectingTitle": {
     "message": "Conectando con la página…",
     "description": "Popup, while injecting."
@@ -598,6 +602,18 @@
     "message": "Una barra pequeña que aparece mientras el puntero está sobre el reproductor.",
     "description": "Help."
   },
+  "overlayToggle": {
+    "message": "Barra flotante",
+    "description": "Popup, top: accessible name of the toggle button that shows or hides the overlay (the bar on players); pressed while it shows on this page."
+  },
+  "overlayShow": {
+    "message": "Mostrar la barra flotante",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay is hidden."
+  },
+  "overlayHide": {
+    "message": "Ocultar la barra flotante",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay shows."
+  },
   "overlayResetPosition": {
     "message": "Devolver la barra flotante a su esquina",
     "description": "Button."
@@ -788,6 +804,23 @@
   "textSizeHelp": {
     "message": "Agranda el texto y los controles de esta página.",
     "description": "Options, Appearance: under textSizeField."
+  },
+  "languageField": {
+    "message": "Idioma",
+    "description": "Options, Appearance: label of the choice of interface language."
+  },
+  "languageHelp": {
+    "message": "El idioma de la ventana emergente, de esta página, de la barra flotante y del menú sobre los vídeos. El navegador muestra el nombre de la extensión y sus atajos en su propio idioma.",
+    "description": "Options, Appearance: under languageField."
+  },
+  "languageBrowser": {
+    "message": "Idioma del navegador ($LANGUAGE$)",
+    "description": "Options, Appearance: first choice of languageField, the interface follows the browser; $LANGUAGE$ is the name of the browser's language, in that language.",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
   },
   "themeYellow": {
     "message": "Amarillo (predeterminado)",

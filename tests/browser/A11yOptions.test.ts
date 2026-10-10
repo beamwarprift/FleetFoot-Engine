@@ -24,6 +24,7 @@ it.each(THEME_NAMES)('the options page in the %s theme meets WCAG 2.2 AA', async
   document.title = 'FleetFoot Engine';
   let root: HTMLElement | null = null;
   const stop = await startOptions({
+    browserLanguage: 'en',
     localData: memoryLocalData(),
     version: TEST_VERSION,
     // The site sections filled in: a remembered site and a chosen site.
@@ -64,6 +65,7 @@ it.each(THEME_NAMES)(
     document.body.replaceChildren();
     let root: HTMLElement | null = null;
     const stop = await startOptions({
+      browserLanguage: 'en',
       localData: memoryLocalData(),
       version: TEST_VERSION,
       profiles: memoryProfiles(),

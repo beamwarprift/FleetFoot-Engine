@@ -49,10 +49,15 @@ section > a {
   align-self: flex-start;
 }
 
+/* A section's title is underlined in the accent, thicker than a link's line, so it reads as the
+   title of what follows and never as something to click. */
 h2 {
   font-size: 20px;
   font-weight: 600;
-  margin: 0 0 var(--space-1);
+  margin: 0 0 var(--space-2);
+  text-decoration: underline 2px var(--accent);
+  text-decoration-skip-ink: none;
+  text-underline-offset: 6px;
 }
 
 h3 {
@@ -111,9 +116,10 @@ h3 {
   inline-size: calc(7ch + 2 * var(--space-3) + 2px);
 }
 
-/* A list of sizes: as wide as its longest. */
-.field > select.number {
+/* A short list (sizes, languages): as wide as its longest, never wider than the page. */
+.field > select:is(.number, .short) {
   align-self: flex-start;
+  max-inline-size: 100%;
 }
 
 /* The field and its button on one line, the help and the error under both. */

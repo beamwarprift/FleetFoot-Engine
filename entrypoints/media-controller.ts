@@ -3,7 +3,7 @@
 // to the page with an event that carries the extension ID.
 
 import { defineUnlistedScript } from 'wxt/utils/define-unlisted-script';
-import { browserLocalization } from '@/src/browser/i18n.ts';
+import { chosenLocalization } from '@/src/browser/i18n.ts';
 import { listenForCommands, serveState } from '@/src/browser/messaging.ts';
 import { storageProfiles } from '@/src/browser/profilesStore.ts';
 import { storageSettings } from '@/src/browser/settingsPort.ts';
@@ -11,6 +11,7 @@ import { extensionShadowRoot } from '@/src/browser/shadowRoots.ts';
 import { reportTimeSaved } from '@/src/browser/stats.ts';
 import { ensureMediaEngine } from '@/src/core/MediaEngine.ts';
 import { startPageSession } from '@/src/page/PageSession.ts';
+import { pageCatalogue } from '@/src/page/pageTexts.ts';
 
 const LISTENING: unique symbol = Symbol.for('fleetfoot-engine.listening');
 
@@ -29,6 +30,6 @@ export default defineUnlistedScript(() => {
     engine,
     settings: storageSettings,
     profiles: storageProfiles,
-    l10n: browserLocalization(),
+    l10n: (language) => chosenLocalization(language, pageCatalogue(language)),
   });
 });

@@ -1,4 +1,5 @@
 import { defineConfig } from 'wxt';
+import { cataloguesPlugin } from './scripts/catalogues.ts';
 import { ALL_SITES } from './src/core/settings/Access.ts';
 import { actionMessageName, BROWSER_COMMAND_ACTIONS } from './src/core/settings/Shortcuts.ts';
 
@@ -63,5 +64,6 @@ export default defineConfig({
       // The modulepreload polyfill ships a fetch() call into extension pages.
       modulePreload: { polyfill: false },
     },
+    plugins: [cataloguesPlugin(import.meta.dirname)],
   }),
 });

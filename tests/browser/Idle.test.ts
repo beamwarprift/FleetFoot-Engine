@@ -177,7 +177,7 @@ async function used(video: HTMLMediaElement) {
     engine,
     settings: memorySettings({ ratePolicy: 'lock', lockFight: 'braked' }),
     profiles: memoryProfiles(),
-    l10n: ENGLISH,
+    l10n: () => ENGLISH,
   });
   const rect = video.getBoundingClientRect();
   window.dispatchEvent(
@@ -259,7 +259,7 @@ describe('idle and stopped', () => {
       engine,
       settings: memorySettings(),
       profiles: memoryProfiles(),
-      l10n: ENGLISH,
+      l10n: () => ENGLISH,
     });
     const rect = video.getBoundingClientRect();
     window.dispatchEvent(

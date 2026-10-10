@@ -107,10 +107,10 @@ describe('the first-run page', () => {
     await settled();
     expect(speed.getAttribute('aria-invalid')).toBe('true');
     expect(settings.stored['favoriteRate']).toBeUndefined();
-    speed.value = '1.5';
+    speed.value = '1.75';
     speed.dispatchEvent(new Event('change'));
     await settled();
-    expect(settings.stored['favoriteRate']).toBe(1.5);
+    expect(settings.stored['favoriteRate']).toBe(1.75);
   });
 
   it('keeps its own size whatever text size the options page has', async () => {

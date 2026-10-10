@@ -58,6 +58,7 @@ async function options(
   const local = memoryLocalData({ settings, profiles, stats });
   let root: HTMLElement | null = null;
   const stop = await startOptions({
+    browserLanguage: 'en',
     document,
     l10n: ENGLISH,
     settings,
@@ -416,7 +417,7 @@ describe('about', () => {
     expect(links[t('aboutLicenseLink')]?.href).toBe(`${REPO}/blob/v${TEST_VERSION}/LICENSE`);
     expect(links[t('aboutIssues')]?.href).toBe(`${REPO}/issues`);
     expect(links[t('aboutDiscussions')]?.href).toBe(`${REPO}/discussions`);
-    expect(links[t('supportDevelopmentKofi')]?.href).toBe('https://ko-fi.com/lyuk28');
+    expect(links[t('supportDevelopmentKofi')]?.href).toBe('https://ko-fi.com/lionrick333');
     for (const link of Object.values(links)) {
       expect(link?.target).toBe('_blank');
       expect(link?.rel).toBe('noopener noreferrer');

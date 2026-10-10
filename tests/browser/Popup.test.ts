@@ -101,7 +101,7 @@ async function popupOnVideo(
     engine: target,
     settings,
     profiles,
-    l10n: ENGLISH,
+    l10n: () => ENGLISH,
   });
   cleanups.push(stopSession);
   const opened = await open(async () => localClient(target), settings, profiles);
@@ -210,6 +210,73 @@ describe('popup on a page with a video', () => {
     expect(preset?.getAttribute('aria-pressed')).toBe('true');
     const pressed = root.querySelectorAll('.presets [aria-pressed="true"]');
     expect(pressed).toHaveLength(1);
+  });
+
+  it('keeps the presets closed until their title opens them, and remembers', async () => {
+    const { root, settings } = await popupOnVideo();
+    const title = button(root, t('presets'));
+    const list = root.querySelector<HTMLElement>('.presets');
+    expect(title.getAttribute('aria-expanded')).toBe('false');
+    expect(title.getAttribute('aria-controls')).toBe(list?.id);
+    expect(list?.checkVisibility()).toBe(false);
+    title.click();
+    await settled();
+    expect(settings.stored['presetsOpen']).toBe(true);
+    expect(title.getAttribute('aria-expanded')).toBe('true');
+    expect(list?.checkVisibility()).toBe(true);
+    title.click();
+    await settled();
+    expect(settings.stored['presetsOpen']).toBe(false);
+    expect(list?.checkVisibility()).toBe(false);
+  });
+
+  it('opens with the presets shown when the user left them open', async () => {
+    const { root } = await popupOnVideo({ presetsOpen: true });
+    expect(button(root, t('presets')).getAttribute('aria-expanded')).toBe('true');
+    expect(root.querySelector<HTMLElement>('.presets')?.checkVisibility()).toBe(true);
+  });
+
+  it('hides and shows the overlay of the page, and says what a click does', async () => {
+    const { root, settings } = await popupOnVideo();
+    const overlay = button(root, t('overlayToggle'));
+    const drawn = () => document.querySelector('fleetfoot-engine-overlay') !== null;
+    expect(overlay.getAttribute('aria-pressed')).toBe('true');
+    expect(overlay.title).toBe(t('overlayHide'));
+    expect(drawn()).toBe(true);
+    overlay.click();
+    await settled();
+    await settled();
+    expect(settings.stored['overlayEnabled']).toBe(false);
+    expect(overlay.getAttribute('aria-pressed')).toBe('false');
+    expect(overlay.title).toBe(t('overlayShow'));
+    expect(drawn()).toBe(false);
+    overlay.click();
+    await settled();
+    await settled();
+    expect(settings.stored['overlayEnabled']).toBe(true);
+    expect(drawn()).toBe(true);
+  });
+
+  it('hides the overlay on every site even with memory per site, never in a profile', async () => {
+    const site = siteOf(window.location.hostname) ?? '';
+    const { root, settings, profiles } = await popupOnVideo({ memory: 'site' });
+    const overlay = button(root, t('overlayToggle'));
+    overlay.click();
+    await settled();
+    await settled();
+    expect(settings.stored['overlayEnabled']).toBe(false);
+    expect(profiles.stored[`site:${site}`]).toBeUndefined();
+    expect(overlay.getAttribute('aria-pressed')).toBe('false');
+    expect(document.querySelector('fleetfoot-engine-overlay')).toBeNull();
+  });
+
+  it('shows the overlay setting as the options page has it', async () => {
+    const { root, settings } = await popupOnVideo({ overlayEnabled: false });
+    const overlay = button(root, t('overlayToggle'));
+    expect(overlay.getAttribute('aria-pressed')).toBe('false');
+    await settings.save('overlayEnabled', true);
+    await settled();
+    expect(overlay.getAttribute('aria-pressed')).toBe('true');
   });
 
   it('resets, returns to the previous speed and applies the favorite', async () => {
@@ -514,7 +581,7 @@ describe('popup on a page with a video', () => {
     expect(footer?.textContent).toBe(t('supportQuestion') + t('supportDevelopment'));
     const link = footer?.querySelector<HTMLAnchorElement>('a.support');
     expect(link?.textContent).toBe(t('supportDevelopment'));
-    expect(link?.href).toBe('https://ko-fi.com/lyuk28');
+    expect(link?.href).toBe('https://ko-fi.com/lionrick333');
     expect(link?.rel).toBe('noopener noreferrer');
   });
 
@@ -831,7 +898,8 @@ describe('the heart for a review', () => {
           ? 'brand'
           : child.getAttribute('aria-label'),
     );
-    expect(order).toEqual(['brand', 'heart', t('options')]);
+    // The heart stays beside the options; the overlay button comes before it.
+    expect(order).toEqual(['brand', t('overlayToggle'), 'heart', t('options')]);
   });
 
   it('is absent when the extension did not come from a known store', async () => {

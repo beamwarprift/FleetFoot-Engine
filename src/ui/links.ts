@@ -6,7 +6,7 @@ import { h } from './dom.ts';
 import type { MessageKey } from './i18n.ts';
 
 /** The developer's Ko-fi page. No tracking or referral parameter. */
-export const SUPPORT_URL = 'https://ko-fi.com/lyuk28';
+export const SUPPORT_URL = 'https://ko-fi.com/lionrick333';
 
 /**
  * The public repository, named after the app: the source of each release

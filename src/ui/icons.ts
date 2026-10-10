@@ -24,6 +24,8 @@ const ICONS = {
     { circle: [9, 17, 2] },
   ],
   pip: [{ rect: [3, 5, 18, 14, 2] }, { rect: [12, 12, 6, 4, 1], fill: true }],
+  overlay: [{ rect: [3, 5, 18, 14, 2] }, { rect: [6, 8, 12, 3, 1.5], fill: true }],
+  chevron: [{ path: 'M8 10l4 4 4-4' }],
   // Sound, then the pause after it played faster.
   skipSilence: [{ path: 'M3 10v4M6 7v10M9 10v4M13 8l4 4-4 4M17 8l4 4-4 4' }],
   loop: [{ path: 'M4 11V9a3 3 0 0 1 3-3h12M16 3l3 3-3 3M20 13v2a3 3 0 0 1-3 3H5M8 21l-3-3 3-3' }],

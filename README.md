@@ -35,7 +35,8 @@ What it keeps, and why each permission is there: [PRIVACY.md](PRIVACY.md) and [d
 - Loops a part between two points, skips back and forward, and keeps voices natural when the speed changes.
 - Works with several players on a page, players inside frames, and pages that load new videos without reloading.
 - Runs only where you allow it: when you call it on a tab, on the sites you choose, or on every site.
-- Eighteen languages, ten color themes, and a settings page whose text you can enlarge up to 200%.
+- Eighteen languages, the browser's or the one you choose in the settings, ten color themes, and a
+  settings page whose text you can enlarge up to 200%.
 
 ## Browsers
 
@@ -87,7 +88,7 @@ This repository does not take pull requests: see [CONTRIBUTING.md](CONTRIBUTING.
 
 ## Support
 
-FleetFoot Engine is free. If it saves you time, you can [support its development on Ko-fi](https://ko-fi.com/lyuk28).
+FleetFoot Engine is free. If it saves you time, you can [support its development on Ko-fi](https://ko-fi.com/lionrick333).
 
 ## License
 

@@ -49,8 +49,8 @@ export async function startPopup(deps: PopupDeps): Promise<PopupHandle> {
   let client: EngineClient | null = null;
   let state: EngineState | null = null;
   let stopWatching: (() => void) | null = null;
-
   const render = (): void => {
+    view.showOverlay(settings.overlayEnabled);
     if (state !== null) view.show(state, settings);
   };
 
@@ -155,6 +155,9 @@ export async function startPopup(deps: PopupDeps): Promise<PopupHandle> {
     },
     choosePlayer: (choice) => void choosePlayer(choice),
     openOptions: () => deps.openOptions(),
+    // The general setting, the one in the options: a shortcut to it, for every site.
+    overlay: (shown) => void deps.settings.save('overlayEnabled', shown),
+    presetsOpen: (open) => void deps.settings.save('presetsOpen', open),
     retry: () => void connect('first'),
     allowSite: (site) => void allow((access) => access.addSite(site)),
     allowAllSites: () => void allow((access) => access.setMode('all')),
@@ -169,6 +172,7 @@ export async function startPopup(deps: PopupDeps): Promise<PopupHandle> {
     applyTheme(deps.document.documentElement, settings.theme);
     render();
   });
+  render();
   await connect('first');
 
   return {

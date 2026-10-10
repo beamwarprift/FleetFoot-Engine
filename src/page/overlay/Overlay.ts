@@ -8,6 +8,7 @@ import type { MediaEngine } from '../../core/MediaEngine.ts';
 import { type EngineState, makeCommand } from '../../core/messages/Protocol.ts';
 import type { OverlayPosition, Settings } from '../../core/settings/Settings.ts';
 import type { Localization } from '../../ui/i18n.ts';
+import type { PageKey } from '../pageTexts.ts';
 import { hostPlace } from './fullscreen.ts';
 import { overlayBar } from './overlayBar.ts';
 import { overlayDrag } from './overlayDrag.ts';
@@ -34,7 +35,7 @@ const CONTAINED_EVENTS = [
 export interface OverlayDeps {
   readonly window: Window;
   readonly engine: MediaEngine;
-  readonly l10n: Localization;
+  readonly l10n: Localization<PageKey>;
   readonly settings: () => Settings;
   readonly savePosition: (position: OverlayPosition) => void;
 }

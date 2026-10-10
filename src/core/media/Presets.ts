@@ -14,7 +14,7 @@ export const DEFAULT_RATE_PRESETS: readonly number[] = [
 export const DEFAULT_RATE_STEP = 0.25;
 
 /** The favorite rate before the user picks one. Chosen value. */
-export const DEFAULT_FAVORITE_RATE = 2;
+export const DEFAULT_FAVORITE_RATE = 1.5;
 
 /** Rate applied while the hold key is down. */
 export const DEFAULT_HOLD_RATE = 3;

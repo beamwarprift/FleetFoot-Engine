@@ -3,6 +3,10 @@
     "message": "Fast, lightweight, privacy-first speed and playback control for HTML5 video and audio.",
     "description": "Store and browser description."
   },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Not shown: the direction this language is written in, exactly ltr or rtl. Read when the user chooses this language in the options."
+  },
   "connectingTitle": {
     "message": "Connecting to the page…",
     "description": "Popup, while injecting."
@@ -598,6 +602,18 @@
     "message": "A small bar that appears while the pointer is on the player.",
     "description": "Help."
   },
+  "overlayToggle": {
+    "message": "Overlay",
+    "description": "Popup, top: accessible name of the toggle button that shows or hides the overlay (the bar on players); pressed while it shows on this page."
+  },
+  "overlayShow": {
+    "message": "Show the overlay",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay is hidden."
+  },
+  "overlayHide": {
+    "message": "Hide the overlay",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay shows."
+  },
   "overlayResetPosition": {
     "message": "Put the overlay back in its corner",
     "description": "Button."
@@ -788,6 +804,23 @@
   "textSizeHelp": {
     "message": "Enlarges the text and controls of this page.",
     "description": "Options, Appearance: under textSizeField."
+  },
+  "languageField": {
+    "message": "Language",
+    "description": "Options, Appearance: label of the choice of interface language."
+  },
+  "languageHelp": {
+    "message": "The language of the popup, this page, the overlay and the menu on videos. The browser shows the extension's name and its shortcuts in its own language.",
+    "description": "Options, Appearance: under languageField."
+  },
+  "languageBrowser": {
+    "message": "Browser language ($LANGUAGE$)",
+    "description": "Options, Appearance: first choice of languageField, the interface follows the browser; $LANGUAGE$ is the name of the browser's language, in that language.",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
   },
   "themeYellow": {
     "message": "Yellow (default)",

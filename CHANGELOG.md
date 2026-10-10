@@ -3,6 +3,16 @@
 Every release of FleetFoot Engine, newest first. Versions follow MAJOR.MINOR.PATCH. Each release in
 the stores is built from the tag of the same version in this repository.
 
+## 1.1.0
+
+- Choose the language of the extension in the settings, or keep the browser's: the popup, the
+  settings, the bar over the player and the right-click menu follow it.
+- Show or hide the bar over the player with one click at the top of the popup, for every site.
+- The preset speeds fold away under their title, and the popup remembers whether they are open.
+- The titles of the settings sections stand out with a line under them.
+- The favorite speed starts at 1.50× on a new install.
+- The support link points to the developer's renamed page.
+
 ## 1.0.0
 
 The first release.

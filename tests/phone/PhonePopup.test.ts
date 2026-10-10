@@ -39,13 +39,14 @@ describe.each(LANGUAGES)('the popup on a phone in $name', ({ l10n }) => {
     document.body.style.margin = '0';
     const engine = createMediaEngine(window);
     cleanups.push(() => engine.stop());
-    const settings = memorySettings();
+    // The presets open: every control on screen.
+    const settings = memorySettings({ presetsOpen: true });
     const profiles = memoryProfiles();
     const video = mountMedia({ seconds: 120, width: 320, height: 180 });
     video.style.position = 'fixed';
     video.style.left = '2000px';
     await ready(video);
-    cleanups.push(await startPageSession({ window, engine, settings, profiles, l10n }));
+    cleanups.push(await startPageSession({ window, engine, settings, profiles, l10n: () => l10n }));
     const handle = await startPopup({
       document,
       l10n,
@@ -87,7 +88,7 @@ it('draws the overlay with controls a finger can hit', async () => {
     engine,
     settings: memorySettings(),
     profiles: memoryProfiles(),
-    l10n: LANGUAGES[0]?.l10n ?? (undefined as never),
+    l10n: () => LANGUAGES[0]?.l10n ?? (undefined as never),
   });
   cleanups.push(stop);
   // A finger on the player.
@@ -116,7 +117,7 @@ it('leaves the overlay alone while a finger moves over the player: that is a scr
       engine,
       settings: memorySettings(),
       profiles: memoryProfiles(),
-      l10n: LANGUAGES[0]?.l10n ?? (undefined as never),
+      l10n: () => LANGUAGES[0]?.l10n ?? (undefined as never),
     }),
   );
   const box = video.getBoundingClientRect();

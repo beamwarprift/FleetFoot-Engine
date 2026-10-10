@@ -71,6 +71,17 @@ describe('interface texts', () => {
     expect(Array.from(description).length).toBeLessThanOrEqual(DESCRIPTION_MAX);
   });
 
+  // The texts the manifest shows: a store changes any space but the plain one (Edge replaced the
+  // narrow no-break space of the French description), so they keep only plain spaces.
+  const MANIFEST_TEXTS = ['extensionDescription', ...SHORTCUT_ACTIONS.map(actionMessageName)];
+
+  it.each(locales)('%s writes the manifest texts with plain spaces only', (locale) => {
+    const entries = catalogue(locale);
+    for (const key of MANIFEST_TEXTS) {
+      expect(entries[key]?.message ?? '', key).not.toMatch(/[^\S ]/u);
+    }
+  });
+
   it('name every browser shortcut', () => {
     for (const action of SHORTCUT_ACTIONS) expect(english[actionMessageName(action)]).toBeDefined();
   });

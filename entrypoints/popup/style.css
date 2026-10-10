@@ -63,6 +63,18 @@ a.ghost {
   color: var(--muted);
 }
 
+/* The overlay button: pressed while the overlay shows, its icon in the accent; never filled like
+   a pressed button, which would hide the icon. */
+.ghost[aria-pressed="true"] {
+  border-color: transparent;
+  background: transparent;
+  color: var(--accent);
+}
+
+.ghost[aria-pressed="true"]:hover {
+  background: var(--surface-2);
+}
+
 .target {
   display: flex;
   flex-direction: column;
@@ -574,6 +586,54 @@ button.switch[aria-checked="true"]::after {
 .support:hover,
 .hover-card a:hover {
   color: var(--accent);
+}
+
+/* The presets' title opens and closes them: it keeps the caption's look, with a chevron that turns
+   when they are open. Closed, nothing is left under it. */
+button.disclosure {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 0;
+  margin-inline: -4px;
+  padding: 0 4px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+}
+
+button.disclosure:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+button.disclosure .icon {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.15s;
+}
+
+button.disclosure[aria-expanded="true"] .icon {
+  transform: rotate(180deg);
+}
+
+/* The title holds its button whole, whatever its height (44 px for a finger). */
+.caption:has(> button.disclosure) {
+  display: flex;
+}
+
+.caption:has(> button.disclosure[aria-expanded="false"]) {
+  margin-bottom: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button.disclosure .icon {
+    transition: none;
+  }
 }
 
 /* Speeds and times are values, written left to right in every language («1.75×», «12:34»). */

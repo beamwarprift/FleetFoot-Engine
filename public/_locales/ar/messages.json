@@ -3,6 +3,10 @@
     "message": "التحكم في سرعة تشغيل الفيديو والصوت بتقنية HTML5: سريع وخفيف ويحترم خصوصيتك.",
     "description": "Store and browser description."
   },
+  "textDirection": {
+    "message": "rtl",
+    "description": "Not shown: the direction this language is written in, exactly ltr or rtl. Read when the user chooses this language in the options."
+  },
   "connectingTitle": {
     "message": "جارٍ الاتصال بالصفحة…",
     "description": "Popup, while injecting."
@@ -598,6 +602,18 @@
     "message": "شريط صغير يظهر ما دام المؤشر فوق المشغّل.",
     "description": "Help."
   },
+  "overlayToggle": {
+    "message": "الشريط",
+    "description": "Popup, top: accessible name of the toggle button that shows or hides the overlay (the bar on players); pressed while it shows on this page."
+  },
+  "overlayShow": {
+    "message": "إظهار الشريط",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay is hidden."
+  },
+  "overlayHide": {
+    "message": "إخفاء الشريط",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay shows."
+  },
   "overlayResetPosition": {
     "message": "إعادة الشريط إلى الزاوية",
     "description": "Button."
@@ -788,6 +804,23 @@
   "textSizeHelp": {
     "message": "يكبّر النص وعناصر التحكم في هذه الصفحة.",
     "description": "Options, Appearance: under textSizeField."
+  },
+  "languageField": {
+    "message": "اللغة",
+    "description": "Options, Appearance: label of the choice of interface language."
+  },
+  "languageHelp": {
+    "message": "لغة النافذة المنبثقة وهذه الصفحة والشريط والقائمة فوق مقاطع الفيديو. يعرض المتصفح اسم الإضافة واختصاراتها بلغته.",
+    "description": "Options, Appearance: under languageField."
+  },
+  "languageBrowser": {
+    "message": "لغة المتصفح ($LANGUAGE$)",
+    "description": "Options, Appearance: first choice of languageField, the interface follows the browser; $LANGUAGE$ is the name of the browser's language, in that language.",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
   },
   "themeYellow": {
     "message": "أصفر (افتراضي)",

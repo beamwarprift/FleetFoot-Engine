@@ -3,6 +3,10 @@
     "message": "Geschwindigkeit und Wiedergabe für HTML5-Video und -Audio steuern: schnell, schlank und datenschutzfreundlich.",
     "description": "Store and browser description."
   },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Not shown: the direction this language is written in, exactly ltr or rtl. Read when the user chooses this language in the options."
+  },
   "connectingTitle": {
     "message": "Verbindung mit der Seite…",
     "description": "Popup, while injecting."
@@ -598,6 +602,18 @@
     "message": "Eine kleine Leiste, die erscheint, solange der Zeiger auf dem Player ist.",
     "description": "Help."
   },
+  "overlayToggle": {
+    "message": "Leiste",
+    "description": "Popup, top: accessible name of the toggle button that shows or hides the overlay (the bar on players); pressed while it shows on this page."
+  },
+  "overlayShow": {
+    "message": "Leiste zeigen",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay is hidden."
+  },
+  "overlayHide": {
+    "message": "Leiste ausblenden",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay shows."
+  },
   "overlayResetPosition": {
     "message": "Leiste zurück in ihre Ecke",
     "description": "Button."
@@ -788,6 +804,23 @@
   "textSizeHelp": {
     "message": "Vergrößert Text und Bedienelemente dieser Seite.",
     "description": "Options, Appearance: under textSizeField."
+  },
+  "languageField": {
+    "message": "Sprache",
+    "description": "Options, Appearance: label of the choice of interface language."
+  },
+  "languageHelp": {
+    "message": "Die Sprache des Popups, dieser Seite, der Leiste und des Menüs auf Videos. Den Namen der Erweiterung und ihre Tastenkürzel zeigt der Browser in seiner Sprache.",
+    "description": "Options, Appearance: under languageField."
+  },
+  "languageBrowser": {
+    "message": "Sprache des Browsers ($LANGUAGE$)",
+    "description": "Options, Appearance: first choice of languageField, the interface follows the browser; $LANGUAGE$ is the name of the browser's language, in that language.",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
   },
   "themeYellow": {
     "message": "Gelb (Standard)",

@@ -28,6 +28,7 @@ afterEach(() => {
 async function options(stored: Record<string, unknown> = {}) {
   let root: HTMLElement | null = null;
   const stop = await startOptions({
+    browserLanguage: 'en',
     localData: memoryLocalData(),
     version: TEST_VERSION,
     profiles: memoryProfiles(),
@@ -136,6 +137,14 @@ describe('the options page as it reads', () => {
     expect(sizes).toBeLessThan(presets / 3);
   });
 
+  it('size the list of languages to its longest, not across the page', async () => {
+    const { root } = await options();
+    const presets = fieldByLabel(root, t('presetsField')).getBoundingClientRect().width;
+    const languages = fieldByLabel(root, t('languageField')).getBoundingClientRect().width;
+    expect(languages).toBeLessThan(presets / 1.5);
+    expect(languages).toBeGreaterThan(0);
+  });
+
   it('write descriptions in the colour that explains, names in the colour that is read', async () => {
     const { root } = await options();
     const colour = (hex: string) => {
@@ -154,5 +163,25 @@ describe('the options page as it reads', () => {
     expect(getComputedStyle(choiceHelp).color).toBe(colour(PALETTES.yellow.help));
     expect(getComputedStyle(label).color).toBe(colour(PALETTES.yellow.text));
     expect(PALETTES.yellow.help).not.toBe(PALETTES.yellow.muted);
+  });
+
+  it("underline each section's title in the accent, thicker than a link's line", async () => {
+    const { root } = await options();
+    const probe = document.createElement('span');
+    probe.style.color = PALETTES.yellow.accent;
+    document.body.append(probe);
+    const accent = getComputedStyle(probe).color;
+    probe.remove();
+    const titles = Array.from(root.querySelectorAll('section > h2'));
+    expect(titles.length).toBeGreaterThan(5);
+    for (const title of titles) {
+      const style = getComputedStyle(title);
+      expect(style.textDecorationLine, title.textContent ?? '').toBe('underline');
+      expect(style.textDecorationColor).toBe(accent);
+      expect(style.textDecorationThickness).toBe('2px');
+    }
+    const link = root.querySelector('a');
+    if (link === null) throw new Error('no link');
+    expect(getComputedStyle(link).textDecorationThickness).not.toBe('2px');
   });
 });

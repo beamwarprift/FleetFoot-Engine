@@ -4,7 +4,7 @@
 import { browser } from 'wxt/browser';
 import { defineBackground } from 'wxt/utils/define-background';
 import { browserCapabilities } from '@/src/browser/capabilities.ts';
-import { browserLocalization } from '@/src/browser/i18n.ts';
+import { chosenLocalization } from '@/src/browser/i18n.ts';
 import { backgroundProfiles, writeProfile } from '@/src/browser/profilesStore.ts';
 import { storageSettings } from '@/src/browser/settingsPort.ts';
 import { loadSettings, migrateStoredSettings, watchSettings } from '@/src/browser/settingsStore.ts';
@@ -32,6 +32,7 @@ import { commandForAction, settingForAction } from '@/src/core/settings/Shortcut
 import { isShortcutAction } from '@/src/core/settings/Shortcuts.ts';
 import { parseReport } from '@/src/core/stats/TimeSaved.ts';
 import { formatRate } from '@/src/ui/format.ts';
+import { menuCatalogue } from '@/src/ui/menuTexts.ts';
 import { saveFromPage } from '@/src/ui/pageWrites.ts';
 
 const MENU_CONTEXTS: ['video', 'audio'] = ['video', 'audio'];
@@ -43,10 +44,10 @@ let menuShown: string | null = null;
 // Only the APIs this browser has: Firefox for Android has no shortcuts and no right-click menu.
 const capabilities = browserCapabilities();
 
-/** Rebuilds the menu when what it shows changed: its switch, the favorite rate. */
+/** Rebuilds the menu when what it shows changed: its switch, the favorite rate, the language. */
 function buildMenu(settings: Settings): Promise<void> {
   if (!capabilities.contextMenu) return Promise.resolve();
-  const shown = JSON.stringify([settings.contextMenu, settings.favoriteRate]);
+  const shown = JSON.stringify([settings.contextMenu, settings.favoriteRate, settings.language]);
   if (shown === menuShown) return menuQueue;
   menuShown = shown;
   menuQueue = menuQueue
@@ -60,7 +61,7 @@ function buildMenu(settings: Settings): Promise<void> {
 async function createMenu(settings: Settings): Promise<void> {
   await browser.contextMenus.removeAll();
   if (!settings.contextMenu) return;
-  const { t, locale } = browserLocalization();
+  const { t, locale } = chosenLocalization(settings.language, menuCatalogue(settings.language));
   browser.contextMenus.create({ id: MENU_PARENT, title: t('menuSpeed'), contexts: MENU_CONTEXTS });
   for (const rate of MENU_RATES) {
     browser.contextMenus.create({

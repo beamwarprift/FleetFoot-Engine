@@ -6,10 +6,14 @@ type Catalogue = typeof import('../../public/_locales/en/messages.json');
 export type MessageKey = keyof Catalogue;
 
 /** The text of `key` in the interface language, with `$1`, `$2`… filled in order. */
-export type Translate = (key: MessageKey, ...substitutions: string[]) => string;
+export type Translate<K extends string = MessageKey> = (
+  key: K,
+  ...substitutions: string[]
+) => string;
 
-export interface Localization {
-  readonly t: Translate;
+/** The interface language; `K`, the texts a part of the extension carries when it carries few. */
+export interface Localization<K extends string = MessageKey> {
+  readonly t: Translate<K>;
   /** BCP 47 tag of the interface language, for number formatting. */
   readonly locale: string;
   /** Writing direction of the interface language. */

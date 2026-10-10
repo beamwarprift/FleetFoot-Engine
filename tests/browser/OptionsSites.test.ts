@@ -34,6 +34,7 @@ async function options(
   const settings = memorySettings(stored);
   let root: HTMLElement | null = null;
   const stop = await startOptions({
+    browserLanguage: 'en',
     localData: memoryLocalData(),
     version: TEST_VERSION,
     document,

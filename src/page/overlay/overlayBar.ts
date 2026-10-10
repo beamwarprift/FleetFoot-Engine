@@ -8,6 +8,7 @@ import { h, setAttr, setDisabled, setHidden, setText } from '../../ui/dom.ts';
 import { formatRate } from '../../ui/format.ts';
 import type { Localization } from '../../ui/i18n.ts';
 import { seekLabels } from '../../ui/seekLabels.ts';
+import type { PageKey } from '../pageTexts.ts';
 import {
   applyStyle,
   bar,
@@ -28,7 +29,11 @@ export interface OverlayBarActions {
   resized(): void;
 }
 
-export function overlayBar(document: Document, l10n: Localization, actions: OverlayBarActions) {
+export function overlayBar(
+  document: Document,
+  l10n: Localization<PageKey>,
+  actions: OverlayBarActions,
+) {
   const { t, locale } = l10n;
   const buttons: HTMLButtonElement[] = [];
   const control = (label: string, name: string, onClick: () => void): HTMLButtonElement => {

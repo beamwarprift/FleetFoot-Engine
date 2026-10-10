@@ -2,8 +2,8 @@
 
 import { browser } from 'wxt/browser';
 import { browserCapabilities } from '@/src/browser/capabilities.ts';
-import { browserLocalization } from '@/src/browser/i18n.ts';
 import { storageLocalData } from '@/src/browser/localData.ts';
+import { pageLocalization } from '@/src/browser/pageLocalization.ts';
 import { storageProfiles } from '@/src/browser/profilesStore.ts';
 import { storageSettings } from '@/src/browser/settingsPort.ts';
 import { permissionsSiteAccess } from '@/src/browser/siteAccess.ts';
@@ -40,12 +40,14 @@ function browserShortcuts(): BrowserShortcuts | null {
   };
 }
 
-const l10n = browserLocalization();
-
-void keyboardLayout().then((layout) =>
+void Promise.all([
+  keyboardLayout(),
+  storageSettings.load().then((settings) => pageLocalization(settings.language)),
+]).then(([layout, l10n]) =>
   startOptions({
     document,
     l10n,
+    relocalize: () => location.reload(),
     settings: storageSettings,
     layout,
     browserShortcuts: browserShortcuts(),
@@ -56,5 +58,6 @@ void keyboardLayout().then((layout) =>
     access: permissionsSiteAccess,
     localData: storageLocalData,
     version: browser.runtime.getManifest().version,
+    browserLanguage: browser.i18n.getUILanguage(),
   }),
 );

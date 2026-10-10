@@ -37,11 +37,22 @@ export class PopupView {
     actions: PopupActions,
     reviewUrl?: string | undefined,
   ) {
-    this.#top = topBar(document, l10n, () => actions.openOptions(), reviewUrl);
+    this.#top = topBar(
+      document,
+      l10n,
+      () => actions.openOptions(),
+      reviewUrl,
+      (shown) => actions.overlay(shown),
+    );
     this.#message = messagePanel(document, l10n, actions);
     this.#player = playerPicker(document, l10n, (choice) => actions.choosePlayer(choice));
     this.#speed = speedCard(document, l10n, actions);
-    this.#presets = presetsCard(document, l10n, (rate) => actions.preset(rate));
+    this.#presets = presetsCard(
+      document,
+      l10n,
+      (rate) => actions.preset(rate),
+      (open) => actions.presetsOpen(open),
+    );
     this.#time = timeCard(document, l10n, actions);
     this.#more = moreCard(document, l10n, actions);
     this.#bottom = bottomBar(document, l10n);
@@ -72,6 +83,11 @@ export class PopupView {
     this.#message.declined();
   }
 
+  /** Whether the overlay shows on this page, as the button at the top says. */
+  showOverlay(shown: boolean): void {
+    this.#top.showOverlay(shown);
+  }
+
   /** The time saved, under the brand and in the support line. */
   showSaved(seconds: number): void {
     this.#top.showSaved(seconds);
@@ -98,7 +114,7 @@ export class PopupView {
     this.#message.hide();
     setHidden(this.#controls, false);
     this.#speed.render(state, settings);
-    this.#presets.render(settings.presets, state.rate);
+    this.#presets.render(settings.presets, state.rate, settings.presetsOpen);
     this.#time.render(state, settings);
     this.#more.render(state);
     this.#player.render(state);

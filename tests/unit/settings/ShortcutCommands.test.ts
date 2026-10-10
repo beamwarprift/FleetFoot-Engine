@@ -8,7 +8,7 @@ const settings = {
   ...DEFAULT_SETTINGS,
   rateStep: 0.1,
   seekStep: 10,
-  favoriteRate: DEFAULT_SETTINGS.favoriteRate,
+  favoriteRate: 2.25 as never,
 };
 
 describe('commandForAction', () => {
@@ -28,7 +28,7 @@ describe('commandForAction', () => {
     expect(commandForAction('favorite', settings, state)).toEqual({
       v: 1,
       type: 'set-rate',
-      rate: 2,
+      rate: 2.25,
     });
     expect(commandForAction('seek-backward', settings, state)).toEqual({
       v: 1,

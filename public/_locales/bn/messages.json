@@ -3,6 +3,10 @@
     "message": "HTML5 ভিডিও ও অডিওর জন্য গতি ও প্লেব্যাক নিয়ন্ত্রণ: দ্রুত, হালকা এবং আপনার গোপনীয়তার প্রতি শ্রদ্ধাশীল।",
     "description": "Store and browser description."
   },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Not shown: the direction this language is written in, exactly ltr or rtl. Read when the user chooses this language in the options."
+  },
   "connectingTitle": {
     "message": "পেজের সঙ্গে সংযোগ হচ্ছে…",
     "description": "Popup, while injecting."
@@ -598,6 +602,18 @@
     "message": "একটি ছোট বার, যা পয়েন্টার প্লেয়ারের ওপর থাকলে দেখা যায়।",
     "description": "Help."
   },
+  "overlayToggle": {
+    "message": "বার",
+    "description": "Popup, top: accessible name of the toggle button that shows or hides the overlay (the bar on players); pressed while it shows on this page."
+  },
+  "overlayShow": {
+    "message": "বার দেখান",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay is hidden."
+  },
+  "overlayHide": {
+    "message": "বার লুকান",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay shows."
+  },
   "overlayResetPosition": {
     "message": "বারটিকে কোণে ফিরিয়ে আনুন",
     "description": "Button."
@@ -788,6 +804,23 @@
   "textSizeHelp": {
     "message": "এই পেজের লেখা ও নিয়ন্ত্রণ বড় করে।",
     "description": "Options, Appearance: under textSizeField."
+  },
+  "languageField": {
+    "message": "ভাষা",
+    "description": "Options, Appearance: label of the choice of interface language."
+  },
+  "languageHelp": {
+    "message": "পপআপ, এই পেজ, বার আর ভিডিওর মেনুর ভাষা। এক্সটেনশনের নাম আর শর্টকাট ব্রাউজার নিজের ভাষায় দেখায়।",
+    "description": "Options, Appearance: under languageField."
+  },
+  "languageBrowser": {
+    "message": "ব্রাউজারের ভাষা ($LANGUAGE$)",
+    "description": "Options, Appearance: first choice of languageField, the interface follows the browser; $LANGUAGE$ is the name of the browser's language, in that language.",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
   },
   "themeYellow": {
     "message": "হলুদ (ডিফল্ট)",

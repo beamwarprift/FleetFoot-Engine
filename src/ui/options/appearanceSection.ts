@@ -1,5 +1,6 @@
-// Appearance: the colour theme, each choice with a swatch of its background and accent, and the
-// size of the text, which this page takes on as soon as it is chosen.
+// Appearance: the interface language, the colour theme, each choice with a swatch of its
+// background and accent, and the size of the text, which this page takes on as soon as it is
+// chosen.
 
 import { validSetting } from '../../core/settings/Settings.ts';
 import { THEME_NAMES, type ThemeName } from '../../core/settings/Themes.ts';
@@ -8,6 +9,7 @@ import { formatPercent } from '../format.ts';
 import type { MessageKey } from '../i18n.ts';
 import { TEXT_SIZES } from '../textSize.ts';
 import { PALETTES } from '../themes.ts';
+import { languageField } from './languageField.ts';
 import { type Control, type OptionsSection, type SectionDeps, settingsSection } from './section.ts';
 
 const THEME_LABELS: Readonly<Record<ThemeName, MessageKey>> = {
@@ -46,7 +48,9 @@ function textSizeField(deps: SectionDeps): Control {
   };
 }
 
-export function appearanceSection(deps: SectionDeps): OptionsSection {
+export function appearanceSection(
+  deps: SectionDeps & { readonly browserLanguage: string },
+): OptionsSection {
   const { document, fields, settings, save } = deps;
   const { t } = deps.l10n;
   const name = fields.nextId('radio');
@@ -71,14 +75,19 @@ export function appearanceSection(deps: SectionDeps): OptionsSection {
     h(document, 'legend', { text: t('themeField') }),
     ...inputs.map(({ element }) => element),
   ]);
+  const language = languageField(deps);
   const textSize = textSizeField(deps);
-  return settingsSection(fields.section('sectionAppearance', [themes, textSize.element]), [
-    {
-      element: themes,
-      refresh() {
-        for (const { input } of inputs) input.checked = input.value === settings().theme;
+  return settingsSection(
+    fields.section('sectionAppearance', [language.element, themes, textSize.element]),
+    [
+      language,
+      {
+        element: themes,
+        refresh() {
+          for (const { input } of inputs) input.checked = input.value === settings().theme;
+        },
       },
-    },
-    textSize,
-  ]);
+      textSize,
+    ],
+  );
 }

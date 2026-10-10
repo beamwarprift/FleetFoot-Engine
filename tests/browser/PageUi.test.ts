@@ -6,6 +6,8 @@ import { userEvent } from 'vitest/browser';
 import { createMediaEngine, type MediaEngine } from '../../src/core/MediaEngine.ts';
 import { HIDE_AFTER_MS } from '../../src/page/overlay/Overlay.ts';
 import { startPageSession } from '../../src/page/PageSession.ts';
+import { pageCatalogue } from '../../src/page/pageTexts.ts';
+import { catalogueLocalization } from '../../src/ui/catalogue.ts';
 import { eventsDelivered, loaded, mountMedia, resetPage } from './media.ts';
 import { ENGLISH, type MemorySettings, memoryProfiles, memorySettings, settled } from './ui.ts';
 
@@ -25,7 +27,7 @@ async function session(stored: Record<string, unknown> = {}, target: Window = wi
     engine,
     settings,
     profiles: memoryProfiles(),
-    l10n: ENGLISH,
+    l10n: () => ENGLISH,
   });
   cleanups.push(() => {
     stop();
@@ -247,6 +249,59 @@ describe('overlay', () => {
     expect(vi.getTimerCount()).toBe(0);
   });
 
+  it('is drawn again in the language the user chooses, with its texts', async () => {
+    // The overlay's root is closed to the page: the test keeps the roots it attaches.
+    const roots: ShadowRoot[] = [];
+    const attach = Element.prototype.attachShadow;
+    Element.prototype.attachShadow = function (this: Element, init: ShadowRootInit) {
+      const root = attach.call(this, init);
+      roots.push(root);
+      return root;
+    };
+    cleanups.push(() => {
+      Element.prototype.attachShadow = attach;
+    });
+    const german = catalogueLocalization('de', pageCatalogue('de') ?? {});
+    const asked: string[] = [];
+    const video = mountMedia({ seconds: 120 });
+    await loaded(video);
+    const engine = createMediaEngine(window);
+    const settings = memorySettings();
+    const stop = await startPageSession({
+      window,
+      engine,
+      settings,
+      profiles: memoryProfiles(),
+      l10n: (language) => {
+        asked.push(language);
+        return language === 'de' ? german : ENGLISH;
+      },
+    });
+    cleanups.push(() => {
+      stop();
+      engine.stop();
+    });
+    const toolbar = () =>
+      roots.at(-1)?.querySelector('[role="toolbar"]')?.getAttribute('aria-label');
+    pointerOver(video);
+    expect(toolbar()).toBe(ENGLISH.t('overlayLabel'));
+    const first = overlayHost();
+    await settings.save('language', 'de');
+    await settled();
+    await settled();
+    pointerOver(video);
+    expect(asked).toEqual(['browser', 'de']);
+    expect(toolbar()).toBe(german.t('overlayLabel'));
+    expect(toolbar()).not.toBe(ENGLISH.t('overlayLabel'));
+    expect(roots.at(-1)?.querySelector('[role="toolbar"]')?.getAttribute('lang')).toBe('de');
+    expect(overlayHost()).not.toBe(first);
+    expect(document.querySelectorAll('fleetfoot-engine-overlay')).toHaveLength(1);
+    // Another setting: the same overlay stays.
+    await settings.save('seekStep', 10);
+    await settled();
+    expect(asked).toEqual(['browser', 'de']);
+  });
+
   it('is not created when switched off, and goes away when switched off', async () => {
     const { video, settings } = await videoSession({ overlayEnabled: false });
     pointerOver(video);
@@ -368,7 +423,7 @@ describe('overlay', () => {
       engine,
       settings,
       profiles: memoryProfiles(),
-      l10n: ENGLISH,
+      l10n: () => ENGLISH,
     });
     expect(listening.length).toBeGreaterThan(0);
     expect(listening.every((signal) => !signal.aborted)).toBe(true);

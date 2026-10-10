@@ -3,6 +3,10 @@
     "message": "Sterowanie prędkością i odtwarzaniem wideo i audio HTML5: szybkie, lekkie i szanujące twoją prywatność.",
     "description": "Store and browser description."
   },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Not shown: the direction this language is written in, exactly ltr or rtl. Read when the user chooses this language in the options."
+  },
   "connectingTitle": {
     "message": "Łączenie ze stroną…",
     "description": "Popup, while injecting."
@@ -598,6 +602,18 @@
     "message": "Mały pasek, który pojawia się, gdy wskaźnik jest nad odtwarzaczem.",
     "description": "Help."
   },
+  "overlayToggle": {
+    "message": "Pasek",
+    "description": "Popup, top: accessible name of the toggle button that shows or hides the overlay (the bar on players); pressed while it shows on this page."
+  },
+  "overlayShow": {
+    "message": "Pokaż pasek",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay is hidden."
+  },
+  "overlayHide": {
+    "message": "Ukryj pasek",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay shows."
+  },
   "overlayResetPosition": {
     "message": "Przenieś pasek z powrotem do rogu",
     "description": "Button."
@@ -788,6 +804,23 @@
   "textSizeHelp": {
     "message": "Powiększa tekst i przyciski na tej stronie.",
     "description": "Options, Appearance: under textSizeField."
+  },
+  "languageField": {
+    "message": "Język",
+    "description": "Options, Appearance: label of the choice of interface language."
+  },
+  "languageHelp": {
+    "message": "Język okienka, tej strony, paska i menu na filmach. Nazwę rozszerzenia i jego skróty przeglądarka pokazuje w swoim języku.",
+    "description": "Options, Appearance: under languageField."
+  },
+  "languageBrowser": {
+    "message": "Język przeglądarki ($LANGUAGE$)",
+    "description": "Options, Appearance: first choice of languageField, the interface follows the browser; $LANGUAGE$ is the name of the browser's language, in that language.",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
   },
   "themeYellow": {
     "message": "Żółty (domyślny)",

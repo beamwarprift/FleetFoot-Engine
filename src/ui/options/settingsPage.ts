@@ -16,6 +16,8 @@ export interface SettingsPageDeps {
   readonly l10n: Localization;
   readonly settings: SettingsPort;
   readonly mount: (root: HTMLElement) => void;
+  /** The page again in the language the user just chose (the page reloads itself). */
+  readonly relocalize?: () => void;
 }
 
 export interface SettingsPageParts {
@@ -73,6 +75,7 @@ export async function startSettingsPage(
   deps.mount(root);
   showPlace(document);
   const stopSettings = deps.settings.watch((next) => {
+    if (next.language !== settings.language) deps.relocalize?.();
     settings = next;
     applyTheme(document.documentElement, settings.theme);
     follow?.(settings);

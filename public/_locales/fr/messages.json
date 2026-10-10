@@ -1,7 +1,11 @@
 {
   "extensionDescription": {
-    "message": "Contrôle de la vitesse et de la lecture pour la vidéo et l’audio HTML5 : rapide, léger, respectueux de la vie privée.",
+    "message": "Contrôle de la vitesse et de la lecture pour la vidéo et l’audio HTML5 : rapide, léger, respectueux de la vie privée.",
     "description": "Store and browser description."
+  },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Not shown: the direction this language is written in, exactly ltr or rtl. Read when the user chooses this language in the options."
   },
   "connectingTitle": {
     "message": "Connexion à la page…",
@@ -598,6 +602,18 @@
     "message": "Une petite barre qui apparaît quand le pointeur est sur le lecteur.",
     "description": "Help."
   },
+  "overlayToggle": {
+    "message": "Barre flottante",
+    "description": "Popup, top: accessible name of the toggle button that shows or hides the overlay (the bar on players); pressed while it shows on this page."
+  },
+  "overlayShow": {
+    "message": "Afficher la barre flottante",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay is hidden."
+  },
+  "overlayHide": {
+    "message": "Masquer la barre flottante",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay shows."
+  },
   "overlayResetPosition": {
     "message": "Remettre la barre flottante dans son coin",
     "description": "Button."
@@ -788,6 +804,23 @@
   "textSizeHelp": {
     "message": "Agrandit le texte et les commandes de cette page.",
     "description": "Options, Appearance: under textSizeField."
+  },
+  "languageField": {
+    "message": "Langue",
+    "description": "Options, Appearance: label of the choice of interface language."
+  },
+  "languageHelp": {
+    "message": "La langue de la fenêtre contextuelle, de cette page, de la barre flottante et du menu sur les vidéos. Le navigateur affiche le nom de l’extension et ses raccourcis dans sa propre langue.",
+    "description": "Options, Appearance: under languageField."
+  },
+  "languageBrowser": {
+    "message": "Langue du navigateur ($LANGUAGE$)",
+    "description": "Options, Appearance: first choice of languageField, the interface follows the browser; $LANGUAGE$ is the name of the browser's language, in that language.",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
   },
   "themeYellow": {
     "message": "Jaune (par défaut)",

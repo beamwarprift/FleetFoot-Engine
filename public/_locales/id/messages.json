@@ -3,6 +3,10 @@
     "message": "Kontrol kecepatan dan pemutaran untuk video dan audio HTML5: cepat, ringan, dan menghormati privasi Anda.",
     "description": "Store and browser description."
   },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Not shown: the direction this language is written in, exactly ltr or rtl. Read when the user chooses this language in the options."
+  },
   "connectingTitle": {
     "message": "Menghubungkan ke halaman…",
     "description": "Popup, while injecting."
@@ -598,6 +602,18 @@
     "message": "Bilah kecil yang muncul saat penunjuk berada di atas pemutar.",
     "description": "Help."
   },
+  "overlayToggle": {
+    "message": "Bilah",
+    "description": "Popup, top: accessible name of the toggle button that shows or hides the overlay (the bar on players); pressed while it shows on this page."
+  },
+  "overlayShow": {
+    "message": "Tampilkan bilah",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay is hidden."
+  },
+  "overlayHide": {
+    "message": "Sembunyikan bilah",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay shows."
+  },
   "overlayResetPosition": {
     "message": "Kembalikan bilah ke sudut",
     "description": "Button."
@@ -788,6 +804,23 @@
   "textSizeHelp": {
     "message": "Memperbesar teks dan kontrol di halaman ini.",
     "description": "Options, Appearance: under textSizeField."
+  },
+  "languageField": {
+    "message": "Bahasa",
+    "description": "Options, Appearance: label of the choice of interface language."
+  },
+  "languageHelp": {
+    "message": "Bahasa untuk popup, halaman ini, bilah, dan menu di video. Nama ekstensi dan pintasannya ditampilkan browser dalam bahasanya sendiri.",
+    "description": "Options, Appearance: under languageField."
+  },
+  "languageBrowser": {
+    "message": "Bahasa browser ($LANGUAGE$)",
+    "description": "Options, Appearance: first choice of languageField, the interface follows the browser; $LANGUAGE$ is the name of the browser's language, in that language.",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
   },
   "themeYellow": {
     "message": "Kuning (bawaan)",

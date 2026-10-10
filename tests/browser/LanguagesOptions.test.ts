@@ -63,6 +63,7 @@ async function options(
   let root: HTMLElement | null = null;
   const { settings, profiles, origins } = SCENARIOS[scenario];
   const stop = await startOptions({
+    browserLanguage: 'en',
     localData: memoryLocalData(),
     version: TEST_VERSION,
     profiles: memoryProfiles(profiles),

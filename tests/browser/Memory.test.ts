@@ -40,7 +40,7 @@ async function session(
     engine: target,
     settings,
     profiles,
-    l10n: ENGLISH,
+    l10n: () => ENGLISH,
   });
   cleanups.push(stop);
   return { engine: target, settings, profiles };

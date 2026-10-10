@@ -44,6 +44,10 @@ export interface OptionsDeps {
   readonly localData: LocalDataPort;
   /** The version this build carries, from its manifest. */
   readonly version: string;
+  /** The browser's own interface language (BCP 47), named in the language choice. */
+  readonly browserLanguage: string;
+  /** The page again in the language the user just chose. */
+  readonly relocalize?: () => void;
 }
 
 export function startOptions(deps: OptionsDeps): Promise<() => void> {
@@ -62,7 +66,7 @@ export function startOptions(deps: OptionsDeps): Promise<() => void> {
       }),
       overlaySection(shared),
       ...(deps.contextMenu ? [menuSection(shared)] : []),
-      appearanceSection(shared),
+      appearanceSection({ ...shared, browserLanguage: deps.browserLanguage }),
       await savedTimeSection({ ...shared, stats: deps.stats }),
       privacySection({
         ...shared,

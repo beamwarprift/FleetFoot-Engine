@@ -32,6 +32,7 @@ describe.each(LANGUAGES)('the options page on a phone in $name', ({ l10n }) => {
     document.body.style.margin = '0';
     let root: HTMLElement | null = null;
     const stop = await startOptions({
+      browserLanguage: 'en',
       localData: memoryLocalData(),
       version: TEST_VERSION,
       document,
@@ -62,6 +63,7 @@ describe.each(LANGUAGES)('the options page on a phone in $name', ({ l10n }) => {
     document.body.style.margin = '0';
     let root: HTMLElement | null = null;
     const stop = await startOptions({
+      browserLanguage: 'en',
       localData: memoryLocalData(),
       version: TEST_VERSION,
       document,

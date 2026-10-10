@@ -3,6 +3,7 @@
 
 import { afterEach, describe, expect, it } from 'vitest';
 import { DEFAULT_SETTINGS } from '../../src/core/settings/Settings.ts';
+import { CATALOGUE_NAMES } from '../../src/ui/catalogues.ts';
 import type { BrowserShortcuts } from '../../src/ui/options/keyboardSection.ts';
 import { startOptions } from '../../src/ui/options/Options.ts';
 import { resetPage } from './media.ts';
@@ -30,10 +31,12 @@ async function options(
   stored: Record<string, unknown> = {},
   browserShortcuts: BrowserShortcuts | null = { open: null },
   contextMenu = true,
+  relocalize?: () => void,
 ) {
   const settings: MemorySettings = memorySettings(stored);
   let root: HTMLElement | null = null;
   const stop = await startOptions({
+    browserLanguage: 'en',
     localData: memoryLocalData(),
     version: TEST_VERSION,
     profiles: memoryProfiles(),
@@ -44,6 +47,7 @@ async function options(
     layout: null,
     browserShortcuts,
     contextMenu,
+    ...(relocalize === undefined ? {} : { relocalize }),
     stats: memoryStats(),
     mount: (element) => {
       root = element;
@@ -80,6 +84,51 @@ function shortcutButton(root: HTMLElement, action: string): HTMLButtonElement {
 }
 
 describe('options', () => {
+  it('offer the browser’s language first, then every language carried, named in itself', async () => {
+    const { root } = await options();
+    const select = fieldByLabel(root, t('languageField')) as unknown as HTMLSelectElement;
+    const choices = Array.from(select.options);
+    expect(choices[0]?.value).toBe('browser');
+    expect(choices[0]?.textContent).toBe(t('languageBrowser', 'English'));
+    const carried = choices.slice(1);
+    expect(carried.map((option) => option.value).sort()).toEqual([...CATALOGUE_NAMES]);
+    const named = (value: string) => carried.find((option) => option.value === value);
+    expect(named('de')?.textContent).toBe('Deutsch');
+    expect(named('ja')?.textContent).toBe('日本語');
+    expect(named('it')?.textContent).toBe('Italiano');
+    expect(named('pt_BR')?.lang).toBe('pt-BR');
+    const names = carried.map((option) => option.textContent ?? '');
+    expect(names).toEqual([...names].sort((a, b) => a.localeCompare(b, 'en')));
+  });
+
+  it('save the chosen language and draw the page again in it', async () => {
+    let reloads = 0;
+    const { root, settings } = await options({}, { open: null }, true, () => reloads++);
+    const select = fieldByLabel(root, t('languageField')) as unknown as HTMLSelectElement;
+    select.value = 'de';
+    select.dispatchEvent(new Event('change'));
+    await settled();
+    expect(settings.stored['language']).toBe('de');
+    expect(reloads).toBe(1);
+    // Another setting changed: the language is the same, the page stays.
+    await settings.save('theme', 'cyan');
+    await settled();
+    expect(reloads).toBe(1);
+  });
+
+  it('show the stored language, and the browser’s for one the extension does not carry', async () => {
+    const select = async (stored: Record<string, unknown>) =>
+      (
+        fieldByLabel(
+          (await options(stored)).root,
+          t('languageField'),
+        ) as unknown as HTMLSelectElement
+      ).value;
+    expect(await select({ language: 'de' })).toBe('de');
+    resetPage();
+    expect(await select({ language: 'xx' })).toBe('browser');
+  });
+
   it('show the current settings', async () => {
     const { root } = await options({ seekStep: 15, favoriteRate: 1.75 });
     expect(fieldByLabel(root, t('seekStepField')).value).toBe('15');
@@ -441,6 +490,7 @@ describe('options', () => {
     const settings = memorySettings();
     let root: HTMLElement | null = null;
     const stop = await startOptions({
+      browserLanguage: 'en',
       localData: memoryLocalData(),
       version: TEST_VERSION,
       profiles: memoryProfiles(),
@@ -490,7 +540,7 @@ describe('options', () => {
   it('link to the support page without a referrer, opened only on a click', async () => {
     const { root } = await options();
     const link = root.querySelector<HTMLAnchorElement>('a.support');
-    expect(link?.href).toBe('https://ko-fi.com/lyuk28');
+    expect(link?.href).toBe('https://ko-fi.com/lionrick333');
     expect(link?.rel).toBe('noopener noreferrer');
     expect(link?.target).toBe('_blank');
   });

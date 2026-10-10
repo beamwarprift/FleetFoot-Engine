@@ -39,7 +39,8 @@ async function popup(l10n: Localization, withMedia: boolean) {
   document.body.style.margin = '0';
   const engine = createMediaEngine(window);
   cleanups.push(() => engine.stop());
-  const settings = memorySettings();
+  // The presets open: the popup at its tallest.
+  const settings = memorySettings({ presetsOpen: true });
   const profiles = memoryProfiles();
   let video: HTMLMediaElement | null = null;
   if (withMedia) {
@@ -50,7 +51,7 @@ async function popup(l10n: Localization, withMedia: boolean) {
     video.style.position = 'fixed';
     video.style.left = '2000px';
     await ready(video);
-    const stop = await startPageSession({ window, engine, settings, profiles, l10n });
+    const stop = await startPageSession({ window, engine, settings, profiles, l10n: () => l10n });
     cleanups.push(stop);
   }
   const handle = await startPopup({

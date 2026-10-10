@@ -3,6 +3,10 @@
     "message": "HTML5 视频和音频的速度与播放控制：快速、轻巧，尊重你的隐私。",
     "description": "Store and browser description."
   },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Not shown: the direction this language is written in, exactly ltr or rtl. Read when the user chooses this language in the options."
+  },
   "connectingTitle": {
     "message": "正在连接页面…",
     "description": "Popup, while injecting."
@@ -598,6 +602,18 @@
     "message": "指针停在播放器上时出现的小工具条。",
     "description": "Help."
   },
+  "overlayToggle": {
+    "message": "工具条",
+    "description": "Popup, top: accessible name of the toggle button that shows or hides the overlay (the bar on players); pressed while it shows on this page."
+  },
+  "overlayShow": {
+    "message": "显示工具条",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay is hidden."
+  },
+  "overlayHide": {
+    "message": "隐藏工具条",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay shows."
+  },
   "overlayResetPosition": {
     "message": "将工具条移回角落",
     "description": "Button."
@@ -788,6 +804,23 @@
   "textSizeHelp": {
     "message": "放大此页面中的文字和控件。",
     "description": "Options, Appearance: under textSizeField."
+  },
+  "languageField": {
+    "message": "语言",
+    "description": "Options, Appearance: label of the choice of interface language."
+  },
+  "languageHelp": {
+    "message": "弹出窗口、本页面、工具条和视频菜单的语言。扩展程序的名称和快捷键由浏览器以其自身语言显示。",
+    "description": "Options, Appearance: under languageField."
+  },
+  "languageBrowser": {
+    "message": "浏览器语言（$LANGUAGE$）",
+    "description": "Options, Appearance: first choice of languageField, the interface follows the browser; $LANGUAGE$ is the name of the browser's language, in that language.",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
   },
   "themeYellow": {
     "message": "黄色（默认）",

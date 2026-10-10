@@ -21,6 +21,12 @@
     "skipLibCheck": true,
     "types": ["node"]
   },
-  "include": ["scripts/**/*", "tests/unit/**/*", "tests/e2e/**/*", "*.config.ts"],
+  "include": [
+    "scripts/**/*",
+    "tests/unit/**/*",
+    "tests/e2e/**/*",
+    "*.config.ts",
+    "src/catalogueModules.d.ts"
+  ],
   "exclude": ["node_modules", ".output", "tests/fixtures/**/*"]
 }

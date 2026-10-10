@@ -3,6 +3,7 @@
 // player, LOCK with a brake keeps the speed against a page that fights it, and Skip Silence hears
 // a page's audio once the page was clicked, the gesture Firefox asks before any audio starts.
 
+import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { test as base, expect } from '@playwright/test';
 import { firefoxBinary } from '../../scripts/firefox.ts';
@@ -65,12 +66,30 @@ async function command(firefox: Firefox, options: string, url: string, message: 
   };
 }
 
+/**
+ * Evaluated in an options page: its title and language once it has drawn itself, which it does
+ * after reading the settings and the chosen language's catalogue.
+ */
+const DRAWN = `new Promise((resolve) => {
+  const read = () => {
+    const title = document.querySelector('h1 .title');
+    if (title === null) return false;
+    resolve(JSON.stringify({
+      heading: document.querySelector('h1').textContent,
+      title: title.textContent,
+      lang: document.documentElement.lang,
+    }));
+    return true;
+  };
+  if (!read()) new MutationObserver((_, observer) => read() && observer.disconnect())
+    .observe(document.body, { childList: true, subtree: true });
+})`;
+
 test.describe.configure({ mode: 'serial' });
 
 test('installs, and its options page saves to storage.local', async ({ firefox, options }) => {
-  expect(await firefox.evaluate(options, 'document.querySelector("h1").textContent')).toContain(
-    'FLEETFOOT',
-  );
+  const drawn = JSON.parse(String(await firefox.evaluate(options, DRAWN))) as { heading: string };
+  expect(drawn.heading).toContain('FLEETFOOT');
   await firefox.evaluate(
     options,
     `(async () => {
@@ -227,4 +246,23 @@ test('Skip Silence waits for a click, then speeds through each silence', async (
   const after = await command(firefox, options, url, { v: 1, type: 'get-state' });
   expect(after.state.rate).toBe(1.5);
   expect(['listening', 'skipping']).toContain(after.state.skipSilence.status);
+});
+
+test('opens its pages in the language the user chose, from its own catalogue', async ({
+  firefox,
+  options,
+}) => {
+  await firefox.evaluate(options, "browser.storage.local.set({ language: 'de' })");
+  const page = await firefox.open(firefox.extensionUrl('/options.html'));
+  const { title, lang } = JSON.parse(String(await firefox.evaluate(page, DRAWN))) as {
+    title: string;
+    lang: string;
+  };
+  // The options tab the other tests use reloads itself in each language chosen, as it should:
+  // the language is put back from the page just read.
+  await firefox.evaluate(page, "browser.storage.local.set({ language: 'browser' })");
+  const german = JSON.parse(
+    readFileSync(join(import.meta.dirname, '../../public/_locales/de/messages.json'), 'utf8'),
+  ) as Record<string, { message: string }>;
+  expect({ title, lang }).toEqual({ title: german['optionsTitle']?.message, lang: 'de' });
 });

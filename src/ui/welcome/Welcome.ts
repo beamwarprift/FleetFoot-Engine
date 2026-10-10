@@ -21,6 +21,8 @@ export interface WelcomeDeps {
   readonly mount: (root: HTMLElement) => void;
   /** Closes this page. */
   readonly close: () => void;
+  /** The page again in the language the user just chose. */
+  readonly relocalize?: () => void;
 }
 
 export function startWelcome(deps: WelcomeDeps): Promise<() => void> {

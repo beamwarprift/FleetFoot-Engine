@@ -27,6 +27,7 @@ import {
   type Target,
 } from '../messages/Protocol.ts';
 import { MAX_SEEK_SECONDS } from '../messages/Validation.ts';
+import { asLanguage, BROWSER_LANGUAGE, type LanguageChoice } from './Languages.ts';
 import { DEFAULT_MEMORY, MEMORY_MODES, type MemoryMode } from './Memory.ts';
 import { type Bindings, DEFAULT_BINDINGS, parseBindings } from './Shortcuts.ts';
 import { siteOf } from './Sites.ts';
@@ -85,6 +86,10 @@ export interface Settings {
   readonly theme: ThemeName;
   /** Percent of the normal size of the options page. */
   readonly textSize: number;
+  /** The interface language: the browser's, or a catalogue's name. */
+  readonly language: LanguageChoice;
+  /** Whether the popup shows its preset speeds. */
+  readonly presetsOpen: boolean;
   readonly memory: MemoryMode;
   /** With All Sites: the sites where FleetFoot Engine never runs on its own. */
   readonly excludedSites: readonly string[];
@@ -118,6 +123,8 @@ export const DEFAULT_SETTINGS: Settings = {
   bindings: DEFAULT_BINDINGS,
   theme: DEFAULT_THEME,
   textSize: MIN_TEXT_SIZE,
+  language: BROWSER_LANGUAGE,
+  presetsOpen: false,
   memory: DEFAULT_MEMORY,
   excludedSites: [],
 };
@@ -219,6 +226,8 @@ const PARSERS: Parsers = {
   bindings: parseBindings,
   theme: (value) => asOneOf(THEME_NAMES, value),
   textSize: asTextSize,
+  language: asLanguage,
+  presetsOpen: asBoolean,
   memory: (value) => asOneOf(MEMORY_MODES, value),
   excludedSites: asSites,
 };

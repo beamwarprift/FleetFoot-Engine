@@ -3,6 +3,10 @@
     "message": "Управление скоростью и воспроизведением видео и аудио HTML5: быстро, легко и с уважением к вашей приватности.",
     "description": "Store and browser description."
   },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Not shown: the direction this language is written in, exactly ltr or rtl. Read when the user chooses this language in the options."
+  },
   "connectingTitle": {
     "message": "Подключение к странице…",
     "description": "Popup, while injecting."
@@ -598,6 +602,18 @@
     "message": "Небольшая панель, которая появляется, когда указатель над плеером.",
     "description": "Help."
   },
+  "overlayToggle": {
+    "message": "Панель",
+    "description": "Popup, top: accessible name of the toggle button that shows or hides the overlay (the bar on players); pressed while it shows on this page."
+  },
+  "overlayShow": {
+    "message": "Показать панель",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay is hidden."
+  },
+  "overlayHide": {
+    "message": "Скрыть панель",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay shows."
+  },
   "overlayResetPosition": {
     "message": "Вернуть панель в угол",
     "description": "Button."
@@ -788,6 +804,23 @@
   "textSizeHelp": {
     "message": "Увеличивает текст и элементы управления на этой странице.",
     "description": "Options, Appearance: under textSizeField."
+  },
+  "languageField": {
+    "message": "Язык",
+    "description": "Options, Appearance: label of the choice of interface language."
+  },
+  "languageHelp": {
+    "message": "Язык всплывающего окна, этой страницы, панели и меню на видео. Название расширения и его сочетания клавиш браузер показывает на своём языке.",
+    "description": "Options, Appearance: under languageField."
+  },
+  "languageBrowser": {
+    "message": "Язык браузера ($LANGUAGE$)",
+    "description": "Options, Appearance: first choice of languageField, the interface follows the browser; $LANGUAGE$ is the name of the browser's language, in that language.",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
   },
   "themeYellow": {
     "message": "Жёлтая (по умолчанию)",

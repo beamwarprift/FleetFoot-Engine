@@ -7,6 +7,7 @@ import type { MediaEngine } from '../core/MediaEngine.ts';
 import { toRate } from '../core/media/PlaybackRate.ts';
 import { makeCommand } from '../core/messages/Protocol.ts';
 import { configCommands } from '../core/settings/EngineConfig.ts';
+import type { LanguageChoice } from '../core/settings/Languages.ts';
 import { effectiveSettings, type SiteProfile, startingRate } from '../core/settings/Profiles.ts';
 import type { Settings } from '../core/settings/Settings.ts';
 import { siteOf } from '../core/settings/Sites.ts';
@@ -16,13 +17,15 @@ import { saveFromPage } from '../ui/pageWrites.ts';
 import type { SettingsPort } from '../ui/SettingsPort.ts';
 import { Overlay } from './overlay/Overlay.ts';
 import { PageShortcuts } from './PageShortcuts.ts';
+import type { PageKey } from './pageTexts.ts';
 
 export interface PageSessionDeps {
   readonly window: Window;
   readonly engine: MediaEngine;
   readonly settings: SettingsPort;
   readonly profiles: ProfilesPort;
-  readonly l10n: Localization;
+  /** The overlay's texts in a language: the user's choice, or the browser's. */
+  readonly l10n: (language: LanguageChoice) => Localization<PageKey>;
 }
 
 export async function startPageSession(deps: PageSessionDeps): Promise<() => void> {
@@ -45,13 +48,16 @@ export async function startPageSession(deps: PageSessionDeps): Promise<() => voi
   const start = startingRate(general.memory, remembered, profile);
   if (start !== null) await engine.handleMessage(makeCommand('set-default-rate', { rate: start }));
 
-  const overlay = new Overlay({
-    window: deps.window,
-    engine,
-    l10n: deps.l10n,
-    settings: () => settings,
-    savePosition: (position) => void deps.settings.save('overlayPosition', position),
-  });
+  const makeOverlay = (): Overlay =>
+    new Overlay({
+      window: deps.window,
+      engine,
+      l10n: deps.l10n(general.language),
+      settings: () => settings,
+      savePosition: (position) => void deps.settings.save('overlayPosition', position),
+    });
+  let overlay = makeOverlay();
+  let language = general.language;
   const shortcuts = new PageShortcuts({
     window: deps.window,
     engine,
@@ -103,6 +109,12 @@ export async function startPageSession(deps: PageSessionDeps): Promise<() => voi
         profile = await loadProfile();
         settings = effectiveSettings(general, profile);
         await apply(before);
+        // Another language: the overlay is drawn again with its texts.
+        if (general.language !== language) {
+          language = general.language;
+          overlay.stop();
+          overlay = makeOverlay();
+        }
         syncOverlay();
         overlay.refresh();
       })

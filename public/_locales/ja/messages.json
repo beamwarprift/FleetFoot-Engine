@@ -3,6 +3,10 @@
     "message": "HTML5 の動画と音声の速度・再生コントロール。速く、軽く、プライバシーを尊重します。",
     "description": "Store and browser description."
   },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Not shown: the direction this language is written in, exactly ltr or rtl. Read when the user chooses this language in the options."
+  },
   "connectingTitle": {
     "message": "ページに接続しています…",
     "description": "Popup, while injecting."
@@ -598,6 +602,18 @@
     "message": "ポインターがプレーヤー上にある間だけ表示される小さなバーです。",
     "description": "Help."
   },
+  "overlayToggle": {
+    "message": "バー",
+    "description": "Popup, top: accessible name of the toggle button that shows or hides the overlay (the bar on players); pressed while it shows on this page."
+  },
+  "overlayShow": {
+    "message": "バーを表示",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay is hidden."
+  },
+  "overlayHide": {
+    "message": "バーを隠す",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay shows."
+  },
   "overlayResetPosition": {
     "message": "バーを隅に戻す",
     "description": "Button."
@@ -788,6 +804,23 @@
   "textSizeHelp": {
     "message": "このページの文字と操作ボタンを大きくします。",
     "description": "Options, Appearance: under textSizeField."
+  },
+  "languageField": {
+    "message": "言語",
+    "description": "Options, Appearance: label of the choice of interface language."
+  },
+  "languageHelp": {
+    "message": "ポップアップ、このページ、バー、動画のメニューの言語です。拡張機能の名前とショートカットは、ブラウザが自分の言語で表示します。",
+    "description": "Options, Appearance: under languageField."
+  },
+  "languageBrowser": {
+    "message": "ブラウザの言語（$LANGUAGE$）",
+    "description": "Options, Appearance: first choice of languageField, the interface follows the browser; $LANGUAGE$ is the name of the browser's language, in that language.",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
   },
   "themeYellow": {
     "message": "イエロー（初期設定）",

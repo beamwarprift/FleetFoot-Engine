@@ -19,6 +19,10 @@ export interface PopupActions {
   copyTimestamp(): void;
   choosePlayer(choice: PlayerChoice): void;
   openOptions(): void;
+  /** Shows or hides the overlay on every site: the general setting. */
+  overlay(shown: boolean): void;
+  /** Opens or closes the preset speeds. */
+  presetsOpen(open: boolean): void;
   retry(): void;
   /** Asked inside the user's click: the browser prompts for the access. */
   allowSite(site: string): void;

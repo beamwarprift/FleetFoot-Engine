@@ -3,6 +3,10 @@
     "message": "HTML5 वीडियो और ऑडियो के लिए गति और प्लेबैक नियंत्रण: तेज़, हल्का और आपकी निजता का सम्मान करने वाला।",
     "description": "Store and browser description."
   },
+  "textDirection": {
+    "message": "ltr",
+    "description": "Not shown: the direction this language is written in, exactly ltr or rtl. Read when the user chooses this language in the options."
+  },
   "connectingTitle": {
     "message": "पेज से जुड़ रहा है…",
     "description": "Popup, while injecting."
@@ -598,6 +602,18 @@
     "message": "एक छोटी पट्टी, जो पॉइंटर के प्लेयर पर होने तक दिखती है।",
     "description": "Help."
   },
+  "overlayToggle": {
+    "message": "पट्टी",
+    "description": "Popup, top: accessible name of the toggle button that shows or hides the overlay (the bar on players); pressed while it shows on this page."
+  },
+  "overlayShow": {
+    "message": "पट्टी दिखाएँ",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay is hidden."
+  },
+  "overlayHide": {
+    "message": "पट्टी छिपाएँ",
+    "description": "Popup, top: tooltip of overlayToggle while the overlay shows."
+  },
   "overlayResetPosition": {
     "message": "पट्टी को वापस कोने में ले जाएँ",
     "description": "Button."
@@ -788,6 +804,23 @@
   "textSizeHelp": {
     "message": "इस पेज के टेक्स्ट और कंट्रोल बड़े करता है।",
     "description": "Options, Appearance: under textSizeField."
+  },
+  "languageField": {
+    "message": "भाषा",
+    "description": "Options, Appearance: label of the choice of interface language."
+  },
+  "languageHelp": {
+    "message": "पॉपअप, इस पेज, पट्टी और वीडियो पर मेन्यू की भाषा। एक्सटेंशन का नाम और उसके शॉर्टकट ब्राउज़र अपनी भाषा में दिखाता है।",
+    "description": "Options, Appearance: under languageField."
+  },
+  "languageBrowser": {
+    "message": "ब्राउज़र की भाषा ($LANGUAGE$)",
+    "description": "Options, Appearance: first choice of languageField, the interface follows the browser; $LANGUAGE$ is the name of the browser's language, in that language.",
+    "placeholders": {
+      "language": {
+        "content": "$1"
+      }
+    }
   },
   "themeYellow": {
     "message": "पीला (डिफ़ॉल्ट)",
