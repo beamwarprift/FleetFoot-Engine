@@ -32,9 +32,37 @@ export function previousVersion(recorded: readonly string[], version: string): s
     .at(-1);
 }
 
-/** The changelog has a section for this version: a heading `## <version>`. */
-export function changelogHas(changelog: string, version: string): boolean {
-  return changelog.split('\n').some((line) => line.trim() === `## ${version}`);
+/**
+ * The text of this version's section of the changelog: what follows its heading `## <version>`,
+ * up to the next `## ` heading; undefined when there is no such heading or nothing under it.
+ */
+export function changelogSection(changelog: string, version: string): string | undefined {
+  const lines = changelog.split(/\r?\n/);
+  const start = lines.findIndex((line) => line.trim() === `## ${version}`);
+  if (start === -1) return undefined;
+  const rest = lines.slice(start + 1);
+  const end = rest.findIndex((line) => line.startsWith('## '));
+  const text = (end === -1 ? rest : rest.slice(0, end)).join('\n').trim();
+  return text === '' ? undefined : text;
+}
+
+/**
+ * The notes of a GitHub release: what changed, from the changelog, then how a download can be
+ * checked, for whoever wants to: its SHA-256 and the attestation of where it was built.
+ */
+export function releaseNotes(section: string, repository: string): string {
+  return [
+    section,
+    '',
+    '### Checking a download',
+    '',
+    'Optional, for anyone who wants proof that a package is intact and was built from this',
+    'repository. `SHA256SUMS` holds the fingerprint of each package: in the folder of the',
+    'downloads, `sha256sum -c SHA256SUMS` says whether they match. GitHub also keeps, for each',
+    'package, a signed attestation of the workflow and the commit of this repository that built',
+    `it, checked with \`gh attestation verify <package> --repo ${repository}\`.`,
+    '',
+  ].join('\n');
 }
 
 export interface Checksum {

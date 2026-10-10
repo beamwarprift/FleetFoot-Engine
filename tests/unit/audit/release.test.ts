@@ -3,12 +3,13 @@
 
 import { describe, expect, it } from 'vitest';
 import {
-  changelogHas,
+  changelogSection,
   compareVersions,
   manifestChanges,
   parseVersion,
   permissionsOf,
   previousVersion,
+  releaseNotes,
   sha256Sums,
 } from '../../../scripts/release/record.ts';
 
@@ -40,11 +41,31 @@ describe('versions', () => {
 });
 
 describe('the changelog', () => {
-  it('has a version only with its own heading', () => {
-    const text = '# Changelog\n\n## 1.0.0\n\n- first\n\n## 1.0.10\n';
-    expect(changelogHas(text, '1.0.0')).toBe(true);
-    expect(changelogHas(text, '1.0.1')).toBe(false);
-    expect(changelogHas('### 1.0.0\n- 1.0.0 mentioned', '1.0.0')).toBe(false);
+  const text =
+    '# Changelog\n\nIntro.\n\n## 1.1.0\n\n- second\n  wrapped\n### Fixed\n- a fix\n\n## 1.0.0\n\n- first\n';
+
+  it('gives the section of a version, up to the next version', () => {
+    expect(changelogSection(text, '1.1.0')).toBe('- second\n  wrapped\n### Fixed\n- a fix');
+    expect(changelogSection(text, '1.0.0')).toBe('- first');
+  });
+
+  it('has a version only with its own heading and text under it', () => {
+    expect(changelogSection(text, '1.0.1')).toBeUndefined();
+    expect(changelogSection(text, '1.1')).toBeUndefined();
+    expect(changelogSection('### 1.0.0\n- 1.0.0 mentioned', '1.0.0')).toBeUndefined();
+    expect(changelogSection('## 1.0.0\n\n## 0.9.0\n- old', '1.0.0')).toBeUndefined();
+    expect(changelogSection('## 1.0.0\n   \n', '1.0.0')).toBeUndefined();
+  });
+
+  it('reads a changelog written with Windows line ends', () => {
+    expect(changelogSection('## 1.0.0\r\n- first\r\n## 0.9.0\r\n', '1.0.0')).toBe('- first');
+  });
+
+  it('the release notes open with the section and say how to check a download', () => {
+    const notes = releaseNotes('- first', 'owner/repo');
+    expect(notes.startsWith('- first\n\n### Checking a download\n')).toBe(true);
+    expect(notes).toContain('sha256sum -c SHA256SUMS');
+    expect(notes).toContain('gh attestation verify <package> --repo owner/repo');
   });
 });
 

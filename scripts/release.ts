@@ -11,7 +11,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 
 import { join, relative } from 'node:path';
 import { parseJson, readObject, readString } from './audit/json.ts';
 import {
-  changelogHas,
+  changelogSection,
   manifestChanges,
   parseVersion,
   permissionsOf,
@@ -40,8 +40,8 @@ const pkg = readJsonObject(join(ROOT, 'package.json'));
 const name = readString(pkg, 'name', 'package.json');
 const version = readString(pkg, 'version', 'package.json');
 if (parseVersion(version) === undefined) fail(`version ${version} is not MAJOR.MINOR.PATCH`);
-if (!changelogHas(readFileSync(join(ROOT, 'CHANGELOG.md'), 'utf8'), version)) {
-  fail(`CHANGELOG.md has no "## ${version}" section`);
+if (changelogSection(readFileSync(join(ROOT, 'CHANGELOG.md'), 'utf8'), version) === undefined) {
+  fail(`CHANGELOG.md has no "## ${version}" section with text under it`);
 }
 
 // The source archive is made from the files on disk: only a tree with nothing left uncommitted
