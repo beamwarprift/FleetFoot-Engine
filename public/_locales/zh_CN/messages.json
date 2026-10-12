@@ -1354,6 +1354,15 @@
       }
     }
   },
+  "aboutAuthor": {
+    "message": "由 $AUTHOR$ 开发",
+    "description": "The author's credit.",
+    "placeholders": {
+      "author": {
+        "content": "$1"
+      }
+    }
+  },
   "aboutLicense": {
     "message": "依据 PolyForm Strict 1.0.0 许可证，可免费用于个人非商业用途。不得修改或再分发代码。",
     "description": "Licence summary; the licence text decides."

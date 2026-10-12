@@ -12,12 +12,12 @@ export const SUPPORT_URL = 'https://ko-fi.com/lionrick333';
  * The public repository, named after the app: the source of each release
  * (what the source says can be checked), its issues and its discussions.
  */
-export const REPOSITORY_URL = 'https://github.com/buildwiserevenue/fleetfoot-engine';
-export const ISSUES_URL = 'https://github.com/buildwiserevenue/fleetfoot-engine/issues';
-export const DISCUSSIONS_URL = 'https://github.com/buildwiserevenue/fleetfoot-engine/discussions';
+export const REPOSITORY_URL = 'https://github.com/beamwarprift/FleetFoot-Engine';
+export const ISSUES_URL = 'https://github.com/beamwarprift/FleetFoot-Engine/issues';
+export const DISCUSSIONS_URL = 'https://github.com/beamwarprift/FleetFoot-Engine/discussions';
 /** A release's files: each release is tagged `v` and its version in the public repository. */
-const TREE_URL = 'https://github.com/buildwiserevenue/fleetfoot-engine/tree/';
-const BLOB_URL = 'https://github.com/buildwiserevenue/fleetfoot-engine/blob/';
+const TREE_URL = 'https://github.com/beamwarprift/FleetFoot-Engine/tree/';
+const BLOB_URL = 'https://github.com/beamwarprift/FleetFoot-Engine/blob/';
 
 /** The source exactly as this version was built. */
 export function versionSourceUrl(version: string): string {

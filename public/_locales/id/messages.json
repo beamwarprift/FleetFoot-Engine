@@ -1354,6 +1354,15 @@
       }
     }
   },
+  "aboutAuthor": {
+    "message": "Dibuat oleh $AUTHOR$",
+    "description": "The author's credit.",
+    "placeholders": {
+      "author": {
+        "content": "$1"
+      }
+    }
+  },
   "aboutLicense": {
     "message": "Gratis untuk penggunaan pribadi dan nonkomersial, dengan lisensi PolyForm Strict 1.0.0. Kode tidak boleh diubah atau didistribusikan ulang.",
     "description": "Licence summary; the licence text decides."

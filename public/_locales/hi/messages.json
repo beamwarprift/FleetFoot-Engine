@@ -1354,6 +1354,15 @@
       }
     }
   },
+  "aboutAuthor": {
+    "message": "$AUTHOR$ द्वारा बनाया गया",
+    "description": "The author's credit.",
+    "placeholders": {
+      "author": {
+        "content": "$1"
+      }
+    }
+  },
   "aboutLicense": {
     "message": "PolyForm Strict 1.0.0 लाइसेंस के तहत निजी और गैर-व्यावसायिक इस्तेमाल के लिए मुफ़्त। कोड में बदलाव करना या उसे दोबारा बाँटना मना है।",
     "description": "Licence summary; the licence text decides."

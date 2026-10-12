@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Questions and ideas
-    url: https://github.com/buildwiserevenue/fleetfoot-engine/discussions
+    url: https://github.com/beamwarprift/FleetFoot-Engine/discussions
     about: Ask a question or propose an idea in Discussions.
   - name: Security problem
-    url: https://github.com/buildwiserevenue/fleetfoot-engine/security/advisories/new
+    url: https://github.com/beamwarprift/FleetFoot-Engine/security/advisories/new
     about: Report it privately, never in a public issue.

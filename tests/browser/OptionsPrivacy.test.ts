@@ -29,7 +29,7 @@ import {
   englishText as t,
 } from './ui.ts';
 
-const REPO = 'https://github.com/buildwiserevenue/fleetfoot-engine';
+const REPO = 'https://github.com/beamwarprift/FleetFoot-Engine';
 
 const cleanups: Array<() => void> = [];
 afterEach(() => {
@@ -405,6 +405,12 @@ describe('deleting everything on this device', () => {
 });
 
 describe('about', () => {
+  it('credits the author', async () => {
+    const { root } = await options();
+    const about = section(root, t('sectionAbout'));
+    expect(about.textContent).toContain(t('aboutAuthor', 'Lionrick333'));
+  });
+
   it('shows the version and its license, with the source and the license of that version', async () => {
     const { root } = await options();
     const about = section(root, t('sectionAbout'));

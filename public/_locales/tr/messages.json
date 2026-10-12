@@ -1354,6 +1354,15 @@
       }
     }
   },
+  "aboutAuthor": {
+    "message": "$AUTHOR$ tarafından geliştirildi",
+    "description": "The author's credit.",
+    "placeholders": {
+      "author": {
+        "content": "$1"
+      }
+    }
+  },
   "aboutLicense": {
     "message": "PolyForm Strict 1.0.0 lisansıyla kişisel ve ticari olmayan kullanım için ücretsizdir. Kodun değiştirilmesine ve yeniden dağıtılmasına izin verilmez.",
     "description": "Licence summary; the licence text decides."

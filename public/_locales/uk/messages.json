@@ -1354,6 +1354,15 @@
       }
     }
   },
+  "aboutAuthor": {
+    "message": "Розробник — $AUTHOR$",
+    "description": "The author's credit.",
+    "placeholders": {
+      "author": {
+        "content": "$1"
+      }
+    }
+  },
   "aboutLicense": {
     "message": "Безкоштовно для особистого некомерційного використання за ліцензією PolyForm Strict 1.0.0. Змінювати й поширювати код заборонено.",
     "description": "Licence summary; the licence text decides."

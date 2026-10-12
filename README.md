@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/buildwiserevenue/fleetfoot-engine/actions/workflows/build.yml"><img src="https://github.com/buildwiserevenue/fleetfoot-engine/actions/workflows/build.yml/badge.svg" alt="Build"></a>
-  <a href="https://github.com/buildwiserevenue/fleetfoot-engine/releases"><img src="https://img.shields.io/github/v/release/buildwiserevenue/fleetfoot-engine?include_prereleases&amp;label=release" alt="Release"></a>
+  <a href="https://github.com/beamwarprift/FleetFoot-Engine/actions/workflows/build.yml"><img src="https://github.com/beamwarprift/FleetFoot-Engine/actions/workflows/build.yml/badge.svg" alt="Build"></a>
+  <a href="https://github.com/beamwarprift/FleetFoot-Engine/releases"><img src="https://img.shields.io/github/v/release/beamwarprift/FleetFoot-Engine?include_prereleases&amp;label=release" alt="Release"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-PolyForm%20Strict%201.0.0-informational" alt="License: PolyForm Strict 1.0.0"></a>
 </p>
 
@@ -62,7 +62,7 @@ At very high or very low speeds, browsers may play audio differently, or mute it
 
 The store packages are built from this repository, by its `build` workflow, from the tag of each
 version. Each GitHub release holds the packages, their SHA-256 in `SHA256SUMS`, and an attestation
-of where they were built: `gh attestation verify <package> --repo buildwiserevenue/fleetfoot-engine`.
+of where they were built: `gh attestation verify <package> --repo beamwarprift/FleetFoot-Engine`.
 
 To build them yourself:
 
@@ -80,8 +80,8 @@ release's `SHA256SUMS` in the folder above `.output/`, and run `sha256sum -c ../
 
 ## Community
 
-- Something does not work: open an issue in [Issues](https://github.com/buildwiserevenue/fleetfoot-engine/issues).
-- A question or an idea: start a conversation in [Discussions](https://github.com/buildwiserevenue/fleetfoot-engine/discussions).
+- Something does not work: open an issue in [Issues](https://github.com/beamwarprift/FleetFoot-Engine/issues).
+- A question or an idea: start a conversation in [Discussions](https://github.com/beamwarprift/FleetFoot-Engine/discussions).
 - A security problem: never in a public issue, see [SECURITY.md](SECURITY.md).
 
 This repository does not take pull requests: see [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -89,6 +89,10 @@ This repository does not take pull requests: see [CONTRIBUTING.md](CONTRIBUTING.
 ## Support
 
 FleetFoot Engine is free. If it saves you time, you can [support its development on Ko-fi](https://ko-fi.com/lionrick333).
+
+## Author
+
+Developed by **Lionrick333** · GitHub: [BeamWarpRift](https://github.com/beamwarprift)
 
 ## License
 

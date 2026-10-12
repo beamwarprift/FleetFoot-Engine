@@ -4,7 +4,7 @@
 
 Please do not report a security problem in a public issue or discussion.
 
-Report it privately through GitHub: [open a private security advisory](https://github.com/buildwiserevenue/fleetfoot-engine/security/advisories/new). Only the maintainer can read it.
+Report it privately through GitHub: [open a private security advisory](https://github.com/beamwarprift/FleetFoot-Engine/security/advisories/new). Only the maintainer can read it.
 
 Include what you found, the browser and its version, the FleetFoot Engine version (shown on its options page, under About), and the steps that show the problem.
 

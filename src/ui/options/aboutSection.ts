@@ -1,7 +1,8 @@
-// About: the version and its licence, the source of this very version, where to report
-// a problem or ask, the support link and «More from the developer». Plain links, opened only on
-// the user's click.
+// About: the version and its licence, the author, the source of this very version, where to
+// report a problem or ask, the support link and «More from the developer». Plain links, opened
+// only on the user's click.
 
+import { AUTHOR } from '../author.ts';
 import { h } from '../dom.ts';
 import {
   DEVELOPER_LINKS,
@@ -39,6 +40,7 @@ export function aboutSection(deps: AboutDeps): OptionsSection {
   return {
     element: fields.section('sectionAbout', [
       h(document, 'p', { text: t('aboutVersion', version) }),
+      h(document, 'p', { text: t('aboutAuthor', AUTHOR) }),
       h(document, 'p', { text: t('aboutLicense') }),
       h(document, 'ul', { className: 'links' }, [
         item(t('aboutSource'), versionSourceUrl(version)),

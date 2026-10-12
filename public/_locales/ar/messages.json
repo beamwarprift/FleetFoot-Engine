@@ -1354,6 +1354,15 @@
       }
     }
   },
+  "aboutAuthor": {
+    "message": "من تطوير $AUTHOR$",
+    "description": "The author's credit.",
+    "placeholders": {
+      "author": {
+        "content": "$1"
+      }
+    }
+  },
   "aboutLicense": {
     "message": "مجاني للاستخدام الشخصي غير التجاري بموجب ترخيص PolyForm Strict 1.0.0. لا يُسمح بتعديل الشيفرة أو إعادة توزيعها.",
     "description": "Licence summary; the licence text decides."

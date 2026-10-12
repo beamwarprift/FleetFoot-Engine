@@ -31,4 +31,4 @@ Each permission and why it is there: [docs/PERMISSIONS.md](docs/PERMISSIONS.md).
 
 ## Questions
 
-Ask in [Discussions](https://github.com/buildwiserevenue/fleetfoot-engine/discussions). A security problem: see [SECURITY.md](SECURITY.md).
+Ask in [Discussions](https://github.com/beamwarprift/FleetFoot-Engine/discussions). A security problem: see [SECURITY.md](SECURITY.md).

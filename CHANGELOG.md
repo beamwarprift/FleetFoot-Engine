@@ -3,6 +3,12 @@
 Every release of FleetFoot Engine, newest first. Versions follow MAJOR.MINOR.PATCH. Each release in
 the stores is built from the tag of the same version in this repository.
 
+## 1.1.1
+
+- The links to the code, Issues, Discussions and private security reports point to the
+  repository's new address, github.com/beamwarprift/FleetFoot-Engine.
+- The About section of the settings names the author.
+
 ## 1.1.0
 
 - Choose the language of the extension in the settings, or keep the browser's: the popup, the

@@ -1354,6 +1354,15 @@
       }
     }
   },
+  "aboutAuthor": {
+    "message": "Creado por $AUTHOR$",
+    "description": "The author's credit.",
+    "placeholders": {
+      "author": {
+        "content": "$1"
+      }
+    }
+  },
   "aboutLicense": {
     "message": "Gratis para uso personal y no comercial, con la licencia PolyForm Strict 1.0.0. No se permite modificar ni redistribuir el código.",
     "description": "Licence summary; the licence text decides."

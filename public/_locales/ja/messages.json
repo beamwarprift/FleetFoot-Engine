@@ -1354,6 +1354,15 @@
       }
     }
   },
+  "aboutAuthor": {
+    "message": "制作 $AUTHOR$",
+    "description": "The author's credit.",
+    "placeholders": {
+      "author": {
+        "content": "$1"
+      }
+    }
+  },
   "aboutLicense": {
     "message": "PolyForm Strict 1.0.0 ライセンスのもと、個人の非営利利用に限り無料です。コードの改変と再配布は認められていません。",
     "description": "Licence summary; the licence text decides."

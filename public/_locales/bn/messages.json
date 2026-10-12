@@ -1354,6 +1354,15 @@
       }
     }
   },
+  "aboutAuthor": {
+    "message": "নির্মাতা $AUTHOR$",
+    "description": "The author's credit.",
+    "placeholders": {
+      "author": {
+        "content": "$1"
+      }
+    }
+  },
   "aboutLicense": {
     "message": "PolyForm Strict 1.0.0 লাইসেন্সের অধীনে ব্যক্তিগত ও অবাণিজ্যিক ব্যবহারের জন্য বিনামূল্যে। কোড পরিবর্তন বা পুনর্বিতরণের অনুমতি নেই।",
     "description": "Licence summary; the licence text decides."

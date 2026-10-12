@@ -1,7 +1,9 @@
 import { defineConfig } from 'wxt';
 import { cataloguesPlugin } from './scripts/catalogues.ts';
+import { signaturePlugin } from './scripts/signature.ts';
 import { ALL_SITES } from './src/core/settings/Access.ts';
 import { actionMessageName, BROWSER_COMMAND_ACTIONS } from './src/core/settings/Shortcuts.ts';
+import { SIGNATURE_BANNER } from './src/ui/author.ts';
 
 // Every value below is audited against config/manifest-policy.json by `pnpm audit:manifest`.
 // Changing a permission here without updating the policy (and docs/PERMISSIONS.md) fails CI.
@@ -64,6 +66,6 @@ export default defineConfig({
       // The modulepreload polyfill ships a fetch() call into extension pages.
       modulePreload: { polyfill: false },
     },
-    plugins: [cataloguesPlugin(import.meta.dirname)],
+    plugins: [cataloguesPlugin(import.meta.dirname), signaturePlugin(SIGNATURE_BANNER)],
   }),
 });
